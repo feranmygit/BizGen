@@ -73,7 +73,7 @@ body{
 .menu-items{
     position: fixed;
     right: -100vw;
-    height: 30vh;
+    height: 32vh;
     width: 80vw;
     background-color: var(--primary_white_color);
     border: 1px solid var(--main_primary_color);
