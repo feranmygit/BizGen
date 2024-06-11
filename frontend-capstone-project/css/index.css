@@ -74,7 +74,7 @@ body{
     position: fixed;
     right: -100vw;
     height: 32vh;
-    width: 80vw;
+    width: 90vw;
     background-color: var(--primary_white_color);
     border: 1px solid var(--main_primary_color);
     margin-top: 6rem;
@@ -84,28 +84,16 @@ body{
     align-items: center;
 }
 #input:checked ~ .menu-items{
-    right: 10vw;
+    right: 5vw;
     transition: 0.3s ease;
 }
 .bizName{
     margin-top: 2rem;
     color: var(--primary_white_color);
 }
-.text_align{
-    text-align: center;
-}
 .text_white{
     color: var(--primary_text_color);
 }
-/* .icon-close{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin: 2rem 1.5rem;
-}
-.icon-close img{
-    height: 1.5rem; 
-}*/
 .list-items{
     padding: 0 1rem;
     text-align: center;
@@ -130,6 +118,11 @@ body{
     color: var(--primary_white_color);
     font-weight: 700;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* other necessary stylings here  */
+.text_align{
+    text-align: center;
 }
 .margin_bottom_null{
     margin-bottom: 0;
