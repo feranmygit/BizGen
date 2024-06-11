@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+
+    /* #main primary colors */
+    --main_primary_color: hsl(122.42, 39.44%, 49.22%);
+    --primary_white_color: #fff;
+    --paragraph_grey_color: hsl(228, 12%, 75%);
+    --primary_black_color: rgb(8, 8, 8);
+}
+body{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.topContainer{
+    background-color: var(--main_primary_color);
+}
+/* logo section here  */
+.logoContainer img{
+    height: 50px;
+    margin-inline-start: 1rem;
+    margin-block-start: 1rem;
+}
+
+/* hamburger section here  */
+#input{
+    display: none;
+}
+.hamburgerElement{
+    position: relative;
+    width: 3rem;
+    height: 2rem;
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-inline-end: 1rem;
+}
+.hamburgerContainer{
+   position: absolute;
+   width: 100%;
+   height: 5px;
+   background-color: var(--primary_black_color);
+}
+.hamburgerContainer::before{
+   content:  ""; 
+   position: absolute;
+   width: 100%;
+   height: 5px;
+   top: -10px;
+   background-color: var(--primary_black_color);
+}
+.hamburgerContainer::after{
+   content:  ""; 
+   position: absolute;
+   width: 100%;
+   height: 5px;
+   top: 10px;
+   background-color: var(--primary_black_color);
+}
+.bizName{
+    margin-top: 1.6rem;
+}
+.text_align{
+    text-align: center;
+}
+.text_white{
+    color: var(--primary_text_color);
+}
+.margin_bottom_null{
+    margin-bottom: 0;
+}
+.flex{
+    display: flex;
+}
+.flex_row{
+    flex-direction: row;
+}
+.justify_centre{
+    justify-content: center;
+}
+.justify_between{
+    justify-content: space-between;
+}
+.gap{
+    gap: 1rem;
+}
+.textPar_color{
+    color: var(--paragraph_text_color);
+}
+.upperCase{
+    text-transform: uppercase;
+}
+.letter_spacing{
+    letter-spacing: 5px;
+}
+.text_decor{
+    text-decoration: none;
+}
+.padding_bottom{
+    padding-bottom: 0.5rem;
+}
+
+@media only screen and (min-width:578px) {
+  
+}
