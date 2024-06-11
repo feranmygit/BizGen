@@ -7,6 +7,7 @@
     --primary_white_color: #fff;
     --paragraph_grey_color: hsl(228, 12%, 75%);
     --primary_black_color: rgb(8, 8, 8);
+    --main_link_color: hsl(228, 12%, 20%);
 }
 body{
     box-sizing: border-box;
@@ -16,7 +17,9 @@ body{
 }
 .topContainer{
     background-color: var(--main_primary_color);
-    padding-bottom: 0rem;
+    position: sticky;
+    bottom: 0;
+    right: 0;
 }
 /* logo section here  */
 .logoContainer img{
@@ -38,7 +41,7 @@ body{
     margin-inline-end: 1rem;
     display: flex;
    justify-content: center;
-    /* border: 1px solid var(--primary_white_color); */
+    border: 1px solid var(--primary_white_color);
     padding-inline: 0.5rem;
     padding-block: 0.3rem;
 }
@@ -65,6 +68,20 @@ body{
    top: 10px;
    background-color: var(--primary_white_color);
 }
+
+/* side bar here  */
+.menu-items{
+    position: fixed;
+    right: -100rem;
+    height: 100vh;
+    width: 70vw;
+    background-color: var(--primary_white_color);
+    border-left: 1px solid var(--paragraph_grey_color);
+}
+#input:checked ~ .menu-items{
+    right: 0rem;
+    transition: 0.3s ease;
+}
 .bizName{
     margin-top: 2rem;
     color: var(--primary_white_color);
@@ -74,6 +91,42 @@ body{
 }
 .text_white{
     color: var(--primary_text_color);
+}
+.icon-close{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 2rem 1.5rem;
+}
+.icon-close img{
+    height: 1.5rem;
+}
+.list-items{
+    padding: 0 1rem;
+}
+.list-items li{
+    padding-left: 2rem;
+}
+.items{
+    list-style: none;
+    padding-block: 0.7rem;
+}
+.items a{
+    text-decoration: none;
+    color: var(--main_link_color);
+}
+.button{
+    background-color: var(--main_primary_color);
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    margin-top: 0.5rem;
+}
+.button a{
+    color: var(--primary_white_color);
+    font-weight: 700;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 .margin_bottom_null{
     margin-bottom: 0;
