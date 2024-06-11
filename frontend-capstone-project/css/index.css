@@ -5,9 +5,11 @@
     /* #main primary colors */
     --main_primary_color: hsl(122.42, 39.44%, 49.22%);
     --primary_white_color: #fff;
-    --paragraph_grey_color: hsl(228, 12%, 75%);
     --primary_black_color: rgb(8, 8, 8);
+    --paragraph_grey_color: hsl(228, 12%, 75%);
+    --primary_light_grey_color: hsl(228, 12%, 90%);
     --main_link_color: hsl(228, 12%, 20%);
+    --primary_orange_color: rgb(196, 127, 0);
 }
 body{
     box-sizing: border-box;
@@ -20,6 +22,7 @@ body{
     position: sticky;
     bottom: 0;
     right: 0;
+    z-index: 999;
 }
 /* logo section here  */
 .logoContainer img{
@@ -78,7 +81,7 @@ body{
     width: 90vw;
     background-color: var(--primary_white_color);
     border: 1px solid var(--main_primary_color);
-    margin-top: 6rem;
+    margin-top: 5.5rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -108,17 +111,36 @@ body{
     color: var(--main_link_color);
 }
 .button{
-    background-color: var(--main_primary_color);
-    border: none;
     outline: none;
     padding: 1rem 2rem;
     border-radius: 30px;
     margin-top: 0.5rem;
 }
 .button a{
-    color: var(--primary_white_color);
     font-weight: 700;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+.btn_bg_col{
+    border: none;
+    background-color: var(--main_primary_color);
+}
+.btn_bg_col a{
+    color: var(--primary_white_color);
+}
+.coverColor{
+    height: 100vh;
+    display: none;
+    background-color: var(--paragraph_grey_color);
+}
+.section1{
+    background-color: var(--primary_light_grey_color);
+    padding: 13rem 1rem;
+
+}
+.textTop{
+    color: var(--primary_orange_color);
+    margin: 0;
+    font-size: clamp(2rem, 2.5vw, 2.3rem);
 }
 
 /* other necessary stylings here  */

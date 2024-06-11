@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    
      <header class="topContainer flex justify_between" id="">
 
         <!-- logo section here  -->
@@ -17,24 +18,32 @@
         </div>
 
         <!-- hamburger section here  -->
-        <input type="checkbox" name="input" id="input">
+        <input type="checkbox" name="input" id="input" >
         <label for="input" class="hamburgerElement ">
             <div class="hamburgerContainer"></div>
         </label>
-        <nav class="menu-items">
+        <nav class="menu-items" id="menu">
             <ul class="list-items">
                 <!-- <label for="input" class="icon-close"><img src="./assets/images/icon-close.svg" alt=""></label> -->
                 <li class="items"><a href="#">LogIn</a></li>
                 <li class="items"><a href="#" >SignUp</a></li>
                 <li class="items"><a href="#">Profile</a></li>
-                <button class="button items"><a href="#">Get Started</a></button>
+                <button class="button items btn_bg_col"><a href="#">Get Started</a></button>
             </ul>
         </nav>
+        
      </header>
+     
     <main class="mainWrapper" id="main">
-   
+            <section class="section1" id="section">
+                <div class="textCont text_align" id="text">
+                    <h1 class="textTop" id="textTop"></h1>
+                    <p class="textPar" id="textPar"></p>
+                    <button class="button items"><a href="#">Start Now</a></button>
+                </div>
+            </section>
     </main>
-
+    <div class="coverColor" id="coverColor"></div>
 
      <script src="./landingpage.js"></script>
 </body>

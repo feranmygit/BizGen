@@ -1,1 +1,14 @@
-const main = document.getElementById('mai').innerHTML = "<img src='./assets/images/work-2.jpg' width=100%, height=100%>,position = cover, "
+const coverColor = document.getElementById('coverColor');
+const menu = document.getElementById('menu');
+
+
+const get_message = `PlanGenius`;
+const textParagh = `Unleash Your 
+Business Potential with 
+Customized Plans and PDF Printing.`;
+
+document.getElementById('textTop').innerHTML = get_message;
+document.getElementById('textPar').innerHTML = textParagh;
+
+
+
