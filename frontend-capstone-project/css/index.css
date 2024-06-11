@@ -61,6 +61,12 @@ body{
 .bizName{
     margin-top: 1.6rem;
 }
+.mainWrapper{
+    background-image: url(/frontend-capstone-project/assets/images/work-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+}
 .text_align{
     text-align: center;
 }
