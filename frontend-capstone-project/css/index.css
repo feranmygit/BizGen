@@ -147,7 +147,7 @@ body{
     background-color: var(--paragraph_grey_color);
 }
 .section1{
-    background-image: url(/frontend-capstone-project/assets/images/background-crew-mobile.jpg);
+    background-image: url(./background-crew-mobile.jpg);
     background-position: center;
     background-size: cover;
     padding: 18rem 1rem;
