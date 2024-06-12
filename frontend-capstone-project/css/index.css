@@ -7,6 +7,7 @@
     --primary_white_color: #fff;
     --primary_black_color: rgb(8, 8, 8);
     --paragraph_grey_color: hsl(228, 12%, 75%);
+    --primary_greyish_color: hsl(228, 12%, 30%);
     --primary_light_grey_color: hsl(228, 12%, 90%);
     --main_link_color: hsl(228, 12%, 20%);
     --primary_orange_color: rgb(196, 127, 0);
@@ -19,17 +20,21 @@ body{
     padding: 0;
 }
 .topContainer{
-    /* background-color: var(--main_primary_color); */
+    background-color: var(--primary_greyish_color); 
     /* position: sticky; */
     /* top: 0; */
+    margin: 1rem;
     z-index: 999;
-    border-bottom: 1px solid var(--paragraph_grey_color);
+    border: 1px solid var(--main_primary_color);
+    border-radius: 50px;
+    align-items: center;
 }
 /* logo section here  */
 .logoContainer img{
     height: 50px;
     margin-inline-start: 1rem;
-    margin-block-start: 1rem;
+    margin-block-start: 0.2rem;
+    /* align-items: center; */
 }
 
 /* hamburger section here  */
@@ -41,7 +46,7 @@ body{
     width: 2rem;
     height: 1.5rem;
     display: inline-block;
-    margin-top: 1.8rem;
+    /* margin-top: 1.8rem; */
     margin-inline-end: 1rem;
     display: flex;
     background-color: var(--main_primary_color);
@@ -81,9 +86,9 @@ body{
     right: -100vw;
     height: 14.5rem;
     width: 90vw;
-    background-color: var(--primary_white_color);
+    background-color: var(--primary_greyish_color);
     border: 1px solid var(--main_primary_color);
-    margin-top: 5.5rem;
+    margin-top: 20rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -94,8 +99,8 @@ body{
     transition: 0.3s ease;
 }
 .bizName{
-    margin-top: 2rem;
-    color: var(--primary_black_color);
+    margin-top: 1rem;
+    color: var(--primary_white_color);
 }
 .text_white{
     color: var(--primary_white_color);
@@ -110,7 +115,7 @@ body{
 }
 .items a{
     text-decoration: none;
-    color: var(--main_link_color);
+    color: var(--primary_white_color);
 }
 .button{
     outline: none;
@@ -145,8 +150,13 @@ body{
     background-image: url(/frontend-capstone-project/assets/images/background-crew-mobile.jpg);
     background-position: center;
     background-size: cover;
-    padding: 14rem 1rem;
-
+    padding: 18rem 1rem;
+    top: -7rem;
+    position: relative;
+    z-index: -2;
+}
+.section0{
+    margin-top: -5rem;
 }
 .textTop{
     color: var(--primary_orange_color);
