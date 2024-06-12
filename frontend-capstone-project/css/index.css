@@ -141,13 +141,18 @@ body{
     margin: 0;
     font-size: clamp(2.5rem, 2.5vw, 3rem);
 }
-.blopContent img{
+.blogImg{
     max-width: 100%;
     border-radius: 15px;
 }
 .blogPost{
     margin-top: 7rem;
+}
+.ft-wt7{
     font-weight: 700;
+}
+.post{
+    margin-bottom: 2rem;
 }
 
 /* other necessary stylings here  */
@@ -189,6 +194,9 @@ body{
 }
 .line_height{
     line-height: 1.5rem;
+}
+.line_height2{
+    line-height: 2rem;
 }
 .text_decor{
     text-decoration: none;
