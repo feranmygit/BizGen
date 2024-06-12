@@ -13,6 +13,9 @@ document.getElementById('textPar').innerHTML = textParagh;
 const _bPost = `Latest Buzz`
 document.getElementById('blogPost').innerHTML = _bPost;
 
+const _bPost1 = `Choose Wisely`
+document.getElementById('blogPost1').innerHTML = _bPost1;
+
 const textContent = `New Feature Alert: PDF Printing Enabled!`;
 document.getElementById('textcontent').innerHTML = textContent;
 
@@ -51,6 +54,11 @@ to elevate your business plans.`;
 document.getElementById('para7').innerHTML = para7;
 document.getElementById('para8').innerHTML = para8;
 
+const _cardgrid = `Starter`;
+document.getElementById('cardPlans').innerHTML = _cardgrid;
+
+const _cardPlan = `Starter`;
+document.getElementById('cardPlan').innerHTML = _cardPlan;
 
 
 
