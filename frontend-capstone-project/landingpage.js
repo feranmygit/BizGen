@@ -82,8 +82,30 @@ document.getElementById('parText2').innerHTML = _cardContents.card3;
 document.getElementById('parText3').innerHTML = _cardContents.card4;
 
 
+const _cardQuestionGrid = {
+    card0: "FAQs",
+    card1: "How to Get Started?",
+    card2: "Can I Print Plans?",
+    card3: "What's the Purpose?",
+    card4: "Need Assistance?",
+    card5: "Why Choose Us?"
+};
 
-
+const _cardAnsGrids = {
+    card1: `Embark on your entrepreneurial journey by 
+            signing up and creating a unique user profile.`,
+    card2: `Absolutely! Print your meticulously crafted 
+            business plans in PDF format with ease`,
+    card3: `Empower yourself to generate innovative business 
+            plans tailored to your vision.`,
+    card4: `Our support team is always ready to guide you 
+            through any challenges you may face`,
+    card5: `Join a community of forward-thinkers and 
+            revolutionize the way you approach business planning.`
+};
+document.getElementById('questiontitle').innerHTML = _cardQuestionGrid.card0;
+document.getElementById('cardqueTopic1').innerHTML = _cardQuestionGrid.card1;
+document.getElementById('cardAnswer1').innerHTML = _cardContents.card1;
 
 
 
