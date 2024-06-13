@@ -3,7 +3,8 @@
 :root{
 
     /* #main primary colors */
-    --main_primary_color: hsl(122.42, 39.44%, 49.22%);
+    --main_primary_color: hsl(236, 65%, 40%);
+    /* --main_primary_color: hsl(122.42, 39.44%, 49.22%); */
     --primary_white_color: #fff;
     --primary_black_color: rgb(8, 8, 8);
     --paragraph_grey_color: hsl(228, 12%, 75%);
