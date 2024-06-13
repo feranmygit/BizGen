@@ -54,11 +54,37 @@ to elevate your business plans.`;
 document.getElementById('para7').innerHTML = para7;
 document.getElementById('para8').innerHTML = para8;
 
-const _cardgrid = `Starter`;
-document.getElementById('cardPlans').innerHTML = _cardgrid;
+const _cardPlans = {
+    card1: "Starter",
+    card2: "Standard",
+    card3: "Premium",
+    card4: "Ultimate"
+};
+const _cardContents = {
+    card1: `Get started with essential features to 
+          kickstart your business planning journey`,
+    card2: `Upgrade to unlock advanced tools and 
+           templates for crafting top-notch business strategies.`,
+    card3: `Go all-in with exclusive access to premium features 
+            and personalized support for your business success.`,
+    card4: `Unleash the full potential of BizGen with unlimited features, 
+            priority support, and 
+            VIP perks for your business empire.`
+};
 
-const _cardPlan = `Starter`;
-document.getElementById('cardPlan').innerHTML = _cardPlan;
+document.getElementById('cardPlans').innerHTML = _cardPlans.card1;
+document.getElementById('cardPlan1').innerHTML = _cardPlans.card2;
+document.getElementById('cardPlan2').innerHTML = _cardPlans.card3;
+document.getElementById('cardPlan3').innerHTML = _cardPlans.card4;
+document.getElementById('parText').innerHTML = _cardContents.card1;
+document.getElementById('parText1').innerHTML = _cardContents.card2;
+document.getElementById('parText2').innerHTML = _cardContents.card3;
+document.getElementById('parText3').innerHTML = _cardContents.card4;
+
+
+
+
+
 
 
 

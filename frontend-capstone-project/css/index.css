@@ -11,7 +11,7 @@
     --primary_light_grey_color: hsl(228, 12%, 90%);
     --main_link_color: hsl(228, 12%, 20%);
     --primary_orange_color: rgb(196, 127, 0);
-    --primary_cream_color: rgb(224, 185, 192);
+    --primary_cream_color: rgb(247, 232, 235);
 }
 body{
     box-sizing: border-box;
@@ -170,13 +170,55 @@ body{
     border-radius: 15px;
 }
 .blogPost{
-    margin-top: 7rem;
+    font-size: clamp(2.5rem, 2.5vw, 3rem);
 }
 .ft-wt7{
     font-weight: 700;
 }
 .post{
     margin-bottom: 2rem;
+}
+.sectionPlan{
+    background-color: var(--primary_cream_color);
+    padding-block: 3rem;
+    border-radius: 30px 30px 0 0 ;
+    margin: 5rem 0 2rem 0;
+}
+.cardContainer{
+  background-color: var(--primary_white_color);
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+.cardblog{
+    background-color: var(--main_primary_color);
+    border-radius: 30px 30px 0 0;
+}
+.pad15{
+    padding: 1.5rem;
+}
+.cardGrid{
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--primary_white_color);
+}
+.cardGrid1{
+    margin-top: 0.5rem;
+    color: var(--primary_white_color);
+}
+.amtPlan{
+    font-weight: 700;
+}
+.ft-fam{
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem); 
+}
+.buttonCard {
+  width: 100%;
+  border-radius: 30px;
+  padding: 1rem 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 2.2rem); 
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 
