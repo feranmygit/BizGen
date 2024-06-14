@@ -3,16 +3,17 @@
 :root{
 
     /* #main primary colors */
-    --main_primary_color: hsl(236, 65%, 40%);
+    --main_primary_color: rgba(0,78, 152, 255);
     /* --main_primary_color: hsl(122.42, 39.44%, 49.22%); */
     --primary_white_color: #fff;
     --primary_black_color: rgb(8, 8, 8);
     --paragraph_grey_color: hsl(228, 12%, 75%);
     --primary_greyish_color: hsl(180, 7%, 80%);
     --primary_light_grey_color: hsl(228, 12%, 90%);
+    --primary_covered_color: rgb(0, 0, 0, 0.7);
     --main_link_color: hsl(228, 12%, 20%);
     --primary_orange_color: rgb(196, 127, 0);
-    --primary_cream_color: rgb(247, 232, 235);
+    --primary_cream_color: rgba(254, 240, 229, 255);
 }
 body{
     box-sizing: border-box;
@@ -92,7 +93,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: -1;
+    z-index: 1;
 }
 #input:checked ~ .menu-items{
     top: -14.7rem;
@@ -142,12 +143,19 @@ body{
 }
 .coverColor{
     height: 1000vh;
-    width: 1000vw;
+    width: 100%;
     display: none;
-    z-index: 777;
+    z-index: -1;
     top: 0;
-    position: absolute;
-    background-color: var(--paragraph_grey_color);
+    position: fixed;
+    background-color: var(--primary_covered_color);
+}
+.coverColor.open{
+   display: block;
+}
+.mainWrapper{
+    z-index: -2;
+    position: relative;
 }
 .section1{
     background-image: url(./background-crew-mobile.jpg);

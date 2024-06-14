@@ -1,7 +1,3 @@
-const coverColor = document.getElementById('coverColor');
-const menu = document.getElementById('menu');
-
-
 const get_message = `PlanGenius`;
 const textParagh = `Unleash Your 
 Business Potential with 
@@ -107,8 +103,13 @@ document.getElementById('questiontitle').innerHTML = _cardQuestionGrid.card0;
 document.getElementById('cardqueTopic1').innerHTML = _cardQuestionGrid.card1;
 document.getElementById('cardAnswer1').innerHTML = _cardContents.card1;
 
+const hamburger = document.getElementById('hamburger');
+const coverColor = document.getElementById('coverColor');
+const menu = document.getElementById('menu');
 
-
+hamburger.addEventListener('click', function(){
+        coverColor.classList.toggle('open');
+})
 
 
 
