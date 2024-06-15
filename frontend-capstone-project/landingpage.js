@@ -117,10 +117,12 @@ document.addEventListener('DOMContentLoaded', function(){
         const hamburger = document.getElementById('hamburger');
         const coverColor = document.getElementById('coverColor');
         const menu = document.getElementById('menu');
+        const topContainer = document.getElementById('topContainer');
 
         function togglecoverColor(){
                 coverColor.classList.toggle('open');
                 menu.classList.toggle('active');
+                topContainer.classList.toggle('active');
                 
         };
         hamburger.addEventListener('click', togglecoverColor);

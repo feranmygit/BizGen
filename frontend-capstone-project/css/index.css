@@ -4,13 +4,13 @@
 
     /* #main primary colors */
     --main_primary_color: rgba(0,78, 152, 255);
-    /* --main_primary_color: hsl(122.42, 39.44%, 49.22%); */
+    --main_primary1_color: hsl(122.42, 39.44%, 49.22%);
     --primary_white_color: #fff;
     --primary_black_color: rgb(8, 8, 8);
     --paragraph_grey_color: hsl(228, 12%, 75%);
     --primary_greyish_color: hsl(180, 7%, 80%);
     --primary_light_grey_color: hsl(228, 12%, 90%);
-    --primary_covered_color: rgb(0, 0, 0, 0.7);
+    --primary_covered_color: rgb(0, 0, 0, 0.6);
     --main_link_color: hsl(228, 12%, 20%);
     --primary_orange_color: rgb(196, 127, 0);
     --primary_cream_color: rgba(254, 240, 229, 255);
@@ -30,6 +30,11 @@ body{
     border: 1px solid var(--primary_greyish_color);
     border-radius: 50px;
     align-items: center;
+}
+.topContainer.active{
+    position: fixed;
+    top: 0;
+    width: 95%;
 }
 /* logo section here  */
 .logoContainer img{
@@ -141,13 +146,18 @@ body{
 }
 .btn_bg_col{
     border: none;
+}
+._btn_blue{
     background-color: var(--main_primary_color);
+}
+._btn_green{
+    background-color: var(--main_primary1_color);
 }
 .btn_bg_col a{
     color: var(--primary_white_color);
 }
 .coverColor{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: none;
     z-index: 1;
@@ -200,7 +210,7 @@ body{
   margin-bottom: 2rem;
 }
 .cardblog{
-    background-color: var(--main_primary_color);
+    background-color: var(--main_primary1_color);
     border-radius: 30px 30px 0 0;
 }
 .pad15{
@@ -235,15 +245,17 @@ body{
 .bolgRatio{
     overflow: hidden;
     width: 100%;
+    margin-top: 8rem;
     background-color: var(--primary_white_color);
 }
 #blogImage{
     display: flex;
-    animation: slides  7s infinite;
+    animation: slides  10s infinite;
 }
 #blogImage img{
     width: 100%;
     height: auto;
+    border-radius: 0;
 }
 @keyframes slides  {
     0% { transform: translateX(0);}
@@ -280,6 +292,7 @@ body{
     font-weight: 700;
     margin: 0;
 }
+
 /* other necessary stylings here  */
 .text_align{
     text-align: center;
