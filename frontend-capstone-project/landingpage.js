@@ -147,4 +147,25 @@ document.getElementById('rating4').innerHTML = _blogRatings.card4;
 document.getElementById('rating5').innerHTML = _blogRatings.card5;
 document.getElementById('rating6').innerHTML = _blogRatings.card6;
 
+const _makePlanning = {
+        card1: "Start Planning Today",
+        card2: "Craft your dream business plan and print it in PDF format.",
+    };
+document.getElementById('makePlan1').innerHTML = _makePlanning.card1;
+document.getElementById('makePlanPar').innerHTML = _makePlanning.card2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

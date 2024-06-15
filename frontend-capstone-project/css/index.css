@@ -157,7 +157,7 @@ body{
     color: var(--primary_white_color);
 }
 .coverColor{
-    height: 100vh;
+    height: 1000vh;
     width: 100%;
     display: none;
     z-index: 1;
@@ -245,7 +245,7 @@ body{
 .bolgRatio{
     overflow: hidden;
     width: 100%;
-    margin-top: 8rem;
+    margin-block: 8rem;
     background-color: var(--primary_white_color);
 }
 #blogImage{
@@ -292,13 +292,16 @@ body{
     font-weight: 700;
     margin: 0;
 }
+.margin_blog1{
+    margin-block: 1rem;
+}
 
 /* other necessary stylings here  */
 .text_align{
     text-align: center;
 }
-.margin_bottom_null{
-    margin-bottom: 0;
+.margin_bottom{
+    margin-bottom: 1rem;
 }
 .margin_inline{
     margin-inline: 1rem;
