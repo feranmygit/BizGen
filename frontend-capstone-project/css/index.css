@@ -295,6 +295,20 @@ body{
 .margin_blog1{
     margin-block: 1rem;
 }
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.userInfo img{
+    height: 5rem;
+    border-radius: 100%;
+}
+.usersReply{
+    margin-block: 8rem;
+}
 
 /* other necessary stylings here  */
 .text_align{

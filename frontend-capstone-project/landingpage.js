@@ -112,6 +112,9 @@ document.getElementById('cardAnswer3').innerHTML = _cardContents.card3;
 document.getElementById('cardqueTopic4').innerHTML = _cardQuestionGrid.card4;
 document.getElementById('cardAnswer4').innerHTML = _cardContents.card4;
 
+document.getElementById('cardqueTopic5').innerHTML = _cardQuestionGrid.card5;
+document.getElementById('cardAnswer5').innerHTML = _cardAnsGrids.card5;
+
 
 document.addEventListener('DOMContentLoaded', function(){
         const hamburger = document.getElementById('hamburger');
@@ -154,8 +157,22 @@ const _makePlanning = {
 document.getElementById('makePlan1').innerHTML = _makePlanning.card1;
 document.getElementById('makePlanPar').innerHTML = _makePlanning.card2;
 
-
-
+const _userFeedbacks = {
+        card0: "Raving",
+        card1: "This app changed my business game! I'm unstoppable now.",
+        card2: "Max Power",
+        card3: "Unbelievable results! My profits soared after using this app.",
+        card4: "Luna Star ",
+        card5: "I never knew planning could be this fun and effective!",
+        card6: "Rocky Road "
+    };
+document.getElementById('titleRep').innerHTML = _userFeedbacks.card0;
+document.getElementById('userRep1').innerHTML = _userFeedbacks.card1;
+document.getElementById('userName1').innerHTML = _userFeedbacks.card2;
+document.getElementById('userRep2').innerHTML = _userFeedbacks.card3;
+document.getElementById('userName2').innerHTML = _userFeedbacks.card4;
+document.getElementById('userRep3').innerHTML = _userFeedbacks.card5;
+document.getElementById('userName3').innerHTML = _userFeedbacks.card6;
 
 
 
