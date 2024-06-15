@@ -15,6 +15,7 @@
     --primary_orange_color: rgb(196, 127, 0);
     --primary_cream_color: rgba(254, 240, 229, 255);
     --primary_blue_color: blue;
+    --pimary_instagram_color: hsl(329, 70%, 58%);
 }
 body{
     box-sizing: border-box;
@@ -200,9 +201,10 @@ body{
 }
 .sectionPlan{
     background-color: var(--primary_cream_color);
-    padding-block: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
     border-radius: 30px 30px 0 0 ;
-    margin: 5rem 0 2rem 0;
+    margin-top: 5rem;
 }
 .cardContainer{
   background-color: var(--primary_white_color);
@@ -309,7 +311,32 @@ body{
 .usersReply{
     margin-block: 8rem;
 }
-
+.socialMedia{
+    background-color: var(--primary_white_color);
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+.soc{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.soc i:nth-child(1){
+    color: var(--main_primary_color);
+}
+.soc i:nth-child(2){
+    color: var(--primary_black_color);
+}
+.soc i:nth-child(3){
+    color: var(--pimary_instagram_color);
+}
+.soc i:nth-child(4){
+    color: var(--main_primary_color);
+}
 /* other necessary stylings here  */
 .text_align{
     text-align: center;

@@ -173,6 +173,7 @@ document.getElementById('userRep2').innerHTML = _userFeedbacks.card3;
 document.getElementById('userName2').innerHTML = _userFeedbacks.card4;
 document.getElementById('userRep3').innerHTML = _userFeedbacks.card5;
 document.getElementById('userName3').innerHTML = _userFeedbacks.card6;
+document.getElementById('mediaCont').innerHTML = "Join Our Social Business Network";
 
 
 
