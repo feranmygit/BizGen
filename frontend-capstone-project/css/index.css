@@ -14,6 +14,7 @@
     --main_link_color: hsl(228, 12%, 20%);
     --primary_orange_color: rgb(196, 127, 0);
     --primary_cream_color: rgba(254, 240, 229, 255);
+    --primary_blue_color: blue;
 }
 body{
     box-sizing: border-box;
@@ -25,6 +26,7 @@ body{
     background-color: var(--primary_greyish_color); 
     margin: 1rem 2.5%;
     z-index: 999;
+    position: relative;
     border: 1px solid var(--primary_greyish_color);
     border-radius: 50px;
     align-items: center;
@@ -95,6 +97,9 @@ body{
     align-items: center;
     z-index: 1;
 }
+.menu-items.active{
+    top: -14.7rem;
+}
 #input:checked ~ .menu-items{
     top: -14.7rem;
     transition: 0.3s ease;
@@ -142,20 +147,16 @@ body{
     color: var(--primary_white_color);
 }
 .coverColor{
-    height: 1000vh;
+    height: 100%;
     width: 100%;
     display: none;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     position: fixed;
     background-color: var(--primary_covered_color);
 }
 .coverColor.open{
    display: block;
-}
-.mainWrapper{
-    z-index: -2;
-    position: relative;
 }
 .section1{
     background-image: url(./background-crew-mobile.jpg);
@@ -231,7 +232,54 @@ body{
 .questionContainer{
     margin-top: 8rem;
 }
-
+.bolgRatio{
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--primary_white_color);
+}
+#blogImage{
+    display: flex;
+    animation: slides  7s infinite;
+}
+#blogImage img{
+    width: 100%;
+    height: auto;
+}
+@keyframes slides  {
+    0% { transform: translateX(0);}
+    20% { transform: translateX(0);}
+    25% { transform: translateX(-100%);}
+    45% { transform: translateX(-100%);}
+    50% { transform: translateX(-200%);}
+    70% { transform: translateX(-200%);}
+    75% { transform: translateX(-300%);}
+    85% { transform: translateX(-300%);}
+    90% { transform: translateX(-300%);}
+    95% { transform: translateX(-400%);}
+    100% { transform: translateX(-400%);}
+}
+.imgSlide img:nth-child(1){
+    animation-delay: 5s;
+}
+.btnDot{
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: var(--main_primary_color);
+}
+.rating{
+    margin-block: 3rem;
+}
+.rating h3{
+    margin: 0.5rem 0 2rem 0;
+}
+.blueCol{
+    color: var(--main_primary_color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
 /* other necessary stylings here  */
 .text_align{
     text-align: center;

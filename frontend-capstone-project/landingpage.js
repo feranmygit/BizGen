@@ -103,14 +103,46 @@ document.getElementById('questiontitle').innerHTML = _cardQuestionGrid.card0;
 document.getElementById('cardqueTopic1').innerHTML = _cardQuestionGrid.card1;
 document.getElementById('cardAnswer1').innerHTML = _cardContents.card1;
 
-const hamburger = document.getElementById('hamburger');
-const coverColor = document.getElementById('coverColor');
-const menu = document.getElementById('menu');
+document.getElementById('cardqueTopic2').innerHTML = _cardQuestionGrid.card2;
+document.getElementById('cardAnswer2').innerHTML = _cardContents.card2;
 
-hamburger.addEventListener('click', function(){
-        coverColor.classList.toggle('open');
+document.getElementById('cardqueTopic3').innerHTML = _cardQuestionGrid.card3;
+document.getElementById('cardAnswer3').innerHTML = _cardContents.card3;
+
+document.getElementById('cardqueTopic4').innerHTML = _cardQuestionGrid.card4;
+document.getElementById('cardAnswer4').innerHTML = _cardContents.card4;
+
+
+document.addEventListener('DOMContentLoaded', function(){
+        const hamburger = document.getElementById('hamburger');
+        const coverColor = document.getElementById('coverColor');
+        const menu = document.getElementById('menu');
+
+        function togglecoverColor(){
+                coverColor.classList.toggle('open');
+                menu.classList.toggle('active');
+                
+        };
+        hamburger.addEventListener('click', togglecoverColor);
+        // coverColor.addEventListener('click', togglecoverColor);
 })
+// const coverColor = document.getElementById('coverColor').addEventListener('click', function(){
+//         document.getElementById('menu').classList.toggle('open');
+// })
 
-
+const _blogRatings = {
+        card1: "100K+",
+        card2: "Happy Entrepreneurs",
+        card3: "99%",
+        card4: "Satisfaction Rate",
+        card5: "1M+",
+        card6: "Business Plans Created"
+    };
+document.getElementById('rating1').innerHTML = _blogRatings.card1;
+document.getElementById('rating2').innerHTML = _blogRatings.card2;
+document.getElementById('rating3').innerHTML = _blogRatings.card3;
+document.getElementById('rating4').innerHTML = _blogRatings.card4;
+document.getElementById('rating5').innerHTML = _blogRatings.card5;
+document.getElementById('rating6').innerHTML = _blogRatings.card6;
 
 
