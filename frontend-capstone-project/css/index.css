@@ -242,7 +242,10 @@ body{
   margin-bottom: 2rem;
 }
 .questionContainer{
-    margin-top: 8rem;
+    margin-top: 0rem;
+}
+.blogPostQ {
+    margin-top: 6rem;
 }
 .bolgRatio{
     overflow: hidden;
@@ -308,9 +311,7 @@ body{
     height: 5rem;
     border-radius: 100%;
 }
-.usersReply{
-    margin-block: 8rem;
-}
+
 .socialMedia{
     background-color: var(--primary_white_color);
     padding: 2rem 1rem;
@@ -388,6 +389,9 @@ body{
 }
 .padding_bottom{
     padding-bottom: 0.5rem;
+}
+.blogPostQ {
+    margin-top: 6rem;
 }
 
 @media only screen and (min-width:578px) {
