@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project | Login Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/allocation_9639386.png">
+    <link rel="stylesheet" href="/frontend-capstone-project/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+      <header class="loginHeadar">
+          <!-- logo section here  -->
+          <!-- <div class="logoContainer flex gap0">
+              <img src="/frontend-capstone-project/assets/logos/allocation_9639386.png" alt="">
+              <h4 class="bizName">BizGenius</h4>
+          </div> -->
+      </header>
+      <main class="wrapperLogin">
+        <div class="loginContainer">
+            <h2 class="loginTitle" id="logTitle"></h2>
+            <p class="logPar" id="logPar"></p>
+            <p class="logPar" id="logPar1"></p>
+            <div class="facebkCont allgen">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="fa-cont" id="faCont"></span>
+            </div>
+            <div class="googleCont allgen">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="fa-cont" id="faCont1"></span>
+            </div>
+            <form action="get" id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="@johndoe" required>
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" placeholder="********" required>
+                <div class="forgotPass">
+                    <div class="forPass" id="forPass">
+                        <input type="checkbox" name="checkMe" id="checkMe">
+                        <label for="checkMe">
+                            <span id="checkMe1"></span>
+                        </label>
+                    </div>
+                    <p class="forPass1" id="forpass1"></p>
+                </div>
+                <button id="login">Login</button>
+            </form>
+            <div class="reg" id="regHere">
+                <p class="regAcc" id="regAcc">Don't have an account?<a href="#" id="createAccLink"><span id="createAcct">Register Here.</span></a></p>
+            </div>
+        </div>
+      </main>
+
+    </main>
+
+     <script src="/frontend-capstone-project/js-doc/login.js"></script>
+</body>
+</html>

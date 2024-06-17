@@ -9,6 +9,7 @@
     --primary_black_color: rgb(8, 8, 8);
     --paragraph_grey_color: hsl(228, 12%, 75%);
     --primary_greyish_color: hsl(180, 7%, 80%);
+    --primary_loginPar_color: hsl(180, 7%, 60%);
     --primary_light_grey_color: hsl(228, 12%, 90%);
     --primary_covered_color: rgb(0, 0, 0, 0.6);
     --main_link_color: hsl(228, 12%, 20%);
@@ -96,7 +97,7 @@ body{
     border: 1px solid var(--primary_greyish_color);
     margin-top: 20rem;
     margin-left: 0;
-    font-weight: 700;
+    font-weight: 400;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -111,7 +112,7 @@ body{
     transition: 0.3s ease;
 }
 .bizName{
-    margin-top: 1.1rem;
+    margin-top: 1.2rem;
     color: var(--primary_black_color);
 }
 .text_white{
@@ -203,7 +204,6 @@ body{
     background-color: var(--primary_cream_color);
     padding-top: 3rem;
     padding-bottom: 0.5rem;
-    border-radius: 30px 30px 0 0 ;
     margin-top: 5rem;
 }
 .cardContainer{
@@ -231,7 +231,10 @@ body{
     font-weight: 700;
 }
 .ft-fam{
-    font-size: clamp(1.2rem, 2.5vw, 1.4rem); 
+    font-size: clamp(1rem, 2.5vw, 1rem); 
+}
+.line_height21{
+    line-height: 1.5rem;
 }
 .buttonCard {
   width: 100%;
@@ -426,7 +429,7 @@ body{
 }
 .blogGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 .margin_inline {
@@ -453,13 +456,46 @@ margin-inline: 1rem;
 }
 }
 
+/* BizGenius Login Page Here  */
+/* .loginHeadar{ 
+    margin-inline: 1rem;
+    margin-top: 1rem;
+}*/
+.wrapperLogin{
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    position: absolute;
+    text-align: center;
+}
+.logPar{
+    color: var(--primary_loginPar_color);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+.facebkCont{
+    background-color: var(--main_primary_color);
+    color: var(--primary_white_color);
+}
+.googleCont{
+    background-color:var(--primary_white_color);
+    box-shadow: 0px 1px 1px 0.5px rgba(0, 0, 0, 0.6);
+}
+.allgen{
+   padding: 1rem ;
+   border-radius: 10px;
+   margin-bottom: 1rem;
+}
 
 @media only screen and (min-width:678px) {
     .topContainer {
         margin-top: 2rem;
     }
     .list-items {
-        gap: 2rem;
+        gap: 1.2rem;
     }
 }
 
