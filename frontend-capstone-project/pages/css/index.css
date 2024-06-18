@@ -436,7 +436,7 @@ body{
 .loginContainer{
     display: grid;
 }
-#loginForm{
+.loginForm{
     margin-top: 1rem;
     position: relative;
 }
@@ -454,14 +454,6 @@ input[type="password"]{
     border: 1px solid var(--primary_loginPar_color);
     margin-block-end: 1rem;
 }
-/* input[placeholder="********"]{
-    align-items: center;
-    padding-top: 0.8rem;
-}
-input[placeholder="@johndoe"]{
-    align-items: center;
-    padding-block: 0.8rem;
-} */
 
 .margin-block-end{
     margin-block-end: 0;
@@ -472,7 +464,8 @@ input[placeholder="@johndoe"]{
     justify-content: space-between;
     align-items: center;
     margin-top: -1.5rem;
-}#login{
+}
+.login{
     width: 100%;
     padding: 0.7rem;
     background-color: var(--primary_black_color);
@@ -542,6 +535,9 @@ margin-inline: 1rem;
 }
 .wrapperLogin{
     width: initial;
+}
+.allgen{
+    width: 70%;
 }
 }
 

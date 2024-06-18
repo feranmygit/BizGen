@@ -8,14 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-      <header class="loginHeadar">
-          <!-- logo section here  -->
-          <!-- <div class="logoContainer flex gap0">
-              <img src="/frontend-capstone-project/assets/logos/allocation_9639386.png" alt="">
-              <h4 class="bizName">BizGenius</h4>
-          </div> -->
-      </header>
+
       <main class="wrapperLogin">
         <div class="loginContainer">
             <h2 class="loginTitle margin-block-end text_align" id="logTitle"></h2>
@@ -29,7 +22,7 @@
                 <i class="fa-brands fa-google"></i>
                 <span class="fa-cont" id="faCont1"></span>
             </div>
-            <form action="get" id="loginForm">
+            <form action="get" class="loginForm" id="loginForm">
                 <label for="username">Username</label><br>
                 <input type="username" name="username" id="username" placeholder="@johndoe" autocomplete="username" required><br>
                 <label for="password">Password</label><br>
@@ -44,7 +37,7 @@
                     <p class="forPass1" id="forpass1"></p>
                 </div>
                 <div class="my_btnLog text_align">
-                    <button class="text_align" id="login">Login</button>
+                    <button class="text_align login" id="login">Login</button>
                 </div>                
             </form>
             <div class="reg text_align" id="regHere">
