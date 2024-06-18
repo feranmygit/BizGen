@@ -14,3 +14,21 @@ document.getElementById('faCont').innerHTML = _logUsers.card4;
 document.getElementById('faCont1').innerHTML = _logUsers.card5;
 document.getElementById('checkMe1').innerHTML = _logUsers.card6;
 document.getElementById('forpass1').innerHTML = _logUsers.card7;
+
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+  
+    let users = JSON.parse(localStorage.getItem('users')) || [];
+    const user = users.find(user => user.username === username && user.password === password);
+  
+    if (user) {
+      localStorage.setItem('loggedInUser', username);
+      window.location.href = 'dashboard.html';
+    } else {
+      alert('Invalid username or password.');
+    }
+  });
