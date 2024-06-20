@@ -32,7 +32,7 @@ document.getElementById('para1').innerHTML = para1;
 document.getElementById('para2').innerHTML = para2;
 
 const para3 = `Yesterday`;
-const para4 = `Sarah used BizGen to create her business plan 
+const para4 = `Sarah used BizGenius to create her business plan 
 and now her startup is taking off like a rocket!`;
 document.getElementById('para3').innerHTML = para3;
 document.getElementById('para4').innerHTML = para4;

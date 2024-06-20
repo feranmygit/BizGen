@@ -9,9 +9,9 @@ const _logUsers = {
 };
 document.getElementById('logTitle').innerHTML = _logUsers.card1;
 document.getElementById('logPar').innerHTML = _logUsers.card2;
-document.getElementById('logPar1').innerHTML = _logUsers.card3;
-document.getElementById('faCont').innerHTML = _logUsers.card4;
-document.getElementById('faCont1').innerHTML = _logUsers.card5;
+// document.getElementById('logPar1').innerHTML = _logUsers.card3;
+// document.getElementById('faCont').innerHTML = _logUsers.card4;
+// document.getElementById('faCont1').innerHTML = _logUsers.card5;
 document.getElementById('checkMe1').innerHTML = _logUsers.card6;
 document.getElementById('forpass1').innerHTML = _logUsers.card7;
 

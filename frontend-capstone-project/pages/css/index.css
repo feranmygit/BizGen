@@ -4,7 +4,7 @@
 
     /* #main primary colors */
     --main_primary_color: rgba(0,78, 152, 255);
-    --main_primary1_color: hsl(122.42, 39.44%, 49.22%);
+    --main_primary1_color: #4CAF50;
     --primary_white_color: #fff;
     --primary_black_color: rgb(8, 8, 8);
     --paragraph_grey_color: hsl(228, 12%, 75%);
