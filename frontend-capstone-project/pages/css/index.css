@@ -7,6 +7,7 @@
     --main_primary1_color: #4CAF50;
     --primary_white_color: #fff;
     --primary_black_color: rgb(8, 8, 8);
+    --paragraph_greyHeader_color: hsl(0, 0%, 49%);
     --paragraph_grey_color: hsl(228, 12%, 75%);
     --primary_greyish_color: hsl(180, 7%, 80%);
     --primary_loginPar_color: hsl(180, 7%, 60%);
@@ -66,26 +67,45 @@ body{
 }
 .hamburgerContainer{
    position: absolute;
-   width: 65%;
    height: 3px;
-   background-color: var(--primary_black_color);
    bottom: 1rem;
 }
+.hamburgerContainer1{
+    background-color: var(--primary_black_color);
+    width: 100%;
+}
+.hamburgerContainer1::before{
+    background-color: var(--primary_black_color);
+    width: 100%;
+}
+.hamburgerContainer1::after{
+    background-color: var(--primary_black_color);
+    width: 100%;
+}
+.hamburgerContainer2{
+    background-color: var(--paragraph_greyHeader_color);
+    width: 100%;
+}
+.hamburgerContainer2::before{
+    background-color: var(--paragraph_greyHeader_color);
+    width: 100%;
+}
+.hamburgerContainer2::after{
+    background-color: var(--paragraph_greyHeader_color);
+    width: 100%;
+}
+
 .hamburgerContainer::before{
    content:  ""; 
    position: absolute;
-   width: 100%;
    height: 3px;
    top: -8px;
-   background-color: var(--primary_black_color);
 }
 .hamburgerContainer::after{
    content:  ""; 
    position: absolute;
-   width: 100%;
    height: 3px;
    top: 8px;
-   background-color: var(--primary_black_color);
 }
 
 /* side bar here  */
@@ -478,7 +498,6 @@ input[type="password"]{
 
 /* Dashboard section stylings here  */
 input[type="search" i] {
-    display: none;
     position: absolute;
     left: 15%;
     width: 70%;
@@ -486,12 +505,30 @@ input[type="search" i] {
     height: 80%;
     border-radius: 30px;
     padding: 1rem;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 1rem;
     border: none;
-    /* box-shadow: 0rem -4.7rem 0rem 5rem rgba(0, 0, 0, 0.6); */
 }
-input[type="search" i].show {
+.inputIcon.show {
+    display: block;
+}
+.inputIcon{
+    display: none;
+    background-color: var(--primary_light_greyish_color);
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    left: 0;
+    z-index: 1000;
+}
+.overlay{
+    position: fixed;
+    width: 1000vw;
+    height: 1000vh;
+    background-color: var(--primary_light_greyish_color);
+    display: none;
+}
+.overlay.propmt{
     display: block;
 }
 .logoContainer1 img {
@@ -504,7 +541,7 @@ input[type="search" i].show {
 .topSectionWrapper{
     display: flex;
     flex-direction: row;
-    background-color: var(--primary_greyish_color);
+    background-color: var(--primary_light_greyish_color);
     justify-content: space-between;
     position: relative;
 }
@@ -534,12 +571,15 @@ input[type="search" i].show {
     width: 0.5rem;
     height: 1rem;
     margin-left: 1rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+    border: 1px solid var(--primary_greyish_color);
+    padding: 1rem 1rem 0.5rem 1rem;
+    border-radius: 5px;
 }
 .threeDot{
     width: 5px;
     height: 5px;
-    background-color: var(--primary_black_color);
+    background-color: var(--paragraph_greyHeader_color);
     border-radius: 100%;
     position: absolute;
 }
@@ -549,7 +589,7 @@ input[type="search" i].show {
     width: 5px;
     height: 5px;
     top: -0.5rem;
-    background-color: var(--primary_black_color);
+    background-color: var(--paragraph_greyHeader_color);
     border-radius: 100%;
 }
 .threeDot::after{
@@ -558,7 +598,7 @@ input[type="search" i].show {
     width: 5px;
     height: 5px;
     top: 0.5rem;
-    background-color: var(--primary_black_color);
+    background-color: var(--paragraph_greyHeader_color);
     border-radius: 100%;
 }
 .bizName1{
@@ -571,14 +611,19 @@ input[type="search" i].show {
     gap: 1rem;
 }
 .hamburgerElement1{
-    width: 3rem;
+    width: 1.5rem;
     position: relative;
     top: -0.8rem;
+    margin-right: 1rem;
 }
 .searchIcon{
-    margin-top: 1.6rem;
-    color: var(--primary_white_color);
+    margin-top: 0.7rem;
+    color: var(--paragraph_greyHeader_color);
+    border: 1px solid var(--primary_greyish_color);
+    padding: 0.7rem 0.8rem 0.8rem 0.8rem;
+    border-radius: 5px;
 }
+
 
 
 @media only screen and (min-width:578px) {
