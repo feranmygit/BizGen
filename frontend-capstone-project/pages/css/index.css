@@ -502,9 +502,6 @@ input[type="search" i] {
     background-color: var(--primary_white_color);
     z-index: 1000;
 }
-/* .nav-container.active{
-    left: -600px;
-} */
 #input1{
     display: none;
 }
@@ -564,7 +561,7 @@ input[type="search" i] {
     top: -0.8rem;
 }
 .searchIcon{
-    margin-top: 1.5rem;
+    margin-top: 1.7rem;
     color: var(--primary_white_color);
 }
 
