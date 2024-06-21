@@ -613,11 +613,11 @@ input[type="search" i] {
 .hamburgerElement1{
     width: 1.5rem;
     position: relative;
-    top: -0.8rem;
+    top: -0.85rem;
     margin-right: 1rem;
 }
 .searchIcon{
-    margin-top: 0.7rem;
+    margin-top: 0.9rem;
     color: var(--paragraph_greyHeader_color);
     border: 1px solid var(--primary_greyish_color);
     padding: 0.7rem 0.8rem 0.8rem 0.8rem;
