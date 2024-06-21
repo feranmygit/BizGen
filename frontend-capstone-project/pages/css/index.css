@@ -479,6 +479,20 @@ input[type="password"]{
 /* Dashboard section stylings here  */
 input[type="search" i] {
     display: none;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    top: 10%;
+    height: 80%;
+    border-radius: 30px;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    /* box-shadow: 0rem -4.7rem 0rem 5rem rgba(0, 0, 0, 0.6); */
+}
+input[type="search" i].show {
+    display: block;
 }
 .logoContainer1 img {
     height: 30px;
@@ -492,6 +506,7 @@ input[type="search" i] {
     flex-direction: row;
     background-color: var(--primary_greyish_color);
     justify-content: space-between;
+    position: relative;
 }
 .nav-container{
     position: fixed;
@@ -553,7 +568,7 @@ input[type="search" i] {
 .setAsidesCont1{
     display: flex;
     flex-direction: row;
-    gap: 0.7rem;
+    gap: 1rem;
 }
 .hamburgerElement1{
     width: 3rem;

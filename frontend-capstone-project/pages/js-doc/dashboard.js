@@ -13,3 +13,10 @@ document.addEventListener('DOMContentLoaded', function(){
 function myFunction(){
     coverColor.classList.toggle('open');
 }
+
+const searcBtn = document.getElementById('searcBtn');
+const search = document.getElementById('search');
+
+function myBtn(){
+    search.classList.toggle('show');
+} 
