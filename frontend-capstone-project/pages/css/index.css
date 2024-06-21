@@ -11,6 +11,7 @@
     --primary_greyish_color: hsl(180, 7%, 80%);
     --primary_loginPar_color: hsl(180, 7%, 60%);
     --primary_light_grey_color: hsl(228, 12%, 90%);
+    --primary_light_greyish_color: hsl(0, 0%, 95%);
     --primary_covered_color: rgb(0, 0, 0, 0.6);
     --main_link_color: hsl(228, 12%, 20%);
     --primary_orange_color: rgb(196, 127, 0);
@@ -201,7 +202,7 @@ body{
     margin-bottom: 2rem;
 }
 .sectionPlan{
-    background-color: var(--primary_cream_color);
+    background-color: var(--primary_light_greyish_color);
     padding-top: 3rem;
     padding-bottom: 0.5rem;
     margin-top: 5rem;
@@ -396,11 +397,10 @@ body{
 .blogPostQ {
     margin-top: 6rem;
 }
-/* BizGenius Login Page Here  */
-/* .loginHeadar{ 
-    margin-inline: 1rem;
-    margin-top: 1rem;
-}*/
+
+
+
+/* login and logout section stylings here  */
 .wrapperLogin{
     display: flex;
     flex-direction: column;
@@ -409,7 +409,6 @@ body{
     transform: translate(-50%, -50%);
     width:90%;
     position: absolute;
-    /* margin-inline-start: 1rem; */
 }
 .logPar{
     color: var(--primary_loginPar_color);
@@ -476,6 +475,100 @@ input[type="password"]{
     font-size: clamp(0.8rem, 2.5vw, 0.9rem);
 }
 
+
+/* Dashboard section stylings here  */
+input[type="search" i] {
+    display: none;
+}
+.logoContainer1 img {
+    height: 30px;
+}
+.profileInfo img{
+    height: 50px;
+    border-radius: 100%;
+}
+.topSectionWrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary_greyish_color);
+    justify-content: space-between;
+}
+.nav-container{
+    position: fixed;
+    left: -600px;
+    height: 1000vh;
+    width: 80vw;
+    top: 0;
+    background-color: var(--primary_white_color);
+    z-index: 1000;
+}
+/* .nav-container.active{
+    left: -600px;
+} */
+#input1{
+    display: none;
+}
+#input1:checked ~ .nav-container{
+    left: 0px;
+    transition: 0.3s ease;
+}
+.leftHeader{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.dotHamburger{
+    position: relative;
+    width: 0.5rem;
+    height: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.threeDot{
+    width: 5px;
+    height: 5px;
+    background-color: var(--primary_black_color);
+    border-radius: 100%;
+    position: absolute;
+}
+.threeDot::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -0.5rem;
+    background-color: var(--primary_black_color);
+    border-radius: 100%;
+}
+.threeDot::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0.5rem;
+    background-color: var(--primary_black_color);
+    border-radius: 100%;
+}
+.bizName1{
+    color: var(--primary_black_color);
+    margin-top: 1.5rem;
+}
+.setAsidesCont1{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+.hamburgerElement1{
+    width: 3rem;
+    position: relative;
+    top: -0.8rem;
+}
+.searchIcon{
+    margin-top: 1.5rem;
+    color: var(--primary_white_color);
+}
+
+
 @media only screen and (min-width:578px) {
 
 .menu-items {
@@ -509,6 +602,11 @@ input[type="password"]{
 .blogGrid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.blogGrid1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 .margin_inline {
