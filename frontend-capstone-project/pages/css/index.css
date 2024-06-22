@@ -652,7 +652,7 @@ input[type="search" i] {
 .listBar{
     padding: 0.8rem;
     list-style: none;
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
 }
 .listBar a{
     text-decoration: none;
