@@ -543,6 +543,7 @@ input[type="search" i] {
 }
 .stickyWrapper{
     /* position: sticky; */
+    background-color: var(--primary_mainpage_color);
     top: 0;
 }
 .topSectionWrapper{
@@ -551,6 +552,7 @@ input[type="search" i] {
     background-color: var(--primary_light_greyish_color);
     justify-content: space-between;
     position: relative;
+    margin-bottom: 1rem;
 }
 .nav-container{
     position: fixed;
@@ -740,14 +742,14 @@ input[type="search" i] {
  .userDash{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin-inline: 1rem;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
  }
 .btnContainer{
     padding: 0.8rem 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 0.5rem;
     border: none;
     outline: none;
