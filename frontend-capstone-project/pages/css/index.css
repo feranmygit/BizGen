@@ -554,6 +554,7 @@ input[type="search" i] {
     top: 0;
     background-color: var(--primary_white_color);
     z-index: 1000;
+    border-radius: 0 10px;
 }
 #input1{
     display: none;
@@ -569,7 +570,7 @@ input[type="search" i] {
 }
 .dotHamburger{
     position: relative;
-    width: 0.5rem;
+    width: 0.4rem;
     height: 1rem;
     margin-left: 1rem;
     border: 1px solid var(--primary_greyish_color);
@@ -647,7 +648,7 @@ input[type="search" i] {
     padding-block-end: 0.1rem;
 }
 .borderBotm{
-    box-shadow: 0px 3px 0px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1.2px 0px -1px rgba(0, 0, 0, 0.2);
 }
 .listBar{
     padding: 0.8rem;
@@ -657,6 +658,8 @@ input[type="search" i] {
 .listBar a{
     text-decoration: none;
     color: var(--primary_sidebar_color);
+}
+.ftwtbar{
     font-weight: 600;
 }
 .listBar a i{
@@ -671,6 +674,56 @@ input[type="search" i] {
 .listBar:active{
  background-color: var(--primary_light_greyish_color);
 }
+
+/* menu services dropdown  */
+.menuList{
+    position: fixed;
+    background-color: var(--primary_light_greyish_color);
+    display: none;
+    border-radius: 10px;
+    width: 11rem;
+    right: 0.5rem;
+    margin-top: 0.5rem;
+}
+.menuList.active{
+    display: block;
+}
+.menuItems:visited{
+    background-color: var(--primary_light_grey_color);
+    border-radius: 10px 10px 0 0;
+   }
+   .menuItems:hover{
+    background-color: var(--primary_light_grey_color);
+    border-radius: 10px 10px 0 0;
+   }
+   .menuItems:active{
+    background-color: var(--primary_light_grey_color);
+    border-radius: 10px 10px 0 0;
+   }
+.menuItems1:visited{
+    background-color: var(--primary_light_grey_color);
+   }
+   .menuItems1:hover{
+    background-color: var(--primary_light_grey_color);
+   }
+   .menuItems1:active{
+    background-color: var(--primary_light_grey_color);
+   }
+.menuItems2:visited{
+    background-color: var(--primary_light_grey_color);
+    border-radius: 0 0 10px 10px;
+   }
+   .menuItems2:hover{
+    background-color: var(--primary_light_grey_color);
+    border-radius: 0 0 10px 10px;
+   }
+   .menuItems2:active{
+    background-color: var(--primary_light_grey_color);
+    border-radius: 0 0 10px 10px;
+   }
+
+
+
 
 
 @media only screen and (min-width:578px) {

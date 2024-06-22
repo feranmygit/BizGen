@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const coverColor = document.getElementById('coverColor');
     const searcBtn = document.getElementById('searcBtn');
     const overlay = document.getElementById('overlay');
+    const menuList = document.getElementById('menuList');
+    const dotHamburger = document.getElementById('dotHamburger');
 
     function togglecoverColor(){
             coverColor.classList.toggle('open');
@@ -11,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function(){
     function myinputIcon(){
         overlay.classList.toggle('propmt');
     };
+    function myDot(){
+        menuList.classList.toggle('active');
+    };
+    
+    dotHamburger.addEventListener('click', myDot);
     searcBtn.addEventListener('click', myinputIcon);
     hamburger.addEventListener('click', togglecoverColor);
 
