@@ -7,6 +7,7 @@
     --main_primary1_color: #4CAF50;
     --primary_setting_color: #126415ab;
     --primary_white_color: #fff;
+    --primary_mainpage_color: hsl(0, 0%, 98%);
     --primary_black_color: rgb(8, 8, 8);
     --primary_sidebar_color: hsl(0, 0%, 40%);
     --paragraph_greyHeader_color: hsl(0, 0%, 49%);
@@ -499,10 +500,6 @@ input[type="password"]{
 
 
 /* Dashboard section stylings here  */
-.stickyWrapper{
-    position: sticky;
-    top: 0;
-}
 input[type="search" i] {
     position: absolute;
     left: 20%;
@@ -544,6 +541,10 @@ input[type="search" i] {
     height: 50px;
     border-radius: 100%;
 }
+.stickyWrapper{
+    /* position: sticky; */
+    top: 0;
+}
 .topSectionWrapper{
     display: flex;
     flex-direction: row;
@@ -558,7 +559,7 @@ input[type="search" i] {
     width: 80vw;
     top: 0;
     background-color: var(--primary_white_color);
-    z-index: 1000;
+    z-index: 10000;
     border-radius: 0 10px;
 }
 #input1{
@@ -732,9 +733,33 @@ input[type="search" i] {
     background-color: var(--primary_light_grey_color);
     border-radius: 0 0 10px 10px;
    }
-
-
-
+.mainWrapper{
+    background-color: var(--primary_mainpage_color);
+    height: 1000vh;
+}
+ .userDash{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+ }
+.btnContainer{
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    background-color: var(--primary_mainpage_color);
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.1);
+}
+button:nth-child(1){
+    background-color: var(--main_primary_color);
+    color: var(--primary_white_color);
+}
 
 
 @media only screen and (min-width:578px) {
