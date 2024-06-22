@@ -7,6 +7,7 @@
     --main_primary1_color: #4CAF50;
     --primary_white_color: #fff;
     --primary_black_color: rgb(8, 8, 8);
+    --primary_sidebar_color: hsl(0, 0%, 30%);
     --paragraph_greyHeader_color: hsl(0, 0%, 49%);
     --paragraph_grey_color: hsl(228, 12%, 75%);
     --primary_greyish_color: hsl(180, 7%, 80%);
@@ -571,7 +572,6 @@ input[type="search" i] {
     width: 0.5rem;
     height: 1rem;
     margin-left: 1rem;
-    /* margin-top: 1rem; */
     border: 1px solid var(--primary_greyish_color);
     padding: 1rem 1rem 0.5rem 1rem;
     border-radius: 5px;
@@ -624,6 +624,52 @@ input[type="search" i] {
     border-radius: 5px;
 }
 
+/* dashboard side bar styngs here  */
+.nav-items{
+    padding: 0rem;
+    margin: 0;
+}
+.profileInfo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 0.7rem;
+    padding-left: 0.7rem;
+}
+.personalSet{
+    text-transform: uppercase;
+    color: var(--paragraph_greyHeader_color);
+    font-size: clamp(0.8rem, 2.2vw, 1rem);
+    margin-left: 0.7rem;
+    margin-block-end: 0.5rem;
+}
+.bar1{
+    padding-block-end: 0.1rem;
+}
+.borderBotm{
+    box-shadow: 0px 3px 0px -1px rgba(0, 0, 0, 0.2);
+}
+.listBar{
+    padding: 0.8rem;
+    list-style: none;
+}
+.listBar a{
+    text-decoration: none;
+    color: var(--primary_sidebar_color);
+    font-weight: 600;
+}
+.listBar a i{
+    margin-right: 1rem;
+}
+.listBar:visited{
+ background-color: var(--primary_light_greyish_color);
+}
+.listBar:hover{
+ background-color: var(--primary_light_greyish_color);
+}
+.listBar:active{
+ background-color: var(--primary_light_greyish_color);
+}
 
 
 @media only screen and (min-width:578px) {
