@@ -746,7 +746,6 @@ input[type="search" i] {
 .btnContainer{
     padding: 0.8rem 2rem;
     border-radius: 5px;
-    margin-bottom: 0.5rem;
     border: none;
     outline: none;
     width: 100%;
@@ -755,21 +754,22 @@ input[type="search" i] {
     background-color: var(--primary_light_greyish_color);
     box-shadow: 0px 0px 2px 0px rgb(0, 0, 0, 0.1);
 }
-button:nth-child(1){
+.button{
     background-color: var(--primary_orange1_color);
     color: var(--primary_white_color);
     font-size: clamp(1.2rem, 2.5vw, 1.2rem);
     font-weight: 600;
     letter-spacing: 3px;
+    margin-bottom: 0.5rem;
 }
-/* .btnContainer1{
-    color: var(--paragraph_greyHeader_color);
-    font-weight: 400;
-} */
-.btnContainer1:visited{
+.btnlinks{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.btnlinks> .btnContainer1:visited{
     background-color: var(--primary_light_grey_color);
 }
-.btnContainer1:hover{
+.btnlinks> .btnContainer1:hover{
     background-color: var(--primary_light_grey_color);
 }
 .bizIcon{
@@ -778,6 +778,7 @@ button:nth-child(1){
 .bizIcon1{
     margin-right: 0.5rem;
 }
+
 
 
 @media only screen and (min-width:578px) {
