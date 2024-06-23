@@ -762,10 +762,10 @@ button:nth-child(1){
     font-weight: 600;
     letter-spacing: 3px;
 }
-.btnContainer1{
+/* .btnContainer1{
     color: var(--paragraph_greyHeader_color);
     font-weight: 400;
-}
+} */
 .btnContainer1:visited{
     background-color: var(--primary_light_grey_color);
 }
