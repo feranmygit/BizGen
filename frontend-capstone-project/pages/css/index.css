@@ -773,7 +773,7 @@ button:nth-child(1){
     background-color: var(--primary_light_grey_color);
 }
 .bizIcon{
-    color: var(--primary_sidebar_color);
+    color: var(--paragraph_grey_color);
 }
 .bizIcon1{
     margin-right: 0.5rem;
