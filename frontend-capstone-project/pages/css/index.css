@@ -828,7 +828,7 @@ input[type="text" ], textarea{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
     align-items: center;
     margin-bottom: 2rem;
 }
@@ -836,15 +836,28 @@ input[type="text" ], textarea{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2rem;
-    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
 }
 .createBtnCont > button{
-    padding: 1rem 3rem;
+    padding: 1rem;
     border-radius: 10px;
     border: none;
-    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.1);
     font-size: 1rem;
+    width: 100%;
+    font-weight: 400;
+}
+.btnCreate{
+    background-color: var(--main_primary_color);
+    color: var(--primary_white_color);
+}
+.btnCancel{
+    background-color: var(--primary_dashboardbackground_greyish_color);
+    color: var(--primary_black_color);
+}
+.createBtnCont > button:hover{
+    opacity: 0.5;
 }
 
 @media only screen and (min-width:578px) {
