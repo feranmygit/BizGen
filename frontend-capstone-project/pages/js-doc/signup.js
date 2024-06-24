@@ -28,7 +28,7 @@ document.getElementById('signUpForm').addEventListener('submit', function(event)
     }
   
     let users = JSON.parse(localStorage.getItem('users')) || [];
-    if (users.some(user => user.username === username)) {
+    if (users.some(user => user.username === username && user.password === password)) {
       alert('Username already exists.');
       return;
     }

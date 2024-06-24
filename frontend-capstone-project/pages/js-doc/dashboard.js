@@ -21,7 +21,32 @@ document.addEventListener('DOMContentLoaded', function(){
     searcBtn.addEventListener('click', myinputIcon);
     hamburger.addEventListener('click', togglecoverColor);
 
+
+    const username = localStorage.getItem('loggedInUser');
+    if (!username) {
+      window.location.href = 'login.html';
+      return;
+    };
+
+    document.getElementById('usernameDisplay1').innerText = username;
+    document.getElementById('usernameDisplay').innerText = username;
+    document.getElementById('logoutButton').addEventListener('click', function() {
+      localStorage.removeItem('loggedInUser');
+      window.location.href = './login.html';
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 function myFunction(){
     coverColor.classList.toggle('open');
@@ -36,3 +61,9 @@ function myBtn(){
 // function myinputIcon(){
 //     overlay.classList.toggle('propmt')
 // }
+
+
+
+
+
+
