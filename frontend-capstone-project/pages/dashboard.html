@@ -83,7 +83,7 @@
         <div class="mainWrapper">
             <div class="userDash">
                 <button class="btnContainer button"><i class="fa-solid bizIcon bizIcon1 fa-sliders"></i>Dashboard</button>
-                    <button class="btnContainer btnlinks btnContainer1"><i class="fa-solid bizIcon bizIcon1 fa-hashtag"></i>Create New Business</button>
+                    <button class="btnContainer btnlinks btnContainer1" onclick="showCreateBusinessForm()"><i class="fa-solid bizIcon bizIcon1 fa-hashtag"></i>Create New Business</button>
                     <button class="btnContainer btnlinks btnContainer1"><i class="fa-solid bizIcon bizIcon1 fa-list"></i>All Businesses</button>
                     <button class="btnContainer btnlinks btnContainer1"><i class="fa-brands bizIcon bizIcon1 fa-shopify"></i>Business Details</button>
             </div>
@@ -92,13 +92,13 @@
             </label>
         </div>
 
-        <section class="Dash_section1">
+        <section class="Dash_section1" id="Dash_section1">
             <div class="wrapDash welcomeAlert">
                 <p class="welcomeAlert1">Welcome Back, <span class="userGiven" id="usernameDisplay1"></span>!</p>
                 <p class="dashPar">Unleash your business potentials using our deployed templates of your choice now.</p>
             </div>
         </section>
-        <section class="Dash_section2">
+        <section class="Dash_section2" id="Dash_section2">
             <div id="create-business-form" style="display:block;">
                 <h2 class="bizGenerate">Create New Business</h2>
                 <form action="" class="formpost">
@@ -118,6 +118,23 @@
                     <button class="btnCancel" onclick="cancelCreateBusiness()">Cancel</button>
                 </div>
               </div>
+        </section>
+        <section class="Dash_section3">
+            <!-- All Businesses -->
+            <div id="all-businesses" style="display:none;">
+                <h2>All Businesses</h2>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Visibility</th>
+                        </tr>
+                    </thead>
+                    <tbody id="business-list"></tbody>
+                </table>
+            </div>
+            </div>
         </section>
     </main>
 

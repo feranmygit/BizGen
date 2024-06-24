@@ -831,6 +831,7 @@ input[type="text" ], textarea{
     gap: 1rem;
     align-items: center;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 .createBtnCont{
     display: flex;
@@ -847,6 +848,7 @@ input[type="text" ], textarea{
     font-size: 1rem;
     width: 100%;
     font-weight: 400;
+    cursor: pointer;
 }
 .btnCreate{
     background-color: var(--main_primary_color);
@@ -857,7 +859,10 @@ input[type="text" ], textarea{
     color: var(--primary_black_color);
 }
 .createBtnCont > button:hover{
-    opacity: 0.5;
+    opacity: 0.7;
+}
+.Dash_section2{
+    display: none;
 }
 
 @media only screen and (min-width:578px) {
