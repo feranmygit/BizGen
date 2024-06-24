@@ -36,7 +36,11 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 });
 
-
+// Load user avatar if available
+const user = getUser(username);
+if (user && user.avatar) {
+  document.getElementById('userAvatar').src = user.avatar;
+}
 
 
 
