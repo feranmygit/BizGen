@@ -698,6 +698,7 @@ input[type="search" i] {
     width: 8rem;
     right: 0.8rem;
     margin-top: 0.8rem;
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.2);
 }
 .menuList.active{
     display: block;
