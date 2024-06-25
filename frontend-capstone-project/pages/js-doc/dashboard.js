@@ -83,7 +83,7 @@ function cancelCreateBusiness() {
     businessCards.innerHTML = '';
     businessList.innerHTML = '';
     businesses.forEach(b => {
-      if (b.visibility === 'public' || b.username === username) {
+      if (b.visibility === 'private' || b.username === username) {
         businessCards.innerHTML += `
           <div class="card">
             <h3>${b.name}</h3>
