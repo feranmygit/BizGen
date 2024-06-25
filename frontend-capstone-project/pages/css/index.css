@@ -870,11 +870,11 @@ input[type="text" ], textarea{
 .newBizTitle{
     text-align: center;
     padding-block: 2rem;
-    background-color: var(--pimary_instagram_color);
+    background-color: var(--main_link_color);
     margin-inline: 5%;
     border-radius: 10px;
     margin-top: 3rem;
-    color: var(--primary_white_color);
+    color: var(--primary_light_greyish_color);
 }
 .card-grid{
     display: grid;
