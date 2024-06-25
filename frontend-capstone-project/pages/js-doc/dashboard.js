@@ -48,12 +48,15 @@ function saveToLocalStorage() {
 
 function showCreateBusinessForm() {
     document.getElementById('Dash_section1').style.display = 'none';
+    document.getElementById('mainCard-content').style.display = 'none';
     document.getElementById('Dash_section2').style.display = 'block';
+    document.getElementById('all-businesses').style.display = 'none';
   };
 function cancelCreateBusiness() {
     document.getElementById('Dash_section1').style.display = 'block';
     document.getElementById('Dash_section2').style.display = 'none';
     document.getElementById('all-businesses').style.display = 'none';
+    document.getElementById('mainCard-content').style.display = 'block';
   }
 
   function createBusiness() {
@@ -101,9 +104,9 @@ function cancelCreateBusiness() {
 
   function showAllBusinesses() {
     document.getElementById('mainCard-content').style.display = 'none';
-    document.getElementById('business-cards').style.display = 'none';
     document.getElementById('Dash_section1').style.display = 'none';
     document.getElementById('all-businesses').style.display = 'block';
+    document.getElementById('Dash_section2').style.display = 'none';
   }
 
 
