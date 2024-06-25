@@ -870,12 +870,11 @@ input[type="text" ], textarea{
 .newBizTitle{
     text-align: center;
     padding-block: 2rem;
-    background-color: var(--main_link_color);
+    background-color: var(--pimary_instagram_color);
     margin-inline: 5%;
     border-radius: 10px;
     margin-top: 3rem;
-    color: var(--primary_light_greyish_color);
-    /* letter-spacing: 2px; */
+    color: var(--primary_white_color);
 }
 .card-grid{
     display: grid;
@@ -888,6 +887,25 @@ input[type="text" ], textarea{
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.1);
     padding: 1rem;
 }
+.allBizPlans{
+    text-align: center;
+}
+.tableContainer{
+    overflow: scroll;
+}
+.tableContainer, th, td{
+    border-collapse: collapse;
+    width: 100vw;
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    width: 50%;
+  }
+  th{
+    width: 30%;
+  }
 
 @media only screen and (min-width:578px) {
 
