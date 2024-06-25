@@ -4,7 +4,7 @@ let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
 
 function saveToLocalStorage() {
   localStorage.setItem('businesses', JSON.stringify(businesses));
-}
+};
 
 function showCreateBusinessForm() {
   document.getElementById('Dash_section1').style.display = 'none';
@@ -12,6 +12,7 @@ function showCreateBusinessForm() {
   document.getElementById('Dash_section2').style.display = 'block';
   document.getElementById('all-businesses').style.display = 'none';
 };
+
 function cancelCreateBusiness() {
   document.getElementById('Dash_section1').style.display = 'block';
   document.getElementById('Dash_section2').style.display = 'none';
@@ -60,7 +61,7 @@ function loadBusinesses() {
     }
   });
 }
-      loadBusinesses();
+  loadBusinesses();
 
 function showAllBusinesses() {
   document.getElementById('mainCard-content').style.display = 'none';
@@ -121,11 +122,6 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('usernameDisplay').innerText = username;
    
 });
-
-
-
-
-
 
 
 function myFunction(){
