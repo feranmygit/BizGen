@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded', function(){
       window.location.href = './login.html';
     });
 
-    document.getElementById('remve').addEventListener('click', function() {
-      localStorage.removeItem('businesses');
-      window.location.href = 'dashboard.html';
-    });
+    // document.getElementById('remve').addEventListener('click', function() {
+    //   localStorage.removeItem('businesses');
+    //   window.location.href = 'dashboard.html';
+    // });
 
 
     // To set the users username where needed on the website
