@@ -18,7 +18,7 @@ function cancelCreateBusiness() {
   document.getElementById('Dash_section2').style.display = 'none';
   document.getElementById('all-businesses').style.display = 'none';
   document.getElementById('mainCard-content').style.display = 'block';
-}
+};
 
 function createBusiness() {
   const name = document.getElementById('business-name').value;
@@ -48,7 +48,7 @@ function loadBusinesses() {
       businessCards.innerHTML += `
         <div class="card">
           <h3>${b.name}</h3>
-          <p>${b.description}</p>
+          <p class="dashPar">${b.description}</p>
         </div>
       `;
       businessList.innerHTML += `
