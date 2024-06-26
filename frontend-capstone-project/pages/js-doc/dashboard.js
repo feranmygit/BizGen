@@ -142,12 +142,12 @@ function myToggle(){
     menuList.classList.toggle('open');
 }
 
-// const inputIcon = document.getElementById('inputIcon');
+const inputIcon = document.getElementById('inputIcon');
 // const overlay = document.getElementById('overlay');
 
-// function myBtn(){
-//     inputIcon.classList.toggle('show');
-// } 
+function myBtn(){
+    inputIcon.classList.toggle('show');
+} 
 // function myinputIcon(){
 //     overlay.classList.toggle('propmt')
 // }
