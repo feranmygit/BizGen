@@ -621,6 +621,7 @@ input[type="search" i] {
 }
 .userMe{
     margin: 0;
+    margin-top: 0.1rem;
     margin-bottom: 1rem;
 }
 .setAsidesCont1{
