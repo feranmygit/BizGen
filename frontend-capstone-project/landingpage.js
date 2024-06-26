@@ -116,24 +116,32 @@ document.getElementById('cardqueTopic5').innerHTML = _cardQuestionGrid.card5;
 document.getElementById('cardAnswer5').innerHTML = _cardAnsGrids.card5;
 
 
-document.addEventListener('DOMContentLoaded', function(){
-        const hamburger = document.getElementById('hamburger');
-        const coverColor = document.getElementById('coverColor');
-        const menu = document.getElementById('menu');
-        const topContainer = document.getElementById('topContainer');
+// document.addEventListener('DOMContentLoaded', function(){
+        // const hamburger = document.getElementById('hamburger');
+        // const coverColor = document.getElementById('coverColor');
+        // const menu = document.getElementById('menu');
+        // const topContainer = document.getElementById('topContainer');
 
-        function togglecoverColor(){
-                coverColor.classList.toggle('open');
-                menu.classList.toggle('active');
-                topContainer.classList.toggle('active');
+        // function togglecoverColor(){
+                // coverColor.classList.toggle('open');
+                // menu.classList.toggle('active');
+                // topContainer.classList.toggle('active');
                 
-        };
-        hamburger.addEventListener('click', togglecoverColor);
+        // };
+        // hamburger.addEventListener('click', togglecoverColor);
         // coverColor.addEventListener('click', togglecoverColor);
-})
+// })
 // const coverColor = document.getElementById('coverColor').addEventListener('click', function(){
 //         document.getElementById('menu').classList.toggle('open');
 // })
+
+
+
+
+
+
+
+
 
 const _blogRatings = {
         card1: "100K+",
@@ -160,11 +168,11 @@ document.getElementById('makePlanPar').innerHTML = _makePlanning.card2;
 const _userFeedbacks = {
         card0: "Raving",
         card1: "This app changed my business game! I'm unstoppable now.",
-        card2: "Max Power",
+        card2: "Diana Clementine",
         card3: "Unbelievable results! My profits soared after using this app.",
-        card4: "Luna Star ",
+        card4: "Omar Louis",
         card5: "I never knew planning could be this fun and effective!",
-        card6: "Rocky Road "
+        card6: "Rocky Raymond "
     };
 document.getElementById('titleRep').innerHTML = _userFeedbacks.card0;
 document.getElementById('userRep1').innerHTML = _userFeedbacks.card1;

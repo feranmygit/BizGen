@@ -16,6 +16,7 @@
     --primary_loginPar_color: hsl(180, 7%, 60%);
     --primary_light_grey_color: hsl(228, 12%, 90%);
     --primary_light_greyish_color: hsl(0, 0%, 95%);
+    --primary_overlay_color: rgb(0, 0, 0, 0.2);
     --primary_dashboardbackground_greyish_color: hsl(0, 0%, 92%);
     --primary_covered_color: rgb(0, 0, 0, 0.6);
     --main_link_color: hsl(228, 12%, 20%);
@@ -60,7 +61,7 @@ body{
 }
 .hamburgerElement{
     position: relative;
-    width: 2rem;
+    width: 1rem;
     height: 1.5rem;
     display: inline-block;
     /* margin-top: 1.8rem; */
@@ -180,11 +181,20 @@ body{
     background-color: var(--main_primary_color);
 }
 ._btn_green{
-    background-color: var(--main_primary1_color);
+    background-color: var(--main_primary_color);
 }
 .btn_bg_col a{
     color: var(--primary_white_color);
 }
+.exploreBtn:visited{
+    opacity: 0.5;
+   }
+   .exploreBtn:hover{
+    opacity: 0.5;
+   }
+   .exploreBtn:active{
+    opacity: 0.5;
+   }
 .coverColor{
     height: 1000vh;
     width: 100%;
@@ -197,6 +207,17 @@ body{
 .coverColor.open{
    display: block;
 }
+.overlayColor{
+    height: 1000vh;
+    width: 100%;
+    display: none;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+}
+.overlayColor.open{
+    display: block;
+ }
 .section1{
     background-image: url(./background-crew-mobile.jpg);
     background-position: center;
@@ -204,7 +225,6 @@ body{
     padding: 18rem 1rem;
     top: -7rem;
     position: relative;
-    z-index: -2;
 }
 .section0{
     margin-top: -5rem;
@@ -239,7 +259,7 @@ body{
   margin-bottom: 2rem;
 }
 .cardblog{
-    background-color: var(--main_primary1_color);
+    background-color: var(--main_primary_color);
     border-radius: 30px 30px 0 0;
 }
 .pad15{
@@ -479,7 +499,6 @@ input[type="password"]{
     border: 1px solid var(--primary_loginPar_color);
     margin-block-end: 1rem;
 }
-
 .margin-block-end{
     margin-block-end: 0;
 }
@@ -531,12 +550,10 @@ input[type="search" i] {
     position: fixed;
     width: 1000vw;
     height: 1000vh;
-    background-color: var(--primary_light_greyish_color);
+    background-color: var(--primary_l);
     display: none;
 }
-.overlay.propmt{
-    display: block;
-}
+
 .logoContainer1 img {
     height: 30px;
 }
@@ -643,11 +660,10 @@ input[type="search" i] {
     border-radius: 5px;
     margin-left: 1rem;
 }
-.mainWrapper{
+.mainWrapper1{
     background-color: var(--primary_light_greyish_color);
     padding-block: 0.5rem; 
 }
-
 /* dashboard side bar styngs here  */
 .nav-items{
     padding: 0rem;
@@ -715,8 +731,9 @@ input[type="search" i] {
     right: 0.8rem;
     margin-top: 0.8rem;
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.2);
+    z-index: 1000;
 }
-.menuList.active{
+.menuList.open{
     display: block;
 }
 .menuItems:visited{
@@ -771,7 +788,7 @@ input[type="search" i] {
     background-color: var(--primary_light_greyish_color);
     box-shadow: 0px 0px 2px 0px rgb(0, 0, 0, 0.1);
 }
-.button{
+.button1{
     background-color: var(--primary_orange1_color);
     color: var(--primary_white_color);
     font-size: clamp(1.2rem, 2.5vw, 1.2rem);

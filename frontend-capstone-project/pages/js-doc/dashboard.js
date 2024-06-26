@@ -20,6 +20,13 @@ function cancelCreateBusiness() {
   document.getElementById('mainCard-content').style.display = 'block';
 };
 
+function showAllBusinesses() {
+  document.getElementById('mainCard-content').style.display = 'none';
+  document.getElementById('Dash_section1').style.display = 'none';
+  document.getElementById('all-businesses').style.display = 'block';
+  document.getElementById('Dash_section2').style.display = 'none';
+}
+
 function createBusiness() {
   const name = document.getElementById('business-name').value;
   const description = document.getElementById('business-description').value;
@@ -63,38 +70,40 @@ function loadBusinesses() {
 }
   loadBusinesses();
 
-function showAllBusinesses() {
-  document.getElementById('mainCard-content').style.display = 'none';
-  document.getElementById('Dash_section1').style.display = 'none';
-  document.getElementById('all-businesses').style.display = 'block';
-  document.getElementById('Dash_section2').style.display = 'none';
-}
-
-
 
 // Toggling the visibility of some containers 
 
 document.addEventListener('DOMContentLoaded', function(){
     const hamburger = document.getElementById('hamburger');
     const coverColor = document.getElementById('coverColor');
-    const searcBtn = document.getElementById('searcBtn');
-    const overlay = document.getElementById('overlay');
-    const menuList = document.getElementById('menuList');
+    const overlayColor = document.getElementById('overlayColor');
     const dotHamburger = document.getElementById('dotHamburger');
+    const menuList = document.getElementById('menuList');
+
+
+
+    // const searcBtn = document.getElementById('searcBtn');
+    // const overlay = document.getElementById('overlay');
+    // const menuList = document.getElementById('menuList');
+    // const dotHamburger = document.getElementById('dotHamburger');
 
     function togglecoverColor(){
             coverColor.classList.toggle('open');
-            
     };
-    function myinputIcon(){
-        overlay.classList.toggle('propmt');
+    function toggleoverlayColor(){
+            overlayColor.classList.toggle('open');
+            menuList.classList.toggle('open');
     };
-    function myDot(){
-        menuList.classList.toggle('active');
-    };
+
+    // function myinputIcon(){
+    //     overlay.classList.toggle('propmt');
+    // };
+    // function myDot(){
+    //     menuList.classList.toggle('active');
+    // };
     
-    dotHamburger.addEventListener('click', myDot);
-    searcBtn.addEventListener('click', myinputIcon);
+    // searcBtn.addEventListener('click', myinputIcon);
+    dotHamburger.addEventListener('click', toggleoverlayColor);
     hamburger.addEventListener('click', togglecoverColor);
 
 
@@ -128,13 +137,17 @@ document.addEventListener('DOMContentLoaded', function(){
 function myFunction(){
     coverColor.classList.toggle('open');
 }
+function myToggle(){
+    overlayColor.classList.toggle('open');
+    menuList.classList.toggle('open');
+}
 
-const inputIcon = document.getElementById('inputIcon');
-const overlay = document.getElementById('overlay');
+// const inputIcon = document.getElementById('inputIcon');
+// const overlay = document.getElementById('overlay');
 
-function myBtn(){
-    inputIcon.classList.toggle('show');
-} 
+// function myBtn(){
+//     inputIcon.classList.toggle('show');
+// } 
 // function myinputIcon(){
 //     overlay.classList.toggle('propmt')
 // }
