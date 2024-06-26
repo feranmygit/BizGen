@@ -553,7 +553,17 @@ input[type="search" i] {
     background-color: var(--primary_l);
     display: none;
 }
-
+.underlay{
+    position: fixed;
+    width: 1000vw;
+    height: 1000vh;
+    background-color: var(--primary_covered_color);
+    display: none;
+    top: 0;
+}
+.underlay.open{
+    display: block;
+}
 .logoContainer1 img {
     height: 30px;
 }
@@ -727,7 +737,7 @@ input[type="search" i] {
     background-color: var(--primary_white_color);
     display: none;
     border-radius: 10px;
-    width: 8rem;
+    width: 10rem;
     right: 0.8rem;
     margin-top: 0.8rem;
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.2);

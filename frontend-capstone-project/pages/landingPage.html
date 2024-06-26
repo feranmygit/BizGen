@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project | Landing Page</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/allocation_9639386.png">
-    <link rel="stylesheet" href="./pages/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 
         <!-- logo section here  -->
         <div class="logoContainer flex justify_centre gap0">
-            <img src="./pages/assets/allocation_9639386.png" alt="">
+            <img src="./assets/allocation_9639386.png" alt="">
             <h4 class="bizName">BizGenius</h4>
         </div>
 
@@ -25,15 +25,14 @@
         </label>
         <nav class="menu-items" id="menu">
             <ul class="list-items">
-                <li class="items"><a href="./pages/login.html">Login</a></li>
-                <li class="items"><a href="./pages/signup.html" >Sign Up</a></li>
-                <li class="items"><a href="#">Profile</a></li>
+                <li class="items"><a href="./login.html" onclick="removeMenu()">Login</a></li>
+                <li class="items"><a href="./signup.html" onclick="removeMenu1()">Sign Up</a></li>
+                <li class="items"><a href="#" onclick="removeMenu2()">Profile</a></li>
                 <button class="button items btn_bg_col _btn_blue exploreBtn"><a href="#">Get Started</a></button>
             </ul>
         </nav>
         
      </header>
-     <div class="coverColor" id="coverColor"></div>
 
     <main class="mainWrapper" id="main">
             <section class="section1" id="section">
@@ -48,7 +47,7 @@
                 <div class="blogpostContainer"><h1 class="blogPost text_align ft-wt7" id="blogPost"></h1></div>
                 <div class="blogContent blogGrid">
                     <div class="post">
-                        <img class="blogImg" src="./pages/assets/images/photo-1664575600796-ffa828c5cb6e.jpeg" alt="">
+                        <img class="blogImg" src="./assets/images/photo-1664575600796-ffa828c5cb6e.jpeg" alt="">
                         <div class="textcontent" >
                             <h2 class="newTopic ft-wt7 line_height2" id="textcontent"></h2>
                             <p class="para1" id="para1"></p>
@@ -57,7 +56,7 @@
                         </div>
                     </div>
                     <div class="post">
-                        <img class="blogImg" src="./pages/assets/images/photo-1520607162513-77705c0f0d4a.jpeg" alt="">
+                        <img class="blogImg" src="./assets/images/photo-1520607162513-77705c0f0d4a.jpeg" alt="">
                         <div class="textcontent" >
                             <h2 class="newTopic ft-wt7 line_height2" id="textcontent1"></h2>
                             <p class="para1" id="para3"></p>
@@ -66,7 +65,7 @@
                         </div>
                     </div>
                     <div class="post">
-                        <img class="blogImg" src="./pages/assets/images/photo-1537511446984-935f663eb1f4.jpeg" alt="">
+                        <img class="blogImg" src="./assets/images/photo-1537511446984-935f663eb1f4.jpeg" alt="">
                         <div class="textcontent" >
                             <h2 class="newTopic ft-wt7 line_height2" id="textcontent2"></h2>
                             <p class="para1" id="para5"></p>
@@ -75,7 +74,7 @@
                         </div>
                     </div>
                     <div class="post">
-                        <img class="blogImg" src="./pages/assets/images/photo-1474631245212-32dc3c8310c6.jpeg" alt="">
+                        <img class="blogImg" src="./assets/images/photo-1474631245212-32dc3c8310c6.jpeg" alt="">
                         <div class="textcontent" >
                             <h2 class="newTopic ft-wt7 line_height2" id="textcontent3"></h2>
                             <p class="para1" id="para7"></p>
@@ -156,11 +155,11 @@
                 
                 <div class="bolgRatio">
                     <div id="blogImage">
-                        <img class="blogImg " src="./pages/assets/images/work-3.jpg" alt="">
-                        <img class="blogImg" src="./pages/assets/images/work-4.jpg" alt="">
-                        <img class="blogImg" src="./pages/assets/images/work-2.jpg" alt="">
-                        <img class="blogImg" src="./pages/assets/images/work-5.jpg" alt="">
-                        <img class="blogImg" src="./pages/assets/images/work-6.jpg" alt="">
+                        <img class="blogImg " src="./assets/images/work-3.jpg" alt="">
+                        <img class="blogImg" src="./assets/images/work-4.jpg" alt="">
+                        <img class="blogImg" src="./assets/images/work-2.jpg" alt="">
+                        <img class="blogImg" src="./assets/images/work-5.jpg" alt="">
+                        <img class="blogImg" src="./assets/images/work-6.jpg" alt="">
                     </div>
                     <div class="rating text_align">
                         <h1 class="blueCol" id="rating1"></h1>
@@ -184,21 +183,21 @@
                         <div class="questionCard cardContainer margin_inline pad15">
                             <p class="ft-fam para2 line_height2" id="userRep1"></p>
                             <div class="userInfo">
-                                <img src="./pages/assets/images/photo-1525614686090-7a3108e3758e.jpeg" alt="">
+                                <img src="./assets/images/photo-1525614686090-7a3108e3758e.jpeg" alt="">
                                 <h2 class="cardGrid margin_bottom" id="userName1"></h2>
                             </div>
                         </div>
                         <div class="questionCard cardContainer margin_inline pad15">
                             <p class="ft-fam para2 line_height2" id="userRep2"></p>
                             <div class="userInfo">
-                                <img src="./pages/assets/images/photo-1596646285603-e5f9bbfa524a.jpeg" alt="">
+                                <img src="./assets/images/photo-1596646285603-e5f9bbfa524a.jpeg" alt="">
                                 <h2 class="cardGrid margin_bottom" id="userName2"></h2>
                             </div>
                         </div>
                         <div class="questionCard cardContainer margin_inline pad15">
                             <p class="ft-fam para2 line_height2" id="userRep3"></p>
                             <div class="userInfo">
-                                <img src="./pages/assets/images/photo-1522091066250-665186289043.jpeg" alt="">
+                                <img src="./assets/images/photo-1522091066250-665186289043.jpeg" alt="">
                                 <h2 class="cardGrid margin_bottom" id="userName3"></h2>
                             </div>
                         </div>
@@ -221,8 +220,12 @@
                     <p>2024 BizGenius. All Rights Reserved.</p>
                 </div>
             </footer>
+            <label for="input">
+                <div class="underlay" id="underlay" onclick="myunderlay()"></div>
+            </label>
+
     </main>
 
-     <script src="./landingpage.js"></script>
+     <script src="./js-doc/landingpage.js"></script>
 </body>
 </html>

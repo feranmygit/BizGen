@@ -81,12 +81,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const menuList = document.getElementById('menuList');
 
 
-
-    // const searcBtn = document.getElementById('searcBtn');
-    // const overlay = document.getElementById('overlay');
-    // const menuList = document.getElementById('menuList');
-    // const dotHamburger = document.getElementById('dotHamburger');
-
     function togglecoverColor(){
             coverColor.classList.toggle('open');
     };
@@ -95,14 +89,7 @@ document.addEventListener('DOMContentLoaded', function(){
             menuList.classList.toggle('open');
     };
 
-    // function myinputIcon(){
-    //     overlay.classList.toggle('propmt');
-    // };
-    // function myDot(){
-    //     menuList.classList.toggle('active');
-    // };
-    
-    // searcBtn.addEventListener('click', myinputIcon);
+   
     dotHamburger.addEventListener('click', toggleoverlayColor);
     hamburger.addEventListener('click', togglecoverColor);
 
@@ -143,11 +130,12 @@ function myToggle(){
 }
 
 const inputIcon = document.getElementById('inputIcon');
-// const overlay = document.getElementById('overlay');
 
 function myBtn(){
-    inputIcon.classList.toggle('show');
+  inputIcon.classList.toggle('show');
 } 
+
+// const overlay = document.getElementById('overlay');
 // function myinputIcon(){
 //     overlay.classList.toggle('propmt')
 // }

@@ -116,26 +116,36 @@ document.getElementById('cardqueTopic5').innerHTML = _cardQuestionGrid.card5;
 document.getElementById('cardAnswer5').innerHTML = _cardAnsGrids.card5;
 
 
-// document.addEventListener('DOMContentLoaded', function(){
-        // const hamburger = document.getElementById('hamburger');
-        // const coverColor = document.getElementById('coverColor');
-        // const menu = document.getElementById('menu');
-        // const topContainer = document.getElementById('topContainer');
 
-        // function togglecoverColor(){
-                // coverColor.classList.toggle('open');
-                // menu.classList.toggle('active');
-                // topContainer.classList.toggle('active');
+// toggle the menubar list items with the underlay color
+
+document.addEventListener('DOMContentLoaded', function(){
+        const hamburger = document.getElementById('hamburger');
+        const underlay = document.getElementById('underlay');
+
+
+        function toggleunderlayColor(){
+                underlay.classList.toggle('open');
+      
                 
-        // };
-        // hamburger.addEventListener('click', togglecoverColor);
-        // coverColor.addEventListener('click', togglecoverColor);
-// })
-// const coverColor = document.getElementById('coverColor').addEventListener('click', function(){
-//         document.getElementById('menu').classList.toggle('open');
-// })
+        };
+
+        hamburger.addEventListener('click', toggleunderlayColor);
+
+});
+
+        const underlay = document.getElementById('underlay');
+
+        function myunderlay(){
+                underlay.classList.toggle('open');
+        };
 
 
+const menu = document.getElementById('menu');
+
+function removeMenu(){
+        menu.style.display = 'none';
+}
 
 
 
