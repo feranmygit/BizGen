@@ -143,9 +143,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
 const menu = document.getElementById('menu');
 
-function removeMenu(){
-        menu.style.display = 'none';
-}
+// function removeMenu(){
+//         menu.style.display = 'none';
+// }
 
 
 
