@@ -872,7 +872,7 @@ input[type="text" ], textarea{
     padding-block: 2rem;
     background-color: var(--main_link_color);
     margin-inline: 5%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 3rem;
     color: var(--primary_light_greyish_color);
 }
@@ -882,29 +882,42 @@ input[type="text" ], textarea{
     gap: 1rem;
     margin-inline: 1rem;
     margin-bottom: 1rem;
+    
 }
 .card{
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.1);
-    padding: 1rem;
+    border-radius: 5px;
 }
 .allBizPlans{
     text-align: center;
 }
-.tableContainer{
-    overflow: scroll;
+.card > h3{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    background-color: var(--primary_light_greyish_color);
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
 }
+.card > p{    
+    padding: 1rem;
+}
+
 .tableContainer, th, td{
     border-collapse: collapse;
-    width: 100vw;
+    width: 100%;
     border: 1px solid #ddd;
 }
 th, td {
     padding: 10px;
     text-align: left;
-    width: 50%;
+    /* width: 150%; */
+
   }
-  th{
-    width: 30%;
+  /* th.description{
+    width: 60%;
+  } */
+  .scrollar{
+    overflow-x: auto;
   }
 
 @media only screen and (min-width:578px) {
