@@ -29,7 +29,6 @@
 body{
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    /* background-color: var(--primary_light_greyish_color); */
     margin: 0;
     padding: 0;
 }
@@ -526,8 +525,8 @@ input[type="search" i] {
     position: absolute;
     left: 20%;
     width: 60%;
-    top: 20%;
-    height: 60%;
+    top: 1rem;
+    height: 4rem;
     border-radius: 30px;
     padding: 1rem;
     font-weight: 300;
@@ -950,15 +949,20 @@ input[type="text" ], textarea{
 th, td {
     padding: 10px;
     text-align: left;
-    /* width: 150%; */
+    width: 50%;
 
   }
-  /* th.description{
-    width: 60%;
-  } */
+  th.description{
+    width: 50%;
+  }
   .scrollar{
     overflow-x: auto;
   }
+  .bizIconSet{
+    margin-right: 0.5rem;
+    opacity: 0;
+}
+ 
 
 @media only screen and (min-width:500px) {
     .borderBotm {
@@ -1053,9 +1057,6 @@ margin-inline: 1rem;
     display: flex;
     margin-left: 2rem;
 }
-.listPad1{
-    /* padding-bottom: 0.7rem ; */
-}
 .listPad1 a {
     width: 6rem;
     display: flex;
@@ -1081,8 +1082,8 @@ margin-inline: 1rem;
 input[type="search" i] {
     left: 12.5%;
     width: 75%;
-    top: 30%;
-    height: 70%;
+    top: 2rem;
+    height: 4rem;
 }
 }
 
@@ -1098,12 +1099,11 @@ input[type="search" i] {
     .mainWrapper1 {
         position: absolute;
         width: 40%;
-        top: 7.9rem;
     }
     .Dash_section1{
         position: absolute;
         width: 40%;
-        top: 22rem;
+        top: 21.7rem;
     }
     .sectionAbt {
         position: absolute;
@@ -1129,8 +1129,8 @@ input[type="search" i] {
     input[type="search" i] {
         left: 20%;
         width: 75%;
-        top: 30%;
-        height: 70%;
+        top: 1rem;
+        height: 4rem;
     }
     .hamburgerElement1 {
         top: -3.7rem;
@@ -1150,14 +1150,98 @@ input[type="search" i] {
         position: absolute;
     }
 }
-@media only screen and (min-width:768px) {
+
+@media only screen and (min-width:800px) {
     input[type="search" i] {
-        left: 20%;
-        width: 63%;
-        top: 30%;
-        height: 70%;
+        left: 17%;
+        width: 55%;
+        top: 1rem;
+        height: 4rem;
+    }
+    .nav-container {
+        position: absolute;
+        left: 0px;
+        height: 40rem;
+        width: 100%;
+        top: 0;
+        background-color: transparent;
+        z-index: inherit;
+        border-radius: 0 10px;
+        overflow-y: scroll;
+    }
+    .profileInfo{
+        position: absolute;
+        right: 1rem;
+        top: 0.4rem;
+    }
+    .bartack{
+        position: absolute;
+        top: 4.5rem;
+        z-index: 2;
+    }
+    .bartack1{
+        right: 2rem;
+    }
+    .bartack2{
+        right: 13rem;
+    }
+    .pBar{
+        background-color: var(--primary_white_color);
+        box-shadow: 0px 0px 0px 2px rgb(0, 0, 0, 0.2);
+        border-radius: 5px;
+        margin-top: 0.2rem;
+        position: absolute;
+    }
+    .personalSet {
+        text-transform: inherit;
+        color: var(--primary_setting_color);
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        margin-left: 0.7rem;
+        margin-block-end: 0.5rem;
+        cursor: pointer;
+    }
+ .pBarTop{
+    display: none;
+ }
+ .pBarTop.open{
+    display: block;
+ }
+ .pBarDown{
+    display: none;
+    right: 1rem;
+    width: 12rem;
+ }
+ .pBarDown.open{
+    display: block;
+ }
+ .inlineTop span {
+    display: none;
+ }
+ .userMe {
+    display: none;
+ }
+ .leftHeader {
+    margin-bottom: 0.6rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+ }
+ .logoContainer1 img {
+    margin-top: 1rem;
+}
+.hamburgerElement1 {
+    display: none;
+}
+.bizIconSet{
+    opacity: 1;
+}
+}
+@media only screen and (min-width:862px) {
+    input[type="search" i] {
+        left: 22.5%;
+        width: 55%;
     }
 }
+
 @media only screen and (min-width:928px) {
     .marg_gid{
         margin-inline: 6rem;
@@ -1167,5 +1251,24 @@ input[type="search" i] {
     }
 #blogImage img{
     width: 50%;
+    }
+}
+@media only screen and (min-width:1200px) {
+   
+/* .topSectionWrapper {
+    padding: 2rem 4rem;
+} */
+    input[type="search" i] {
+        left: 15%;
+        width: 70%;
+    }
+    .mainWrapper1 {
+        width: 30%;
+    }
+    .Dash_section1{
+        width: 30%;
+    }
+    .sectionAbt {
+        width: 70%;
     }
 }

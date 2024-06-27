@@ -77,10 +77,24 @@ document.addEventListener('DOMContentLoaded', function(){
     const hamburger = document.getElementById('hamburger');
     const coverColor = document.getElementById('coverColor');
     const overlayColor = document.getElementById('overlayColor');
+    const overlayColor1 = document.getElementById('overlayColor1');
+    const overlayColor2 = document.getElementById('overlayColor2');
     const dotHamburger = document.getElementById('dotHamburger');
     const menuList = document.getElementById('menuList');
+    const personalSetting = document.getElementById('personalSetting');
+    const pBarTop = document.getElementById('pBarTop');
+    const genSetting = document.getElementById('genSetting');
+    const pBarDown = document.getElementById('pBarDown');
 
 
+    function togglecoverColor1(){
+      overlayColor1.classList.toggle('open');
+      pBarTop.classList.toggle('open');
+    };
+    function togglecoverColor2(){
+      overlayColor2.classList.toggle('open');
+      pBarDown.classList.toggle('open');
+    };
     function togglecoverColor(){
             coverColor.classList.toggle('open');
     };
@@ -90,6 +104,8 @@ document.addEventListener('DOMContentLoaded', function(){
     };
 
    
+    personalSetting.addEventListener('click', togglecoverColor1);
+    genSetting.addEventListener('click', togglecoverColor2);
     dotHamburger.addEventListener('click', toggleoverlayColor);
     hamburger.addEventListener('click', togglecoverColor);
 
@@ -127,6 +143,14 @@ function myFunction(){
 function myToggle(){
     overlayColor.classList.toggle('open');
     menuList.classList.toggle('open');
+}
+function myToggleTop(){
+    overlayColor1.classList.toggle('open');
+    pBarTop.classList.toggle('open');
+}
+function myToggleDown(){
+    overlayColor2.classList.toggle('open');
+    pBarDown.classList.toggle('open');
 }
 
 const inputIcon = document.getElementById('inputIcon');

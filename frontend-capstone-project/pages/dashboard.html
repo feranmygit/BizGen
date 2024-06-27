@@ -63,21 +63,29 @@
                              <img src="./assets/avaters/testimonial-4.jpg" alt="">
                              <h3 class="userN">Hi, <span id="usernameDisplay2"></span></h3>
                          </div>
-                         <div class="bar1 borderBotm">
-                             <h4 class="personalSet">Personal Setting</h4>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-user"></i>Edit Profile</a></li>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-address-book"></i>Address</a></li>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-bell"></i>Notification</a></li>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-regular bizIcon fa-credit-card"></i>Payment</a></li>
+                         <div class="bar1 bartack bartack1 borderBotm">
+                            <label for="input3">
+                                <h4 class="personalSet" id="personalSetting"><i class="fa-solid bizIconSet fa-circle-info"></i>Personal Setting</h4>
+                            </label>
+                             <div class="pBar pBarTop" id="pBarTop">
+                                 <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-user"></i>Edit Profile</a></li>
+                                 <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-address-book"></i>Address</a></li>
+                                 <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-bell"></i>Notification</a></li>
+                                 <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-regular bizIcon fa-credit-card"></i>Payment</a></li>
+                             </div>
                          </div>
-                         <div class="bar2 bar1">
-                             <h4 class="genSet personalSet">Setting</h4>
-                             <li class="listBar1 listBar bizIcon listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-lock"></i>Security</a></li>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-comments"></i>Get Feedback</a></li>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-circle-question"></i>Help Center</a></li>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-brands bizIcon fa-rocketchat"></i>Chat</a></li>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-circle-info"></i>Enquiry</a></li>
-                             <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="logoutButton"><i class="fa-solid bizIcon fa-right-from-bracket"></i>Logout</a></li>
+                         <div class="bar2 bartack bartack2 bar1">
+                            <label for="input4">
+                                <h4 class="genSet personalSet" id="genSetting"><i class="fa-solid bizIconSet fa-lock"></i>Settings</h4>
+                            </label>
+                             <div class="pBar pBarDown" id="pBarDown">
+                                <li class="listBar1 listBar bizIcon listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-lock"></i>Security</a></li>
+                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-comments"></i>Get Feedback</a></li>
+                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-circle-question"></i>Help Center</a></li>
+                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-brands bizIcon fa-rocketchat"></i>Chat</a></li>
+                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-circle-info"></i>Enquiry</a></li>
+                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="logoutButton"><i class="fa-solid bizIcon fa-right-from-bracket"></i>Logout</a></li>
+                            </div>
                          </div>
                      </ul>
                  </nav>
@@ -99,6 +107,12 @@
             </label>
             <label for="input2">
                 <div class="overlayColor" id="overlayColor" onclick="myToggle()"></div>
+            </label>
+            <label for="input3">
+                <div class="overlayColor" id="overlayColor1" onclick="myToggleTop()"></div>
+            </label>
+            <label for="input4">
+                <div class="overlayColor" id="overlayColor2" onclick="myToggleDown()"></div>
             </label>
         </div>
 
