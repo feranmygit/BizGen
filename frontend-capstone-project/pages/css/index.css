@@ -51,7 +51,6 @@ body{
     height: 50px;
     margin-inline-start: 1rem;
     margin-block-start: 0.2rem;
-    /* align-items: center; */
 }
 
 /* hamburger section here  */
@@ -63,7 +62,6 @@ body{
     width: 1rem;
     height: 1.5rem;
     display: inline-block;
-    /* margin-top: 1.8rem; */
     margin-inline-end: 1rem;
     display: flex;
    justify-content: center;
@@ -526,7 +524,7 @@ input[type="search" i] {
     left: 20%;
     width: 60%;
     top: 1rem;
-    height: 4rem;
+    height: 2.5rem;
     border-radius: 30px;
     padding: 1rem;
     font-weight: 300;
@@ -674,7 +672,23 @@ input[type="search" i] {
     background-color: var(--primary_light_greyish_color);
     padding-block: 0.5rem; 
 }
-/* dashboard side bar styngs here  */
+.menuItems3:visited{
+    background-color: transparent;
+   }
+   .menuItems3:hover{
+    background-color: transparent;
+   }
+   .menuItems3:active{
+    background-color: transparent;
+   }
+   .showSettings1{
+    display: none;
+   }
+   .showSettings{
+    display: block;
+   }
+
+/* dashboard side bar stylings here  */
 .nav-items{
     padding: 0rem;
     margin: 0;
@@ -902,9 +916,6 @@ input[type="text" ], textarea{
 .Dash_section2{
     display: none;
 }
-/* .Dash_sectionContent{
-    background-color: var(--primary_light_greyish_color);
-} */
 .newBizTitle{
     text-align: center;
     padding-block: 2rem;
@@ -962,6 +973,9 @@ th, td {
     margin-right: 0.5rem;
     opacity: 0;
 }
+.loghidden{
+    display: none;
+}
  
 
 @media only screen and (min-width:500px) {
@@ -992,6 +1006,14 @@ th, td {
     gap: 1rem;
     margin-inline: auto 0;
     padding: 0.1rem;
+}
+
+.menuItems:hover {
+    border-radius: 0px 0px 0 0;
+}
+
+.menuItems2:hover {
+    border-radius: 0px 0px 0 0;
 }
 .button {
     margin-top: 0;
@@ -1083,7 +1105,6 @@ input[type="search" i] {
     left: 12.5%;
     width: 75%;
     top: 2rem;
-    height: 4rem;
 }
 }
 
@@ -1129,12 +1150,15 @@ input[type="search" i] {
     input[type="search" i] {
         left: 20%;
         width: 75%;
-        top: 1rem;
-        height: 4rem;
+        top: 1.7rem;
     }
     .hamburgerElement1 {
         top: -3.7rem;
     }
+    
+.topSectionWrapper {
+    border-bottom: 1px solid var(--primary_greyish_color);
+}
 }
 @media only screen and (min-width:762px) {
     .mainWrapper1 {
@@ -1151,12 +1175,11 @@ input[type="search" i] {
     }
 }
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:826px) {
     input[type="search" i] {
         left: 17%;
         width: 55%;
-        top: 1rem;
-        height: 4rem;
+        top: 1.7rem;
     }
     .nav-container {
         position: absolute;
@@ -1174,9 +1197,12 @@ input[type="search" i] {
         right: 1rem;
         top: 0.4rem;
     }
+    .borderBotm {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    }
     .bartack{
         position: absolute;
-        top: 4.5rem;
+        top: 3.7rem;
         z-index: 2;
     }
     .bartack1{
@@ -1234,6 +1260,32 @@ input[type="search" i] {
 .bizIconSet{
     opacity: 1;
 }
+.menuItems3:visited{
+    background-color: var(--primary_light_grey_color);
+   }
+   .menuItems3:hover{
+    background-color: var(--primary_light_grey_color);
+   }
+   .menuItems3:active{
+    background-color: var(--primary_light_grey_color);
+   }
+   .showSettings1{
+    display: block;
+   }
+   .showSettings{
+    display: none;
+   }
+   .loghidden{
+    display: block;
+    position: absolute;
+    top: 4rem;
+    right: 0rem;
+    cursor: pointer;
+    padding: 0.1rem 1rem;
+    z-index: 2;
+   }
+   .loghidden:hover{
+    background-color: var(--primary_orange1_color);
 }
 @media only screen and (min-width:862px) {
     input[type="search" i] {
@@ -1251,6 +1303,19 @@ input[type="search" i] {
     }
 #blogImage img{
     width: 50%;
+    }
+    .logoContainer1 img {
+        height: 50px;
+    }
+    .leftHeader {
+        margin-bottom: 0.1rem;
+        margin-top: 0.2rem;
+    }
+    .bizName1 {
+        font-size: 1.2rem;
+    }
+    .bartack {
+        top: 3.5rem;
     }
 }
 @media only screen and (min-width:1200px) {

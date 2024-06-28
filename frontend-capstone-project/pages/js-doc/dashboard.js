@@ -117,9 +117,28 @@ document.addEventListener('DOMContentLoaded', function(){
       window.location.href = 'login.html';
       return;
     };
+
     document.getElementById('logoutButton').addEventListener('click', function() {
-      localStorage.removeItem('loggedInUser');
-      window.location.href = './login.html';
+      if(this.click){
+        alert(`${username}, You are about to Logout!`);
+      }
+        alert.click;
+          localStorage.removeItem('loggedInUser');
+          window.location.href = './login.html';{
+            alert('Will you want to login again?')
+          }
+    });
+
+    document.getElementById('logoutButton2').addEventListener('click', function() {
+      if(this.click){
+        alert(`${username}, You are about to Logout!`);
+      }
+        alert.click;
+          localStorage.removeItem('loggedInUser');
+          window.location.href = './login.html';{
+            alert('Will you want to login again?')
+          }
+      
     });
 
     // document.getElementById('remve').addEventListener('click', function() {
