@@ -125,18 +125,19 @@ document.addEventListener('DOMContentLoaded', function(){
         alert.click;
           localStorage.removeItem('loggedInUser');
           window.location.href = './login.html';{
-            alert('Will you want to login again?')
+            alert('Will you like to Login again?')
           }
     });
 
     document.getElementById('logoutButton2').addEventListener('click', function() {
+
       if(this.click){
         alert(`${username}, You are about to Logout!`);
       }
         alert.click;
           localStorage.removeItem('loggedInUser');
           window.location.href = './login.html';{
-            alert('Will you want to login again?')
+            alert('Will you like to Login again?')
           }
       
     });
