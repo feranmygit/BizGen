@@ -197,6 +197,8 @@ const  items1 = document.getElementById('items1');
 // const  items2 = document.getElementById('items2');
 // const  items3 = document.getElementById('items3');
 // const  items4 = document.getElementById('items4');
+
+
 const  input = document.getElementById('input');
 
 input.addEventListener('click', () => {
@@ -204,6 +206,70 @@ input.addEventListener('click', () => {
 })
 
 document.getElementById('LoginBar').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('LogOUtBar').addEventListener('click', () => {
+        window.location.href = 'signup.html';
+        return;
+});
+
+document.getElementById('profileBar').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar1').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar2').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar3').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar4').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar5').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar6').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar7').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar8').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+
+document.getElementById('startBar9').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
+document.getElementById('startBar10').addEventListener('click', () => {
         window.location.href = 'login.html';
         return;
 });

@@ -12,6 +12,7 @@
     --primary_sidebar_color: hsl(0, 0%, 40%);
     --paragraph_greyHeader_color: hsl(0, 0%, 49%);
     --paragraph_grey_color: hsl(228, 12%, 75%);
+    --paragraph_btn_color: hsl(230, 40%, 68%);
     --primary_greyish_color: hsl(180, 7%, 80%);
     --primary_loginPar_color: hsl(180, 7%, 60%);
     --primary_light_grey_color: hsl(228, 12%, 90%);
@@ -65,9 +66,9 @@ body{
     margin-inline-end: 1rem;
     display: flex;
    justify-content: center;
-    border-radius: 5px;
     padding-inline: 0.5rem;
     padding-block: 0.3rem;
+    cursor: pointer;
 }
 .hamburgerContainer{
    position: absolute;
@@ -147,10 +148,24 @@ body{
 .items{
     list-style: none;
     padding-block: 0.7rem;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 .items a{
     text-decoration: none;
     color: var(--primary_black_color);
+}
+.itemsMen:visited{
+    background-color: var(--paragraph_grey_color);
+    transition: 0.5s ease;
+}
+.itemsMen:hover{
+    background-color: var(--paragraph_grey_color);
+    transition: 0.5s ease;
+}
+.itemsMen:active{
+    background-color: var(--primary_light_grey_color);
+    transition: 0.5s ease;
 }
 .button{
     outline: none;
@@ -159,11 +174,11 @@ body{
     margin-top: 0.5rem;
     background-color: transparent;
     border: 2px solid var(--primary_greyish_color);
-}
-.button a{
     font-weight: 700;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
-    color: var(--primary_greyish_color);
+}
+.buttonCol{
+    color: var(--primary_white_color);
 }
 .textPar{
     color: var(--primary_greyish_color);
@@ -181,13 +196,22 @@ body{
     color: var(--primary_white_color);
 }
 .exploreBtn:visited{
-    opacity: 0.5;
+    background-color: var(--paragraph_btn_color);
    }
    .exploreBtn:hover{
-    opacity: 0.5;
+    background-color: var(--paragraph_btn_color);
    }
    .exploreBtn:active{
+    background-color: var(--paragraph_grey_color);
+   }
+.exploreBtn1:visited{
     opacity: 0.5;
+   }
+   .exploreBtn1:hover{
+    opacity: 0.5;
+   }
+   .exploreBtn1:active{
+    opacity: 0.2;
    }
 .coverColor{
     height: 1000vh;
@@ -224,7 +248,7 @@ body{
     margin-top: -5rem;
 }
 .textTop{
-    color: var(--primary_orange_color);
+    color: var(--primary_orange1_color);
     margin: 0;
     font-size: clamp(2.5rem, 2.5vw, 3rem);
 }
