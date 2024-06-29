@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function(){
    
 });
 
+// using onclick Event on a container 
 
 function myFunction(){
     coverColor.classList.toggle('open');
@@ -178,6 +179,17 @@ const inputIcon = document.getElementById('inputIcon');
 function myBtn(){
   inputIcon.classList.toggle('show');
 } 
+
+
+// using MouseEvent instead of clicking Event 
+function showSetting(){
+  pBarDown.classList.toggle('open');
+  overlayColor2.classList.toggle('open');
+}
+function showSetting1(){
+  overlayColor1.classList.toggle('open');
+  pBarTop.classList.toggle('open');
+}
 
 
 
