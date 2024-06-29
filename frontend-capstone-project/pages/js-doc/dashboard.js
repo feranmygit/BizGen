@@ -136,8 +136,8 @@ document.addEventListener('DOMContentLoaded', function(){
       }
         alert.click;
           localStorage.removeItem('loggedInUser');
-          window.location.href = './login.html';{
-            alert('Will you like to Login again?')
+          window.location.href = 'landingPage.html';{
+            alert('Return to Homepage?')
           }
       
     });
