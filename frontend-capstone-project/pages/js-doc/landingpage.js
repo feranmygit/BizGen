@@ -193,16 +193,20 @@ document.getElementById('userRep3').innerHTML = _userFeedbacks.card5;
 document.getElementById('userName3').innerHTML = _userFeedbacks.card6;
 document.getElementById('mediaCont').innerHTML = "Join Our Social Business Network";
 
-// const  items1 = document.getElementById('items1');
+const  items1 = document.getElementById('items1');
 // const  items2 = document.getElementById('items2');
 // const  items3 = document.getElementById('items3');
 // const  items4 = document.getElementById('items4');
+const  input = document.getElementById('input');
 
-// items1.addEventListener('click', () => {
-//         menu.classList.toggle('active');
-// })
+input.addEventListener('click', () => {
+        menu.classList.toggle('active');
+})
 
-
+document.getElementById('LoginBar').addEventListener('click', () => {
+        window.location.href = 'login.html';
+        return;
+});
 
 
 

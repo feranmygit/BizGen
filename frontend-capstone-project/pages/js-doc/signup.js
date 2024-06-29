@@ -16,6 +16,8 @@ document.getElementById('checkMe2').innerHTML = _logUsers.card6;
 document.getElementById('forpass2').innerHTML = _logUsers.card7;
 
 
+// To Register a New account code here
+
 document.getElementById('signUpForm').addEventListener('submit', function(event) {
     event.preventDefault();
   

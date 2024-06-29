@@ -179,11 +179,6 @@ function myBtn(){
   inputIcon.classList.toggle('show');
 } 
 
-// const overlay = document.getElementById('overlay');
-// function myinputIcon(){
-//     overlay.classList.toggle('propmt')
-// }
-
 
 
 
