@@ -27,6 +27,10 @@ function showAllBusinesses() {
   document.getElementById('Dash_section2').style.display = 'none';
 }
 
+function showProfile(){
+  window.location.href = 'profile.html';
+}
+
 function createBusiness() {
   const name = document.getElementById('business-name').value;
   const description = document.getElementById('business-description').value;
@@ -182,14 +186,14 @@ function myBtn(){
 
 
 // using MouseEvent instead of clicking Event 
-function showSetting(){
-  pBarDown.classList.toggle('open');
-  overlayColor2.classList.toggle('open');
-}
-function showSetting1(){
-  overlayColor1.classList.toggle('open');
-  pBarTop.classList.toggle('open');
-}
+// function showSetting(){
+//   pBarDown.classList.toggle('open');
+//   overlayColor2.classList.toggle('open');
+// }
+// function showSetting1(){
+//   overlayColor1.classList.toggle('open');
+//   pBarTop.classList.toggle('open');
+// }
 
 
 
