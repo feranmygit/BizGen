@@ -1076,8 +1076,7 @@ th, td {
     margin: 0;
 }
 .userDetails{
-    box-shadow: 0px 1.5px 0px -1px rgba(0, 0, 0, 0.2);
-
+    box-shadow: 0px 2.5px 0px -1px rgba(0, 0, 0, 0.2);
 }
 .uMeData{
     padding: 1rem;
