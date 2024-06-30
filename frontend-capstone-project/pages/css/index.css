@@ -992,8 +992,8 @@ th, td {
 
 /* User Profile Stylings Here  */
 .profHeader{
-    padding-bottom: 1rem;
-    background-color: var(--pimary_instagram_color);
+    padding-bottom: 0.8rem;
+    background-color: var(--main_primary_color);
 }
 .profDirect{
     color: var(--primary_white_color);
@@ -1019,10 +1019,10 @@ th, td {
 }
 .plus-button{
     position: absolute;
-    right: 10px;
-    bottom: 10px;
-    width: 30px;
-    height: 30px;
+    right: 5px;
+    bottom: 5px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -1045,8 +1045,20 @@ th, td {
     margin-bottom: 0;
 }
 .myVisibility{
+    position: relative;
     margin: 0.1rem;
     color: var(--paragraph_greyHeader_color);
+
+}
+.myVisibility::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: var(--main_primary1_color);
+    margin-top: 0.2rem;
+    margin-left: -0.9rem;
 }
 .informationDet{
     font-size: 2rem;
