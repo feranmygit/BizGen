@@ -7,3 +7,7 @@ function myBtnProfile(){
 function goBack(){
   window.location.href = 'dashboard.html';
 }
+
+const username = localStorage.getItem('loggedInUser');
+
+document.getElementById('usernameDisplay1').innerText = username;
