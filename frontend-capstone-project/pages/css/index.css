@@ -1007,12 +1007,12 @@ th, td {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--primary_light_greyish_color); */
     padding: 2rem 2rem 0 2rem;
 }
 .userPic{
     display: inline-block;
     position: relative;
+    border-radius: 100%;
 }
 .userPic img{
     border-radius: 100%;
@@ -1060,9 +1060,6 @@ th, td {
     margin-top: 0.2rem;
     margin-left: -0.9rem;
 }
-/* .userInfoDetails{
-    background-color: var(--primary_cream_color);
-} */
 .informationDet{
     font-size: 1.5rem;
     background-color: var(--main_primary_color);
@@ -1076,12 +1073,53 @@ th, td {
     margin: 0;
 }
 .userDetails{
-    box-shadow: 0px 2.5px 0px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1.8px 0px -0.5px rgba(0, 0, 0, 0.1);
 }
 .uMeData{
     padding: 1rem;
     align-items: center;
 }
+.userProfileSection1{
+    margin-top: 4rem;
+    padding-inline: 1rem;
+}
+.userProfileSection2{
+    margin-top: 4rem;
+}
+.userRole{
+    margin-bottom: 2rem;
+}
+.roles{
+    margin: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color: var(--primary_light_greyish_color);
+    cursor: pointer;
+}
+.roles i{
+    margin-right: 1rem;
+}
+.roles:hover{
+    background-color: var(--primary_light_grey_color);
+}
+.meetPals{
+    display: flex;
+    overflow-x: auto;
+    gap: 4rem;
+}
+.palsList{
+    text-align: center;
+}
+.palsList img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+.palName{
+    margin-top: 0.5rem;
+}
+
 
 @media only screen and (min-width:500px) {
     .borderBotm {
