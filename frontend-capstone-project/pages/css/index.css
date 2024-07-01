@@ -1284,9 +1284,22 @@ input[type="search" i] {
     width: 75%;
     top: 2rem;
 }
+
+
+/* user profile page here  */
+/* .profileUserContainer{
+    margin-inline: 5%;
+} */
+.userProfileSection{
+    margin-inline: 4rem;
 }
-
-
+.roles {
+    width: 20rem;
+}
+.userPadding {
+    padding-inline-start: 3rem;
+}
+}
 
 @media only screen and (min-width:678px) {
     .topContainer {
@@ -1336,6 +1349,28 @@ input[type="search" i] {
     
 .topSectionWrapper {
     border-bottom: 1px solid var(--primary_greyish_color);
+}
+.userProfileSection{
+    position: absolute;
+    width: 40%;
+    margin-inline-start: 2rem;
+    margin-inline-end: 0rem;
+}
+.userProfileSection1 {
+    position: absolute;
+    width: 50%;
+    right: 1rem;
+    margin-top: 2rem;
+}
+.roles {
+    width: 100%;
+}
+.userPadding {
+    padding-inline-start: 1rem;
+    padding-inline-end: 3rem;
+}
+.meetPals {
+    margin-left: 1rem;
 }
 }
 @media only screen and (min-width:762px) {
@@ -1504,6 +1539,9 @@ input[type="search" i] {
     .bartack {
         top: 3.5rem;
     }
+    .roles {
+        width: 20rem;
+    }
 }
 @media only screen and (min-width:1200px) {
    
@@ -1522,5 +1560,11 @@ input[type="search" i] {
     }
     .sectionAbt {
         width: 70%;
+    }
+    .userProfileSection {
+        width: 40%;
+    }
+    .userProfileSection1 {
+        width: 53%;
     }
 }
