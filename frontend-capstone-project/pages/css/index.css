@@ -591,14 +591,14 @@ input[type="search" i] {
     box-shadow: 0px 1.3px 0px -1px rgba(0, 0, 0, 0.2);
 }
 .nav-container{
-    position: fixed;
+    position: absolute;
     left: -600px;
-    height: 1000vh;
+    height: 100vh;
     width: 80vw;
     top: 0;
     background-color: var(--primary_white_color);
     z-index: 10000;
-    border-radius: 0 10px;
+    border-radius: 0 10px 10px 0;
     overflow-y: scroll;
 }
 #input1{
@@ -993,7 +993,7 @@ th, td {
 /* User Profile Stylings Here  */
 .profHeader{
     padding-bottom: 0.8rem;
-    background-color: var(--main_primary_color);
+    background-color: var(--main_primary1_color);
 }
 .profDirect{
     color: var(--primary_white_color);
@@ -1035,9 +1035,6 @@ th, td {
 }
 .userFullNm{
     text-align: center;
-    /* box-shadow: 0px 1.3px 0px -1px var(--pimary_instagram_color); */
-    /* border-bottom: 1px solid var(--pimary_instagram_color); */
-    /* border-bottom: 1px solid var(--primary_light_grey_color); */
     padding-bottom: 1rem;
 }
 .myFullN{
@@ -1046,9 +1043,9 @@ th, td {
 }
 .myVisibility{
     position: relative;
-    margin: 0.1rem;
+    margin: 0.2rem;
     color: var(--paragraph_greyHeader_color);
-
+    letter-spacing: 0.3rem;
 }
 .myVisibility::before{
     content: "";
@@ -1057,12 +1054,12 @@ th, td {
     width: 10px;
     border-radius: 100%;
     background-color: var(--main_primary1_color);
-    margin-top: 0.2rem;
-    margin-left: -0.9rem;
+    margin-top: 0.3rem;
+    margin-left: -1.2rem;
 }
 .informationDet{
     font-size: 1.5rem;
-    background-color: var(--main_primary_color);
+    background-color: var(--main_primary1_color);
     margin: 0;
     text-align: center;
     padding: 1rem;
@@ -1081,10 +1078,12 @@ th, td {
 }
 .userProfileSection1{
     margin-top: 4rem;
-    padding-inline: 1rem;
 }
 .userProfileSection2{
     margin-top: 4rem;
+}
+.userPadding{
+    padding-inline: 1rem;
 }
 .userRole{
     margin-bottom: 2rem;
@@ -1107,6 +1106,7 @@ th, td {
     display: flex;
     overflow-x: auto;
     gap: 4rem;
+    padding-inline: 0.5rem;
 }
 .palsList{
     text-align: center;
