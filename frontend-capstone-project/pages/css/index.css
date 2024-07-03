@@ -156,8 +156,7 @@ body{
     color: var(--primary_black_color);
 }
 .itemsMen:hover{
-    background-color: var(--paragraph_grey_color);
-    transition: 0.5s ease;
+    color: var(--pimary_instagram_color);
 }
 .button{
     outline: none;
@@ -852,6 +851,7 @@ input[type="search" i] {
 }
 .btnlinks{
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 .btnContainer1:visited{
     background-color: var(--primary_light_grey_color);
@@ -1071,7 +1071,7 @@ th, td {
     width: 10px;
     border-radius: 100%;
     background-color: var(--main_primary1_color);
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
     margin-left: -1.2rem;
 }
 .informationDet{
@@ -1165,6 +1165,10 @@ th, td {
 .itemPad{
     padding-inline: 1rem;
     border-radius: 30px;
+}
+.itemsMen:hover{
+    background-color: var(--paragraph_grey_color);
+    transition: 0.5s ease;
 }
 .list-items {
     display: flex;
