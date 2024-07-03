@@ -1010,7 +1010,7 @@ th, td {
 /* User Profile Stylings Here  */
 .profHeader{
     padding-bottom: 0.8rem;
-    background-color: var(--main_primary1_color);
+    background-color: var(--primary_black_color);
 }
 .profDirect{
     color: var(--primary_white_color);
@@ -1076,7 +1076,7 @@ th, td {
 }
 .informationDet{
     font-size: 1.5rem;
-    background-color: var(--main_primary1_color);
+    background-color: var(--primary_black_color);
     margin: 0;
     text-align: center;
     padding: 1rem;
