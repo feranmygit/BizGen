@@ -500,7 +500,7 @@ input[type="username"]{
     width: 95%;
     border-radius: 5px;
     border: 1px solid var(--primary_loginPar_color);
-    margin-block-end: 2rem;
+    margin-block-end: 1rem;
 }
 input[type="password"]{
     padding: 0.5rem;
