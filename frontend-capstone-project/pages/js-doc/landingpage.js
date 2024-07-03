@@ -43,10 +43,10 @@ on creating killer business plans that attract investors!`;
 document.getElementById('para5').innerHTML = para5;
 document.getElementById('para6').innerHTML = para6;
 
-const para7 = `Next Week`;
-const para8 = `Upgrade to our Premium plan and 
-unlock a treasure trove of professionally designed templates 
-to elevate your business plans.`;
+// const para7 = `Next Week`;
+// const para8 = `Upgrade to our Premium plan and 
+// unlock a treasure trove of professionally designed templates 
+// to elevate your business plans.`;
 // document.getElementById('para7').innerHTML = para7;
 // document.getElementById('para8').innerHTML = para8;
 
@@ -63,7 +63,7 @@ const _cardContents = {
            templates for crafting top-notch business strategies.`,
     card3: `Go all-in with exclusive access to premium features 
             and personalized support for your business success.`,
-    card4: `Unleash the full potential of BizGen with unlimited features, 
+    card4: `Unleash the full potential of BizGenius with unlimited features, 
             priority support, and 
             VIP perks for your business empire.`
 };
@@ -245,10 +245,10 @@ document.getElementById('startBar4').addEventListener('click', () => {
         return;
 });
 
-document.getElementById('startBar5').addEventListener('click', () => {
-        window.location.href = 'login.html';
-        return;
-});
+// document.getElementById('startBar5').addEventListener('click', () => {
+//         window.location.href = 'login.html';
+//         return;
+// });
 
 document.getElementById('startBar6').addEventListener('click', () => {
         window.location.href = 'login.html';

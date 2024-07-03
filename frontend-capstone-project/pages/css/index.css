@@ -500,7 +500,7 @@ input[type="username"]{
     width: 95%;
     border-radius: 5px;
     border: 1px solid var(--primary_loginPar_color);
-    margin-block-end: 1rem;
+    margin-block-end: 2rem;
 }
 input[type="password"]{
     padding: 0.5rem;
@@ -508,6 +508,19 @@ input[type="password"]{
     border-radius: 5px;
     border: 1px solid var(--primary_loginPar_color);
     margin-block-end: 1rem;
+}
+#signUpForm > label:nth-child(1){
+    font-weight: 700;
+}
+#signUpForm > label:nth-child(5){
+    font-weight: 700;
+}
+#loginForm > label:nth-child(1){
+    font-weight: 700;
+}
+#loginForm > label:nth-child(5){
+    font-weight: 700;
+    padding-bottom: 2rem;
 }
 .margin-block-end{
     margin-block-end: 0;
@@ -527,7 +540,11 @@ input[type="password"]{
     border-radius: 30px;
     border: none;
     outline: none;
-    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    margin-top: 2rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+#createAccLink{
+    margin-left: 1rem;
 }
 
 
@@ -1206,7 +1223,7 @@ margin-inline: 1rem;
     margin-block: 0rem;
 }
 .wrapperLogin{
-    width: initial;
+    width: 30%;
 }
 .allgen{
     width: 70%;
