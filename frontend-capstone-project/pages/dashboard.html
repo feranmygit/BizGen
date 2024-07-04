@@ -128,7 +128,7 @@
         <section class="Dash_section2 sectionAbt " id="Dash_section2" style="display:none;">
             <div id="create-business-form">
                 <h2 class="bizGenerate">Create New Business</h2>
-                <form action="" class="formpost">
+                <form class="formpost">
                     <input type="text" id="business-name" placeholder="Business Name">
                     <textarea id="business-description" placeholder="Business Description"></textarea>
                 </form>
@@ -170,12 +170,15 @@
                         <tbody id="business-list"></tbody>
                     </table>
                 </div>
-            </div>
+
+                <div class="pdfGen flex">
+                    <button id="generatePdf">Generate PDF</button>
+                </div>
             </div>
         </section>
     </main>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
     <script src="./js-doc/dashboard.js"></script>
 </body>
 </html>

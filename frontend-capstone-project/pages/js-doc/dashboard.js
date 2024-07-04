@@ -1,5 +1,6 @@
 let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
 
+
 // creating businesses and storing to saveToLocalStorage
 
 function saveToLocalStorage() {
@@ -158,6 +159,14 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('usernameDisplay2').innerText = username;
     document.getElementById('usernameDisplay').innerText = username;
    
+
+
+document.getElementById('generatePdf').addEventListener('click', ( ) => {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    doc.save(businesses.value).pdf
+})
 });
 
 // using onclick Event on a container 
