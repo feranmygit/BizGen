@@ -43,10 +43,10 @@ function loadBusinesses() {
       `;
       businessList.innerHTML += `
         <tr>
-          <td>${b.name}</td>
-          <td>${b.description}</td>
-          <td>${b.type}</td>
-          <td>${b.visibility}</td>
+          <td class="dataEntry">${b.name}</td>
+          <td class="dataEntry">${b.description}</td>
+          <td class="dataEntry">${b.type}</td>
+          <td class="dataEntry">${b.visibility}</td>
         </tr>
       `;
     }

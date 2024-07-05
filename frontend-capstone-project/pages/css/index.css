@@ -1165,6 +1165,9 @@ th, td {
     cursor: pointer;
     margin-top: 3rem;
 }
+.dataEntry{
+    font-size: 10px;
+}
 
 
 @media only screen and (min-width:500px) {
