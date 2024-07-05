@@ -1,44 +1,21 @@
-let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
-
-
 // creating businesses and storing to saveToLocalStorage
+
+let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
 
 function saveToLocalStorage() {
   localStorage.setItem('businesses', JSON.stringify(businesses));
 };
 
-function showCreateBusinessForm() {
-  document.getElementById('Dash_section1').style.display = 'none';
-  document.getElementById('mainCard-content').style.display = 'none';
-  document.getElementById('Dash_section2').style.display = 'block';
-  document.getElementById('all-businesses').style.display = 'none';
-};
-
-function cancelCreateBusiness() {
-  document.getElementById('Dash_section1').style.display = 'block';
-  document.getElementById('Dash_section2').style.display = 'none';
-  document.getElementById('all-businesses').style.display = 'none';
-  document.getElementById('mainCard-content').style.display = 'block';
-};
-
-function showAllBusinesses() {
-  document.getElementById('mainCard-content').style.display = 'none';
-  document.getElementById('Dash_section1').style.display = 'none';
-  document.getElementById('all-businesses').style.display = 'block';
-  document.getElementById('Dash_section2').style.display = 'none';
-}
-
-function showProfile(){
-  window.location.href = 'profile.html';
-}
+// Data Creation 
 
 function createBusiness() {
   const name = document.getElementById('business-name').value;
+  const type = document.getElementById('business-type').value;
   const description = document.getElementById('business-description').value;
   const visibility = document.querySelector('input[name="visibility"]:checked').value;
   const username = localStorage.getItem('loggedInUser');
-  if (name && description) {
-    businesses.push({ name, description, visibility, username });
+  if (name && description && type) {
+    businesses.push({ name, type, description, visibility, username });
     saveToLocalStorage();
     alert('Business created successfully!');
     cancelCreateBusiness();
@@ -48,6 +25,7 @@ function createBusiness() {
   }
 };
 
+// Data Display or Visualization 
 
 function loadBusinesses() {
   const username = localStorage.getItem('loggedInUser');
@@ -67,6 +45,7 @@ function loadBusinesses() {
         <tr>
           <td>${b.name}</td>
           <td>${b.description}</td>
+          <td>${b.type}</td>
           <td>${b.visibility}</td>
         </tr>
       `;
@@ -75,6 +54,33 @@ function loadBusinesses() {
 }
   loadBusinesses();
 
+
+// To set display visibility of some content 
+
+  function showCreateBusinessForm() {
+    document.getElementById('Dash_section1').style.display = 'none';
+    document.getElementById('mainCard-content').style.display = 'none';
+    document.getElementById('Dash_section2').style.display = 'block';
+    document.getElementById('all-businesses').style.display = 'none';
+  };
+  
+  function cancelCreateBusiness() {
+    document.getElementById('Dash_section1').style.display = 'block';
+    document.getElementById('Dash_section2').style.display = 'none';
+    document.getElementById('all-businesses').style.display = 'none';
+    document.getElementById('mainCard-content').style.display = 'block';
+  };
+  
+  function showAllBusinesses() {
+    document.getElementById('mainCard-content').style.display = 'none';
+    document.getElementById('Dash_section1').style.display = 'none';
+    document.getElementById('all-businesses').style.display = 'block';
+    document.getElementById('Dash_section2').style.display = 'none';
+  }
+  
+  function showProfile(){
+    window.location.href = 'profile.html';
+  }
 
 // Toggling the visibility of some containers 
 
