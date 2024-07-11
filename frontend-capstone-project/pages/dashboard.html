@@ -120,6 +120,9 @@
             <label for="input4">
                 <div class="overlayColor" id="overlayColor2" onclick="myToggleDown()"></div>
             </label>
+            <label for="input5">
+                <div class="coverColor" id="convColor" onclick="confirmFunction()"></div>
+            </label>
             <section class="Dash_section1" id="Dash_section1">
                 <div class="wrapDash welcomeAlert">
                     <p class="welcomeAlert1">Welcome Back, <span class="userGiven" id="usernameDisplay1"></span>!</p>
@@ -177,11 +180,18 @@
                     </table>
                 </div>
 
-                <div class="pdfGen flex">
-                    <button id="generatePdf">Generate PDF</button>
+                <div class="pdfGen flex" onclick="confirmFunctionf()">
+                    <button id="generatePdfBtn">Generate PDF</button>
                 </div>
             </div>
         </section>
+        <div class="confirmDownload wrapperLogin" id="confirmDownload">
+            <h4 class="conText">Do You want to Download all Business Entry?</h4>
+            <div class="conList flex gap justify_centre">
+                <button class="conBtn" id="generatePdf" onclick="removeConfirm()">Yes</button>
+                <button class="conBtn"  onclick="confirmBtn()">No</button>
+            </div>
+        </div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>

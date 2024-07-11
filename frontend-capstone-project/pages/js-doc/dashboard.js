@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function(){
     hamburger.addEventListener('click', togglecoverColor);
 
 
+
     // To logout of your account inside DOMContentLoaded
 
     const username = localStorage.getItem('loggedInUser');
@@ -202,6 +203,21 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 });
 
 // using onclick Event on a container 
+
+const coverColor = document.getElementById('coverColor');
+const confirmDownload = document.getElementById('confirmDownload');
+function confirmFunctionf(){
+  confirmDownload.style.display = 'block';
+  coverColor.style.display = 'block';
+}
+function confirmBtn(){
+  confirmDownload.style.display = 'none';
+  coverColor.style.display = 'none';
+}
+function removeConfirm(){
+  confirmDownload.style.display = 'none';
+  coverColor.style.display = 'none';
+}
 
 function myFunction(){
     coverColor.classList.toggle('open');

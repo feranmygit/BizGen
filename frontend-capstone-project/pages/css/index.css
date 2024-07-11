@@ -208,7 +208,7 @@ body{
     height: 1000vh;
     width: 100%;
     display: none;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     position: fixed;
     background-color: var(--primary_covered_color);
@@ -1159,7 +1159,7 @@ th, td {
     justify-content: center;
     position: relative;
 }
-#generatePdf{
+#generatePdfBtn{
     color: var(--primary_black_color);
     padding: 1rem 1.5rem;
     font-size: clamp(1.2rem, 2.5vw, 1.5rem);
@@ -1173,6 +1173,13 @@ th, td {
 }
 .dataEntry{
     font-size: 15px;
+}
+.confirmDownload{
+  padding: 1rem;
+  z-index: 10;
+  background-color: var(--primary_white_color);
+  text-align: center;
+  display: none;
 }
 
 
