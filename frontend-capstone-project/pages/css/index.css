@@ -1181,6 +1181,19 @@ th, td {
   text-align: center;
   display: none;
 }
+.conBtn{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.conBtn1{
+    background-color: var(--main_primary_color);
+    color: var(--primary_white_color);
+}
 
 
 @media only screen and (min-width:500px) {
