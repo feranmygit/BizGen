@@ -61,6 +61,7 @@ function loadBusinesses() {
     document.getElementById('Dash_section1').style.display = 'none';
     document.getElementById('mainCard-content').style.display = 'none';
     document.getElementById('Dash_section2').style.display = 'block';
+    document.getElementById('showHomePage').style.display = 'block';
     document.getElementById('all-businesses').style.display = 'none';
   };
   
@@ -68,6 +69,7 @@ function loadBusinesses() {
     document.getElementById('Dash_section1').style.display = 'block';
     document.getElementById('Dash_section2').style.display = 'none';
     document.getElementById('all-businesses').style.display = 'none';
+    document.getElementById('showHomePage').style.display = 'none';
     document.getElementById('mainCard-content').style.display = 'block';
   };
   
@@ -75,11 +77,18 @@ function loadBusinesses() {
     document.getElementById('mainCard-content').style.display = 'none';
     document.getElementById('Dash_section1').style.display = 'none';
     document.getElementById('all-businesses').style.display = 'block';
+    document.getElementById('showHomePage').style.display = 'block';
     document.getElementById('Dash_section2').style.display = 'none';
   }
   
   function showProfile(){
     window.location.href = 'profile.html';
+  }
+  function showHomePage(){
+    window.location.href = 'dashboard.html';
+  }
+  function displayHomePage(){
+    window.location.href = 'dashboard.html';
   }
 
 // Toggling the visibility of some containers inside DOMContentLoaded
@@ -185,7 +194,7 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 });
 
 
-    doc.save(businesses.value).pdf
+    doc.save('All_Businesses.pdf');
 })
 });
 

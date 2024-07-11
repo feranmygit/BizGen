@@ -592,6 +592,7 @@ input[type="search" i] {
 }
 .logoContainer1 img {
     height: 30px;
+    cursor: pointer;
 }
 .profileInfo img{
     height: 50px;
@@ -626,8 +627,9 @@ input[type="search" i] {
 }
 .leftHeader{
     display: flex;
-    gap: 0.5rem;
     align-items: center;
+    z-index: 2;
+    gap: 0.5rem;
 }
 .dotHamburger{
     position: relative;
@@ -669,6 +671,10 @@ input[type="search" i] {
     margin-top: 5rem;
     margin-bottom: 0;
     display: inline;
+    cursor: pointer;
+}
+.bizName1:hover{
+    background-color: var(--primary_light_grey_color);
 }
 .inlineTop{
     margin-top: 1rem;
@@ -696,10 +702,6 @@ input[type="search" i] {
     padding: 0.7rem 0.8rem 0.8rem 0.8rem;
     border-radius: 5px;
     margin-left: 1rem;
-}
-.mainWrapper1{
-    background-color: var(--primary_light_greyish_color);
-    padding-block: 0.5rem; 
 }
 .menuItems3:visited{
     background-color: transparent;
@@ -822,6 +824,10 @@ input[type="search" i] {
     background-color: var(--primary_light_grey_color);
     border-radius: 0 0 10px 10px;
    }
+ .userDashBkg{
+    background-color: var(--primary_light_greyish_color);
+    padding-block: 0.5rem; 
+ }
  .userDash{
     display: flex;
     flex-direction: column;
@@ -1166,7 +1172,7 @@ th, td {
     margin-top: 3rem;
 }
 .dataEntry{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 
@@ -1319,7 +1325,6 @@ margin-inline: 1rem;
     display: none;
 }
 .leftHeader {
-    gap: 0.5rem;
     margin-left: 0.3rem;
     margin-top: 0.3rem;
 }
@@ -1365,11 +1370,6 @@ input[type="search" i] {
     .list-items {
         gap: 1rem;
     }
-    .Dash_section1{
-        position: absolute;
-        width: 40%;
-        top: 21.7rem;
-    }
     .sectionAbt {
         position: absolute;
         width: 60%;
@@ -1377,7 +1377,7 @@ input[type="search" i] {
     }
     .sectionAbt1{
         position: absolute;
-        top: 20rem;
+        top: 25rem;
     }
     .inputIcon {
         display: block;
@@ -1398,6 +1398,10 @@ input[type="search" i] {
     }
     .hamburgerElement1 {
         top: -3.7rem;
+    }
+    .bizName1{
+        cursor: pointer;
+
     }
     
 .topSectionWrapper {
@@ -1430,9 +1434,9 @@ input[type="search" i] {
     .mainWrapper1 {
         width: 40%;
     }
-    .Dash_section1{
+    /* .Dash_section1{
         width: 40%;
-    }
+    } */
     .sectionAbt {
         width: 60%;
     }
@@ -1449,6 +1453,10 @@ input[type="search" i] {
     }
     .section1 {
         background-image: url(./background-crew-desktop.jpg);
+    }
+    .leftHeader {
+        gap: 0;
+        margin-left: 0.5rem;
     }
     .nav-container {
         position: absolute;
@@ -1522,6 +1530,7 @@ input[type="search" i] {
  }
  .logoContainer1 img {
     margin-top: 1rem;
+    cursor: pointer;
 }
 .hamburgerElement1 {
     display: none;
@@ -1559,6 +1568,9 @@ input[type="search" i] {
    .loghidden:hover{
     background-color: var(--primary_orange1_color);
     border-radius: 30px;
+}
+.bizName1{
+    padding: 0.5rem;
 }
 }
 
@@ -1611,9 +1623,9 @@ input[type="search" i] {
     .mainWrapper1 {
         width: 30%;
     }
-    .Dash_section1{
+    /* .Dash_section1{
         width: 30%;
-    }
+    } */
     .sectionAbt {
         width: 70%;
     }

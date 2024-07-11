@@ -21,7 +21,7 @@
                     <div class="logoContainer1 leftHeader">
                         <img src="./assets/allocation_9639386.png" alt="">
                         <div class="inlineTop">
-                            <p class="bizName1">BizGenius</p><span>/</span>
+                            <p class="bizName1" onclick="displayHomePage()">BizGenius</p><span>/</span>
                             <h4 class="userMe" id="usernameDisplay"></h4>
                         </div>
                     </div>
@@ -98,12 +98,15 @@
 
     <main class="mainWrapperContainer">
         <div class="mainWrapper1">
-            <div class="userDash">
-                <button class="btnContainer button1"><i class="fa-solid bizIcon bizIcon1 fa-sliders"></i>Dashboard</button>
-                    <button class="btnContainer btnlinks btnContainer1" onclick="showCreateBusinessForm()"><i class="fa-solid bizIcon bizIcon1 fa-hashtag"></i>Create New Business</button>
-                    <button class="btnContainer btnlinks btnContainer1" onclick="showAllBusinesses()"><i class="fa-solid bizIcon bizIcon1 fa-list"></i>All Businesses</button>
-                    <button class="btnContainer btnlinks btnContainer1" onclick="showProfile()"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>My Profile</button>
-                    <!-- <button class="btnContainer btnlinks btnContainer1" id="remve"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>Remove all biz</button> -->
+            <div class="userDashBkg">
+                <div class="userDash">
+                    <button class="btnContainer button1"><i class="fa-solid bizIcon bizIcon1 fa-sliders"></i>Dashboard</button>
+                        <button class="btnContainer btnlinks btnContainer1" onclick="showCreateBusinessForm()"><i class="fa-solid bizIcon bizIcon1 fa-hashtag"></i>Create New Business</button>
+                        <button class="btnContainer btnlinks btnContainer1" onclick="showAllBusinesses()"><i class="fa-solid bizIcon bizIcon1 fa-list"></i>All Businesses</button>
+                        <button class="btnContainer btnlinks btnContainer1" onclick="showProfile()"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>My Profile</button>
+                        <button class="btnContainer btnlinks btnContainer1" onclick="showHomePage()" id="showHomePage" style="display: none;"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>Home</button>
+                        <!-- <button class="btnContainer btnlinks btnContainer1" id="remve"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>Remove all biz</button> -->
+                </div>
             </div>
             <label for="input1">
                 <div class="coverColor" id="coverColor" onclick="myFunction()"></div>
@@ -117,14 +120,15 @@
             <label for="input4">
                 <div class="overlayColor" id="overlayColor2" onclick="myToggleDown()"></div>
             </label>
+            <section class="Dash_section1" id="Dash_section1">
+                <div class="wrapDash welcomeAlert">
+                    <p class="welcomeAlert1">Welcome Back, <span class="userGiven" id="usernameDisplay1"></span>!</p>
+                    <p class="dashPar">Unleash your business potentials using our deployed templates of your choice now.</p>
+                </div>
+            </section>
         </div>
 
-        <section class="Dash_section1" id="Dash_section1">
-            <div class="wrapDash welcomeAlert">
-                <p class="welcomeAlert1">Welcome Back, <span class="userGiven" id="usernameDisplay1"></span>!</p>
-                <p class="dashPar">Unleash your business potentials using our deployed templates of your choice now.</p>
-            </div>
-        </section>
+    
         <section class="Dash_section2 sectionAbt " id="Dash_section2" style="display:none;">
             <div id="create-business-form">
                 <h2 class="bizGenerate">Create New Business</h2>
@@ -135,7 +139,7 @@
                 </form>
                 <div class="radioBox">
                     <label>
-                      <input type="radio" name="visibility" value="private" checked> Private
+                      <input type="radio" name="visibility" value="Private" checked> Private
                     </label>
                     <!-- <label>
                       <input type="radio" name="visibility" value="public"> Public
