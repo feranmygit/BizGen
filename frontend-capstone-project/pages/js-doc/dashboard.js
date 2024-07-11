@@ -90,6 +90,9 @@ function loadBusinesses() {
   function displayHomePage(){
     window.location.href = 'dashboard.html';
   }
+  function logoHomePage(){
+    window.location.href = 'dashboard.html';
+  }
 
 // Toggling the visibility of some containers inside DOMContentLoaded
 
