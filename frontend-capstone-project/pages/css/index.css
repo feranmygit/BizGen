@@ -994,7 +994,7 @@ input[type="text" ], textarea{
     border: 1px solid #ddd;
 }
 #all-businesses > div.scrollar > table > thead{
-    background-color: var(--pimary_instagram_color);
+    background-color: var(--main_primary_color);
     color: var(--primary_white_color);
 }
 th, td {

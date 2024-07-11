@@ -82,7 +82,7 @@ function loadBusinesses() {
     window.location.href = 'profile.html';
   }
 
-// Toggling the visibility of some containers 
+// Toggling the visibility of some containers inside DOMContentLoaded
 
 document.addEventListener('DOMContentLoaded', function(){
     const hamburger = document.getElementById('hamburger');
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function(){
     hamburger.addEventListener('click', togglecoverColor);
 
 
-    // To logout of your account 
+    // To logout of your account inside DOMContentLoaded
 
     const username = localStorage.getItem('loggedInUser');
     if (!username) {
@@ -159,13 +159,15 @@ document.addEventListener('DOMContentLoaded', function(){
     // });
 
 
-    // To set the users username where needed on the website
+    // To set the users username where needed on the website inside DOMContentLoaded
 
     document.getElementById('usernameDisplay1').innerText = username;
     document.getElementById('usernameDisplay2').innerText = username;
     document.getElementById('usernameDisplay').innerText = username;
    
 
+
+    // PDF Formatter Generation inside DOMContentLoaded
 
 document.getElementById('generatePdf').addEventListener('click', ( ) => {
   const { jsPDF } = window.jspdf;
@@ -174,8 +176,8 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 
   const username = localStorage.getItem('loggedInUser');
   const publicBusinesses = businesses.filter(b => b.visibility === 'public' || b.username === username);
-  const tableData = publicBusinesses.map(b => [b.name, b.description, b.type, b.visibility, b.username]);
-  const tableHeaders = [["Name", "Description", "Type", "Visibility", "Username"]];
+  const tableData = publicBusinesses.map(b => [b.name, b.description, b.type, b.visibility]);
+  const tableHeaders = [["Name", "Description", "Type", "Visibility"]];
 
   doc.autoTable({
     head: tableHeaders,
