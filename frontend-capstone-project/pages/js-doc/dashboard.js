@@ -168,8 +168,20 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 document.getElementById('generatePdf').addEventListener('click', ( ) => {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
+  const { jsPDF } = window.jspdf;
+  let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
+  const doc = new jsPDF();
+
+  const username = localStorage.getItem('loggedInUser');
+  const publicBusinesses = businesses.filter(b => b.visibility === 'public' || b.username === username);
+  const tableData = publicBusinesses.map(b => [b.name, b.description, b.type, b.visibility, b.username]);
+  const tableHeaders = [["Name", "Description", "Type", "Visibility", "Username"]];
+
+  doc.autoTable({
+    head: tableHeaders,
+    body: tableData
+});
+
 
     doc.save(businesses.value).pdf
 })
