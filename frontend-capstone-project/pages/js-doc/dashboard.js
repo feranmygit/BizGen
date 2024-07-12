@@ -79,6 +79,7 @@ function loadBusinesses() {
     document.getElementById('all-businesses').style.display = 'block';
     document.getElementById('showHomePage').style.display = 'block';
     document.getElementById('Dash_section2').style.display = 'none';
+    document.getElementById('mainWrapper1').style.display = 'none';
   }
   
   function showProfile(){

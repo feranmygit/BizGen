@@ -1001,6 +1001,7 @@ input[type="text" ], textarea{
 }
 .tableContainer{
     margin-inline: 5%;
+    margin-bottom: 3rem;
 }
 
 .tableContainer, th, td{
@@ -1163,11 +1164,11 @@ th, td {
     margin-top: 0.5rem;
     cursor: pointer;
 }
-.pdfGen{
+/* .pdfGen{
     text-align: center;
     justify-content: center;
     position: relative;
-}
+} */
 #generatePdfBtn{
     color: var(--primary_black_color);
     padding: 1rem 1.5rem;
@@ -1175,10 +1176,9 @@ th, td {
     border: none;
     outline: none;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
-    margin-bottom: 3rem;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 3rem;
+    margin-left: 5%;
     transition: 0.3s ease;
 }
 #generatePdfBtn:hover{
@@ -1407,18 +1407,27 @@ input[type="search" i] {
     .mainWrapper1 {
         position: absolute;
         width: 40%;
+       height: 100vh;
+       background-color: var(--primary_light_greyish_color);
     }
     .list-items {
         gap: 1rem;
     }
-    .sectionAbt {
+
+    .sectionAbt, .Dash_section1{
         position: absolute;
         width: 60%;
         right: 0;
     }
+    .Dash_section1{
+        margin-top: 2rem;
+    }
+    .Dash_sectionContent{
+        top: 20rem;
+    }
     .sectionAbt1{
         position: absolute;
-        top: 25rem;
+        top: 7.4rem;
     }
     .inputIcon {
         display: block;
@@ -1664,10 +1673,8 @@ input[type="search" i] {
     .mainWrapper1 {
         width: 30%;
     }
-    /* .Dash_section1{
-        width: 30%;
-    } */
-    .sectionAbt {
+   
+    .sectionAbt, .Dash_section1{
         width: 70%;
     }
     .userProfileSection {

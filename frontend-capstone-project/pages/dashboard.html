@@ -97,7 +97,7 @@
     </header>
 
     <main class="mainWrapperContainer">
-        <div class="mainWrapper1">
+        <div class="mainWrapper1" id="mainWrapper1">
             <div class="userDashBkg">
                 <div class="userDash">
                     <button class="btnContainer button1"><i class="fa-solid bizIcon bizIcon1 fa-sliders"></i>Dashboard</button>
@@ -108,6 +108,8 @@
                         <!-- <button class="btnContainer btnlinks btnContainer1" id="remve"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>Remove all biz</button> -->
                 </div>
             </div>
+        </div>
+        <div class="underLays">
             <label for="input1">
                 <div class="coverColor" id="coverColor" onclick="myFunction()"></div>
             </label>
@@ -123,14 +125,13 @@
             <label for="input5">
                 <div class="convColor" id="convColor" onclick="confirmFunction()"></div>
             </label>
-            <section class="Dash_section1" id="Dash_section1">
-                <div class="wrapDash welcomeAlert">
-                    <p class="welcomeAlert1">Welcome Back, <span class="userGiven" id="usernameDisplay1"></span>!</p>
-                    <p class="dashPar">Unleash your business potentials using our deployed templates of your choice now.</p>
-                </div>
-            </section>
         </div>
-
+        <section class="Dash_section1" id="Dash_section1">
+            <div class="wrapDash welcomeAlert">
+                <p class="welcomeAlert1">Welcome Back, <span class="userGiven" id="usernameDisplay1"></span>!</p>
+                <p class="dashPar">Unleash your business potentials using our deployed templates of your choice now.</p>
+            </div>
+        </section>
     
         <section class="Dash_section2 sectionAbt " id="Dash_section2" style="display:none;">
             <div id="create-business-form">
@@ -165,6 +166,10 @@
         <section class="Dash_section3 sectionAbt1 ">
             <!-- All Businesses -->
             <div id="all-businesses" class="all-businesses" style="display:none;">
+                <button class="btnContainer btnlinks btnContainer1" onclick="showHomePage()" id="showHomePage"><i class="fa-solid bizIcon bizIcon1 fa-house"></i>Home</button>
+                <div class="" >
+                <button id="generatePdfBtn" onclick="confirmFunctionf()">Generate PDF</button>
+                </div>
                 <h2 class="allBizPlans newBizTitle">All Businesses</h2>
                 <div class="scrollar">
                     <table class="tableContainer">
@@ -180,9 +185,6 @@
                     </table>
                 </div>
 
-                <div class="pdfGen flex" onclick="confirmFunctionf()">
-                    <button id="generatePdfBtn">Generate PDF</button>
-                </div>
             </div>
         </section>
         <div class="confirmDownload wrapperLogin1" id="confirmDownload">
