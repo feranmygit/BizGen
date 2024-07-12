@@ -204,19 +204,19 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 
 // using onclick Event on a container 
 
-const coverColor = document.getElementById('coverColor');
+const convColor = document.getElementById('convColor');
 const confirmDownload = document.getElementById('confirmDownload');
 function confirmFunctionf(){
   confirmDownload.style.display = 'block';
-  coverColor.style.display = 'block';
+  convColor.style.display = 'block';
 }
 function confirmBtn(){
   confirmDownload.style.display = 'none';
-  coverColor.style.display = 'none';
+  convColor.style.display = 'none';
 }
 function removeConfirm(){
   confirmDownload.style.display = 'none';
-  coverColor.style.display = 'none';
+  convColor.style.display = 'none';
 }
 
 function myFunction(){

@@ -204,7 +204,7 @@ body{
    .exploreBtn1:active{
     opacity: 0.2;
    }
-.coverColor{
+.coverColor, .convColor{
     height: 1000vh;
     width: 100%;
     display: none;
@@ -465,6 +465,15 @@ body{
     width:90%;
     position: absolute;
 }
+.wrapperLogin1{
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+    position: fixed;
+}
 .logPar{
     color: var(--primary_loginPar_color);
     font-size: clamp(0.8rem, 2.5vw, 0.9rem);
@@ -608,7 +617,7 @@ input[type="search" i] {
     box-shadow: 0px 1.3px 0px -1px rgba(0, 0, 0, 0.2);
 }
 .nav-container{
-    position: absolute;
+    position: fixed;
     left: -600px;
     height: 100vh;
     width: 80vw;
@@ -1170,12 +1179,17 @@ th, td {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 3rem;
+    transition: 0.3s ease;
+}
+#generatePdfBtn:hover{
+    background-color: var(--main_primary_color);
+    color: var(--primary_white_color);
 }
 .dataEntry{
     font-size: 15px;
 }
 .confirmDownload{
-  padding: 1rem;
+  padding: 3rem 1rem;
   z-index: 10;
   background-color: var(--primary_white_color);
   text-align: center;
@@ -1183,16 +1197,23 @@ th, td {
 }
 .conBtn{
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     border: none;
     outline: none;
     font-weight: 700;
-    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    margin-top: 1.5rem;
+    /* border-radius: 5px; */
 }
 .conBtn1{
     background-color: var(--main_primary_color);
     color: var(--primary_white_color);
+}
+.conBtn:hover{
+    background-color: var(--primary_orange1_color);
+}
+.conText{
+    line-height: 1.5rem;
+    margin-top: 0;
 }
 
 
