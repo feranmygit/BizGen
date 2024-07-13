@@ -1252,6 +1252,9 @@ th, td {
 .btnContainer2:hover{
     color: var(--primary_black_color);
 }
+.Dash_section3{
+    width: 100%;
+}
 
 @media only screen and (min-width:500px) {
     .borderBotm {

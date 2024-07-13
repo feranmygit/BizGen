@@ -184,7 +184,18 @@
                 </div>
                 <h2 class="allBizPlans newBizTitle">All Businesses</h2>
                 <div class="scrollar">
-                    <table class="tableContainer">
+                    <section class="Dash_section5" id="Dash_sectionNew" style="display: none;">
+                        <div class="displayContainer">
+                            <div class="ifNothingContainer flex justify_centre">
+                                <p class="ifNothing">Nothing to show yet. Start building your business empire - add your first business!</p>
+                                <button class="btnContainer1 btnContainer2" onclick="showCreateBusinessForm()">Click to create now.</button>
+                            </div>
+                            <div class="imgIfNothing">
+                                <img src="./assets/images/empty_message.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <table class="tableContainer" id="tableContainer" style="display: none;">
                         <thead>
                             <tr>
                                 <th class="dataEntry">Name</th>
@@ -196,17 +207,7 @@
                         <tbody id="business-list"></tbody>
                     </table>
                 </div>
-                <section class="Dash_section5" id="Dash_section5" style="display: none;">
-                    <div class="displayContainer">
-                        <div class="ifNothingContainer flex justify_centre">
-                            <p class="ifNothing">Nothing to show yet. Start building your business empire - add your first business!</p>
-                            <button class="btnContainer1 btnContainer2" onclick="showCreateBusinessForm()">Click to create now.</button>
-                        </div>
-                        <div class="imgIfNothing">
-                            <img src="./assets/images/empty_message.png" alt="">
-                        </div>
-                    </div>
-                </section>
+          
             </div>
             
             

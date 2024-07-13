@@ -61,9 +61,14 @@ function showIfNothing(){
   let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
   const username = localStorage.getItem('loggedInUser');
   const Dash = document.getElementById('Dash_section5');
+  const DashNew = document.getElementById('Dash_sectionNew');
+  const tableContainer = document.getElementById('tableContainer');
   businesses.forEach(b => {
     if(!b.name || !b.description || !b.type || b.visibility === 'public' || b.username === username){
       Dash.style.display = 'block';
+      DashNew.style.display = 'block';
+      tableContainer.style.display = 'none';
+
     }
   })
 }
@@ -76,9 +81,14 @@ function showIfSomething(){
   let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
   const username = localStorage.getItem('loggedInUser');
   const Dash = document.getElementById('Dash_section5');
+  const DashNew = document.getElementById('Dash_sectionNew');
+  const tableContainer = document.getElementById('tableContainer');
   businesses.forEach(b => {
     if(b.name, b.description, b.type, b.visibility === 'public' || b.username === username){
       Dash.style.display = 'none';
+      DashNew.style.display = 'none';
+      tableContainer.style.display = 'block';
+      
     }
   })
 }
@@ -93,6 +103,7 @@ showIfSomething();
     document.getElementById('showHomePage').style.display = 'block';
     document.getElementById('all-businesses').style.display = 'none';
     document.getElementById('Dash_section5').style.display = 'none';
+    document.getElementById('mainWrapper1').style.display = 'block';
   };
   
   function cancelCreateBusiness() {
