@@ -193,7 +193,6 @@ document.addEventListener('DOMContentLoaded', function(){
         alert.click;
           localStorage.removeItem('loggedInUser');
           window.location.href = 'landingPage.html';{
-            alert('Return to Homepage?')
           }
     });
 
@@ -205,7 +204,6 @@ document.addEventListener('DOMContentLoaded', function(){
         alert.click;
           localStorage.removeItem('loggedInUser');
           window.location.href = 'landingPage.html';{
-            alert('Return to Homepage?')
           }
       
     });

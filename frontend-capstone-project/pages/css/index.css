@@ -1003,14 +1003,13 @@ input[type="text" ], textarea{
     padding: 1rem;
 }
 .tableContainer{
-    margin-inline: 5%;
+    margin-inline: 0%;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .tableContainer, th, td{
     border-collapse: collapse;
-    width: 90%;
-    border: 1px solid #ddd;
 }
 #all-businesses > div.scrollar > table > thead{
     background-color: var(--main_primary_color);
@@ -1020,6 +1019,7 @@ th, td {
     padding: 10px;
     text-align: left;
     width: 50%;
+    border: 1px solid #ddd;
 
   }
   th.description{
@@ -1534,6 +1534,10 @@ input[type="search" i] {
     }
     .wrapperLogin1 {
         width: 60%;
+    }
+    .tableContainer{
+        margin-inline: 5%;
+        width: 90%;
     }
 }
 
