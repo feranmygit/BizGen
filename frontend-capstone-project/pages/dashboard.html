@@ -162,16 +162,18 @@
                 <div id="business-cards" class="card-grid"></div>
               </div>
             </div>
-        </section>
-        <section class="Dash_section5" id="Dash_section5" style="display: none;">
-            <div class="displayContainer">
-                <div class="ifNothingContainer">
-                    <p class="ifNothing">Nothing to show yet. Start building your business empire - add your first business! <a href="#">Click to create now.</a></p>
+
+            <section class="Dash_section5" id="Dash_section5" style="display: none;">
+                <div class="displayContainer">
+                    <div class="ifNothingContainer flex justify_centre">
+                        <p class="ifNothing">Nothing to show yet. Start building your business empire - add your first business!</p>
+                        <button class="btnContainer1 btnContainer2" onclick="showCreateBusinessForm()">Click to create now.</button>
+                    </div>
+                    <div class="imgIfNothing">
+                        <img src="./assets/images/empty_message.png" alt="">
+                    </div>
                 </div>
-                <div class="imgIfNothing">
-                    <img src="./assets/images/empty_message.png" alt="">
-                </div>
-            </div>
+            </section>
         </section>
         <section class="Dash_section3 sectionAbt1 ">
             <!-- All Businesses -->
@@ -194,8 +196,20 @@
                         <tbody id="business-list"></tbody>
                     </table>
                 </div>
+                <section class="Dash_section5" id="Dash_section5" style="display: none;">
+                    <div class="displayContainer">
+                        <div class="ifNothingContainer flex justify_centre">
+                            <p class="ifNothing">Nothing to show yet. Start building your business empire - add your first business!</p>
+                            <button class="btnContainer1 btnContainer2" onclick="showCreateBusinessForm()">Click to create now.</button>
+                        </div>
+                        <div class="imgIfNothing">
+                            <img src="./assets/images/empty_message.png" alt="">
+                        </div>
+                    </div>
+                </section>
             </div>
-
+            
+            
             <!-- <button class="btnCancel" onclick="cancelCreateBusiness()">Cancel</button> -->
 
         </section>

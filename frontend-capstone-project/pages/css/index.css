@@ -1220,6 +1220,7 @@ th, td {
 }
 .ifNothingContainer{
     margin-inline: 10%;
+    flex-direction: column;
 }
 .ifNothing{
     line-height: 1.5rem;
@@ -1236,7 +1237,21 @@ th, td {
     height: 10rem;
     margin-top: 2rem;
 }
-
+.btnContainer2{
+    padding-block: 1rem;
+    border: none;
+    margin-inline: 28%;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--primary_orange_color);
+    color: var(--primary_white_color);
+    font-size: clamp(1rem, 2.5vw, 1rem);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btnContainer2:hover{
+    color: var(--primary_black_color);
+}
 
 @media only screen and (min-width:500px) {
     .borderBotm {
@@ -1514,6 +1529,9 @@ input[type="search" i] {
     .sectionAbt1{
         position: absolute;
     }
+    .wrapperLogin1 {
+        width: 60%;
+    }
 }
 
 @media only screen and (min-width:826px) {
@@ -1644,6 +1662,8 @@ input[type="search" i] {
 .bizName1{
     padding: 0.5rem;
 }
+
+
 }
 
 @media only screen and (min-width:862px) {
@@ -1704,5 +1724,17 @@ input[type="search" i] {
     }
     .userProfileSection1 {
         width: 55%;
+    }
+    .displayContainer{
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+    }
+    .ifNothingContainer{
+        margin-inline: 0;
+        width: 40%;
+    }
+    .wrapperLogin1 {
+        width: 40%;
     }
 }

@@ -96,12 +96,12 @@ showIfSomething();
   };
   
   function cancelCreateBusiness() {
-    document.getElementById('Dash_section1').style.display = 'block';
-    document.getElementById('Dash_section2').style.display = 'none';
-    document.getElementById('all-businesses').style.display = 'none';
-    document.getElementById('showHomePage').style.display = 'none';
-    document.getElementById('mainCard-content').style.display = 'block';
-    document.getElementById('Dash_section5').style.display = 'block';
+    window.location.href = 'dashboard.html';
+    // document.getElementById('Dash_section2').style.display = 'none';
+    // document.getElementById('all-businesses').style.display = 'none';
+    // document.getElementById('showHomePage').style.display = 'none';
+    // document.getElementById('mainCard-content').style.display = 'block';
+    // // document.getElementById('Dash_section5').style.display = 'block';
   };
   
   function showAllBusinesses() {
@@ -111,7 +111,7 @@ showIfSomething();
     document.getElementById('showHomePage').style.display = 'block';
     document.getElementById('Dash_section2').style.display = 'none';
     document.getElementById('mainWrapper1').style.display = 'none';
-    document.getElementById('Dash_section5').style.display = 'none';
+    document.getElementById('Dash_section5').style.display = 'block';
   }
   
   function showProfile(){
