@@ -64,7 +64,7 @@ function showIfNothing(){
   businesses.forEach(b => {
     if(!b.name || !b.description || !b.type || b.visibility === 'public' || b.username === username){
       Dash.style.display = 'block';
-      alert(`Welcome, ${username}! Start creating your business plans now.`);
+      // alert(`Welcome, ${username}! Start creating your business plans now.`);
     }
   })
 }
