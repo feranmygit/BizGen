@@ -55,6 +55,35 @@ function loadBusinesses() {
   loadBusinesses();
 
 
+  // To show up a container if no businesses created yet 
+
+function showIfNothing(){
+  let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
+  const username = localStorage.getItem('loggedInUser');
+  const Dash = document.getElementById('Dash_section5');
+  businesses.forEach(b => {
+    if(!b.name || !b.description || !b.type || b.visibility === 'public' || b.username === username){
+      Dash.style.display = 'block';
+    }
+  })
+}
+showIfNothing();
+
+
+  // To hide a container if atleast a business is created  
+
+function showIfSomething(){
+  let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
+  const username = localStorage.getItem('loggedInUser');
+  const Dash = document.getElementById('Dash_section5');
+  businesses.forEach(b => {
+    if(b.name, b.description, b.type, b.visibility === 'public' || b.username === username){
+      Dash.style.display = 'none';
+    }
+  })
+}
+showIfSomething();
+
 // To set display visibility of some content 
 
   function showCreateBusinessForm() {
@@ -201,6 +230,7 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 
     doc.save('All_Businesses.pdf');
 })
+
 });
 
 // using onclick Event on a container 

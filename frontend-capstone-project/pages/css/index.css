@@ -220,7 +220,7 @@ body{
     height: 1000vh;
     width: 100%;
     display: none;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     position: fixed;
 }
@@ -1218,6 +1218,12 @@ th, td {
     line-height: 1.5rem;
     margin-top: 0;
 }
+.ifNothingContainer{
+    margin-inline: 10%;
+}
+.ifNothing{
+    line-height: 1.5rem;
+}
 
 
 @media only screen and (min-width:500px) {
@@ -1533,7 +1539,7 @@ input[type="search" i] {
     .bartack{
         position: absolute;
         top: 3.7rem;
-        z-index: 2;
+        /* z-index: 2; */
     }
     .bartack1{
         right: 2rem;
@@ -1547,6 +1553,7 @@ input[type="search" i] {
         border-radius: 5px;
         margin-top: 0.2rem;
         position: absolute;
+        z-index: 4;
     }
     .personalSet {
         text-transform: inherit;
