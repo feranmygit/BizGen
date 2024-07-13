@@ -64,7 +64,6 @@ function showIfNothing(){
   businesses.forEach(b => {
     if(!b.name || !b.description || !b.type || b.visibility === 'public' || b.username === username){
       Dash.style.display = 'block';
-      // alert(`Welcome, ${username}! Start creating your business plans now.`);
     }
   })
 }
@@ -93,6 +92,7 @@ showIfSomething();
     document.getElementById('Dash_section2').style.display = 'block';
     document.getElementById('showHomePage').style.display = 'block';
     document.getElementById('all-businesses').style.display = 'none';
+    document.getElementById('Dash_section5').style.display = 'none';
   };
   
   function cancelCreateBusiness() {
@@ -101,6 +101,7 @@ showIfSomething();
     document.getElementById('all-businesses').style.display = 'none';
     document.getElementById('showHomePage').style.display = 'none';
     document.getElementById('mainCard-content').style.display = 'block';
+    document.getElementById('Dash_section5').style.display = 'block';
   };
   
   function showAllBusinesses() {
@@ -110,6 +111,7 @@ showIfSomething();
     document.getElementById('showHomePage').style.display = 'block';
     document.getElementById('Dash_section2').style.display = 'none';
     document.getElementById('mainWrapper1').style.display = 'none';
+    document.getElementById('Dash_section5').style.display = 'none';
   }
   
   function showProfile(){
