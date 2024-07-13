@@ -1240,10 +1240,10 @@ th, td {
 .btnContainer2{
     padding-block: 1rem;
     border: none;
-    margin-inline: 28%;
+    margin-inline: 20%;
     outline: none;
     border-radius: 5px;
-    background-color: var(--primary_orange_color);
+    background-color: var(--primary_orange1_color);
     color: var(--primary_white_color);
     font-size: clamp(1rem, 2.5vw, 1rem);
     transition: 0.3s ease;
