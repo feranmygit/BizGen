@@ -85,6 +85,6 @@ document.getElementById('signUpForm').addEventListener('submit', function(event)
     users.push({ username, password, avatar: '' });
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('loggedInUser', username);
-  
-    window.location.href = 'dashboard.html';
+    alert('Account created successfully, Kindly login.')
+    window.location.href = 'login.html';
   });
