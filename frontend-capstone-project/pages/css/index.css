@@ -270,7 +270,6 @@ body{
 .sectionPlan{
     background-color: var(--primary_light_greyish_color);
     padding-top: 3rem;
-    padding-bottom: 0.5rem;
     margin-top: 5rem;
 }
 .cardContainer{
@@ -386,7 +385,7 @@ body{
     background-color: var(--primary_white_color);
     padding: 2rem 1rem;
     margin-top: 5rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .soc{
     margin-top: 2rem;
