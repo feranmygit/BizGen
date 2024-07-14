@@ -472,6 +472,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width:90%;
+    overflow-y: scroll;
     position: fixed;
 }
 .logPar{
@@ -1260,6 +1261,9 @@ th, td {
     .borderBotm {
         box-shadow: 0px 1.5px 0px -1px rgba(0, 0, 0, 0.2);
     }
+    .wrapperLogin {
+        width: 70%;
+    }
 }
 @media only screen and (min-width:576px) {
 
@@ -1343,7 +1347,7 @@ margin-inline: 1rem;
     margin-block: 0rem;
 }
 .wrapperLogin{
-    width: 30%;
+    width: 60%;
 }
 .allgen{
     width: 70%;
@@ -1554,6 +1558,9 @@ input[type="search" i] {
         gap: 0;
         margin-left: 0.5rem;
     }
+    .wrapperLogin{
+        width: 50%;
+    }
     .nav-container {
         position: absolute;
         left: 0px;
@@ -1706,6 +1713,9 @@ input[type="search" i] {
     .roles {
         width: 20rem;
     }
+    .wrapperLogin{
+        width: 40%;
+    }
 }
 @media only screen and (min-width:1200px) {
    
@@ -1722,7 +1732,9 @@ input[type="search" i] {
     .mainWrapper1 {
         width: 30%;
     }
-   
+    .wrapperLogin{
+        width: 30%;
+    }
     .sectionAbt, .Dash_section1{
         width: 70%;
     }

@@ -138,7 +138,7 @@ showIfSomething();
     window.location.href = 'dashboard.html';
   }
 
-// Toggling the visibility of some containers inside DOMContentLoaded
+// Toggling the visibility of some underlay color containers inside DOMContentLoaded
 
 document.addEventListener('DOMContentLoaded', function(){
     const hamburger = document.getElementById('hamburger');
