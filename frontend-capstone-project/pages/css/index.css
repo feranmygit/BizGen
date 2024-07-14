@@ -1152,15 +1152,15 @@ th, td {
 .meetPals{
     display: flex;
     overflow-x: auto;
-    gap: 4rem;
+    gap: 3rem;
     padding-inline: 0.5rem;
 }
 .palsList{
     text-align: center;
 }
 .palsList img{
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     cursor: pointer;
 }
