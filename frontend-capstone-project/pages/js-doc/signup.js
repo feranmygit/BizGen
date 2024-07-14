@@ -16,6 +16,57 @@ document.getElementById('checkMe2').innerHTML = _logUsers.card6;
 document.getElementById('forpass2').innerHTML = _logUsers.card7;
 
 
+document.addEventListener('DOMContentLoaded', function(){
+  const hamburger = document.getElementById('hamburger');
+  const underlay = document.getElementById('underlay');
+
+
+  function toggleunderlayColor(){
+          underlay.classList.toggle('open');
+
+          
+  };
+
+  hamburger.addEventListener('click', toggleunderlayColor);
+
+});
+
+const underlay = document.getElementById('underlay');
+
+function myunderlay(){
+        underlay.classList.toggle('open');
+};
+
+const  input = document.getElementById('input');
+
+input.addEventListener('click', () => {
+        menu.classList.toggle('active');
+})
+
+
+
+
+
+document.getElementById('homeBar').addEventListener('click', () => {
+  window.location.href = 'landingPage.html';
+  return;
+});
+
+document.getElementById('startBar').addEventListener('click', () => {
+  window.location.href = 'login.html';
+  return;
+});
+
+document.getElementById('LoginBar').addEventListener('click', () => {
+  window.location.href = 'login.html';
+  return;
+});
+
+document.getElementById('LogOUtBar').addEventListener('click', () => {
+  window.location.href = 'signup.html';
+  return;
+});
+
 // To Register a New account code here
 
 document.getElementById('signUpForm').addEventListener('submit', function(event) {

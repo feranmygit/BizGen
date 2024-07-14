@@ -4,50 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project | Sign Up Page</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./pages/assets/logos/allocation_9639386.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/allocation_9639386.png">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <link rel="preload" href="./css/background-crew-mobile.jpg">
+    <link rel="preload" href="./css/background-crew-tablet.jpg">
+    <link rel="preload" href="./css/background-crew-desktop.jpg"> -->
 </head>
 <body>
-      <main class="wrapperLogin">
-        <div class="loginContainer">
-            <h2 class="loginTitle margin-block-end text_align" id="logTitle2"></h2>
-            <p class="logPar margin-block-end text_align" id="logPar2"></p>
-            <p class="logPar text_align" id="logPar3"></p>
-            <!-- <div class="facebkCont allgen text_align">
-                <i class="fa-brands fa-facebook"></i>
-                <span class="fa-cont" id="faCont2"></span>
-            </div>
-            <div class="googleCont allgen text_align">
-                <i class="fa-brands fa-google"></i>
-                <span class="fa-cont" id="faCont3"></span>
-            </div> -->
-            <form action="get" class="loginForm" id="signUpForm">
-                <label for="username">Create Username</label><br>
-                <input type="username" name="username" id="username" placeholder="@johndoe" autocomplete="username" required><br>
-                <label for="password">Create Password</label><br>
-                <input type="password" name="password" id="password"  autocomplete="new-password" required><br>
-                <div class="forgotPass text_align">
-                    <div class="forPass" id="forPass2">
-                        <input type="checkbox" name="checkMe" id="checkMe">
-                        <label for="checkMe">
-                            <span id="checkMe2"></span>
-                        </label>
-                    </div>
-                    <p class="forPass1" id="forpass2"></p>
-                </div>
-                <div class="my_btnLog text_align">
-                    <button class="text_align login" id="signUp">Sign Up</button>
-                </div>                
-            </form>
-            <div class="reg text_align" id="regHere">
-                <p class="regAcc" id="regAcc">Already have an account?<a href="./login.html" id="createAccLink"><span id="createAcct2">Sign in.</span></a></p>
-            </div>
+    
+     <header class="topContainer flex justify_between" id="topContainer">
+
+        <!-- logo section here  -->
+        <div class="logoContainer flex justify_centre gap0">
+            <img src="./assets/allocation_9639386.png" alt="">
+            <h4 class="bizName">BizGenius</h4>
         </div>
-      </main>
+
+        <!-- hamburger section here  -->
+        <input type="checkbox" name="input" id="input" >
+        <label for="input" class="hamburgerElement" id="hamburger">
+            <div class="hamburgerContainer hamburgerContainer1"></div>
+        </label>
+        <nav class="menu-items menu-itemsHeight" id="menu">
+            <ul class="list-items">
+                <li class="items itemsMen itemPad" id="LoginBar" onclick="removeMenu()">Login</li>
+                <li class="items itemsMen itemPad" id="LogOUtBar" onclick="removeMenu1()">Sign Up</li>
+                <li class="items itemsMen itemPad" id="homeBar" onclick="removeMenu2()">Home</li>
+                <button class="button items btn_bg_col _btn_blue exploreBtn buttonCol" id="startBar">Get Started</button>
+            </ul>
+        </nav>
+        
+     </header>
+
+    <main class="mainWrapper" id="main">
+            <section class="section1 sectionMore" id="section">
+          
+                    <div class="wrapperLogin">
+                        <div class="loginContainer">
+                            <h3 class="loginTitle margin-block-end text_align" id="logTitle2"></h3>
+                            <p class="logPar margin-block-end text_align" id="logPar2"></p>
+                            <p class="logPar text_align" id="logPar3"></p>
+                            <!-- <div class="facebkCont allgen text_align">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span class="fa-cont" id="faCont2"></span>
+                            </div>
+                            <div class="googleCont allgen text_align">
+                                <i class="fa-brands fa-google"></i>
+                                <span class="fa-cont" id="faCont3"></span>
+                            </div> -->
+                            <form action="get" class="loginForm" id="signUpForm">
+                                <label for="username"class="checkMe2">Create Username</label><br>
+                                <input type="username" name="username" id="username" placeholder="@johndoe" autocomplete="username" required><br>
+                                <label for="password" class="checkMe2">Create Password</label><br>
+                                <input type="password" name="password" id="password"  autocomplete="new-password" required><br>
+                                <div class="forgotPass text_align">
+                                    <div class="forPass" id="forPass2">
+                                        <input type="checkbox" name="checkMe" id="checkMe">
+                                        <label for="checkMe">
+                                            <span class="checkMe1 checkMe2" id="checkMe2"></span>
+                                        </label>
+                                    </div>
+                                    <p class="forPass1 checkMe1 checkMe2" id="forpass2"></p>
+                                </div>
+                                <div class="my_btnLog text_align">
+                                    <button class="text_align login" id="signUp">Sign Up</button>
+                                </div>                
+                            </form>
+                            <div class="reg text_align" id="regHere">
+                                <p class="regAcc checkMe1 checkMe2" id="regAcc">Already have an account?<a href="./login.html" id="createAccLink"><span id="createAcct2">Sign in.</span></a></p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <footer>
+                <div class="footerblog text_align">
+                    <i class="fa-light fa-circle-c"></i>
+                    <p>2024 BizGenius. All Rights Reserved.</p>
+                </div>
+            </footer>
+            <label for="input">
+                <div class="underlay" id="underlay" onclick="myunderlay()"></div>
+            </label>
 
     </main>
-
-     <script src="./js-doc/signup.js"></script>
+    <script src="./js-doc/signup.js"></script>
+    <!-- <script src="./js-doc/landingpage.js"></script> -->
 </body>
 </html>
+
+

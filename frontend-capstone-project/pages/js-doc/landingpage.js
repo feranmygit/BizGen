@@ -215,10 +215,10 @@ document.getElementById('LogOUtBar').addEventListener('click', () => {
         return;
 });
 
-document.getElementById('profileBar').addEventListener('click', () => {
-        window.location.href = 'login.html';
-        return;
-});
+// document.getElementById('profileBar').addEventListener('click', () => {
+//         window.location.href = 'login.html';
+//         return;
+// });
 
 document.getElementById('startBar').addEventListener('click', () => {
         window.location.href = 'login.html';

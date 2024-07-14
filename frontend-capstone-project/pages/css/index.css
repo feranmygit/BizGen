@@ -4,6 +4,7 @@
 
     /* #main primary colors */
     --main_primary_color: rgba(0,78, 152, 255);
+    --main_Deep_primary_color: rgba(0,120, 255, 255);
     --main_primary1_color: #4CAF50;
     --primary_setting_color: #126415ab;
     --primary_white_color: #fff;
@@ -117,7 +118,6 @@ body{
 .menu-items{
     position: absolute;
     top: -40rem;
-    height: 14.5rem;
     width: 100%;
     background-color: var(--primary_greyish_color);
     border: 1px solid var(--primary_greyish_color);
@@ -133,6 +133,12 @@ body{
 .menu-items.active{
     top: -15.5rem;
     transition: 0.3s ease;
+}
+.menu-itemsHeight{
+    height: 14.5rem;
+}
+.menu-itemsHeight1{
+    height: 12rem;
 }
 .bizName{
     margin-top: 1.2rem;
@@ -187,10 +193,10 @@ body{
     color: var(--primary_white_color);
 }
 .exploreBtn:visited{
-    background-color: var(--pimary_instagram_color);
+    background-color: var(--main_Deep_primary_color);
    }
    .exploreBtn:hover{
-    background-color: var(--pimary_instagram_color);
+    background-color: var(--main_Deep_primary_color);
    }
    .exploreBtn:active{
     background-color: var(--paragraph_grey_color);
@@ -234,6 +240,9 @@ body{
     padding: 18rem 1rem;
     top: -7rem;
     position: relative;
+}
+.sectionMore{
+    padding: 23rem 1rem;
 }
 .section0{
     margin-top: -5rem;
@@ -462,8 +471,9 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:90%;
+    width:80%;
     position: absolute;
+    /* overflow-y: scroll; */
 }
 .wrapperLogin1{
     display: flex;
@@ -471,9 +481,12 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:90%;
+    width:80%;
     overflow-y: scroll;
     position: fixed;
+}
+.loginTitle{
+    color: var(--primary_white_color);
 }
 .logPar{
     color: var(--primary_loginPar_color);
@@ -519,17 +532,24 @@ input[type="password"]{
     margin-block-end: 1rem;
 }
 #signUpForm > label:nth-child(1){
-    font-weight: 700;
+    color: var(--primary_white_color);
 }
 #signUpForm > label:nth-child(5){
-    font-weight: 700;
+    color: var(--primary_white_color);
+
 }
 #loginForm > label:nth-child(1){
-    font-weight: 700;
+    color: var(--primary_white_color);
 }
 #loginForm > label:nth-child(5){
-    font-weight: 700;
     padding-bottom: 2rem;
+    color: var(--primary_white_color);
+}
+.checkMe1{
+    color: var(--primary_white_color);
+}
+.checkMe2{
+    font-size: 0.7rem;
 }
 .margin-block-end{
     margin-block-end: 0;
@@ -539,18 +559,23 @@ input[type="password"]{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: -1.5rem;
+    margin-top: -1rem;
 }
 .login{
     width: 100%;
     padding: 0.7rem;
-    background-color: var(--primary_black_color);
+    background-color: var(--main_primary_color);
     color: var(--primary_white_color);
     border-radius: 30px;
     border: none;
+    cursor: pointer;
     outline: none;
     margin-top: 2rem;
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    transition: 0.3s ease;
+}
+.login:hover{
+    background-color: var(--main_Deep_primary_color);
 }
 #createAccLink{
     margin-left: 1rem;
