@@ -12,71 +12,73 @@
     <link rel="preload" href="./css/background-crew-desktop.jpg"> -->
 </head>
 <body>
+    <main class="section1">
+        <header class="topContainer flex justify_between" id="topContainer">
+
+            <!-- logo section here  -->
+            <div class="logoContainer flex justify_centre gap0">
+                <img src="./assets/allocation_9639386.png" alt="">
+                <h4 class="bizName">BizGenius</h4>
+            </div>
     
-     <header class="topContainer flex justify_between" id="topContainer">
+            <!-- hamburger section here  -->
+            <input type="checkbox" name="input" id="input" >
+            <label for="input" class="hamburgerElement" id="hamburger">
+                <div class="hamburgerContainer hamburgerContainer1"></div>
+            </label>
+            <nav class="menu-items" id="menu">
+                <ul class="list-items">
+                    <li class="items itemsMen itemPad" id="homeBar" onclick="removeMenu2()">Home</li>
+                    <li class="items itemsMen itemPad" id="LogOUtBar" onclick="removeMenu1()">Sign Up</li>
+                    <button class="button items btn_bg_col _btn_blue exploreBtn buttonCol" id="startBar">Get Started</button>
+                </ul>
+            </nav>
+            
+         </header>
 
-        <!-- logo section here  -->
-        <div class="logoContainer flex justify_centre gap0">
-            <img src="./assets/allocation_9639386.png" alt="">
-            <h4 class="bizName">BizGenius</h4>
-        </div>
-
-        <!-- hamburger section here  -->
-        <input type="checkbox" name="input" id="input" >
-        <label for="input" class="hamburgerElement" id="hamburger">
-            <div class="hamburgerContainer hamburgerContainer1"></div>
-        </label>
-        <nav class="menu-items" id="menu">
-            <ul class="list-items">
-                <li class="items itemsMen itemPad" id="homeBar" onclick="removeMenu2()">Home</li>
-                <li class="items itemsMen itemPad" id="LogOUtBar" onclick="removeMenu1()">Sign Up</li>
-                <button class="button items btn_bg_col _btn_blue exploreBtn buttonCol" id="startBar">Get Started</button>
-            </ul>
-        </nav>
-        
-     </header>
+        <section class="section1 sectionMore" id="section">
+          
+            <div class="wrapperLogin">
+                <div class="loginContainer">
+                    <h3 class="loginTitle margin-block-end text_align" id="logTitle"></h3>
+                    <p class="logPar margin-block-end text_align" id="logPar"></p>
+                    <!-- <p class="logPar text_align" id="logPar1"></p> -->
+                    <!-- <div class="facebkCont allgen text_align">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span class="fa-cont" id="faCont"></span>
+                    </div>
+                    <div class="googleCont allgen text_align">
+                        <i class="fa-brands fa-google"></i>
+                        <span class="fa-cont" id="faCont1"></span>
+                    </div> -->
+                    <form action="get" class="loginForm" id="loginForm">
+                        <label for="username" class="checkMe2">Username</label><br>
+                        <input type="username" name="username" id="username" placeholder="@johndoe" autocomplete="username" required><br>
+                        <label for="password" class="checkMe2">Password</label><br>
+                        <input type="password" name="password" id="password" placeholder="Type Password"  autocomplete="new-password" required>
+                        <div class="forgotPass text_align">
+                            <div class="forPass" id="forPass">
+                                <input type="checkbox" name="checkMe" id="checkMe">
+                                <label for="checkMe">
+                                    <span class="checkMe1 checkMe2" id="checkMe1"></span>
+                                </label>
+                            </div>
+                            <p class="forPass1 checkMe1 checkMe2" id="forpass1"></p>
+                        </div>
+                        <div class="my_btnLog text_align">
+                            <button class="text_align login" id="login">Login</button>
+                        </div>                
+                    </form>
+                    <div class="reg text_align" id="regHere">
+                        <p class="regAcc checkMe1 checkMe2" id="regAcc">Don't have an account?</p>
+                        <a href="./signup.html" class="createAccLink" id="createAccLink"><span id="createAcct">Register</span></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </main>
 
     <main class="mainWrapper" id="main">
-            <section class="section1 sectionMore" id="section">
-          
-                    <div class="wrapperLogin">
-                        <div class="loginContainer">
-                            <h3 class="loginTitle margin-block-end text_align" id="logTitle"></h3>
-                            <p class="logPar margin-block-end text_align" id="logPar"></p>
-                            <!-- <p class="logPar text_align" id="logPar1"></p> -->
-                            <!-- <div class="facebkCont allgen text_align">
-                                <i class="fa-brands fa-facebook"></i>
-                                <span class="fa-cont" id="faCont"></span>
-                            </div>
-                            <div class="googleCont allgen text_align">
-                                <i class="fa-brands fa-google"></i>
-                                <span class="fa-cont" id="faCont1"></span>
-                            </div> -->
-                            <form action="get" class="loginForm" id="loginForm">
-                                <label for="username" class="checkMe2">Username</label><br>
-                                <input type="username" name="username" id="username" placeholder="@johndoe" autocomplete="username" required><br>
-                                <label for="password" class="checkMe2">Password</label><br>
-                                <input type="password" name="password" id="password" placeholder="Type Password"  autocomplete="new-password" required>
-                                <div class="forgotPass text_align">
-                                    <div class="forPass" id="forPass">
-                                        <input type="checkbox" name="checkMe" id="checkMe">
-                                        <label for="checkMe">
-                                            <span class="checkMe1 checkMe2" id="checkMe1"></span>
-                                        </label>
-                                    </div>
-                                    <p class="forPass1 checkMe1 checkMe2" id="forpass1"></p>
-                                </div>
-                                <div class="my_btnLog text_align">
-                                    <button class="text_align login" id="login">Login</button>
-                                </div>                
-                            </form>
-                            <div class="reg text_align" id="regHere">
-                                <p class="regAcc checkMe1 checkMe2" id="regAcc">Don't have an account?</p>
-                                <a href="./signup.html" class="createAccLink" id="createAccLink"><span id="createAcct">Register</span></a>
-                            </div>
-                        </div>
-                    </div>
-            </section>
             <footer>
                 <div class="footerblog text_align">
                     <i class="fa-light fa-circle-c"></i>

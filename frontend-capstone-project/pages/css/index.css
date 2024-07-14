@@ -26,6 +26,7 @@
     --primary_orange1_color: #ecae1d;
     --primary_cream_color: rgba(254, 240, 229, 255);
     --primary_blue_color: blue;
+    --primary_footer_color: rgb(4, 0, 20);
     --pimary_instagram_color: hsl(329, 70%, 58%);
 }
 body{
@@ -36,7 +37,7 @@ body{
 }
 .topContainer{
     background-color: var(--primary_greyish_color); 
-    margin: 1rem 2.5%;
+    margin: 0rem 2.5%;
     z-index: 999;
     position: relative;
     border: 1px solid var(--primary_greyish_color);
@@ -175,6 +176,9 @@ body{
 .textPar{
     color: var(--primary_greyish_color);
 }
+.textPar1{
+    padding-inline: 1rem;
+}
 .btn_bg_col{
     border: none;
 }
@@ -228,16 +232,19 @@ body{
 .overlayColor.open{
     display: block;
  }
+ .section{
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+ }
 .section1{
     background-image: url(./background-crew-mobile.jpg);
     background-position: center;
     background-size: cover;
-    padding: 18rem 1rem;
-    top: -7rem;
+    padding-top: 1rem;
     position: relative;
 }
 .sectionMore{
-    padding: 23rem 1rem;
+    padding: 18rem 1rem;
 }
 .section0{
     margin-top: -5rem;
@@ -401,6 +408,12 @@ body{
 .soc i:nth-child(4){
     color: var(--main_primary_color);
 }
+.footerblog{
+    background-color: var(--primary_footer_color);
+    color: var(--paragraph_greyHeader_color);
+    padding-block: 0.5rem;
+}
+
 /* other necessary stylings here  */
 .text_align{
     text-align: center;
@@ -468,7 +481,6 @@ body{
     transform: translate(-50%, -50%);
     width:80%;
     position: absolute;
-    /* overflow-y: scroll; */
 }
 .wrapperLogin1{
     display: flex;
@@ -477,7 +489,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width:80%;
-    overflow-y: scroll;
     position: fixed;
 }
 .loginTitle{
@@ -575,7 +586,7 @@ input[type="password"]{
     border: none;
     cursor: pointer;
     outline: none;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     transition: 0.3s ease;
 }
@@ -593,6 +604,10 @@ input[type="password"]{
 .regAcc{
     margin: 0;
 }
+/* .footerblog{
+    position: relative;
+    top: -7rem;
+} */
 
 
 /* Dashboard section stylings here  */
