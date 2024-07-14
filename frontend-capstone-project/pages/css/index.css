@@ -549,7 +549,7 @@ input[type="password"]{
     color: var(--primary_white_color);
 }
 .checkMe2{
-    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
 }
 .margin-block-end{
     margin-block-end: 0;
