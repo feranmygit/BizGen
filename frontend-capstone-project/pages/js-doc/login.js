@@ -37,11 +37,6 @@ document.getElementById('startBar').addEventListener('click', () => {
   return;
 });
 
-document.getElementById('LoginBar').addEventListener('click', () => {
-  window.location.href = 'login.html';
-  return;
-});
-
 document.getElementById('LogOUtBar').addEventListener('click', () => {
   window.location.href = 'signup.html';
   return;

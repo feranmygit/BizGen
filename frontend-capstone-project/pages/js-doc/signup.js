@@ -62,10 +62,6 @@ document.getElementById('LoginBar').addEventListener('click', () => {
   return;
 });
 
-document.getElementById('LogOUtBar').addEventListener('click', () => {
-  window.location.href = 'signup.html';
-  return;
-});
 
 // To Register a New account code here
 
