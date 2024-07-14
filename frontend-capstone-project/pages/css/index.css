@@ -187,10 +187,10 @@ body{
     color: var(--primary_white_color);
 }
 .exploreBtn:visited{
-    background-color: var(--paragraph_btn_color);
+    background-color: var(--pimary_instagram_color);
    }
    .exploreBtn:hover{
-    background-color: var(--paragraph_btn_color);
+    background-color: var(--pimary_instagram_color);
    }
    .exploreBtn:active{
     background-color: var(--paragraph_grey_color);
