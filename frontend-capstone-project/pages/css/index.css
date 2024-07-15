@@ -245,7 +245,6 @@ body{
 }
 .sectionMore{
     padding: 16rem 1rem 18rem 1rem;
-    /* padding: 18rem 1rem; */
 }
 .section0{
     margin-top: -5rem;
@@ -488,7 +487,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:80%;
+    width:100%;
     position: fixed;
 }
 .loginTitle{
@@ -611,10 +610,7 @@ input[type="password"]{
 .regAcc{
     margin: 0;
 }
-/* .footerblog{
-    position: relative;
-    top: -7rem;
-} */
+
 
 
 /* Dashboard section stylings here  */
@@ -674,7 +670,6 @@ input[type="search" i] {
     background-color: var(--primary_light_greyish_color);
     justify-content: space-between;
     position: relative;
-    /* margin-bottom: 1rem; */
     box-shadow: 0px 1.3px 0px -1px rgba(0, 0, 0, 0.2);
 }
 .nav-container{
@@ -1044,7 +1039,6 @@ input[type="text" ], textarea{
     gap: 1rem;
     margin-inline: 5%;
     margin-bottom: 1rem;
-    
 }
 .card{
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.1);
@@ -1068,7 +1062,6 @@ input[type="text" ], textarea{
     margin-bottom: 3rem;
     width: 100%;
 }
-
 .tableContainer, th, td{
     border-collapse: collapse;
 }
@@ -1228,11 +1221,6 @@ th, td {
     margin-top: 0.5rem;
     cursor: pointer;
 }
-/* .pdfGen{
-    text-align: center;
-    justify-content: center;
-    position: relative;
-} */
 #generatePdfBtn{
     color: var(--primary_black_color);
     padding: 1rem 1.5rem;
@@ -1253,11 +1241,14 @@ th, td {
     font-size: 15px;
 }
 .confirmDownload{
-  padding: 3rem 1rem;
+  padding-block: 3rem;
   z-index: 10;
   background-color: var(--primary_white_color);
   text-align: center;
   display: none;
+}
+#confirmDownload > p{
+    margin-inline: 1rem;
 }
 .conBtn{
     cursor: pointer;
@@ -1266,7 +1257,6 @@ th, td {
     outline: none;
     font-weight: 700;
     margin-top: 1.5rem;
-    /* border-radius: 5px; */
 }
 .conBtn1{
     background-color: var(--main_primary_color);
@@ -1486,12 +1476,12 @@ input[type="search" i] {
     width: 75%;
     top: 2rem;
 }
+.wrapperLogin1 {
+    width: 80%;
+}
 
 
 /* user profile page here  */
-/* .profileUserContainer{
-    margin-inline: 5%;
-} */
 .userProfileSection{
     margin-inline: 4rem;
 }
@@ -1587,9 +1577,6 @@ input[type="search" i] {
     .mainWrapper1 {
         width: 40%;
     }
-    /* .Dash_section1{
-        width: 40%;
-    } */
     .sectionAbt {
         width: 60%;
     }
@@ -1643,7 +1630,6 @@ input[type="search" i] {
     .bartack{
         position: absolute;
         top: 3.7rem;
-        /* z-index: 2; */
     }
     .bartack1{
         right: 2rem;
@@ -1779,9 +1765,6 @@ input[type="search" i] {
 }
 @media only screen and (min-width:1200px) {
    
-/* .topSectionWrapper {
-    padding: 2rem 4rem;
-} */
 .topContainer {
     margin-inline: 10%;
 }
