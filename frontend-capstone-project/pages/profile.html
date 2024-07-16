@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-    <header class="profHeader">
+    <!-- <header class="profHeader">
         <div class="goBackContaine" id="goBack" onclick="goBack()">
             <div class="gobackIcon"><i class="fa-solid searchIcon profDirect fa-arrow-left"></i></div>
         </div>
-    </header>
+    </header> -->
 
     <main class="profileUserContainer">
         <section class="userProfileSection">
@@ -27,30 +27,137 @@
                 <h3 class="myFullN">Nora Tsunoda</h3>
                 <h5 class="myVisibility">Online</h5>
             </div>
+
+<!-- user's profile data -->
+
             <div class="userInfoDetails">
                 <h3 class="informationDet ">My Profile</h3>
-                <div class="flex justify_between userDetails uMeData">
-                    <h4 class="uMe">About</h4>
-                    <span id="usernameDisplay2"></span>
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont1">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Relationship</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay3"></span>
+                                <i class="fa-solid fa-pen" id="removePen1" onclick="removePenOne()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer1">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoOne" placeholder="Relationship Status">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataOne()">cancel</span>
+                        </div>
+                    </form>
                 </div>
-                <div class="flex justify_between userDetails uMeData">
-                    <h4 class="uMe">Username</h4>
-                    <span id="usernameDisplay1"></span>
+
+
+                <div class="profileInputData userDetails uMeData">
+                    <div class="detailCont" id="detailCont2">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Username</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay4"></span>
+                                <!-- <i class="fa-solid fa-camera" id="removePen1"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="inputDataContainer" id="inputDataContainer2">
+                        <input type="text" id="DataInfoTwo">
+                        <span class="saveData">Save</span>
+                    </div>               -->
                 </div>
-                <div class="flex justify_between userDetails uMeData">
-                    <h4 class="uMe">Email</h4>
+
+
+
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont3">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Email</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay5"></span>
+                                <i class="fa-solid fa-pen" id="removePen3" onclick="removePenThree()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer3">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoThree" placeholder="About Yourself">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataThree()">cancel</span>
+                        </div>
+                    </form>
                 </div>
-                <div class="flex justify_between userDetails uMeData">
-                    <h4 class="uMe">Contact</h4>                
+
+
+
+
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont4">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Contact</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay6"></span>
+                                <i class="fa-solid fa-pen" id="removePen4" onclick="removePenFour()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer4">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoFour" placeholder="Input Contact">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataFour()">cancel</span>
+                        </div>
+                    </form>
                 </div>
-                <div class="flex justify_between userDetails uMeData">
-                    <h4 class="uMe">Nickname</h4>
+
+
+
+
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont5">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Nickname</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay7"></span>
+                                <i class="fa-solid fa-pen" id="removePen5" onclick="removePenFive()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer5">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoFive" placeholder="Input Nickname">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataFive()">cancel</span>
+                        </div>
+                    </form>
                 </div>
-                <div class="flex justify_between userDetails uMeData">
-                    <h4 class="uMe">Address</h4>
+
+
+                
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont6">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Address</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay8"></span>
+                                <i class="fa-solid fa-pen" id="removePen6" onclick="removePenSix()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer6">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoFive" placeholder="Input Address">
+                            <button class="saveData saveData1" onclick="saveDataBox()">Save</button>
+                            <span class="saveData" onclick="removeSaveDataSix()">cancel</span>
+                        </div>
+                    </form>
                 </div>
+
             </div>
         </section>
+
+
         <section class="userProfileSection1">
             <p class="userRole userPadding">Nora spends most of their time on...</p>
             <div class="roleLists userPadding">

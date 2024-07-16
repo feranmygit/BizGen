@@ -1171,6 +1171,7 @@ th, td {
 }
 .userDetails{
     box-shadow: 0px 1.8px 0px -0.5px rgba(0, 0, 0, 0.1);
+    height: 2rem;
 }
 .uMeData{
     padding: 1rem;
@@ -1240,6 +1241,45 @@ th, td {
 .dataEntry{
     font-size: 15px;
 }
+.profileInputData{
+    position: relative;
+    margin-top: 1rem;
+}
+.inputDataContainer1{
+    position: absolute;
+    top: 0;
+    width: 95%;
+    display: none;
+}
+.inputDataContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.inputDataContainer input{
+    margin: 0;
+    width: 70%;
+}
+.outputData{
+    margin-right: 1rem;
+}
+.saveData1{
+    margin-inline: 0.4rem;
+}
+.saveData{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--main_Deep_primary_color);
+    border: none;
+    outline: none;
+    box-shadow: 0px px 0px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: var(--primary_white_color);
+}
+
+/* downLoad stylings here  */
+
 .confirmDownload{
   padding-block: 3rem;
   z-index: 10;
