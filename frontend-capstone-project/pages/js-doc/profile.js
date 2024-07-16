@@ -30,7 +30,10 @@ document.getElementById('inputDataContainer1').addEventListener('submit', functi
   let info = JSON.parse(localStorage.getItem('info')) || [];
   const username = localStorage.getItem('loggedInUser');
   if (info.some(user => user.DataInfoOne === DataInfoOne)) {
-    alert('already exists.');
+    info.push({ DataInfoOne, username});
+    localStorage.setItem('info', JSON.stringify(info));
+    localStorage.setItem('userInfoOne', DataInfoOne);
+    alert('changed!.');
     return;
   }
 
@@ -55,7 +58,10 @@ document.getElementById('inputDataContainer3').addEventListener('submit', functi
   let info = JSON.parse(localStorage.getItem('info')) || [];
   const username = localStorage.getItem('loggedInUser');
   if (info.some(user => user.DataInfoThree === DataInfoThree)) {
-    alert('already exists.');
+    info.push({ DataInfoThree, username});
+    localStorage.setItem('info', JSON.stringify(info));
+    localStorage.setItem('userInfoThree', DataInfoThree);
+    alert('changed!.');
     return;
   }
 
@@ -80,7 +86,10 @@ document.getElementById('inputDataContainer4').addEventListener('submit', functi
   let info = JSON.parse(localStorage.getItem('info')) || [];
   const username = localStorage.getItem('loggedInUser');
   if (info.some(user => user.DataInfoFour === DataInfoFour)) {
-    alert('already exists.');
+    info.push({ DataInfoFour, username});
+    localStorage.setItem('info', JSON.stringify(info));
+    localStorage.setItem('userInfoFour', DataInfoFour);
+    alert('changed!.');
     return;
   }
 
@@ -105,7 +114,10 @@ document.getElementById('inputDataContainer5').addEventListener('submit', functi
   let info = JSON.parse(localStorage.getItem('info')) || [];
   const username = localStorage.getItem('loggedInUser');
   if (info.some(user => user.DataInfoFive === DataInfoFive)) {
-    alert('already exists.');
+    info.push({DataInfoFive, username});
+    localStorage.setItem('info', JSON.stringify(info));
+    localStorage.setItem('userInfoFive', DataInfoFive);
+    alert('changed!.');
     return;
   }
 
@@ -163,19 +175,6 @@ document.getElementById('usernameDisplay8').innerHTML= DataInfoSix;
 })
 
 
-
-// function saveDataBoxOne(){
-//   const DataInfoSix = document.getElementById('DataInfoSix').value;
-//   let info = JSON.parse(localStorage.getItem('info')) || [];
-//   const username = localStorage.getItem('loggedInUser');
-//   if (!DataInfoSix){
-//     info.push({DataInfoSix, username});
-//     return;
-//   }else{
-//     localStorage.removeItem('DataInfoSix');
-//     return;
-//   }
-// }
 
 
 const inputDataContainer1 = document.getElementById('inputDataContainer1');
