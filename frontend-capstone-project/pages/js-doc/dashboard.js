@@ -216,6 +216,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // To set the users username where needed on the website inside DOMContentLoaded
 
+ 
     document.getElementById('usernameDisplay1').innerText = username;
     document.getElementById('usernameDisplay2').innerText = username;
     document.getElementById('usernameDisplay').innerText = username;

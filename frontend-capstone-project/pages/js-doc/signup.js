@@ -82,9 +82,82 @@ document.getElementById('signUpForm').addEventListener('submit', function(event)
       return;
     }
   
-    users.push({ username, password, avatar: '' });
+    users.push({ username, password, avatar: '', profile: {} });
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('loggedInUser', username);
     alert('Account created successfully, Kindly login.')
     window.location.href = 'login.html';
   });
+
+
+
+
+
+
+
+
+
+
+
+
+// document.getElementById('signUpForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
+  
+//     const username = document.getElementById('username').value;
+//     const password = document.getElementById('password').value;
+  
+//     if (!username || !password) {
+//       alert('Please fill in all fields.');
+//       return;
+//     }
+  
+//     let users = JSON.parse(localStorage.getItem('users')) || [];
+//     if (users.some(user => user.username === username && user.password === password)) {
+//       alert('Username already exists.');
+//       return;
+//     }
+  
+//     users.push({ username, password, avatar: ''});
+//     localStorage.setItem('users', JSON.stringify(users));
+//     localStorage.setItem('loggedInUser', username);
+//     alert('Account created successfully, Kindly login.')
+//     window.location.href = 'login.html';
+//   });
+
+
+
+
+  // document.getElementById('inputDataContainer1').addEventListener('submit', function(event) {
+  //   event.preventDefault();
+  
+  //   const DataInfoOne = document.getElementById('DataInfoOne').value;
+  //   const username = localStorage.getItem('loggedInUser');  
+  
+  // if (!DataInfoOne) {
+  //     alert('Please fill the field.');    
+  //     return;
+  //   }
+  
+  //   if (!username){
+  //     alert('No logged-in user found.');
+  //     return;
+  //   }
+  
+  //   let info = JSON.parse(localStorage.getItem('info')) || [];
+  //     loggedInUser.DataInfoOne = DataInfoOne;
+  //     users[loggedInUser.username] = loggedInUser;
+  //       info.push({ DataInfoOne});
+  //       localStorage.setItem(username, JSON.stringify(info));
+  //       localStorage.setItem('userInfoOne', DataInfoOne);
+  //         alert('Input Received');     
+  //          return;
+  
+  //   // if (username === 'loggedInUser'){
+  //   //   const username = localStorage.getItem('loggedInUser');
+  //   //   let info = JSON.parse(localStorage.getItem(username)) || [];
+  //   //   info.push({ DataInfoOne, username});
+  //   //   localStorage.setItem(username, JSON.stringify(info));
+  //   //   localStorage.setItem('userInfoOne', DataInfoOne);
+  //   //     alert('Input Received');
+  //   // }
+  // });

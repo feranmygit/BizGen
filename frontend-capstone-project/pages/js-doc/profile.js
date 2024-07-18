@@ -1,12 +1,12 @@
-const inputIcon = document.getElementById('inputIcon');
+// const inputIcon = document.getElementById('inputIcon');
 
-function myBtnProfile(){
-  inputIcon.classList.toggle('show');
-}
+// function myBtnProfile(){
+//   inputIcon.classList.toggle('show');
+// }
 
-function goBack(){
-  window.location.href = 'dashboard.html';
-}
+// function goBack(){
+//   window.location.href = 'dashboard.html';
+// }
 
 const username = localStorage.getItem('loggedInUser');
 
@@ -14,148 +14,82 @@ document.getElementById('usernameDisplay4').innerText = username;
 
 
 
+
+
 // To input a New entry code here
 
+
+
 document.getElementById('inputDataContainer1').addEventListener('submit', function(event) {
-  event.preventDefault();
+    event.preventDefault();
+    let users = JSON.parse(localStorage.getItem('users')) || [];
+    const currentUser = users.find(user => user.username === username); 
+    const DataInfoOne = document.getElementById('DataInfoOne').value;
 
-  const DataInfoOne = document.getElementById('DataInfoOne').value;
-
-
-  if (!DataInfoOne) {
-    alert('Please fill the field.');    
-    return;
-  }
-
-  let info = JSON.parse(localStorage.getItem('info')) || [];
-  const username = localStorage.getItem('loggedInUser');
-  if (info.some(user => user.DataInfoOne === DataInfoOne)) {
-    info.push({ DataInfoOne, username});
-    localStorage.setItem('info', JSON.stringify(info));
+    users.push(DataInfoOne, currentUser)
+    localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoOne', DataInfoOne);
-    alert('changed!.');
-    return;
-  }
-
-  info.push({ DataInfoOne, username});
-  localStorage.setItem('info', JSON.stringify(info));
-  localStorage.setItem('userInfoOne', DataInfoOne);
-  alert('Input Received');
-
-});
-
-document.getElementById('inputDataContainer3').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const DataInfoThree = document.getElementById('DataInfoThree').value;
+    alert('Profile updated');
+    })
 
 
-  if (!DataInfoThree) {
-    alert('Please fill the field.');    
-    return;
-  }
+  document.getElementById('inputDataContainer3').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let users = JSON.parse(localStorage.getItem('users')) || [];
+    const currentUser = users.find(user => user.username === username); 
+    const DataInfoThree = document.getElementById('DataInfoThree').value;
 
-  let info = JSON.parse(localStorage.getItem('info')) || [];
-  const username = localStorage.getItem('loggedInUser');
-  if (info.some(user => user.DataInfoThree === DataInfoThree)) {
-    info.push({ DataInfoThree, username});
-    localStorage.setItem('info', JSON.stringify(info));
+    users.push(DataInfoThree, currentUser)
+    localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoThree', DataInfoThree);
-    alert('changed!.');
-    return;
-  }
-
-  info.push({ DataInfoThree, username});
-  localStorage.setItem('info', JSON.stringify(info));
-  localStorage.setItem('userInfoThree', DataInfoThree);
-  alert('Input Received');
-
-});
-
-document.getElementById('inputDataContainer4').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const DataInfoFour = document.getElementById('DataInfoFour').value;
+    alert('Profile updated');
+    })
 
 
-  if (!DataInfoFour) {
-    alert('Please fill the field.');    
-    return;
-  }
 
-  let info = JSON.parse(localStorage.getItem('info')) || [];
-  const username = localStorage.getItem('loggedInUser');
-  if (info.some(user => user.DataInfoFour === DataInfoFour)) {
-    info.push({ DataInfoFour, username});
-    localStorage.setItem('info', JSON.stringify(info));
+    document.getElementById('inputDataContainer4').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let users = JSON.parse(localStorage.getItem('users')) || [];
+    const currentUser = users.find(user => user.username === username); 
+    const DataInfoFour = document.getElementById('DataInfoFour').value;
+
+    users.push(DataInfoOne, currentUser)
+    localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoFour', DataInfoFour);
-    alert('changed!.');
-    return;
-  }
-
-  info.push({ DataInfoFour, username});
-  localStorage.setItem('info', JSON.stringify(info));
-  localStorage.setItem('userInfoFour', DataInfoFour);
-  alert('Input Received');
-
-});
-
-document.getElementById('inputDataContainer5').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const DataInfoFive = document.getElementById('DataInfoFive').value;
+    alert('Profile updated');
+    })
 
 
-  if (!DataInfoFive) {
-    alert('Please fill the field.');    
-    return;
-  }
 
-  let info = JSON.parse(localStorage.getItem('info')) || [];
-  const username = localStorage.getItem('loggedInUser');
-  if (info.some(user => user.DataInfoFive === DataInfoFive)) {
-    info.push({DataInfoFive, username});
-    localStorage.setItem('info', JSON.stringify(info));
+    document.getElementById('inputDataContainer5').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let users = JSON.parse(localStorage.getItem('users')) || [];
+    const currentUser = users.find(user => user.username === username); 
+    const DataInfoFive = document.getElementById('DataInfoFive').value;
+
+    users.push(DataInfoOne, currentUser)
+    localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoFive', DataInfoFive);
-    alert('changed!.');
-    return;
-  }
-
-  info.push({DataInfoFive, username});
-  localStorage.setItem('info', JSON.stringify(info));
-  localStorage.setItem('userInfoFive', DataInfoFive);
-  alert('Input Received');
-
-});
-
-document.getElementById('inputDataContainer6').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const DataInfoSix = document.getElementById('DataInfoSix').value;
-
-
-  if (!DataInfoSix) {
-    alert('Please fill the field.');    
-    return;
-  }
-
-  let info = JSON.parse(localStorage.getItem('info')) || [];
-  const username = localStorage.getItem('loggedInUser');
-  if (info.some(user => user.DataInfoSix === DataInfoSix)) {
-    alert('already exists.');
-    return;
-  }
-
-  info.push({DataInfoSix, username});
-  localStorage.setItem('info', JSON.stringify(info));
-  localStorage.setItem('userInfoSix', DataInfoSix);
-  alert('Input Received');
-
-});
+    alert('Profile updated');
+    })
 
 
 
-document.addEventListener('DOMContentLoaded', function(){
+  document.getElementById('inputDataContainer6').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let users = JSON.parse(localStorage.getItem('users')) || [];
+    const currentUser = users.find(user => user.username === username); 
+    const DataInfoSix = document.getElementById('DataInfoSix').value;
+
+    users.push(DataInfoOne, currentUser)
+    localStorage.setItem('users', JSON.stringify(users));
+    localStorage.setItem('userInfoSix', DataInfoSix);
+    alert('Profile updated');
+    })
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
 
 
 const DataInfoOne = localStorage.getItem('userInfoOne');
@@ -172,9 +106,10 @@ document.getElementById('usernameDisplay7').innerHTML= DataInfoFive;
 
 const DataInfoSix = localStorage.getItem('userInfoSix');
 document.getElementById('usernameDisplay8').innerHTML= DataInfoSix;
-})
 
 
+
+});
 
 
 const inputDataContainer1 = document.getElementById('inputDataContainer1');
