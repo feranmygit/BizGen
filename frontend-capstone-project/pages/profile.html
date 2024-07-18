@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project | Profile Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./pages/assets/logos/allocation_9639386.png">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+    <!-- <header class="profHeader">
+        <div class="goBackContaine" id="goBack" onclick="goBack()">
+            <div class="gobackIcon"><i class="fa-solid searchIcon profDirect fa-arrow-left"></i></div>
+        </div>
+    </header> -->
+
+    <main class="profileUserContainer">
+        <section class="userProfileSection">
+            <div class="userPicture">
+                <div class="userPic">
+                    <img src="./assets/avaters/testimonial-4.jpg" alt="">
+                    <button class="plus-button"><i class="fa-solid fa-camera"></i></button>
+                </div>
+            </div>
+            <div class="userFullNm">
+                <h3 class="myFullN">Nora Tsunoda</h3>
+                <h5 class="myVisibility">Online</h5>
+            </div>
+
+<!-- user's profile data -->
+
+            <div class="userInfoDetails">
+                <h3 class="informationDet ">My Profile</h3>
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont1">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Relationship</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay3"></span>
+                                <i class="fa-solid fa-pen" id="removePen1" onclick="removePenOne()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer1">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoOne" placeholder="Relationship Status">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataOne()">cancel</span>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="profileInputData userDetails uMeData">
+                    <div class="detailCont" id="detailCont2">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Username</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay4"></span>
+                                <!-- <i class="fa-solid fa-camera" id="removePen1"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="inputDataContainer" id="inputDataContainer2">
+                        <input type="text" id="DataInfoTwo">
+                        <span class="saveData">Save</span>
+                    </div>               -->
+                </div>
+
+
+
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont3">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Email</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay5"></span>
+                                <i class="fa-solid fa-pen" id="removePen3" onclick="removePenThree()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer3">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoThree" placeholder="Input Email">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataThree()">cancel</span>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont4">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Contact</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay6"></span>
+                                <i class="fa-solid fa-pen" id="removePen4" onclick="removePenFour()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer4">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoFour" placeholder="Input Contact">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataFour()">cancel</span>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont5">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Nickname</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay7"></span>
+                                <i class="fa-solid fa-pen" id="removePen5" onclick="removePenFive()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer5">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoFive" placeholder="Input Nickname">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataFive()">cancel</span>
+                        </div>
+                    </form>
+                </div>
+
+
+                
+                <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailCont6">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Address</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="usernameDisplay8"></span>
+                                <i class="fa-solid fa-pen" id="removePen6" onclick="removePenSix()"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="get" class="inputDataContainer1" id="inputDataContainer6">
+                        <div class="inputDataContainer">
+                            <input type="text" id="DataInfoSix" placeholder="Input Address">
+                            <button class="saveData saveData1">Save</button>
+                            <span class="saveData" onclick="removeSaveDataSix()">cancel</span>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+      
+        <section class="userProfileSection1">
+            <p class="userRole userPadding">Nora spends most of their time on...</p>
+            <div class="roleLists userPadding">
+                <h4 class="roles"><i class="fa-solid fa-camera"></i>Product Infrastructure</h4>
+                <h4 class="roles"><i class="fa-solid fa-camera"></i>Network Security</h4>
+                <h4 class="roles"><i class="fa-solid fa-camera"></i>Security Testing</h4>
+                <h4 class="roles"><i class="fa-solid fa-camera"></i> Security Audit Outsourcing</h4>
+                <h4 class="roles"><i class="fa-solid fa-camera"></i>Bugs</h4>
+                <h4 class="roles"><i class="fa-solid fa-camera"></i>Others</h4>
+            </div>
+            <div class="userProfileSection2">
+                <p class="userRole userPadding">Connects with others on BizGenius...</p>
+                <div class="meetPals">
+                    <div class="palsList">
+                        <img src="./assets/avaters/pic 1.jpg" alt="">
+                        <h5 class="palName">Joe A.</h5>
+                    </div>
+                    <div class="palsList">
+                        <img src="./assets/avaters/pic 2.jpg" alt="">
+                        <h5 class="palName">Ethan C.</h5>
+                    </div>
+                    <div class="palsList">
+                        <img src="./assets/avaters/avatar-jessica.jpeg" alt="">
+                        <h5 class="palName">Jacob S.</h5>
+                    </div>
+                    <div class="palsList">
+                        <img src="./assets/avaters/pic 3.jpg" alt="">
+                        <h5 class="palName">Dylan C.</h5>
+                    </div>
+                    <div class="palsList">
+                        <img src="./assets/avaters/pic4.jpg" alt="">
+                        <h5 class="palName">Julian S.</h5>
+                    </div>
+                    <div class="palsList">
+                        <img src="./assets/avaters/pic5.jpg" alt="">
+                        <h5 class="palName">Willian M.</h5>
+                    </div>
+                    <div class="palsList">
+                        <img src="./assets/avaters/pic6.jpg" alt="">
+                        <h5 class="palName">Nathan L.</h5>
+                    </div>
+                    <div class="palsList">
+                        <img src="./assets/avaters/pic7.jpg" alt="">
+                        <h5 class="palName">Manuel E.</h5>
+                    </div>
+                    <div class="palsList">
+                        <img src="./assets/avaters/pic8.jpg" alt="">
+                        <h5 class="palName">Bernard M.</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+     <script src="./js-doc/profile.js"></script>
+</body>
+</html>
