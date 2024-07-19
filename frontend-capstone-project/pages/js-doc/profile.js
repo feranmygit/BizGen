@@ -4,9 +4,9 @@
 //   inputIcon.classList.toggle('show');
 // }
 
-// function goBack(){
-//   window.location.href = 'dashboard.html';
-// }
+function goBack(){
+  window.location.href = 'dashboard.html';
+}
 
 const username = localStorage.getItem('loggedInUser');
 

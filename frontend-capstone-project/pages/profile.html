@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-    <!-- <header class="profHeader">
-        <div class="goBackContaine" id="goBack" onclick="goBack()">
-            <div class="gobackIcon"><i class="fa-solid searchIcon profDirect fa-arrow-left"></i></div>
+    <header class="goBackContainer">
+        <div class="goBack-icon" id="goBack" onclick="goBack()">
+            <i class="fa-solid  fa-arrow-left"></i>
         </div>
-    </header> -->
+    </header>
 
     <main class="profileUserContainer">
         <section class="userProfileSection">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="userFullNm">
-                <h3 class="myFullN">Nora Tsunoda</h3>
+                <h2 class="myFullN">Nora Tsunoda</h2>
                 <h5 class="myVisibility">Online</h5>
             </div>
 
@@ -38,7 +38,9 @@
                             <h4 class="uMe">Relationship</h4>
                             <div class="outDataContainer">
                                 <span class="outputData" id="usernameDisplay3"></span>
-                                <i class="fa-solid fa-pen" id="removePen1" onclick="removePenOne()"></i>
+                                <label for="DataInfoOne">
+                                    <i class="fa-solid fa-pen" id="removePen1" onclick="removePenOne()"></i>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -46,7 +48,7 @@
                         <div class="inputDataContainer">
                             <input type="text" id="DataInfoOne" placeholder="Relationship Status">
                             <button class="saveData saveData1">Save</button>
-                            <span class="saveData" onclick="removeSaveDataOne()">cancel</span>
+                            <span class="saveData saveData2" onclick="removeSaveDataOne()">cancel</span>
                         </div>
                     </form>
                 </div>
@@ -76,7 +78,9 @@
                             <h4 class="uMe">Email</h4>
                             <div class="outDataContainer">
                                 <span class="outputData" id="usernameDisplay5"></span>
-                                <i class="fa-solid fa-pen" id="removePen3" onclick="removePenThree()"></i>
+                                <label for="DataInfoThree">
+                                    <i class="fa-solid fa-pen" id="removePen3" onclick="removePenThree()"></i>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -84,7 +88,7 @@
                         <div class="inputDataContainer">
                             <input type="text" id="DataInfoThree" placeholder="Input Email">
                             <button class="saveData saveData1">Save</button>
-                            <span class="saveData" onclick="removeSaveDataThree()">cancel</span>
+                            <span class="saveData saveData2" onclick="removeSaveDataThree()">cancel</span>
                         </div>
                     </form>
                 </div>
@@ -98,7 +102,9 @@
                             <h4 class="uMe">Contact</h4>
                             <div class="outDataContainer">
                                 <span class="outputData" id="usernameDisplay6"></span>
-                                <i class="fa-solid fa-pen" id="removePen4" onclick="removePenFour()"></i>
+                                <label for="DataInfoFour">
+                                    <i class="fa-solid fa-pen" id="removePen4" onclick="removePenFour()"></i>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -106,7 +112,7 @@
                         <div class="inputDataContainer">
                             <input type="text" id="DataInfoFour" placeholder="Input Contact">
                             <button class="saveData saveData1">Save</button>
-                            <span class="saveData" onclick="removeSaveDataFour()">cancel</span>
+                            <span class="saveData saveData2" onclick="removeSaveDataFour()">cancel</span>
                         </div>
                     </form>
                 </div>
@@ -120,7 +126,9 @@
                             <h4 class="uMe">Nickname</h4>
                             <div class="outDataContainer">
                                 <span class="outputData" id="usernameDisplay7"></span>
-                                <i class="fa-solid fa-pen" id="removePen5" onclick="removePenFive()"></i>
+                                <label for="DataInfoFive">
+                                    <i class="fa-solid fa-pen" id="removePen5" onclick="removePenFive()"></i>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -128,7 +136,7 @@
                         <div class="inputDataContainer">
                             <input type="text" id="DataInfoFive" placeholder="Input Nickname">
                             <button class="saveData saveData1">Save</button>
-                            <span class="saveData" onclick="removeSaveDataFive()">cancel</span>
+                            <span class="saveData saveData2" onclick="removeSaveDataFive()">cancel</span>
                         </div>
                     </form>
                 </div>
@@ -141,7 +149,9 @@
                             <h4 class="uMe">Address</h4>
                             <div class="outDataContainer">
                                 <span class="outputData" id="usernameDisplay8"></span>
-                                <i class="fa-solid fa-pen" id="removePen6" onclick="removePenSix()"></i>
+                                <label for="DataInfoSix">
+                                    <i class="fa-solid fa-pen" id="removePen6" onclick="removePenSix()"></i>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -149,7 +159,7 @@
                         <div class="inputDataContainer">
                             <input type="text" id="DataInfoSix" placeholder="Input Address">
                             <button class="saveData saveData1">Save</button>
-                            <span class="saveData" onclick="removeSaveDataSix()">cancel</span>
+                            <span class="saveData saveData2" onclick="removeSaveDataSix()">cancel</span>
                         </div>
                     </form>
                 </div>
@@ -158,17 +168,19 @@
         </section>
       
         <section class="userProfileSection1">
-            <p class="userRole userPadding">Nora spends most of their time on...</p>
-            <div class="roleLists userPadding">
-                <h4 class="roles"><i class="fa-solid fa-camera"></i>Product Infrastructure</h4>
-                <h4 class="roles"><i class="fa-solid fa-camera"></i>Network Security</h4>
-                <h4 class="roles"><i class="fa-solid fa-camera"></i>Security Testing</h4>
-                <h4 class="roles"><i class="fa-solid fa-camera"></i> Security Audit Outsourcing</h4>
-                <h4 class="roles"><i class="fa-solid fa-camera"></i>Bugs</h4>
-                <h4 class="roles"><i class="fa-solid fa-camera"></i>Others</h4>
+            <div class="roleLists roleLists1 userPadding userSetP">
+                <p class="userRole userPadding">Nora spends most of their time on...</p>
+                <div class="userPadding1">
+                    <h4 class="roles roles1"><i class="fa-solid fa-tablet"></i>Product Infrastructure</h4>
+                    <h4 class="roles roles2"><i class="fa-solid keyYellow fa-lock"></i>Network Security</h4>
+                    <h4 class="roles roles3"><i class="fa-solid fa-microscope"></i>Security Testing</h4>
+                    <h4 class="roles roles4"><i class="fa-solid greenWorld fa-globe"></i>Security Audit Outsourcing</h4>
+                    <h4 class="roles roles5"><i class="fa-solid antRed fa-bug"></i>Bugs</h4>
+                    <h4 class="roles roles6"><i class="fa-brands fa-modx"></i>Others</h4>
+                </div>
             </div>
-            <div class="userProfileSection2">
-                <p class="userRole userPadding">Connects with others on BizGenius...</p>
+            <div class="userProfileSection2 userPadding userPadding1">
+                <p class=" userSetParag">Connects with others on BizGenius...</p>
                 <div class="meetPals">
                     <div class="palsList">
                         <img src="./assets/avaters/pic 1.jpg" alt="">

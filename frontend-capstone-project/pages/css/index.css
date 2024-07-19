@@ -1103,6 +1103,20 @@ th, td {
 .search_marg_left{
     margin-right: 1rem;
 }
+.goBackContainer{
+    position: absolute;
+    width: 2rem; 
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    z-index: 4;
+    background-color: var(--main_primary_color);
+    color: var(--primary_white_color);
+    cursor: pointer;
+}
+.goBackContainer:hover{
+    background-color: var(--primary_mainpage_color);
+}
 .userPicture{
     display: flex;
     justify-content: center;
@@ -1179,12 +1193,27 @@ th, td {
 }
 .userProfileSection1{
     margin-top: 4rem;
+    padding-top: 3rem;
+    background-color: var(--primary_light_greyish_color);
+    height: 100%;
+    padding-bottom: 10rem;
 }
 .userProfileSection2{
     margin-top: 4rem;
 }
+.userPadding1{
+    padding-bottom: 1.5rem;
+}
 .userPadding{
-    padding-inline: 1rem;
+    background-color: var(--primary_dashboardbackground_greyish_color);
+    border-radius: 30px 0 0 30px;
+
+}
+.userSetP{
+    padding: 1rem;
+}
+.userSetParag{
+    padding: 2rem 1rem 0 1rem;
 }
 .userRole{
     margin-bottom: 2rem;
@@ -1206,21 +1235,38 @@ th, td {
 .meetPals{
     display: flex;
     overflow-x: auto;
-    gap: 3rem;
-    padding-inline: 0.5rem;
+    gap: 2rem;
+    background-color: var(--primary_light_grey_color);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border-radius: 10px;
 }
 .palsList{
     text-align: center;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background-color: var(--primary_light_greyish_color);
 }
 .palsList img{
-    height: 60px;
-    width: 60px;
+    height: 70px;
     border-radius: 100%;
     cursor: pointer;
+}
+.palsList:hover{
+    background-color: var(--primary_white_color);
 }
 .palName{
     margin-top: 0.5rem;
     cursor: pointer;
+}
+.keyYellow{
+    color: var(--primary_orange1_color);
+}
+.greenWorld{
+    color: var(--main_primary1_color);
+}
+.antRed{
+    color: var(--pimary_instagram_color);
 }
 #generatePdfBtn{
     color: var(--primary_black_color);
@@ -1264,18 +1310,31 @@ th, td {
 .outputData{
     margin-right: 1rem;
 }
+.outDataContainer> label >i{
+    cursor: pointer;
+}
+.outDataContainer> label > i:hover{
+    color: var(--pimary_instagram_color);
+}
+.saveData2{
+    margin-inline-end: 0.4rem;
+}
 .saveData1{
     margin-inline: 0.4rem;
 }
 .saveData{
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     font-size: 1rem;
-    background-color: var(--main_Deep_primary_color);
+    background-color: var(--main_primary_color);
     border: none;
     outline: none;
     box-shadow: 0px px 0px 3px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     color: var(--primary_white_color);
+    cursor: pointer;
+}
+.saveData:hover{
+    background-color:  var(--main_Deep_primary_color);
 }
 
 /* downLoad stylings here  */
@@ -1414,6 +1473,19 @@ th, td {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
+/* .userProfileSection{
+    position: absolute;
+    width: 40%;
+    margin-inline-start: 2rem;
+    margin-inline-end: 0rem;
+}
+.userProfileSection1 {
+    position: absolute;
+    width: 50%;
+    right: 1rem;
+    margin-top: 0;
+    border-radius: 0;
+} */
 .margin_inline {
     margin-inline: 0rem;
 }
@@ -1525,8 +1597,23 @@ input[type="search" i] {
 .userProfileSection{
     margin-inline: 4rem;
 }
-.roles {
-    width: 20rem;
+.roles1 {
+    width: 90%;
+}
+.roles2 {
+    width: 87%;
+}
+.roles3 {
+    width: 84%;
+}
+.roles4 {
+    width: 81%;
+}
+.roles5 {
+    width: 78%;
+}
+.roles6 {
+    width: 75%;
 }
 .userPadding {
     padding-inline-start: 3rem;
@@ -1590,7 +1677,7 @@ input[type="search" i] {
 .topSectionWrapper {
     border-bottom: 1px solid var(--primary_greyish_color);
 }
-.userProfileSection{
+/* .userProfileSection{
     position: absolute;
     width: 40%;
     margin-inline-start: 2rem;
@@ -1600,10 +1687,26 @@ input[type="search" i] {
     position: absolute;
     width: 50%;
     right: 1rem;
-    margin-top: 2rem;
+    margin-top: 0;
+    border-radius: 0;
+} */
+.roles1 {
+    width: 90%;
 }
-.roles {
-    width: 100%;
+.roles2 {
+    width: 85%;
+}
+.roles3 {
+    width: 80%;
+}
+.roles4 {
+    width: 75%;
+}
+.roles5 {
+    width: 70%;
+}
+.roles6 {
+    width: 65%;
 }
 .userPadding {
     padding-inline-start: 1rem;
@@ -1630,6 +1733,25 @@ input[type="search" i] {
         margin-inline: 5%;
         width: 90%;
     }
+
+.roles1 {
+    width: 90%;
+}
+.roles2 {
+    width: 85%;
+}
+.roles3 {
+    width: 80%;
+}
+.roles4 {
+    width: 75%;
+}
+.roles5 {
+    width: 70%;
+}
+.roles6 {
+    width: 65%;
+}
 }
 
 @media only screen and (min-width:826px) {
@@ -1663,6 +1785,37 @@ input[type="search" i] {
         position: absolute;
         right: 1rem;
         top: 0.4rem;
+    }
+    .userProfileSection{
+        position: absolute;
+        width: 40%;
+        margin-inline-start: 2rem;
+        margin-inline-end: 0rem;
+    }
+    .userProfileSection1 {
+        position: absolute;
+        width: 50%;
+        right: 1rem;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .roles1 {
+        width: 90%;
+    }
+    .roles2 {
+        width: 85%;
+    }
+    .roles3 {
+        width: 80%;
+    }
+    .roles4 {
+        width: 75%;
+    }
+    .roles5 {
+        width: 70%;
+    }
+    .roles6 {
+        width: 65%;
     }
     .borderBotm {
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
@@ -1796,9 +1949,7 @@ input[type="search" i] {
     .bartack {
         top: 3.5rem;
     }
-    .roles {
-        width: 20rem;
-    }
+  
     .wrapperLogin{
         width: 40%;
     }
