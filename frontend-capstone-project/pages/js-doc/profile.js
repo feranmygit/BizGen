@@ -30,6 +30,7 @@ document.getElementById('inputDataContainer1').addEventListener('submit', functi
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoOne', DataInfoOne);
     alert('Profile updated');
+    window.location.href = 'profile.html';
     })
 
 
@@ -43,6 +44,7 @@ document.getElementById('inputDataContainer1').addEventListener('submit', functi
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoThree', DataInfoThree);
     alert('Profile updated');
+    window.location.href = 'profile.html';
     })
 
 
@@ -57,6 +59,7 @@ document.getElementById('inputDataContainer1').addEventListener('submit', functi
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoFour', DataInfoFour);
     alert('Profile updated');
+    window.location.href = 'profile.html';
     })
 
 
@@ -71,6 +74,7 @@ document.getElementById('inputDataContainer1').addEventListener('submit', functi
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoFive', DataInfoFive);
     alert('Profile updated');
+    window.location.href = 'profile.html';
     })
 
 
@@ -85,6 +89,7 @@ document.getElementById('inputDataContainer1').addEventListener('submit', functi
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('userInfoSix', DataInfoSix);
     alert('Profile updated');
+    window.location.href = 'profile.html';
     })
 
 
