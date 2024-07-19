@@ -1105,13 +1105,10 @@ th, td {
 }
 .goBackContainer{
     position: absolute;
-    width: 2rem; 
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-top: 1rem;
     z-index: 4;
-    background-color: var(--main_primary_color);
-    color: var(--primary_white_color);
     cursor: pointer;
 }
 .goBackContainer:hover{
@@ -1141,7 +1138,7 @@ th, td {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
+    border: 2.5px solid var(--primary_white_color);
     background-color: var(--main_primary_color);
     font-size: 20px;
     color: var(--primary_white_color);
@@ -1196,13 +1193,16 @@ th, td {
     padding-top: 3rem;
     background-color: var(--primary_light_greyish_color);
     height: 100%;
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
 }
 .userProfileSection2{
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 .userPadding1{
     padding-bottom: 1.5rem;
+}
+.userPadding2{
+    padding-bottom: 2.5rem;
 }
 .userPadding{
     background-color: var(--primary_dashboardbackground_greyish_color);
@@ -1427,6 +1427,9 @@ th, td {
 .section1 {
     background-image: url(./background-crew-tablet.jpg);
 }
+.goBackContainer{
+    margin-left: 1rem;
+}
 .hamburgerElement {
     display: none;
 }
@@ -1472,19 +1475,6 @@ th, td {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
-/* .userProfileSection{
-    position: absolute;
-    width: 40%;
-    margin-inline-start: 2rem;
-    margin-inline-end: 0rem;
-}
-.userProfileSection1 {
-    position: absolute;
-    width: 50%;
-    right: 1rem;
-    margin-top: 0;
-    border-radius: 0;
-} */
 .margin_inline {
     margin-inline: 0rem;
 }
