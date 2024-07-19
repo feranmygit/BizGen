@@ -1106,13 +1106,14 @@ th, td {
 .goBackContainer{
     position: absolute;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     margin-top: 1rem;
     z-index: 4;
     cursor: pointer;
+    border-radius: 100%;
 }
 .goBackContainer:hover{
-    background-color: var(--primary_mainpage_color);
+    background-color: var(--primary_light_greyish_color);
 }
 .userPicture{
     display: flex;
