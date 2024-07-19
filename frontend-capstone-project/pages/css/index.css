@@ -1323,8 +1323,7 @@ th, td {
     margin-inline: 0.4rem;
 }
 .saveData{
-    padding: 1rem 0.5rem;
-    font-size: 1rem;
+    padding: 1rem 0.6rem;
     background-color: var(--main_primary_color);
     border: none;
     outline: none;
