@@ -1111,6 +1111,7 @@ th, td {
     z-index: 4;
     cursor: pointer;
     border-radius: 100%;
+    transition: 0.3s ease;
 }
 .goBackContainer:hover{
     background-color: var(--primary_light_greyish_color);
