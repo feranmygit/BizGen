@@ -1141,7 +1141,7 @@ th, td {
     justify-content: center;
     align-items: center;
     border: 2.5px solid var(--primary_white_color);
-    background-color: var(--main_primary_color);
+    background-color: var(--primary_light_grey_color);
     font-size: 20px;
     color: var(--primary_white_color);
     cursor: pointer;
