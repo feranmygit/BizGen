@@ -181,3 +181,130 @@ function removePenSix(){
   inputDataContainer6.style.display = 'block';
   detailCont6.style.display = 'none';
 }
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const username = localStorage.getItem('loggedInUser');
+//   if (!username) {
+//     window.location.href = 'login.html';
+//     return;
+//   }
+
+//   const user = getUser(username);
+//   document.getElementById('username').value = user.username;
+
+//   document.getElementById('profileForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
+
+//     const updatedUsername = document.getElementById('username').value;
+//     const avatarFile = document.getElementById('avatar').files[0];
+//     let avatarUrl = user.avatar;
+
+//     if (avatarFile) {
+//       const reader = new FileReader();
+//       reader.onload = function(event) {
+//         avatarUrl = event.target.result;
+//         saveUserProfile(username, updatedUsername, avatarUrl);
+//       };
+//       reader.readAsDataURL(avatarFile);
+//     } else {
+//       saveUserProfile(username, updatedUsername, avatarUrl);
+//     }
+//   });
+// });
+
+// function saveUserProfile(oldUsername, newUsername, avatarUrl) {
+//   let users = JSON.parse(localStorage.getItem('users')) || [];
+//   users = users.map(user => {
+//     if (user.username === oldUsername) {
+//       return { ...user, username: newUsername, avatar: avatarUrl };
+//     }
+//     return user;
+//   });
+//   localStorage.setItem('users', JSON.stringify(users));
+//   localStorage.setItem('loggedInUser', newUsername);
+
+//   alert('Profile updated successfully!');
+//   window.location.href = 'dashboard.html';
+// }
+
+// function getUser(username) {
+//   const users = JSON.parse(localStorage.getItem('users')) || [];
+//   return users.find(user => user.username === username);
+// }
+
+
+
+
+// // profile pic 
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const username = localStorage.getItem('loggedInUser');
+//   if (!username) {
+//     window.location.href = 'login.html';
+//     return;
+//   }
+
+//   const user = getUser(username);
+//   document.getElementById('username').value = user.username;
+
+//   document.getElementById('profileForm').addEventListener('submit', function(event) {
+//     event.preventDefault();
+
+//     const updatedUsername = document.getElementById('username').value;
+//     const avatarFile = document.getElementById('avatar').files[0];
+//     let avatarUrl = user.avatar;
+
+//     if (avatarFile) {
+//       const reader = new FileReader();
+//       reader.onload = function(event) {
+//         avatarUrl = event.target.result;
+//         saveUserProfile(username, updatedUsername, avatarUrl);
+//       };
+//       reader.readAsDataURL(avatarFile);
+//     } else {
+//       saveUserProfile(username, updatedUsername, avatarUrl);
+//     }
+//   });
+
+
+// if (user && user.avatar) {
+//   document.getElementById('userAvatar').src = user.avatar;
+// }
+// });
+
+// function saveUserProfile(oldUsername, newUsername, avatarUrl) {
+//   let users = JSON.parse(localStorage.getItem('users')) || [];
+//   users = users.map(user => {
+//     if (user.username === oldUsername) {
+//       return { ...user, username: newUsername, avatar: avatarUrl };
+//     }
+//     return user;
+//   });
+//   localStorage.setItem('users', JSON.stringify(users));
+//   localStorage.setItem('loggedInUser', newUsername);
+
+//   alert('Profile updated successfully!');
+//   window.location.href = 'dashboard.html';
+// }
+// b
+// function getUser(username) {
+//   const users = JSON.parse(localStorage.getItem('users')) || [];
+//   return users.find(user => user.username === username);
+// }
+
+
+
+
+
+
+
+
+
+
+
+

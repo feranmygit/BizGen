@@ -1,4 +1,4 @@
-const get_message = `PlanGenius`;
+const get_message = `BizGenius`;
 const textParagh = `Unleash Your 
 Business Potential with 
 Customized Plans and PDF Printing.`;

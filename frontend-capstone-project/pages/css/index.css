@@ -1090,6 +1090,7 @@ th, td {
     display: none;
 }
 
+
 /* User Profile Stylings Here  */
 .profHeader{
     padding-bottom: 0.8rem;
@@ -1337,6 +1338,16 @@ th, td {
 .saveData:hover{
     background-color:  var(--main_Deep_primary_color);
 }
+.profileForm3{
+    background-color: var(--main_primary_color);
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--primary_white_color);
+}
 
 /* downLoad stylings here  */
 
@@ -1391,7 +1402,6 @@ th, td {
 .btnContainer2{
     padding-block: 1rem;
     border: none;
-    margin-inline: 20%;
     outline: none;
     border-radius: 5px;
     background-color: var(--primary_orange1_color);
@@ -1400,11 +1410,47 @@ th, td {
     transition: 0.3s ease;
     cursor: pointer;
 }
+.btnCont{
+    margin-inline: 20%;
+}
+.btnleft{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.btnleft button{
+    padding-inline: 1rem;
+}
 .btnContainer2:hover{
     color: var(--primary_black_color);
 }
 .Dash_section3{
     width: 100%;
+}
+.actionBtn{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.actionBtn button{
+    padding: 0.5rem 1rem;
+    border: none;
+    color: var(--primary_white_color);
+    border-radius: 5px;
+}
+.actionBtn button:hover{
+    opacity: 0.5;
+}
+.btnEdit{
+    background-color: var(--main_primary_color);
+}
+/* .btnPrint{
+    background-color: var(--main_primary_color);
+} */
+/* .btnDownload{
+    background-color: var(--main_primary_color);
+} */
+.btnDelete{
+    background-color: var(--pimary_instagram_color);
 }
 
 @media only screen and (min-width:500px) {
@@ -1606,8 +1652,12 @@ input[type="search" i] {
 .roles6 {
     width: 75%;
 }
-.userPadding {
+.userPaddingProfile{
     padding-inline-start: 3rem;
+}
+
+.userSetParag {
+    padding-left: 3rem;
 }
 }
 
@@ -1698,10 +1748,6 @@ input[type="search" i] {
 }
 .roles6 {
     width: 65%;
-}
-.userPadding {
-    padding-inline-start: 1rem;
-    padding-inline-end: 3rem;
 }
 .meetPals {
     margin-left: 1rem;

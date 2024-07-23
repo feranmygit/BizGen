@@ -41,7 +41,7 @@
              <!-- search section here  -->
               <div class="setAsidesCont1">
                 <div class="inputIcon" id="inputIcon">
-                    <input type="search" name="search" id="search" placeholder="Search...">
+                    <input type="search" name="search" id="search" placeholder="Search your business...">
                     <label for="search" class="search xRemove" id="searcBtn" onclick="myBtn()">
                         <i class="fa-solid searchIcon fa-xmark"></i>
                       </label>
@@ -59,8 +59,8 @@
                  <!-- lists item blog page  -->
                  <nav class="nav-container" id="navContainer">
                      <ul class="nav-items">
-                         <div class="profileInfo" id="userAvatar">
-                             <img src="./assets/avaters/testimonial-4.jpg" alt="">
+                         <div class="profileInfo">
+                             <img src="./assets/avaters/testimonial-4.jpg" alt="" id="userAvatar">
                              <h3 class="userN">Hi, <span id="usernameDisplay2"></span></h3>
                          </div>
                          <div class="bar1 bartack bartack1 borderBotm">
@@ -150,7 +150,7 @@
                     </label> -->
                 </div>
                 <div class="createBtnCont">
-                    <button class="btnCreate" onclick="createBusiness()">Create Business</button>
+                    <button class="btnCreate" id="create-business-button" onclick="createBusiness()">Create Business</button>
                     <button class="btnCancel" onclick="cancelCreateBusiness()">Cancel</button>
                 </div>
               </div>
@@ -167,13 +167,17 @@
                 <div class="displayContainer">
                     <div class="ifNothingContainer flex justify_centre">
                         <p class="ifNothing">Nothing to show yet. Start building your business empire - add your first business!</p>
-                        <button class="btnContainer1 btnContainer2" onclick="showCreateBusinessForm()">Click to create now.</button>
+                        <button class="btnContainer1 btnContainer2 btnCont" onclick="showCreateBusinessForm()">Click to create now.</button>
                     </div>
                     <div class="imgIfNothing">
                         <img src="./assets/images/empty_message.png" alt="">
                     </div>
                 </div>
             </section>
+            <div class="btnleft">
+                <button class="btnContainer1 btnContainer2" id="createMore" style="display: none;" onclick="showCreateBusinessForm()">Create more</button>
+            </div>
+
         </section>
         <section class="Dash_section3 sectionAbt1 ">
             <!-- All Businesses -->
@@ -223,6 +227,7 @@
         </div>
     </main>
 
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>    <script src="./js-doc/dashboard.js"></script>
 </body>

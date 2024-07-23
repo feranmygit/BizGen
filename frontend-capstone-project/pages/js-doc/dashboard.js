@@ -1,10 +1,12 @@
 // creating businesses and storing to saveToLocalStorage
 
+
 let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
+let editingPlanIndex = null;
 
 function saveToLocalStorage() {
   localStorage.setItem('businesses', JSON.stringify(businesses));
-};
+}
 
 // Data Creation 
 
@@ -14,16 +16,25 @@ function createBusiness() {
   const description = document.getElementById('business-description').value;
   const visibility = document.querySelector('input[name="visibility"]:checked').value;
   const username = localStorage.getItem('loggedInUser');
+  
   if (name && description && type) {
-    businesses.push({ name, type, description, visibility, username });
+    const business = { name, type, description, visibility, username };
+    if (editingPlanIndex !== null) {
+      businesses[editingPlanIndex] = business;
+      editingPlanIndex = null;
+      document.getElementById('create-business-button').innerText = 'Create Business';
+      alert('Business updated successfully!');
+    } else {
+      businesses.push(business);
+      alert('Business created successfully!');
+    }
     saveToLocalStorage();
-    alert('Business created successfully!');
     cancelCreateBusiness();
     loadBusinesses();
   } else {
     alert('Please fill in all fields.');
   }
-};
+}
 
 // Data Display or Visualization 
 
@@ -33,12 +44,16 @@ function loadBusinesses() {
   const businessList = document.getElementById('business-list');
   businessCards.innerHTML = '';
   businessList.innerHTML = '';
-  businesses.forEach(b => {
+  businesses.forEach((b, index) => {
     if (b.visibility === 'public' || b.username === username) {
       businessCards.innerHTML += `
         <div class="card">
           <h3>${b.name}</h3>
           <p class="dashPar">${b.description}</p>
+          <div class="actionBtn">
+              <button class="btnEdit" onclick="editBusiness(${index})">Edit</button>
+              <button class="btnDelete" onclick="deleteBusiness(${index})">Delete</button>
+          </div>
         </div>
       `;
       businessList.innerHTML += `
@@ -47,12 +62,84 @@ function loadBusinesses() {
           <td class="dataEntry">${b.description}</td>
           <td class="dataEntry">${b.type}</td>
           <td class="dataEntry">${b.visibility}</td>
+          <td><button onclick="editBusiness(${index})">Edit</button></td>
+          <td><button onclick="deleteBusiness(${index})">Delete</button></td>
+          <td><button class="btnPrint" onclick="printBusiness(${index})">Print</button></td>
+          <td><button class="btnDownload" onclick="downloadBusiness(${index})">Download</button></td>
         </tr>
       `;
     }
   });
 }
-  loadBusinesses();
+
+function editBusiness(index) {
+  const business = businesses[index];
+  document.getElementById('business-name').value = business.name;
+  document.getElementById('business-type').value = business.type;
+  document.getElementById('business-description').value = business.description;
+  document.querySelector(`input[name="visibility"][value="${business.visibility}"]`).checked = true;
+  editingPlanIndex = index; 
+  document.getElementById('Dash_section1').style.display = 'none';
+  document.getElementById('mainCard-content').style.display = 'none';
+  document.getElementById('Dash_section2').style.display = 'block';
+  document.getElementById('showHomePage').style.display = 'block';
+  document.getElementById('all-businesses').style.display = 'none';
+  document.getElementById('Dash_section5').style.display = 'none';
+  document.getElementById('mainWrapper1').style.display = 'block';  
+  document.getElementById('create-business-button').innerText = 'Update Business';
+
+}
+
+function deleteBusiness(index) {
+  if (confirm('Are you sure you want to delete this business?')) {
+    businesses.splice(index, 1);
+    saveToLocalStorage();
+    loadBusinesses();
+  }
+}
+
+function printBusiness(index) {
+  const business = businesses[index];
+  const printContent = `
+    <h3>${business.name}</h3>
+    <p>Type: ${business.type}</p>
+    <p>Description: ${business.description}</p>
+    <p>Visibility: ${business.visibility}</p>
+  `;
+  const printWindow = window.open('', '', 'width=600,height=400');
+  printWindow.document.write('<html><head><title>Print Business</title></head><body>');
+  printWindow.document.write(printContent);
+  printWindow.document.write('</body></html>');
+  printWindow.document.close();
+  printWindow.print();
+}
+
+function downloadBusiness(index) {
+  const business = businesses[index];
+  const businessData = `
+    Name: ${business.name}\n
+    Type: ${business.type}\n
+    Description: ${business.description}\n
+    Visibility: ${business.visibility}
+  `;
+  const blob = new Blob([businessData], { type: 'text/plain' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `${business.name}.txt`;
+  link.click();
+}
+
+function cancelCreateBusiness() {
+  document.getElementById('business-name').value = '';
+  document.getElementById('business-type').value = '';
+  document.getElementById('business-description').value = '';
+  document.querySelector(`input[name="visibility"][value="public"]`).checked = true;
+  editingPlanIndex = null;
+  document.getElementById('create-business-button').innerText = 'Create Business';
+}
+
+loadBusinesses();
+
 
 
   // To show up a container if no businesses created yet 
@@ -63,11 +150,13 @@ function showIfNothing(){
   const Dash = document.getElementById('Dash_section5');
   const DashNew = document.getElementById('Dash_sectionNew');
   const tableContainer = document.getElementById('tableContainer');
+  const createMore = document.getElementById('createMore');
   businesses.forEach(b => {
     if(!b.name || !b.description || !b.type || b.visibility === 'public' || b.username === username){
       Dash.style.display = 'block';
       DashNew.style.display = 'block';
       tableContainer.style.display = 'none';
+      createMore.style.display = 'none';
 
     }
   })
@@ -83,12 +172,13 @@ function showIfSomething(){
   const Dash = document.getElementById('Dash_section5');
   const DashNew = document.getElementById('Dash_sectionNew');
   const tableContainer = document.getElementById('tableContainer');
+  const createMore = document.getElementById('createMore');
   businesses.forEach(b => {
     if(b.name, b.description, b.type, b.visibility === 'public' || b.username === username){
       Dash.style.display = 'none';
       DashNew.style.display = 'none';
       tableContainer.style.display = 'block';
-      
+      createMore.style.display = 'block';
     }
   })
 }
@@ -244,7 +334,20 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
     doc.save('All_Businesses.pdf');
 })
 
+
+const user = getUser(username);
+if (user && user.avatar) {
+  document.getElementById('userAvatar').src = user.avatar;
+}
+
 });
+
+function getUser(username) {
+  const users = JSON.parse(localStorage.getItem('users')) || [];
+  return users.find(user => user.username === username);
+}
+
+
 
 // using onclick Event on a container 
 
