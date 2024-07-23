@@ -1417,6 +1417,7 @@ th, td {
     display: flex;
     justify-content: flex-end;
     margin-right: 5%;
+    margin-bottom: 2rem;
 }
 .btnleft button{
     padding-inline: 1rem;
@@ -1436,6 +1437,9 @@ th, td {
     border: none;
     color: var(--primary_white_color);
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size:  clamp(0.8rem, 2.5vw, 1rem);
 }
 .actionBtn button:hover{
     opacity: 0.5;
