@@ -87,6 +87,7 @@ function editBusiness(index) {
   document.getElementById('Dash_section5').style.display = 'none';
   document.getElementById('mainWrapper1').style.display = 'block';  
   document.getElementById('create-business-button').innerText = 'Update Business';
+  document.getElementById('bizGenerate').innerText = 'Edit Business Created';
 
 }
 
@@ -198,11 +199,6 @@ showIfSomething();
   
   function cancelCreateBusiness() {
     window.location.href = 'dashboard.html';
-    // document.getElementById('Dash_section2').style.display = 'none';
-    // document.getElementById('all-businesses').style.display = 'none';
-    // document.getElementById('showHomePage').style.display = 'none';
-    // document.getElementById('mainCard-content').style.display = 'block';
-    // // document.getElementById('Dash_section5').style.display = 'block';
   };
   
   function showAllBusinesses() {
@@ -226,6 +222,9 @@ showIfSomething();
   }
   function logoHomePage(){
     window.location.href = 'dashboard.html';
+  }
+  function viewbizContainer(){
+    window.location.href = 'businessDetails.html';
   }
 
 // Toggling the visibility of some underlay color containers inside DOMContentLoaded
@@ -277,31 +276,18 @@ document.addEventListener('DOMContentLoaded', function(){
     };
 
     document.getElementById('logoutButton').addEventListener('click', function() {
-      if(this.click){
-        alert(`${username}, You are about to Logout!`);
-      }
-        alert.click;
+      if(confirm((`${username}, You are about to Logout!`))){
           localStorage.removeItem('loggedInUser');
-          window.location.href = 'landingPage.html';{
-          }
-    });
+          window.location.href = 'landingPage.html';
+    }
+});
 
     document.getElementById('logoutButton2').addEventListener('click', function() {
-
-      if(this.click){
-        alert(`${username}, You are about to Logout!`);
-      }
-        alert.click;
+      if(confirm((`${username}, You are about to Logout!`))){
           localStorage.removeItem('loggedInUser');
-          window.location.href = 'landingPage.html';{
-          }
-      
-    });
-
-    // document.getElementById('remve').addEventListener('click', function() {
-    //   localStorage.removeItem('businesses');
-    //   window.location.href = 'dashboard.html';
-    // });
+          window.location.href = 'landingPage.html';
+    }
+});
 
 
     // To set the users username where needed on the website inside DOMContentLoaded

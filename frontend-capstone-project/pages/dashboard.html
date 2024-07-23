@@ -105,7 +105,7 @@
                         <button class="btnContainer btnlinks btnContainer1" onclick="showAllBusinesses()"><i class="fa-solid bizIcon bizIcon1 fa-list"></i>All Businesses</button>
                         <button class="btnContainer btnlinks btnContainer1" onclick="showProfile()"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>My Profile</button>
                         <button class="btnContainer btnlinks btnContainer1" onclick="showHomePage()" id="showHomePage" style="display: none;"><i class="fa-solid bizIcon bizIcon1 fa-house"></i>Home</button>
-                        <!-- <button class="btnContainer btnlinks btnContainer1" id="remve"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>Remove all biz</button> -->
+                        <!-- <button class="btnContainer btnlinks btnContainer1" id="viewbizContainer" onclick="viewbizContainer()"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>View all biz</button> -->
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
     
         <section class="Dash_section2 sectionAbt " id="Dash_section2" style="display:none;">
             <div id="create-business-form">
-                <h2 class="bizGenerate">Create New Business</h2>
+                <h2 class="bizGenerate" id="bizGenerate">Create New Business</h2>
                 <form class="formpost">
                     <input type="text" id="business-name" placeholder="Business Name">
                     <input type="text" id="business-type" placeholder="Business Type">
@@ -192,7 +192,7 @@
                         <div class="displayContainer">
                             <div class="ifNothingContainer flex justify_centre">
                                 <p class="ifNothing">Nothing to show yet. Start building your business empire - add your first business!</p>
-                                <button class="btnContainer1 btnContainer2" onclick="showCreateBusinessForm()">Click to create now.</button>
+                                <button class="btnContainer1 btnContainer2 btnCont" onclick="showCreateBusinessForm()">Click to create now.</button>
                             </div>
                             <div class="imgIfNothing">
                                 <img src="./assets/images/empty_message.png" alt="">
@@ -214,9 +214,9 @@
           
             </div>
             
-            
-            <!-- <button class="btnCancel" onclick="cancelCreateBusiness()">Cancel</button> -->
+        </section>
 
+        <section class="viewbizContainer" id="viewbizCont" onclick="viewbizCont()">
         </section>
         <div class="confirmDownload wrapperLogin1" id="confirmDownload">
             <p class="conText">Do you want to download all business plan entries in a PDF format?</p>
@@ -229,6 +229,7 @@
 
  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>    <script src="./js-doc/dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>    
+    <script src="./js-doc/dashboard.js"></script>
 </body>
 </html>
