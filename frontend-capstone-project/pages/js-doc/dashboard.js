@@ -14,7 +14,6 @@ function createBusiness() {
   const name = document.getElementById('business-name').value;
   const type = document.getElementById('business-type').value;
   const description = document.getElementById('business-description').value;
-  // const cardDotCont = document.getElementById('cardDotCont').style.display = 'block';
   const visibility = document.querySelector('input[name="visibility"]:checked').value;
   const username = localStorage.getItem('loggedInUser');
   
@@ -87,8 +86,6 @@ function loadBusinesses() {
                   <button class="btnPrint" onclick="printBusiness(${index})">Print</button>
                   <button class="btnDownload" onclick="downloadBusiness(${index})">Download</button>
                   <button onclick="shareLink(${index})">Share</button>
-                  <button onclick="printBusiness(${index})">Print</button>
-
                 </div>
               </div>
           </div>
