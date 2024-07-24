@@ -47,13 +47,21 @@ function loadBusinesses() {
   businesses.forEach((b, index) => {
     if (b.visibility === 'public' || b.username === username) {
       businessCards.innerHTML += `
-        <div class="card">
-          <h3>${b.name}</h3>
+         <div class="cardEdit">
+              <div class="cardContTitle">
+                  <h3>${b.name}</h3>
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleMenu(${index})">⋮</button>
+                    <div id="dropdown-content-${index}" class="dropdown-content">
+                      <button onclick="editBusiness(${index})">View business</button>
+                      <button onclick="editBusiness(${index})">Edit</button>
+                      <button onclick="deleteBusiness(${index})">Delete</button>
+                      <button onclick="printBusiness(${index})">Print</button>
+                      <button onclick="downloadBusiness(${index})">Download</button>
+                    </div>
+                  </div>
+              </div>
           <p class="dashPar">${b.description}</p>
-          <div class="actionBtn">
-              <button class="btnEdit" onclick="editBusiness(${index})">Edit</button>
-              <button class="btnDelete" onclick="deleteBusiness(${index})">Delete</button>
-          </div>
         </div>
       `;
       businessList.innerHTML += `
@@ -374,16 +382,16 @@ function myBtn(){
   inputIcon.classList.toggle('show');
 } 
 
+function toggleMenu(index) {
+  const menu = document.getElementById(`dropdown-content-${index}`);
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'block';
+  }
+}
 
-// using MouseEvent instead of clicking Event 
-// function showSetting(){
-//   pBarDown.classList.toggle('open');
-//   overlayColor2.classList.toggle('open');
-// }
-// function showSetting1(){
-//   overlayColor1.classList.toggle('open');
-//   pBarTop.classList.toggle('open');
-// }
+
 
 
 
