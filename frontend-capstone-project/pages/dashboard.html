@@ -209,7 +209,7 @@
                                 <th class="dataEntry">Actions</th>
                             </tr>
                         </thead>
-                        <tbody id="business-list"></tbody>
+                        <tbody class="business-list" id="business-list"></tbody>
                     </table>
                 </div>
           
@@ -218,11 +218,6 @@
         </section>
 
         <section class="viewBusiness" id="viewBusiness">
-            <div class="goBackContainer" onclick="goBack()">
-                <div class="goBack-icon" id="goBack">
-                    <i class="fa-solid  fa-arrow-left"></i>
-                </div>
-            </div>
         </section>
         <div class="confirmDownload wrapperLogin1" id="confirmDownload">
             <p class="conText">Do you want to download all business plan entries in a PDF format?</p>
@@ -232,7 +227,6 @@
             </div>
         </div>
     </main>
-
  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>    

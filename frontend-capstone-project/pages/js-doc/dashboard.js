@@ -14,11 +14,12 @@ function createBusiness() {
   const name = document.getElementById('business-name').value;
   const type = document.getElementById('business-type').value;
   const description = document.getElementById('business-description').value;
+  const cardDotCont = document.getElementById('cardDotCont').style.display = 'block';
   const visibility = document.querySelector('input[name="visibility"]:checked').value;
   const username = localStorage.getItem('loggedInUser');
   
   if (name && description && type) {
-    const business = { name, type, description, visibility, username };
+    const business = { name, type, description, cardDotCont, visibility, username };
     if (editingPlanIndex !== null) {
       businesses[editingPlanIndex] = business;
       editingPlanIndex = null;
@@ -52,17 +53,15 @@ function loadBusinesses() {
                   <h3 class="">${b.name}</h3>
                   <div class="dropdown cardEdit1">
                    <div class="cardDotCont">
-                   <div class="threeDot dropbtn" onclick="toggleMenu(${index})">
-                   </div>
+                      <div class="threeDot dropbtn" onclick="toggleMenu(${index})">
+                      </div>
                   </div>
                     <div id="dropdown-content-${index}" class="dropdown-content">
                       <button onclick="viewBusiness(${index})">View business</button>
                       <button onclick="editBusiness(${index})">Edit</button>
                       <button onclick="deleteBusiness(${index})">Delete</button>
-                      <button onclick="printBusiness(${index})">Print</button>
                       <button onclick="downloadBusiness(${index})">Download</button>
                       <button onclick="copyLink(${index})">Copy Link</button>
-                      <button onclick="shareLink(${index})">Share Link</button>
                     </div>
                   </div>
               </div>
@@ -71,18 +70,50 @@ function loadBusinesses() {
       `;
       businessList.innerHTML += `
         <tr>
-          <td class="dataEntry">${b.name}</td>
-          <td class="dataEntry">${b.description}</td>
-          <td class="dataEntry">${b.type}</td>
-          <td class="dataEntry">${b.visibility}</td>
-          <td><button onclick="editBusiness(${index})">Edit</button></td>
-          <td><button onclick="deleteBusiness(${index})">Delete</button></td>
-          <td><button class="btnPrint" onclick="printBusiness(${index})">Print</button></td>
-          <td><button class="btnDownload" onclick="downloadBusiness(${index})">Download</button></td>
+          <div id="dropdown-content-${index}" class="dropdown-content">
+              <td class="dataEntry">${b.name}</td>
+              <td class="dataEntry">${b.description}</td>
+              <td class="dataEntry">${b.type}</td>
+              <td class="dataEntry">${b.visibility}</td>
+              <td> <div class="cardDotCont" onclick="cardViewBtnContainers(${index})">
+                      <div class="threeDot">
+                      </div>
+                  </div></td>
+              <div class="cardTableBtnCont" id="cardTableBtnCont${index}">
+                <div class="cardTableBtn">
+                  <button onclick="editBusiness(${index})">Edit</button>
+                  <button onclick="deleteBusiness(${index})">Delete</button>
+                  <button class="btnPrint" onclick="printBusiness(${index})">Print</button>
+                  <button class="btnDownload" onclick="downloadBusiness(${index})">Download</button>
+                  <button onclick="shareLink(${index})">Share Link</button>
+                  <button onclick="printBusiness(${index})">Print</button>
+
+                </div>
+              </div>
+          </div>
         </tr>
       `;
     }
   });
+}
+
+function cardViewBtnContainers(index) {
+  let cardTableBtnCont = document.getElementById(`cardTableBtnCont${index}`);
+  if (cardTableBtnCont.style.display === 'block') {
+    cardTableBtnCont.style.display = 'none';
+  } else {
+    cardTableBtnCont.style.display = 'block';
+  }
+
+}
+
+function toggleMenu(index) {
+  const menu = document.getElementById(`dropdown-content-${index}`);
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'block';
+  }
 }
 
 function viewBusiness(index) {
@@ -435,14 +466,7 @@ function myBtn(){
   inputIcon.classList.toggle('show');
 } 
 
-function toggleMenu(index) {
-  const menu = document.getElementById(`dropdown-content-${index}`);
-  if (menu.style.display === 'block') {
-    menu.style.display = 'none';
-  } else {
-    menu.style.display = 'block';
-  }
-}
+
 
 
 
