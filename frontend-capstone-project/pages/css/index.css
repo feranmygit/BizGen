@@ -956,6 +956,7 @@ input[type="search" i] {
 }
 .dashPar{
     line-height: 1.5rem;
+    padding-inline: 10px;
 }
 .bizGenerate{
     margin-inline-start: 8%;
@@ -1465,8 +1466,6 @@ th, td {
     position: relative;
     display: inline-block;
     border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
     cursor: pointer;
   }
   .cardContTitle{
@@ -1474,6 +1473,7 @@ th, td {
     justify-content: space-between;
     align-items: center;
     padding-inline: 1rem;
+    gap: 1rem;
     background-color: var(--primary_light_greyish_color);
   }
   
