@@ -14,12 +14,12 @@ function createBusiness() {
   const name = document.getElementById('business-name').value;
   const type = document.getElementById('business-type').value;
   const description = document.getElementById('business-description').value;
-  const cardDotCont = document.getElementById('cardDotCont').style.display = 'block';
+  // const cardDotCont = document.getElementById('cardDotCont').style.display = 'block';
   const visibility = document.querySelector('input[name="visibility"]:checked').value;
   const username = localStorage.getItem('loggedInUser');
   
   if (name && description && type) {
-    const business = { name, type, description, cardDotCont, visibility, username };
+    const business = { name, type, description, visibility, username };
     if (editingPlanIndex !== null) {
       businesses[editingPlanIndex] = business;
       editingPlanIndex = null;
@@ -81,11 +81,12 @@ function loadBusinesses() {
                   </div></td>
               <div class="cardTableBtnCont" id="cardTableBtnCont${index}">
                 <div class="cardTableBtn">
+                  <button onclick="viewBusiness(${index})">View</button>
                   <button onclick="editBusiness(${index})">Edit</button>
                   <button onclick="deleteBusiness(${index})">Delete</button>
                   <button class="btnPrint" onclick="printBusiness(${index})">Print</button>
                   <button class="btnDownload" onclick="downloadBusiness(${index})">Download</button>
-                  <button onclick="shareLink(${index})">Share Link</button>
+                  <button onclick="shareLink(${index})">Share</button>
                   <button onclick="printBusiness(${index})">Print</button>
 
                 </div>
