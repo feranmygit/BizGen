@@ -53,11 +53,13 @@ function loadBusinesses() {
                   <div class="dropdown">
                     <button class="dropbtn" onclick="toggleMenu(${index})">⋮</button>
                     <div id="dropdown-content-${index}" class="dropdown-content">
-                      <button onclick="editBusiness(${index})">View business</button>
+                      <button onclick="viewBusiness(${index})">View business</button>
                       <button onclick="editBusiness(${index})">Edit</button>
                       <button onclick="deleteBusiness(${index})">Delete</button>
                       <button onclick="printBusiness(${index})">Print</button>
                       <button onclick="downloadBusiness(${index})">Download</button>
+                      <button onclick="copyLink(${index})">Copy Link</button>
+                      <button onclick="shareLink(${index})">Share Link</button>
                     </div>
                   </div>
               </div>
@@ -79,6 +81,27 @@ function loadBusinesses() {
     }
   });
 }
+
+function viewBusiness(index) {
+  const business = businesses[index];
+  let viewBusiness = document.getElementById('viewBusiness');
+  viewBusiness.innerHTML = `
+          <div class="goBackContainer" onclick="goBack()">
+                <div class="goBack-icon" id="goBack">
+                    <i class="fa-solid  fa-arrow-left"></i>
+                </div>
+          </div>
+          <div class="viewData">
+            <h3 class="viewName">${business.name}</h3>
+            <p><h4>Type:</h4> ${business.type}</p>
+            <p class="viewDescription"><h4>Description:</h4> ${business.description}</p>
+            <p><h4>Visibility:</h4> ${business.visibility}</p>
+          </div>
+  `;
+      document.getElementById('viewBusiness').style.display = 'block';
+
+}
+
 
 function editBusiness(index) {
   const business = businesses[index];
@@ -136,6 +159,30 @@ function downloadBusiness(index) {
   link.href = URL.createObjectURL(blob);
   link.download = `${business.name}.txt`;
   link.click();
+}
+
+function copyLink(index) {
+  const business = businesses[index];
+  const url = `${window.location.href}?business=${index}`;
+  navigator.clipboard.writeText(url).then(() => {
+    alert('Link copied to clipboard');
+  });
+}
+
+function shareLink(index) {
+  const business = businesses[index];
+  const url = `${window.location.href}?business=${index}`;
+  if (navigator.share) {
+    navigator.share({
+      title: business.name,
+      text: `Check out this business: ${business.name}`,
+      url: url,
+    })
+    .then(() => console.log('Share successful'))
+    .catch(error => console.log('Share failed', error));
+  } else {
+    alert('Web Share API is not supported in your browser.');
+  }
 }
 
 function cancelCreateBusiness() {
@@ -218,7 +265,7 @@ showIfSomething();
     document.getElementById('mainWrapper1').style.display = 'none';
     document.getElementById('Dash_section5').style.display = 'block';
   }
-  
+
   function showProfile(){
     window.location.href = 'profile.html';
   }
@@ -233,6 +280,9 @@ showIfSomething();
   }
   function viewbizContainer(){
     window.location.href = 'businessDetails.html';
+  }
+  function goBack(){
+    window.location.href = 'dashboard.html';
   }
 
 // Toggling the visibility of some underlay color containers inside DOMContentLoaded

@@ -1514,6 +1514,8 @@ th, td {
     border: none;
     background: none;
     text-align: left;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+
   }
   
   .dropdown-content button:hover {
@@ -1523,7 +1525,26 @@ th, td {
   .cardEdit:hover .dropdown-content {
     display: block;
   }
-  
+  .viewBusiness{
+    position: fixed;
+    overflow-y: auto;
+    width: 100%;
+    background-color: var(--primary_white_color);
+    top: 0;
+    bottom: 0;
+    z-index: 15;
+    display: none;
+  }
+  .viewData{
+    margin-top: 5rem;
+    padding-inline: 5%;
+  }
+  .viewDescription{
+    line-height: 1.5rem;
+  }
+  .viewName{
+    text-align: center;
+  }
 
 @media only screen and (min-width:500px) {
     .borderBotm {
