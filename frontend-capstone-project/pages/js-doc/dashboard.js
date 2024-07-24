@@ -51,7 +51,10 @@ function loadBusinesses() {
               <div class="cardContTitle">
                   <h3 class="">${b.name}</h3>
                   <div class="dropdown cardEdit1">
-                    <button class="dropbtn"  onclick="toggleMenu(${index})">⋮</button>
+                   <div class="cardDotCont">
+                   <div class="threeDot dropbtn" onclick="toggleMenu(${index})">
+                   </div>
+                  </div>
                     <div id="dropdown-content-${index}" class="dropdown-content">
                       <button onclick="viewBusiness(${index})">View business</button>
                       <button onclick="editBusiness(${index})">Edit</button>
