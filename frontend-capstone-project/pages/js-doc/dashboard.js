@@ -49,9 +49,9 @@ function loadBusinesses() {
       businessCards.innerHTML += `
          <div class="cardEdit">
               <div class="cardContTitle">
-                  <h3>${b.name}</h3>
-                  <div class="dropdown">
-                    <button class="dropbtn" onclick="toggleMenu(${index})">⋮</button>
+                  <h3 class="">${b.name}</h3>
+                  <div class="dropdown cardEdit1">
+                    <button class="dropbtn"  onclick="toggleMenu(${index})">⋮</button>
                     <div id="dropdown-content-${index}" class="dropdown-content">
                       <button onclick="viewBusiness(${index})">View business</button>
                       <button onclick="editBusiness(${index})">Edit</button>

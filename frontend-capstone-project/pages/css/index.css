@@ -1522,7 +1522,7 @@ th, td {
     background-color: #f1f1f1;
   }
   
-  .cardEdit:hover .dropdown-content {
+  .cardEdit1:hover .dropdown-content {
     display: block;
   }
   .viewBusiness{
@@ -1780,7 +1780,7 @@ input[type="search" i] {
         margin-top: 2rem;
     }
     .Dash_sectionContent{
-        top: 20rem;
+        top: 22rem;
     }
     .sectionAbt1{
         position: absolute;
@@ -1866,6 +1866,9 @@ input[type="search" i] {
         margin-inline: 5%;
         width: 90%;
     }
+    .Dash_sectionContent{
+        top: 21rem;
+    }
 
 .roles1 {
     width: 90%;
@@ -1925,6 +1928,7 @@ input[type="search" i] {
         margin-inline-start: 2rem;
         margin-inline-end: 0rem;
     }
+   
     .userProfileSection1 {
         position: absolute;
         width: 50%;
@@ -2089,6 +2093,7 @@ input[type="search" i] {
     .wrapperLogin{
         width: 40%;
     }
+   
 }
 @media only screen and (min-width:1200px) {
    
@@ -2107,6 +2112,9 @@ input[type="search" i] {
     }
     .sectionAbt, .Dash_section1{
         width: 70%;
+    }
+    .Dash_sectionContent{
+        top: 19rem;
     }
     .userProfileSection {
         width: 35%;
