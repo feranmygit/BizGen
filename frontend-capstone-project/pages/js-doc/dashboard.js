@@ -14,11 +14,12 @@ function createBusiness() {
   const name = document.getElementById('business-name').value;
   const type = document.getElementById('business-type').value;
   const description = document.getElementById('business-description').value;
+  const planType = document.getElementById('planType').value;
   const visibility = document.querySelector('input[name="visibility"]:checked').value;
   const username = localStorage.getItem('loggedInUser');
   
-  if (name && description && type) {
-    const business = { name, type, description, visibility, username };
+  if (name && description && type && planType) {
+    const business = { name, type, description, planType, visibility, username };
     if (editingPlanIndex !== null) {
       businesses[editingPlanIndex] = business;
       editingPlanIndex = null;
@@ -51,7 +52,7 @@ function loadBusinesses() {
               <div class="cardContTitle">
                   <h3 class="">${b.name}</h3>
                   <div class="dropdown cardEdit1">
-                   <div class="cardDotCont">
+                   <div class="cardDotCont cardDotCont1">
                       <div class="threeDot dropbtn" onclick="toggleMenu(${index})">
                       </div>
                   </div>
@@ -70,16 +71,20 @@ function loadBusinesses() {
       businessList.innerHTML += `
         <tr>
           <div id="dropdown-content-${index}" class="dropdown-content">
-              <td class="dataEntry">${b.name}</td>
-              <td class="dataEntry">${b.description}</td>
+              <td class="dataEntry1">${b.name}</td>
               <td class="dataEntry">${b.type}</td>
+              <td class="dataEntry">${b.planType}</td>
               <td class="dataEntry">${b.visibility}</td>
-              <td> <div class="cardDotCont" onclick="cardViewBtnContainers(${index})">
+              <td> 
+                <div class="cardEdit2">
+                  <div class="cardDotCont cardDotCont2 " onclick="cardViewBtnContainers(${index})">
                       <div class="threeDot">
                       </div>
-                  </div></td>
+                  </div>
+                
+              </td>
               <div class="cardTableBtnCont" id="cardTableBtnCont${index}">
-                <div class="cardTableBtn">
+                <div class="cardTableBtn dropdowncardTableBtn">
                   <button onclick="viewBusiness(${index})">View</button>
                   <button onclick="editBusiness(${index})">Edit</button>
                   <button onclick="deleteBusiness(${index})">Delete</button>
@@ -89,6 +94,7 @@ function loadBusinesses() {
                 </div>
               </div>
           </div>
+           </div> 
         </tr>
       `;
     }
@@ -125,7 +131,8 @@ function viewBusiness(index) {
           </div>
           <div class="viewData">
             <h3 class="viewName">${business.name}</h3>
-            <p><h4>Type:</h4> ${business.type}</p>
+            <p><h4>Business Type:</h4> ${business.type}</p>
+            <p><h4>Type:</h4> ${business.planType}</p>
             <p class="viewDescription"><h4>Description:</h4> ${business.description}</p>
             <p><h4>Visibility:</h4> ${business.visibility}</p>
           </div>
@@ -167,6 +174,7 @@ function printBusiness(index) {
   const printContent = `
     <h3>${business.name}</h3>
     <p>Type: ${business.type}</p>
+    <p>Type: ${business.planType}</p>
     <p>Description: ${business.description}</p>
     <p>Visibility: ${business.visibility}</p>
   `;
@@ -183,6 +191,7 @@ function downloadBusiness(index) {
   const businessData = `
     Name: ${business.name}\n
     Type: ${business.type}\n
+    Type: ${business.planType}\n
     Description: ${business.description}\n
     Visibility: ${business.visibility}
   `;
@@ -220,6 +229,7 @@ function shareLink(index) {
 function cancelCreateBusiness() {
   document.getElementById('business-name').value = '';
   document.getElementById('business-type').value = '';
+  document.getElementById('business-planType').value = '';
   document.getElementById('business-description').value = '';
   document.querySelector(`input[name="visibility"][value="public"]`).checked = true;
   editingPlanIndex = null;

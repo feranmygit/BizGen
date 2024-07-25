@@ -1085,18 +1085,20 @@ input[type="text" ], textarea{
 }
 #all-businesses > div.scrollar > table > thead{
     background-color: var(--main_primary_color);
-    color: var(--primary_white_color);
+    color: var(--primary_light_greyish_color);
 }
 th, td {
     padding: 10px;
     text-align: left;
-    width: 50%;
-    border: 1px solid #ddd;
+    width: 23%;
+  }
+  .dataEntry1{
+    width: 40%;
+}
+  tr:nth-child(even){
+    background-color: var(--primary_light_greyish_color);
+  }
 
-  }
-  th.description{
-    width: 50%;
-  }
   .scrollar{
     overflow-x: auto;
   }
@@ -1306,9 +1308,7 @@ th, td {
     background-color: var(--main_primary_color);
     color: var(--primary_white_color);
 }
-.dataEntry{
-    font-size: 15px;
-}
+
 .profileInputData{
     position: relative;
     margin-top: 1rem;
@@ -1482,8 +1482,8 @@ th, td {
 .cardEdit {
     position: relative;
     display: inline-block;
-    border: 1px solid var(--primary_light_greyish_color);
-    /* box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2); */
+    /* border: 3px solid var(--primary_light_grey_color); */
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -1494,11 +1494,10 @@ th, td {
     align-items: center;
     padding-inline: 1rem;
     gap: 1rem;
-    background-color: var(--main_link_color);
-    color: var(--primary_white_color);
-    letter-spacing: 2px;
+    background-color: var(--primary_light_grey_color);
+    color: var(--main_link_color);
     line-height: 1.5rem;
-    border-radius: 5px 5px 0 0;
+    font-weight: 700;
   }
   
   .dropdown {
@@ -1513,16 +1512,27 @@ th, td {
     cursor: pointer;
   }
   .cardDotCont{
-    padding: 1.3rem 1.6rem 1.6rem 1.3rem;
     border-radius: 100%;
     transition: 0.3s ease;
-    /* background-color: var(--primary_greyish_color); */
+    cursor: pointer;
   }
-  .cardDotCont:visited{
-    background-color: var(--primary_light_grey_color);
+  .cardDotCont1{
+    padding: 1.3rem 1.6rem 1.6rem 1.3rem;
   }
-  .cardDotCont:hover,  .cardDotCont:focus{
-    background-color: var(--primary_light_grey_color);
+  .cardDotCont2{
+    padding: 1.4rem 1.6rem 1.6rem 1.5rem;
+  }
+  .cardDotCont1:visited{
+    background-color: var(--primary_greyish_color);
+  }
+  .cardDotCont1:hover,  .cardDotCont:focus{
+    background-color: var(--primary_greyish_color);
+  }
+  .cardDotCont2:visited{
+    background-color: var(--primary_light_greyish_color);
+  }
+  .cardDotCont2:hover,  .cardDotCont:focus{
+    background-color: var(--primary_light_greyish_color);
   }
   
   .dropdown-content {
@@ -1530,7 +1540,7 @@ th, td {
     position: absolute;
     background-color: var(--primary_dropDown_color);
     min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.2);
     z-index: 1;
     right: 1px;
   }
@@ -1550,7 +1560,7 @@ th, td {
   }
   
   .dropdown-content button:hover {
-    background-color: #f1f1f1;
+    background-color: var(--primary_light_greyish_color);
   }
   
   .cardEdit1:hover .dropdown-content {
@@ -1587,16 +1597,20 @@ th, td {
       display: none;
 }
   .cardTableBtn{
-    right: 6%;
     position: absolute;
-    background-color: var(--primary_dropDown_color);
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    background-color: var(--primary_light_greyish_color);
+    box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.2);
     z-index: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-
+    justify-content: end;
+    min-width: 160px;
+    right: 0;
   }
+  /* .cardEdit2:hover .cardTableBtnCont {
+    display: block;
+  } */
   .cardTableBtn button{
     padding: 0.5rem 1rem;
     border: none;

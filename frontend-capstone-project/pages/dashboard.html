@@ -139,10 +139,11 @@
                 <form class="formpost">
                     <input type="text" id="business-name" placeholder="Business Name">
                     <input type="text" id="business-type" placeholder="Business Type">
-                    <select id="plan-type" class="planType" required>
+                    <select id="planType" class="planType" required>
                         <option class="option" value="">Select Type</option>
                         <option value="Products">Products</option>
                         <option value="Services">Services</option>
+                        <option value="Others">Others</option>
                     </select>
                     <textarea id="business-description" placeholder="Business Description"></textarea>
                 </form>
@@ -207,9 +208,9 @@
                     <table class="tableContainer" id="tableContainer" style="display: none;">
                         <thead>
                             <tr>
-                                <th class="dataEntry">Name</th>
-                                <th class="dataEntry">Description</th>
+                                <th class="dataEntry1">Name</th>
                                 <th class="dataEntry">Type</th>
+                                <th class="dataEntry">Plan Type</th>
                                 <th class="dataEntry">Visibility</th>
                                 <th class="dataEntry">Actions</th>
                             </tr>
