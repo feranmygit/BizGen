@@ -132,7 +132,7 @@ function viewBusiness(index) {
           <div class="viewData">
             <h3 class="viewName">${business.name}</h3>
             <p><h4>Business Type:</h4> ${business.type}</p>
-            <p><h4>Type:</h4> ${business.planType}</p>
+            <p><h4>Plan Type:</h4> ${business.planType}</p>
             <p class="viewDescription"><h4>Description:</h4> ${business.description}</p>
             <p><h4>Visibility:</h4> ${business.visibility}</p>
           </div>
@@ -174,7 +174,7 @@ function printBusiness(index) {
   const printContent = `
     <h3>${business.name}</h3>
     <p>Type: ${business.type}</p>
-    <p>Type: ${business.planType}</p>
+    <p>Plan Type: ${business.planType}</p>
     <p>Description: ${business.description}</p>
     <p>Visibility: ${business.visibility}</p>
   `;
@@ -191,7 +191,7 @@ function downloadBusiness(index) {
   const businessData = `
     Name: ${business.name}\n
     Type: ${business.type}\n
-    Type: ${business.planType}\n
+    Plan Type: ${business.planType}\n
     Description: ${business.description}\n
     Visibility: ${business.visibility}
   `;
