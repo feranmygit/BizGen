@@ -1479,8 +1479,8 @@ th, td {
     align-items: center;
     padding-inline: 1rem;
     gap: 1rem;
-    background-color: var(--primary_brown_color);
-    color: var(--primary_light_greyish_color);
+    background-color: var(--primary_orange1_color);
+    color: var(--primary_white_color);
     letter-spacing: 2px;
     line-height: 1.5rem;
     border-radius: 5px 5px 0 0;
@@ -1501,7 +1501,7 @@ th, td {
     padding: 1.3rem 1.6rem 1.6rem 1.3rem;
     border-radius: 100%;
     transition: 0.3s ease;
-    background-color: var(--primary_greyish_color);
+    /* background-color: var(--primary_greyish_color); */
   }
   .cardDotCont:visited{
     background-color: var(--primary_light_grey_color);
