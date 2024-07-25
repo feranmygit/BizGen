@@ -249,7 +249,7 @@ function showIfNothing(){
     }
   })
 }
-// showIfNothing();
+showIfNothing();
 
 
   // To hide a container if atleast a business is created  
@@ -270,7 +270,7 @@ function showIfSomething(){
     }
   })
 }
-// showIfSomething();
+showIfSomething();
 
 // To set display visibility of some content 
 
