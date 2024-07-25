@@ -411,17 +411,17 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 })
 
 
-const user = getUser(username);
-if (user && user.avatar) {
-  document.getElementById('userAvatar').src = user.avatar;
-}
+// const user = getUser(username);
+// if (user && user.avatar) {
+//   document.getElementById('userAvatar').src = user.avatar;
+// }
 
 });
 
-function getUser(username) {
-  const users = JSON.parse(localStorage.getItem('users')) || [];
-  return users.find(user => user.username === username);
-}
+// function getUser(username) {
+//   const users = JSON.parse(localStorage.getItem('users')) || [];
+//   return users.find(user => user.username === username);
+// }
 
 
 
