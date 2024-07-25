@@ -1101,6 +1101,7 @@ th, td {
 
   .scrollar{
     overflow-x: auto;
+    padding-bottom: 10rem;
   }
   .bizIconSet{
     margin-right: 0.5rem;

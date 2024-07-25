@@ -273,6 +273,7 @@ function showIfSomething(){
   const DashNew = document.getElementById('Dash_sectionNew');
   const tableContainer = document.getElementById('tableContainer');
   const createMore = document.getElementById('createMore');
+  const createMore1 = document.getElementById('createMore1');
   businesses.forEach(b => {
     if(b.name, b.description, b.type, b.visibility === 'public' || b.username === username){
       Dash.style.display = 'none';
