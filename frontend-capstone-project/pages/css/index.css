@@ -1093,6 +1093,12 @@ th, td {
 .loghidden{
     display: none;
 }
+.planType{
+    margin-bottom: 1rem;
+    width: 85%;
+    padding: 1rem;
+    border-radius: 5px;
+}
 
 
 /* User Profile Stylings Here  */
@@ -1479,7 +1485,7 @@ th, td {
     align-items: center;
     padding-inline: 1rem;
     gap: 1rem;
-    background-color: var(--primary_orange1_color);
+    background-color: var(--main_link_color);
     color: var(--primary_white_color);
     letter-spacing: 2px;
     line-height: 1.5rem;
