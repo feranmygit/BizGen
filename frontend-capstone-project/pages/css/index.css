@@ -982,6 +982,20 @@ input[type="text" ], textarea{
     border-radius: 5px;
     font-size: 1rem;
 }
+.planType{
+    margin-bottom: 1rem;
+    padding: 1rem 0.5rem;
+    margin-left: 0;
+    display: block;
+    font-size: 1rem;
+    border-radius: 5px;border: none;
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.5);
+    width: 84%;
+    color: var(--paragraph_greyHeader_color);
+}
+.option{
+    padding: 1rem;
+}
 .radioBox{
     display: flex;
     flex-direction: row;
@@ -1093,12 +1107,7 @@ th, td {
 .loghidden{
     display: none;
 }
-.planType{
-    margin-bottom: 1rem;
-    width: 85%;
-    padding: 1rem;
-    border-radius: 5px;
-}
+
 
 
 /* User Profile Stylings Here  */
