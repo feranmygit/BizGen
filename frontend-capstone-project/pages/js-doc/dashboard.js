@@ -280,7 +280,7 @@ function showIfSomething(){
       DashNew.style.display = 'none';
       tableContainer.style.display = 'block';
       createMore.style.display = 'block';
-      // createMore1.style.display = 'block';
+      createMore1.style.display = 'block';
     }
   })
 }
