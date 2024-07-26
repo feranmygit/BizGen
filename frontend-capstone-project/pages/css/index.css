@@ -487,11 +487,11 @@ body{
 }
 .loginTitle{
     color: var(--primary_white_color);
-    font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
 }
 .logPar{
     color: var(--primary_loginPar_color);
-    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
     line-height: 1.5rem;
 }
 .createAccLink{
@@ -524,24 +524,29 @@ body{
     display: grid;
 }
 .loginForm{
-    margin-top: 1rem;
+    margin-top: 2rem;
     position: relative;
 }
 input[type="username"]{
     padding: 0.5rem;
     width: 95%;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border: 1px solid var(--primary_loginPar_color);
     margin-block-end: 1rem;
     background-color: var(--primary_greyish_color);
+    margin-top: 0.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
 input[type="password"]{
     padding: 0.5rem;
     width: 95%;
     background-color: var(--primary_greyish_color);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border: 1px solid var(--primary_loginPar_color);
     margin-block-end: 1rem;
+    margin-top: 0.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+
 }
 .forPass{
     display: flex;
@@ -566,7 +571,10 @@ input[type="password"]{
     color: var(--primary_white_color);
 }
 .checkMe2{
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+}
+.checkMe3{
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 .margin-block-end{
     margin-block-end: 0;
@@ -588,7 +596,7 @@ input[type="password"]{
     cursor: pointer;
     outline: none;
     margin-top: 0.5rem;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
     transition: 0.3s ease;
 }
 .login:hover{

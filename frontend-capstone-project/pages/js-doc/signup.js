@@ -12,8 +12,8 @@ document.getElementById('logPar2').innerHTML = _logUsers.card2;
 // document.getElementById('logPar3').innerHTML = _logUsers.card3;
 // document.getElementById('faCont2').innerHTML = _logUsers.card4;
 // document.getElementById('faCont3').innerHTML = _logUsers.card5;
-document.getElementById('checkMe2').innerHTML = _logUsers.card6;
-document.getElementById('forpass2').innerHTML = _logUsers.card7;
+// document.getElementById('checkMe2').innerHTML = _logUsers.card6;
+// document.getElementById('forpass2').innerHTML = _logUsers.card7;
 
 
 document.addEventListener('DOMContentLoaded', function(){
