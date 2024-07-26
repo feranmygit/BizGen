@@ -346,7 +346,7 @@ showIfSomething();
     window.location.href = 'businessDetails.html';
   }
   function goBack(){
-    window.location.href = 'dashboard.html';
+    document.getElementById('viewBusiness').style.display = 'none';
   }
 
 // Toggling the visibility of some underlay color containers inside DOMContentLoaded
