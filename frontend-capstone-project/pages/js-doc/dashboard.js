@@ -39,13 +39,13 @@ function createBusiness() {
 
 // Data Display or Visualization 
 
-function loadBusinesses() {
+function loadBusinesses(filteredBusinesses = businesses) {
   const username = localStorage.getItem('loggedInUser');
   const businessCards = document.getElementById('business-cards');
   const businessList = document.getElementById('business-list');
   businessCards.innerHTML = '';
   businessList.innerHTML = '';
-  businesses.forEach((b, index) => {
+  filteredBusinesses.forEach((b, index) => {
     if (b.visibility === 'public' || b.username === username) {
       businessCards.innerHTML += `
          <div class="cardEdit">
@@ -226,6 +226,21 @@ function shareLink(index) {
   }
 }
 
+
+// To search for a name of a business by setting filteredBusinesses = businesses 
+
+function searchByname() {
+  const searchInput = document.getElementById('searchInput').value.toLowerCase();
+  const filteredBusinesses = businesses.filter(business => 
+    business.name.toLowerCase().includes(searchInput)
+  );
+  loadBusinesses(filteredBusinesses);
+}
+
+loadBusinesses();
+
+
+
 function cancelCreateBusiness() {
   document.getElementById('business-name').value = '';
   document.getElementById('business-type').value = '';
@@ -314,6 +329,9 @@ showIfSomething();
 
   function showProfile(){
     window.location.href = 'profile.html';
+  }
+  function reloadDashboard(){
+    window.location.href = 'dashboard.html';
   }
   function showHomePage(){
     window.location.href = 'dashboard.html';
@@ -412,8 +430,8 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 
   const username = localStorage.getItem('loggedInUser');
   const publicBusinesses = businesses.filter(b => b.visibility === 'public' || b.username === username);
-  const tableData = publicBusinesses.map(b => [b.name, b.description, b.type, b.visibility]);
-  const tableHeaders = [["Name", "Description", "Type", "Visibility"]];
+  const tableData = publicBusinesses.map(b => [b.name, b.description, b.type, b.planType, b.visibility]);
+  const tableHeaders = [["Name", "Description", "Type", "Plan Type", "Visibility"]];
 
   doc.autoTable({
     head: tableHeaders,
