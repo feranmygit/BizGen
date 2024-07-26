@@ -344,7 +344,6 @@ body{
     border-radius: 0;
     display: none;
 }
-
 .btnDot{
     height: 5px;
     width: 5px;
@@ -1708,13 +1707,9 @@ th, td {
 .marg_gid{
     margin-inline: 2rem;
 }
-/* #blogImage{
-width: 70%;
+.landingPageBottom{
+    padding-block: 1rem;
 }
-#blogImage img{
-width: 70%;
-margin-inline: 1rem;
-} */
 .questionContainer {
     margin-top: 0;
 }
