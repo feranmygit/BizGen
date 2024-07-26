@@ -199,6 +199,25 @@ const  items1 = document.getElementById('items1');
 // const  items4 = document.getElementById('items4');
 
 
+
+// picture Slides here 
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("blogPics");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
 const  input = document.getElementById('input');
 
 input.addEventListener('click', () => {

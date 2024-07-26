@@ -326,36 +326,25 @@ body{
     margin-top: 6rem;
 }
 .bolgRatio{
-    overflow: hidden;
     width: 100%;
     margin-block: 8rem;
     background-color: var(--primary_white_color);
+  
+}
+.landingPageBottom{
+    padding-bottom: 1rem;
 }
 #blogImage{
     display: flex;
-    animation: slides  10s infinite;
+    justify-content: center;
 }
-#blogImage img{
-    width: 100%;
+.blogPics{
+    max-width: 100%;
     height: auto;
     border-radius: 0;
+    display: none;
 }
-@keyframes slides  {
-    0% { transform: translateX(0);}
-    20% { transform: translateX(0);}
-    25% { transform: translateX(-100%);}
-    45% { transform: translateX(-100%);}
-    50% { transform: translateX(-200%);}
-    70% { transform: translateX(-200%);}
-    75% { transform: translateX(-300%);}
-    85% { transform: translateX(-300%);}
-    90% { transform: translateX(-300%);}
-    95% { transform: translateX(-400%);}
-    100% { transform: translateX(-400%);}
-}
-.imgSlide img:nth-child(1){
-    animation-delay: 5s;
-}
+
 .btnDot{
     height: 5px;
     width: 5px;
@@ -1687,7 +1676,9 @@ th, td {
     margin-inline: auto 0;
     padding: 0.1rem;
 }
-
+.blogPics{
+    max-width: 90%;
+}
 .menuItems:hover {
     border-radius: 0px 0px 0 0;
 }
@@ -1717,13 +1708,13 @@ th, td {
 .marg_gid{
     margin-inline: 2rem;
 }
-#blogImage{
+/* #blogImage{
 width: 70%;
 }
 #blogImage img{
 width: 70%;
 margin-inline: 1rem;
-}
+} */
 .questionContainer {
     margin-top: 0;
 }
@@ -2014,7 +2005,9 @@ input[type="search" i] {
         margin-inline-start: 2rem;
         margin-inline-end: 0rem;
     }
-   
+    .blogPics{
+        max-width: 70%;
+    }
     .userProfileSection1 {
         position: absolute;
         width: 50%;
@@ -2162,12 +2155,12 @@ input[type="search" i] {
     .marg_gid{
         margin-inline: 6rem;
     }
-#blogImage{
+/* #blogImage{
     width: 50%;
     }
 #blogImage img{
     width: 50%;
-    }
+    } */
     .logoContainer1 img {
         height: 50px;
     }
@@ -2233,5 +2226,8 @@ input[type="search" i] {
     }
     .viewData {
         padding-inline: 12%;
+    }
+    .blogPics{
+        max-width: 40%;
     }
 }
