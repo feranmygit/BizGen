@@ -257,6 +257,12 @@ body{
     margin: 0;
     font-size: clamp(2.5rem, 2.5vw, 3rem);
 }
+.newTopic{
+    margin-block: 0;
+}
+.para2{
+    font-size: 1rem;
+}
 .blogImg{
     max-width: 100%;
     border-radius: 15px;
@@ -455,9 +461,6 @@ body{
 }
 .line_height{
     line-height: 1.5rem;
-}
-.line_height2{
-    line-height: 2rem;
 }
 .text_decor{
     text-decoration: none;
