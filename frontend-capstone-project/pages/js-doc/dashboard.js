@@ -60,6 +60,7 @@ function loadBusinesses(filteredBusinesses = businesses) {
                       <button onclick="viewBusiness(${index})">View business</button>
                       <button onclick="editBusiness(${index})">Edit</button>
                       <button onclick="deleteBusiness(${index})">Delete</button>
+                      <button onclick="showAllBusinesses(${index})">Show Table</button>
                       <button onclick="downloadBusiness(${index})">Download</button>
                       <button onclick="copyLink(${index})">Copy Link</button>
                     </div>
@@ -140,6 +141,8 @@ function viewBusiness(index) {
       document.getElementById('viewBusiness').style.display = 'block';
 
 }
+
+
 
 
 function editBusiness(index) {
