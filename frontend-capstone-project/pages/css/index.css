@@ -258,7 +258,8 @@ body{
     font-size: clamp(2.5rem, 2.5vw, 3rem);
 }
 .newTopic{
-    margin-block: 0;
+    margin-top: 0.5rem;
+    font-size: 1rem;
 }
 .para2{
     font-size: 1rem;
