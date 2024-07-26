@@ -195,11 +195,13 @@ function downloadBusiness(index) {
     Description: ${business.description}\n
     Visibility: ${business.visibility}
   `;
-  const blob = new Blob([businessData], { type: 'text/plain' });
-  const link = document.createElement('a');
-  link.href = URL.createObjectURL(blob);
-  link.download = `${business.name}.txt`;
+  if(confirm((`Do you want to download this business plan in a document text type?`))){
+    const blob = new Blob([businessData], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `${business.name}.txt`;
   link.click();
+  }
 }
 
 function copyLink(index) {
