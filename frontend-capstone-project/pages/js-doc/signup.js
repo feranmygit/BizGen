@@ -1,6 +1,6 @@
 const _logUsers = {
     card1: `Register a New Account`,
-    card2: `Create an Account`,
+    card2: `Create an Account on BizGenius`,
     card3: `, Or register with`,
     card4: `Sign Up with Facebook`,
     card5: `Sign Up with Google`,
