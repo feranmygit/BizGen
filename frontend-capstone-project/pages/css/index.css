@@ -487,11 +487,11 @@ body{
 }
 .loginTitle{
     color: var(--primary_white_color);
-    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.7rem);
 }
 .logPar{
     color: var(--primary_loginPar_color);
-    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
     line-height: 1.5rem;
 }
 .createAccLink{
@@ -571,7 +571,7 @@ input[type="password"]{
     color: var(--primary_white_color);
 }
 .checkMe2{
-    font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 .checkMe3{
     font-size: clamp(0.9rem, 2.5vw, 1rem);
@@ -627,7 +627,8 @@ input[type="search" i] {
     padding: 1rem;
     font-weight: 300;
     font-size: 1rem;
-    border: none;
+    border: 0;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .inputIcon.show {
     display: block;
@@ -648,7 +649,6 @@ input[type="search" i] {
     width: 60%;
     padding: 0.8rem 1.2rem;
     border-radius: 30px;
-    border: 0;
     outline: 0;
 }
 .overlay{
@@ -972,17 +972,18 @@ input[type="search" i] {
     padding-inline: 10px;
 }
 .bizGenerate{
-    margin-inline-start: 8%;
+    margin-inline-start: 5%;
     margin-top: 8%;
 }
 .formpost{
-    width: 100%;
+    width: 90%;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-inline: 5%;
 }
-input[type="text" ], textarea{
+input[type="text" ], select, textarea{
     display: block;
     padding: 1rem;
     width: 100%;
@@ -994,7 +995,7 @@ input[type="text" ], textarea{
     font-size: 1rem;
     box-sizing: border-box;
 }
-.planType{
+/* .planType{
     margin-bottom: 1rem;
     padding: 1rem 0.5rem;
     margin-left: 0;
@@ -1004,7 +1005,7 @@ input[type="text" ], textarea{
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.5);
     width: 84%;
     color: var(--paragraph_greyHeader_color);
-}
+} */
 .option{
     padding: 1rem;
 }
@@ -1167,6 +1168,7 @@ th, td {
 }
 .userPic img{
     border-radius: 100%;
+    cursor: pointer;
 }
 .plus-button{
     position: absolute;
@@ -1431,7 +1433,22 @@ th, td {
     padding: 4%;
     margin: 10px;
   }
-  
+  .viewProfilePics{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .zoomContainer{
+    display: none;
+  }
+  .viewProfilePics img{
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+  }
   #profile-picture {
     display: block;
     margin-bottom: 10px;

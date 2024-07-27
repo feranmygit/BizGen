@@ -19,12 +19,12 @@
         <section class="userProfileSection">
             <div class="userPicture">
                 <div class="userPic">
-                    <img id="profile-picture1" src="default-avatar.png" alt="Profile Picture" width="150" height="150">
-                    <button class="plus-button"><i class="fa-solid fa-camera"></i></button>
+                    <img id="profile-picture1" src="./assets/avaters/images1.png" alt="Profile Picture" width="150" height="150" onclick="profileZoomOut()">
+                    <button class="plus-button" onclick="EditProfile()"><i class="fa-solid fa-camera"></i></button>
                 </div>
             </div>
             <div class="userFullNm">
-                <h2 class="myFullN" id="myFullN"></h2><i class="fa-solid fa-pen" id="removePen4" onclick="removePenFour()"></i>
+                <h2 class="myFullN" id="myFullN"></h2><i class="fa-solid fa-pen" id="removePen4" onclick="EditProfile()"></i>
                 <h5 class="myVisibility">Online</h5>
             </div>
 
@@ -113,6 +113,14 @@
                     </div>
                 </div>
             </div>
+            <div class="zoomContainer" id="viewProfilePics" onclick="myToggleDown()">
+                <div class="viewProfilePics">
+                    <img class="myProfilePicEdit" id="profile-picture3" src="./assets/avaters/images1.png" alt="Profile Picture">
+                </div>
+            </div>
+            <label for="input4">
+                <div class="convColor" id="overColor" onclick="myToggleDown()"></div>
+            </label>
         </section>
       
         <section class="userProfileSection1">
@@ -169,6 +177,57 @@
                 </div>
             </div>
         </section>
+
+        <div class="profileEditContainer" id="profileEditContainer">
+            <div class="profileEditHeader">
+                <i class="fa-solid searchIconn fa-xmark" onclick="removeProfileEditPage()"></i>
+                <h2 class="editText">Edit Profile</h2>
+            </div>
+            <div id="profile-section">
+                <div class="myProfilePicEditCont">
+                    <img class="myProfilePicEdit" id="profile-picture2" src="./assets/avaters/images1.png" alt="Profile Picture">
+                </div>
+                <div class="chooseAvaterCont flex justify_centre">
+                    <input type="file" class="profileInputAvater" id="profile-picture-input" accept="image/*" onchange="changeProfilePicture(event)">
+                </div>
+                <div>
+                    <label for="profile-name">Name:</label>
+                    <input type="text" class="textSpace" id="myFullN">
+                </div>
+                <div>
+                    <label for="profile-gender">Gender:</label>
+                    <select id="my_Gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="profile-Contact">Phone Number:</label>
+                    <input type="text" id="my_Contact">
+                </div>
+                <div>
+                    <label for="profile-Relationship">Relationship Status:</label>
+                    <input type="text" id="Relationship">
+                </div>
+                <div>
+                    <label for="profile-email">Email Address:</label>
+                    <input type="text" id="my_EmailAdd">
+                </div>
+                <div>
+                    <label for="profile-Nickname">Nickname:</label>
+                    <input type="text" id="my_Nickname">
+                </div>
+                <div>
+                    <label for="profile-Address">Home Address:</label>
+                    <input type="text" id="my_Address">
+                </div>
+                <div class="buttonSubmitEdit flex justify_centre">
+                    <button onclick="saveProfile()">Save Profile</button>
+                </divv>
+            </div>
+        </div>
+    
     </main>
 
      <script src="./js-doc/profile.js"></script>

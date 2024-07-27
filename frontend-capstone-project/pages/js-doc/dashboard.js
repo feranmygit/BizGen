@@ -24,7 +24,8 @@ function loadUserProfile() {
     document.getElementById('profile-picture1').src = profile.picture;
     document.getElementById('profile-picture2').src = profile.picture;
   } else {
-    document.getElementById('profile-picture1').src = 'default-avatar.png';
+    document.getElementById('profile-picture1').src = './assets/avaters/images1.png';
+    document.getElementById('profile-picture2').src = './assets/avaters/images1.png';
   }
   document.getElementById('myFullN').value = profile.name || '';
   document.getElementById('my_Gender').value = profile.gender || 'Select';
@@ -419,6 +420,9 @@ showIfSomething();
     document.getElementById('profileEditContainer').style.display = 'none';
   }
  
+  function avaterBtn(){
+    window.location.href = 'profile.html';
+  }
   function showProfile(){
     window.location.href = 'profile.html';
   }

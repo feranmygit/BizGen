@@ -60,8 +60,9 @@
                  <nav class="nav-container" id="navContainer">
                      <ul class="nav-items">
                          <div class="profileInfo">
-                            <img id="profile-picture1" src="default-avatar.png" alt="Profile Picture" width="55" height="100">
-                             <!-- <img src="./assets/avaters/testimonial-4.jpg" alt="" id="userAvatar"> -->
+                            <div class="userAvaterContainer" onclick="avaterBtn()">
+                                <img id="profile-picture1" src="default-avatar.png" alt="Profile Picture" width="55" height="100">
+                            </div>
                              <h3 class="userN">Hi, <span id="usernameDisplay2"></span></h3>
                          </div>
                          <div class="bar1 bartack bartack1 borderBotm">
@@ -244,7 +245,7 @@
             </div>
             <div id="profile-section">
                 <div class="myProfilePicEditCont">
-                    <img class="myProfilePicEdit" id="profile-picture2" src="default-avatar.png" alt="Profile Picture">
+                    <img class="myProfilePicEdit" id="profile-picture2" src="./assets/avaters/images1.png" alt="Profile Picture">
                 </div>
                 <div class="chooseAvaterCont flex justify_centre">
                     <input type="file" class="profileInputAvater" id="profile-picture-input" accept="image/*" onchange="changeProfilePicture(event)">
