@@ -15,292 +15,75 @@ document.getElementById('usernameDisplay4').innerText = username;
 
 
 
+// set profile here 
 
-// To input a New entry code here
-
-
-
-document.getElementById('inputDataContainer1').addEventListener('submit', function(event) {
-    event.preventDefault();
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    const currentUser = users.find(user => user.username === username); 
-    const DataInfoOne = document.getElementById('DataInfoOne').value;
-
-    users.push(DataInfoOne, currentUser)
-    localStorage.setItem('users', JSON.stringify(users));
-    localStorage.setItem('userInfoOne', DataInfoOne);
-    alert('Profile updated');
-    window.location.href = 'profile.html';
-    })
-
-
-  document.getElementById('inputDataContainer3').addEventListener('submit', function(event) {
-    event.preventDefault();
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    const currentUser = users.find(user => user.username === username); 
-    const DataInfoThree = document.getElementById('DataInfoThree').value;
-
-    users.push(DataInfoThree, currentUser)
-    localStorage.setItem('users', JSON.stringify(users));
-    localStorage.setItem('userInfoThree', DataInfoThree);
-    alert('Profile updated');
-    window.location.href = 'profile.html';
-    })
-
-
-
-    document.getElementById('inputDataContainer4').addEventListener('submit', function(event) {
-    event.preventDefault();
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    const currentUser = users.find(user => user.username === username); 
-    const DataInfoFour = document.getElementById('DataInfoFour').value;
-
-    users.push(DataInfoOne, currentUser)
-    localStorage.setItem('users', JSON.stringify(users));
-    localStorage.setItem('userInfoFour', DataInfoFour);
-    alert('Profile updated');
-    window.location.href = 'profile.html';
-    })
-
-
-
-    document.getElementById('inputDataContainer5').addEventListener('submit', function(event) {
-    event.preventDefault();
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    const currentUser = users.find(user => user.username === username); 
-    const DataInfoFive = document.getElementById('DataInfoFive').value;
-
-    users.push(DataInfoOne, currentUser)
-    localStorage.setItem('users', JSON.stringify(users));
-    localStorage.setItem('userInfoFive', DataInfoFive);
-    alert('Profile updated');
-    window.location.href = 'profile.html';
-    })
-
-
-
-  document.getElementById('inputDataContainer6').addEventListener('submit', function(event) {
-    event.preventDefault();
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    const currentUser = users.find(user => user.username === username); 
-    const DataInfoSix = document.getElementById('DataInfoSix').value;
-
-    users.push(DataInfoOne, currentUser)
-    localStorage.setItem('users', JSON.stringify(users));
-    localStorage.setItem('userInfoSix', DataInfoSix);
-    alert('Profile updated');
-    window.location.href = 'profile.html';
-    })
-
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-
-
-const DataInfoOne = localStorage.getItem('userInfoOne');
-document.getElementById('usernameDisplay3').innerHTML= DataInfoOne;
-
-const DataInfoThree = localStorage.getItem('userInfoThree');
-document.getElementById('usernameDisplay5').innerHTML= DataInfoThree;
-
-const DataInfoFour = localStorage.getItem('userInfoFour');
-document.getElementById('usernameDisplay6').innerHTML= DataInfoFour;
-
-const DataInfoFive = localStorage.getItem('userInfoFive');
-document.getElementById('usernameDisplay7').innerHTML= DataInfoFive;
-
-const DataInfoSix = localStorage.getItem('userInfoSix');
-document.getElementById('usernameDisplay8').innerHTML= DataInfoSix;
-
-
-
-});
-
-
-const inputDataContainer1 = document.getElementById('inputDataContainer1');
-const removePen1 = document.getElementById('removePen1');
-const detailCont1 = document.getElementById('detailCont1');
-
-const inputDataContainer3 = document.getElementById('inputDataContainer3');
-const removePen3 = document.getElementById('removePen3');
-const detailCont3 = document.getElementById('detailCont3');
-
-const inputDataContainer4 = document.getElementById('inputDataContainer4');
-const removePen4 = document.getElementById('removePen4');
-const detailCont4 = document.getElementById('detailCont4');
-
-const inputDataContainer5 = document.getElementById('inputDataContainer5');
-const removePen5 = document.getElementById('removePen5');
-const detailCont5 = document.getElementById('detailCont5');
-
-const inputDataContainer6 = document.getElementById('inputDataContainer6');
-const removePen6 = document.getElementById('removePen6');
-const detailCont6 = document.getElementById('detailCont6');
-
-function removeSaveDataOne(){
-  inputDataContainer1.style.display = 'none';
-  detailCont1.style.display = 'block';
-}
-function removePenOne(){
-  inputDataContainer1.style.display = 'block';
-  detailCont1.style.display = 'none';
+function getUserProfile(username) {
+  return JSON.parse(localStorage.getItem(`profile_${username}`)) || {};
 }
 
-function removeSaveDataThree(){
-  inputDataContainer3.style.display = 'none';
-  detailCont3.style.display = 'block';
-}
-function removePenThree(){
-  inputDataContainer3.style.display = 'block';
-  detailCont3.style.display = 'none';
+function saveUserProfile(username, profile) {
+  localStorage.setItem(`profile_${username}`, JSON.stringify(profile));
 }
 
-function removeSaveDataFour(){
-  inputDataContainer4.style.display = 'none';
-  detailCont4.style.display = 'block';
-}
-function removePenFour(){
-  inputDataContainer4.style.display = 'block';
-  detailCont4.style.display = 'none';
-}
-
-function removeSaveDataFive(){
-  inputDataContainer5.style.display = 'none';
-  detailCont5.style.display = 'block';
-}
-function removePenFive(){
-  inputDataContainer5.style.display = 'block';
-  detailCont5.style.display = 'none';
+function changeProfilePicture(event) {
+  const reader = new FileReader();
+  reader.onload = function() {
+    const profilePicture = reader.result;
+    document.getElementById('profile-picture1').src = profilePicture;
+    const username = localStorage.getItem('loggedInUser');
+    const profile = getUserProfile(username);
+    profile.picture = profilePicture;
+    saveUserProfile(username, profile);
+  };
+  reader.readAsDataURL(event.target.files[0]);
 }
 
-function removeSaveDataSix(){
-  inputDataContainer6.style.display = 'none';
-  detailCont6.style.display = 'block';
+function saveProfile() {
+  const name = document.getElementById('myFullN').value;
+  const gender = document.getElementById('my_Gender').value;
+  const relationship = document.getElementById('Relationship').value;
+  const email = document.getElementById('my_EmailAdd').value;
+  const contact = document.getElementById('my_Contact').value;
+  const nickname = document.getElementById('my_Nickname').value;
+  const address = document.getElementById('my_Address').value;
+  const username = localStorage.getItem('loggedInUser');
+
+  const profile = {
+    name,
+    gender,
+    relationship,
+    email,
+    contact,
+    nickname,
+    address,
+    picture: document.getElementById('profile-picture1').src
+  };
+
+  saveUserProfile(username, profile);
+  alert('Profile saved successfully!');
 }
-function removePenSix(){
-  inputDataContainer6.style.display = 'block';
-  detailCont6.style.display = 'none';
+
+function loadUserProfile() {
+  const username = localStorage.getItem('loggedInUser');
+  const profile = getUserProfile(username);
+
+  if (profile.picture) {
+    document.getElementById('profile-picture1').src = profile.picture;
+  } else {
+    document.getElementById('profile-picture1').src = 'default-avatar.png';
+  }
+  document.getElementById('myFullN').innerText = profile.name || '';
+  document.getElementById('myFullNProfile').innerText = profile.name || '';
+  document.getElementById('my_Gender').innerText = profile.gender || 'male';
+  document.getElementById('Relationship').innerText = profile.relationship || '';
+  document.getElementById('my_EmailAdd').innerText =  profile.email || '';
+  document.getElementById('my_Contact').innerText = profile.contact || '';
+  document.getElementById('my_Nickname').innerText = profile.nickname || '';
+  document.getElementById('my_Address').innerText = profile.address || '';
 }
 
-
-
-
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const username = localStorage.getItem('loggedInUser');
-//   if (!username) {
-//     window.location.href = 'login.html';
-//     return;
-//   }
-
-//   const user = getUser(username);
-//   document.getElementById('username').value = user.username;
-
-//   document.getElementById('profileForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     const updatedUsername = document.getElementById('username').value;
-//     const avatarFile = document.getElementById('avatar').files[0];
-//     let avatarUrl = user.avatar;
-
-//     if (avatarFile) {
-//       const reader = new FileReader();
-//       reader.onload = function(event) {
-//         avatarUrl = event.target.result;
-//         saveUserProfile(username, updatedUsername, avatarUrl);
-//       };
-//       reader.readAsDataURL(avatarFile);
-//     } else {
-//       saveUserProfile(username, updatedUsername, avatarUrl);
-//     }
-//   });
-// });
-
-// function saveUserProfile(oldUsername, newUsername, avatarUrl) {
-//   let users = JSON.parse(localStorage.getItem('users')) || [];
-//   users = users.map(user => {
-//     if (user.username === oldUsername) {
-//       return { ...user, username: newUsername, avatar: avatarUrl };
-//     }
-//     return user;
-//   });
-//   localStorage.setItem('users', JSON.stringify(users));
-//   localStorage.setItem('loggedInUser', newUsername);
-
-//   alert('Profile updated successfully!');
-//   window.location.href = 'dashboard.html';
-// }
-
-// function getUser(username) {
-//   const users = JSON.parse(localStorage.getItem('users')) || [];
-//   return users.find(user => user.username === username);
-// }
-
-
-
-
-// // profile pic 
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const username = localStorage.getItem('loggedInUser');
-//   if (!username) {
-//     window.location.href = 'login.html';
-//     return;
-//   }
-
-//   const user = getUser(username);
-//   document.getElementById('username').value = user.username;
-
-//   document.getElementById('profileForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     const updatedUsername = document.getElementById('username').value;
-//     const avatarFile = document.getElementById('avatar').files[0];
-//     let avatarUrl = user.avatar;
-
-//     if (avatarFile) {
-//       const reader = new FileReader();
-//       reader.onload = function(event) {
-//         avatarUrl = event.target.result;
-//         saveUserProfile(username, updatedUsername, avatarUrl);
-//       };
-//       reader.readAsDataURL(avatarFile);
-//     } else {
-//       saveUserProfile(username, updatedUsername, avatarUrl);
-//     }
-//   });
-
-
-// if (user && user.avatar) {
-//   document.getElementById('userAvatar').src = user.avatar;
-// }
-// });
-
-// function saveUserProfile(oldUsername, newUsername, avatarUrl) {
-//   let users = JSON.parse(localStorage.getItem('users')) || [];
-//   users = users.map(user => {
-//     if (user.username === oldUsername) {
-//       return { ...user, username: newUsername, avatar: avatarUrl };
-//     }
-//     return user;
-//   });
-//   localStorage.setItem('users', JSON.stringify(users));
-//   localStorage.setItem('loggedInUser', newUsername);
-
-//   alert('Profile updated successfully!');
-//   window.location.href = 'dashboard.html';
-// }
-// b
-// function getUser(username) {
-//   const users = JSON.parse(localStorage.getItem('users')) || [];
-//   return users.find(user => user.username === username);
-// }
-
-
-
-
-
+// Initial load
+loadUserProfile();
 
 
 

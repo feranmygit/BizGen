@@ -648,6 +648,8 @@ input[type="search" i] {
     width: 60%;
     padding: 0.8rem 1.2rem;
     border-radius: 30px;
+    border: 0;
+    outline: 0;
 }
 .overlay{
     position: fixed;
@@ -1381,6 +1383,66 @@ th, td {
     color: var(--primary_white_color);
 }
 
+
+/* Uers profile edit form here  */
+.profileEditContainer{
+    position: fixed;
+    z-index: 5;
+    width: 96%;
+    background-color: var(--primary_white_color);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2%;
+    display: none;
+    overflow-y: auto;
+}
+/* .contentDashboard{
+    display: none;
+} */
+
+#profile-section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  #profile-picture {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #profile-section div {
+    margin-bottom: 10px;
+  }
+  
+  #profile-section label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #profile-section input,
+  #profile-section select {
+    width: 80%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  #profile-section button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #profile-section button:hover {
+    background-color: #0056b3;
+  }
+
+  
 /* downLoad stylings here  */
 
 .confirmDownload{

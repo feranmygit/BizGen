@@ -41,7 +41,7 @@
              <!-- search section here  -->
               <div class="setAsidesCont1">
                 <div class="inputIcon" id="inputIcon">
-                    <input type="text" id="searchInput" placeholder="Search business by name..." oninput="searchByname()">
+                    <input type="search" id="searchInput" placeholder="Search business by name..." oninput="searchByname()">
                     <label for="search" class="search xRemove" id="searcBtn" onclick="myBtn()">
                         <i class="fa-solid searchIcon fa-xmark"></i>
                       </label>
@@ -60,7 +60,8 @@
                  <nav class="nav-container" id="navContainer">
                      <ul class="nav-items">
                          <div class="profileInfo">
-                             <img src="./assets/avaters/testimonial-4.jpg" alt="" id="userAvatar">
+                            <img id="profile-picture1" src="default-avatar.png" alt="Profile Picture" width="55" height="100">
+                             <!-- <img src="./assets/avaters/testimonial-4.jpg" alt="" id="userAvatar"> -->
                              <h3 class="userN">Hi, <span id="usernameDisplay2"></span></h3>
                          </div>
                          <div class="bar1 bartack bartack1 borderBotm">
@@ -69,7 +70,7 @@
                             </label>
                             <h4 class="personalSet menuItems3 showSettings"><i class="fa-solid bizIconSet fa-circle-info"></i>Personal Setting</h4>
                              <div class="pBar pBarTop" id="pBarTop">
-                                 <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-user"></i>Edit Profile</a></li>
+                                 <li class="listBar1 listBar listPad ftwtbar" onclick="EditProfile()"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-user"></i>Edit Profile</a></li>
                                  <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-address-book"></i>Address</a></li>
                                  <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-solid bizIcon fa-bell"></i>Notification</a></li>
                                  <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink" id="barLink"><i class="fa-regular bizIcon fa-credit-card"></i>Payment</a></li>
@@ -235,6 +236,49 @@
                 <button class="conBtn"  onclick="confirmBtn()">No</button>
             </div>
         </div>
+
+        <div class="profileEditContainer" id="profileEditContainer">
+            <i class="fa-solid searchIcon fa-xmark" onclick="removeProfileEditPage()"></i>
+            <h2>Profile</h2>
+            <div id="profile-section">
+                <!-- <img id="profile-picture1" src="default-avatar.png" alt="Profile Picture" width="100" height="100"> -->
+                <input type="file" id="profile-picture-input" accept="image/*" onchange="changeProfilePicture(event)">
+                <div>
+                    <label for="profile-name">Name:</label>
+                    <input type="text" id="myFullN">
+                </div>
+                <div>
+                    <label for="profile-gender">Gender:</label>
+                    <select id="my_Gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="profile-Contact">Phone Number:</label>
+                    <input type="text" id="my_Contact">
+                </div>
+                <div>
+                    <label for="profile-Relationship">Relationship Status:</label>
+                    <input type="text" id="Relationship">
+                </div>
+                <div>
+                    <label for="profile-email">Email Address:</label>
+                    <input type="text" id="my_EmailAdd">
+                </div>
+                <div>
+                    <label for="profile-Nickname">Nickname:</label>
+                    <input type="text" id="my_Nickname">
+                </div>
+                <div>
+                    <label for="profile-Address">Home Address:</label>
+                    <input type="text" id="my_Address">
+                </div>
+                <button onclick="saveProfile()">Save Profile</button>
+            </div>
+        </div>
+    
     </main>
  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>

@@ -19,12 +19,12 @@
         <section class="userProfileSection">
             <div class="userPicture">
                 <div class="userPic">
-                    <img src="./assets/avaters/testimonial-4.jpg" alt="" id="userAvatar">
+                    <img id="profile-picture1" src="default-avatar.png" alt="Profile Picture" width="150" height="150">
                     <button class="plus-button"><i class="fa-solid fa-camera"></i></button>
                 </div>
             </div>
             <div class="userFullNm">
-                <h2 class="myFullN">Nora Tsunoda</h2>
+                <h2 class="myFullN" id="myFullN"></h2>
                 <h5 class="myVisibility">Online</h5>
             </div>
 
@@ -33,24 +33,31 @@
             <div class="userInfoDetails">
                 <h3 class="informationDet ">My Profile</h3>
                 <div class="profileInputData userDetails  gap uMeData">
+                    <div class="detailCont" id="detailContr">
+                        <div class="flex justify_between">
+                            <h4 class="uMe">Gender</h4>
+                            <div class="outDataContainer">
+                                <span class="outputData" id="my_Gender"></span>
+                                <label for="DataInfoFour">
+                                    <i class="fa-solid fa-pen" id="removePen4" onclick="removePenFour()"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profileInputData userDetails  gap uMeData">
                     <div class="detailCont" id="detailCont1">
                         <div class="flex justify_between">
                             <h4 class="uMe">Relationship</h4>
                             <div class="outDataContainer">
-                                <span class="outputData" id="usernameDisplay3"></span>
+                                <span class="outputData" id="Relationship">hello</span>
                                 <label for="DataInfoOne">
                                     <i class="fa-solid fa-pen" id="removePen1" onclick="removePenOne()"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <form action="get" class="inputDataContainer1" id="inputDataContainer1">
-                        <div class="inputDataContainer">
-                            <input type="text" id="DataInfoOne" placeholder="Relationship Status">
-                            <button class="saveData saveData1">Save</button>
-                            <span class="saveData saveData2" onclick="removeSaveDataOne()">cancel</span>
-                        </div>
-                    </form>
                 </div>
 
 
@@ -60,116 +67,72 @@
                             <h4 class="uMe">Username</h4>
                             <div class="outDataContainer">
                                 <span class="outputData" id="usernameDisplay4"></span>
-                                <!-- <i class="fa-solid fa-camera" id="removePen1"></i> -->
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="inputDataContainer" id="inputDataContainer2">
-                        <input type="text" id="DataInfoTwo">
-                        <span class="saveData">Save</span>
-                    </div>               -->
                 </div>
-
-
 
                 <div class="profileInputData userDetails  gap uMeData">
                     <div class="detailCont" id="detailCont3">
                         <div class="flex justify_between">
                             <h4 class="uMe">Email</h4>
                             <div class="outDataContainer">
-                                <span class="outputData" id="usernameDisplay5"></span>
+                                <span class="outputData" id="my_EmailAdd"></span>
                                 <label for="DataInfoThree">
                                     <i class="fa-solid fa-pen" id="removePen3" onclick="removePenThree()"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <form action="get" class="inputDataContainer1" id="inputDataContainer3">
-                        <div class="inputDataContainer">
-                            <input type="text" id="DataInfoThree" placeholder="Input Email">
-                            <button class="saveData saveData1">Save</button>
-                            <span class="saveData saveData2" onclick="removeSaveDataThree()">cancel</span>
-                        </div>
-                    </form>
                 </div>
-
-
-
 
                 <div class="profileInputData userDetails  gap uMeData">
                     <div class="detailCont" id="detailCont4">
                         <div class="flex justify_between">
                             <h4 class="uMe">Contact</h4>
                             <div class="outDataContainer">
-                                <span class="outputData" id="usernameDisplay6"></span>
+                                <span class="outputData" id="my_Contact"></span>
                                 <label for="DataInfoFour">
                                     <i class="fa-solid fa-pen" id="removePen4" onclick="removePenFour()"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <form action="get" class="inputDataContainer1" id="inputDataContainer4">
-                        <div class="inputDataContainer">
-                            <input type="text" id="DataInfoFour" placeholder="Input Contact">
-                            <button class="saveData saveData1">Save</button>
-                            <span class="saveData saveData2" onclick="removeSaveDataFour()">cancel</span>
-                        </div>
-                    </form>
                 </div>
-
-
-
 
                 <div class="profileInputData userDetails  gap uMeData">
                     <div class="detailCont" id="detailCont5">
                         <div class="flex justify_between">
                             <h4 class="uMe">Nickname</h4>
                             <div class="outDataContainer">
-                                <span class="outputData" id="usernameDisplay7"></span>
+                                <span class="outputData" id="my_Nickname"></span>
                                 <label for="DataInfoFive">
                                     <i class="fa-solid fa-pen" id="removePen5" onclick="removePenFive()"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <form action="get" class="inputDataContainer1" id="inputDataContainer5">
-                        <div class="inputDataContainer">
-                            <input type="text" id="DataInfoFive" placeholder="Input Nickname">
-                            <button class="saveData saveData1">Save</button>
-                            <span class="saveData saveData2" onclick="removeSaveDataFive()">cancel</span>
-                        </div>
-                    </form>
                 </div>
-
-
-                
+         
                 <div class="profileInputData userDetails  gap uMeData">
                     <div class="detailCont" id="detailCont6">
                         <div class="flex justify_between">
                             <h4 class="uMe">Address</h4>
                             <div class="outDataContainer">
-                                <span class="outputData" id="usernameDisplay8"></span>
+                                <span class="outputData" id="my_Address"></span>
                                 <label for="DataInfoSix">
                                     <i class="fa-solid fa-pen" id="removePen6" onclick="removePenSix()"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <form action="get" class="inputDataContainer1" id="inputDataContainer6">
-                        <div class="inputDataContainer">
-                            <input type="text" id="DataInfoSix" placeholder="Input Address">
-                            <button class="saveData saveData1">Save</button>
-                            <span class="saveData saveData2" onclick="removeSaveDataSix()">cancel</span>
-                        </div>
-                    </form>
                 </div>
-
             </div>
         </section>
       
         <section class="userProfileSection1">
             <div class="roleLists roleLists1 userPadding userPaddingProfile userSetP">
-                <p class="userRole userPadding">Nora spends most of their time on...</p>
+                <p class="userRole userPadding"><span id="myFullNProfile" style="font-weight: 600; font-size: 1.5rem; font-style: italic; "></span>  spends most of their time on...</p>
                 <div class="userPadding1">
                     <h4 class="roles roles1"><i class="fa-solid fa-tablet"></i>Product Infrastructure</h4>
                     <h4 class="roles roles2"><i class="fa-solid keyYellow fa-lock"></i>Network Security</h4>
@@ -221,15 +184,7 @@
                 </div>
             </div>
         </section>
-        
     </main>
-    <!-- <form class="profileForm3" id="profileForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="avatar">Profile Picture:</label>
-        <input type="file" id="avatar" name="avatar">
-        <button type="submit">Save Profile</button>
-      </form> -->
 
      <script src="./js-doc/profile.js"></script>
 </body>
