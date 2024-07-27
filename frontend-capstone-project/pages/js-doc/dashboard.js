@@ -22,11 +22,12 @@ function loadUserProfile() {
 
   if (profile.picture) {
     document.getElementById('profile-picture1').src = profile.picture;
+    document.getElementById('profile-picture2').src = profile.picture;
   } else {
     document.getElementById('profile-picture1').src = 'default-avatar.png';
   }
   document.getElementById('myFullN').value = profile.name || '';
-  document.getElementById('my_Gender').value = profile.gender || 'male';
+  document.getElementById('my_Gender').value = profile.gender || 'Select';
   document.getElementById('Relationship').value = profile.relationship || '';
   document.getElementById('my_EmailAdd').value =  profile.email || '';
   document.getElementById('my_Contact').value = profile.contact || '';
@@ -298,6 +299,7 @@ function changeProfilePicture(event) {
   reader.onload = function() {
     const profilePicture = reader.result;
     document.getElementById('profile-picture1').src = profilePicture;
+    document.getElementById('profile-picture2').src = profilePicture;
     const username = localStorage.getItem('loggedInUser');
     const profile = getUserProfile(username);
     profile.picture = profilePicture;
@@ -324,7 +326,7 @@ function saveProfile() {
     contact,
     nickname,
     address,
-    picture: document.getElementById('profile-picture1').src
+    picture: document.getElementById('profile-picture1', 'profile-picture2').src
   };
 
 

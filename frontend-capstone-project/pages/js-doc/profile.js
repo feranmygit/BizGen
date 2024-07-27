@@ -75,7 +75,7 @@ function loadUserProfile() {
   }
   document.getElementById('myFullN').innerText = profile.name || '';
   document.getElementById('myFullNProfile').innerText = profile.name || '';
-  document.getElementById('my_Gender').innerText = profile.gender || 'male';
+  document.getElementById('my_Gender').innerText = profile.gender || 'Select';
   document.getElementById('Relationship').innerText = profile.relationship || '';
   document.getElementById('my_EmailAdd').innerText =  profile.email || '';
   document.getElementById('my_Contact').innerText = profile.contact || '';
