@@ -1387,7 +1387,7 @@ th, td {
 /* Uers profile edit form here  */
 .profileEditContainer{
     position: fixed;
-    z-index: 5;
+    z-index: 10000;
     width: 96%;
     background-color: var(--primary_white_color);
     top: 0;
