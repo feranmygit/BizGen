@@ -61,6 +61,7 @@ function saveProfile() {
 
   saveUserProfile(username, profile);
   alert('Profile saved successfully!');
+  document.getElementById('profileEditContainer').style.display = 'none';
 }
 
 function loadUserProfile() {

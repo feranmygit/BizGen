@@ -330,6 +330,7 @@ function saveProfile() {
 
   saveUserProfile(username, profile);
   alert('Profile saved successfully!');
+  document.getElementById('profileEditContainer').style.display = 'none';
 }
 
 // Initial load
@@ -415,9 +416,7 @@ showIfSomething();
   function removeProfileEditPage() {
     document.getElementById('profileEditContainer').style.display = 'none';
   }
-  function EditProfile() {
-    document.getElementById('profileEditContainer').style.display = 'block';
-  }
+ 
   function showProfile(){
     window.location.href = 'profile.html';
   }
