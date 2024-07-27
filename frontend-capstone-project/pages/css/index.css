@@ -219,6 +219,7 @@ body{
     z-index: 2;
     top: 0;
     position: fixed;
+    left: 0;
     background-color: var(--primary_covered_color);
 }
 .coverColor.open{
@@ -230,6 +231,7 @@ body{
     display: none;
     z-index: 3;
     top: 0;
+    left: 0;
     position: fixed;
 }
 .overlayColor.open{
@@ -1434,7 +1436,7 @@ th, td {
     margin: 10px;
   }
   .viewProfilePics{
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 10;
     top: 2rem;
