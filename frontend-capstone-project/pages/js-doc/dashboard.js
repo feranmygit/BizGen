@@ -81,7 +81,7 @@ function loadBusinesses(filteredBusinesses = businesses) {
                       </div>
                   </div>
                     <div id="dropdown-content-${index}" class="dropdown-content">
-                      <button onclick="viewBusiness(${index})">View business</button>
+                      <a href="./viewBusiness.html?index=${index}"><button>View</button></a>     
                       <button onclick="editBusiness(${index})">Edit</button>
                       <button onclick="deleteBusiness(${index})">Delete</button>
                       <button onclick="showAllBusinesses(${index})">Show Table</button>
@@ -110,8 +110,7 @@ function loadBusinesses(filteredBusinesses = businesses) {
               </td>
               <div class="cardTableBtnCont" id="cardTableBtnCont${index}">
                 <div class="cardTableBtn dropdowncardTableBtn">
-                  <button onclick="viewBusiness(${index})">View</button>
-                  <button onclick="editBusiness(${index})">Edit</button>
+                  <a href="./viewBusiness.html?index=${index}"><button>View</button></a>                <button onclick="editBusiness(${index})">Edit</button>
                   <button onclick="deleteBusiness(${index})">Delete</button>
                   <button class="btnPrint" onclick="printBusiness(${index})">Print</button>
                   <button class="btnDownload" onclick="downloadBusiness(${index})">Download</button>
@@ -146,29 +145,6 @@ function toggleMenu(index) {
     menu.style.display = 'block';
   }
 }
-
-function viewBusiness(index) {
-  const business = businesses[index];
-  let viewBusiness = document.getElementById('viewBusiness');
-  viewBusiness.innerHTML = `
-          <div class="goBackContainer" onclick="goBack()">
-                <div class="goBack-icon" id="goBack">
-                    <i class="fa-solid  fa-arrow-left"></i>
-                </div>
-          </div>
-          <div class="viewData">
-            <h3 class="viewName">${business.name}</h3>
-            <p><h4>Business Type:</h4> ${business.type}</p>
-            <p><h4>Plan Type:</h4> ${business.planType}</p>
-            <p class="viewDescription"><h4>Description:</h4> ${business.description}</p>
-            <p><h4>Visibility:</h4> ${business.visibility}</p>
-          </div>
-  `;
-      document.getElementById('viewBusiness').style.display = 'block';
-
-}
-
-
 
 
 function editBusiness(index) {
@@ -360,7 +336,9 @@ showIfSomething();
   function removeProfileEditPage() {
     window.location.href = 'profile.html';
   }
- 
+ function viewBusiness(index){
+  window.location.href = 'viewBusiness.html';
+ }
   function avaterBtn(){
     window.location.href = 'profile.html';
   }

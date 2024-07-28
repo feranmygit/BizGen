@@ -1150,6 +1150,10 @@ th, td {
     cursor: pointer;
     border-radius: 100%;
     transition: 0.3s ease;
+    top: 2rem;
+}
+.dropdown-content a{
+    text-decoration: none;
 }
 .goBackContainer:hover{
     background-color: var(--primary_light_greyish_color);
@@ -1698,14 +1702,14 @@ th, td {
     display: block;
   }
   .viewBusiness{
-    position: fixed;
+    /* position: fixed;
     overflow-y: auto;
-    width: 100%;
+    width: 100%; */
     background-color: var(--primary_white_color);
-    top: 0;
+    /* top: 0;
     bottom: 0;
     z-index: 15;
-    display: none;
+    display: none; */
   }
   .viewData{
     margin-top: 5rem;
