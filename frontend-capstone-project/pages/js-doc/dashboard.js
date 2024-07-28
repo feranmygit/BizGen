@@ -5,8 +5,16 @@ let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
 let editingPlanIndex = null;
 let users = JSON.parse(localStorage.getItem('users')) || [];
 
+function truncateUsername(username, maxLength) {
+  if (username.length > maxLength) {
+    return username.slice(0, maxLength) + '...';
+  }
+  return username;
+}
 
 // Load user profile from local storage
+
+
 
 function getUserProfile(username) {
   return JSON.parse(localStorage.getItem(`profile_${username}`)) || {};
@@ -19,6 +27,7 @@ function saveUserProfile(username, profile) {
 function loadUserProfile() {
   const username = localStorage.getItem('loggedInUser');
   const profile = getUserProfile(username);
+  
 
   if (profile.picture) {
     document.getElementById('profile-picture1').src = profile.picture;
@@ -463,10 +472,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // To set the users username where needed on the website inside DOMContentLoaded
 
- 
-    document.getElementById('usernameDisplay1').innerText = username;
-    document.getElementById('usernameDisplay2').innerText = username;
-    document.getElementById('usernameDisplay').innerText = username;
+      const maxLength = 8; 
+      const truncatedUsername = truncateUsername(username, maxLength);
+      
+      document.getElementById('usernameDisplay1').innerText = username;
+    document.getElementById('usernameDisplay2').innerText = truncatedUsername;
+    document.getElementById('usernameDisplay').innerText = truncatedUsername;
    
 
 
