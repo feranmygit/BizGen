@@ -10,7 +10,7 @@
 
 ## Project Overview
 
-The **Business Dashboard Project** is a web application designed to help users manage and display business information. it also enable users to generate pdf printing for their business information. Users can create, edit, delete, and view details of their businesses. Additionally, users can update their profiles, including their name, gender, phone number, and profile picture, which are stored and displayed exclusively to the account owner.
+The **BizGenius Project** is a web application designed to help users manage and display business information. it also enable users to generate pdf printing for their business information. Users can create, edit, delete, and view details of their businesses. Additionally, users can update their profiles, including their name, gender, phone number, and profile picture, which are stored and displayed exclusively to the account owner.
 
 You can view the live project [here](https://feranmygit.github.io/BizGen/).
 
