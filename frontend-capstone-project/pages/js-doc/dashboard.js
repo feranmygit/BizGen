@@ -110,7 +110,7 @@ function loadBusinesses(filteredBusinesses = businesses) {
               </td>
               <div class="cardTableBtnCont" id="cardTableBtnCont${index}">
                 <div class="cardTableBtn dropdowncardTableBtn">
-                  <a href="./viewBusiness.html?index=${index}"><button>View</button></a>                <button onclick="editBusiness(${index})">Edit</button>
+                  <a href="./viewBusiness.html?index=${index}"><button class="viewBt">View</button></a>                <button onclick="editBusiness(${index})">Edit</button>
                   <button onclick="deleteBusiness(${index})">Delete</button>
                   <button class="btnPrint" onclick="printBusiness(${index})">Print</button>
                   <button class="btnDownload" onclick="downloadBusiness(${index})">Download</button>
@@ -359,9 +359,6 @@ showIfSomething();
   }
   function viewbizContainer(){
     window.location.href = 'businessDetails.html';
-  }
-  function goBack(){
-    document.getElementById('viewBusiness').style.display = 'none';
   }
 
 // Toggling the visibility of some underlay color containers inside DOMContentLoaded

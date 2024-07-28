@@ -1630,11 +1630,12 @@ th, td {
     padding-inline: 1rem;
     gap: 1rem;
     background-color: var(--primary_light_grey_color);
-    color: var(--main_link_color);
     line-height: 1.5rem;
     font-weight: 700;
   }
-  
+  .viewBt{
+    width: 100%;
+  }
   .dropdown {
     position: relative;
     display: inline-block;
