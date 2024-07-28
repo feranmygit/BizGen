@@ -1032,7 +1032,7 @@ input[type="text" ], select, textarea{
     border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.1);
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     width: 15rem;
     font-weight: 400;
     cursor: pointer;
