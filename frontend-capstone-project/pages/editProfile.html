@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project | Edit profile Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/allocation_9639386.png">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="profileEditContainer" id="profileEditContainer">
+            <div class="profileEditHeader">
+                <i class="fa-solid searchIconn fa-xmark" onclick="removeProfileEditPage()"></i>
+                <h2 class="editText">Edit Profile</h2>
+            </div>
+            <div id="profile-section">
+                <div class="myProfilePicEditCont">
+                    <img class="myProfilePicEdit" id="profile-picture2" src="./assets/avaters/images1.png" alt="Profile Picture">
+                </div>
+                <div class="chooseAvaterCont flex justify_centre">
+                    <input type="file" class="profileInputAvater" id="profile-picture-input" accept="image/*" onchange="changeProfilePicture(event)">
+                </div>
+                <div>
+                    <label for="profile-name">Name:</label>
+                    <input type="text" class="textSpace" id="myFullN">
+                </div>
+                <div>
+                    <label for="profile-gender">Gender:</label>
+                    <select id="my_Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="profile-Contact">Phone Number:</label>
+                    <input type="text" id="my_Contact">
+                </div>
+                <div>
+                    <label for="profile-Relationship">Relationship Status:</label>
+                    <input type="text" id="Relationship">
+                </div>
+                <div>
+                    <label for="profile-email">Email Address:</label>
+                    <input type="text" id="my_EmailAdd">
+                </div>
+                <div>
+                    <label for="profile-Nickname">Nickname:</label>
+                    <input type="text" id="my_Nickname">
+                </div>
+                <div>
+                    <label for="profile-Address">Home Address:</label>
+                    <input type="text" id="my_Address">
+                </div>
+                <div class="buttonSubmitEdit flex">
+                    <button onclick="saveProfile()">Save Profile</button>
+                </divv>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js-doc/editProfile.js"></script>
+</body>
+</html>

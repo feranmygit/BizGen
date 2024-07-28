@@ -51,7 +51,7 @@
                         <div class="flex justify_between">
                             <h4 class="uMe">Relationship</h4>
                             <div class="outDataContainer">
-                                <span class="outputData" id="Relationship">hello</span>
+                                <span class="outputData" id="Relationship"></span>
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
             </div>
             <div class="zoomContainer" id="viewProfilePics" onclick="myToggleDown()">
                 <div class="viewProfilePics">
-                    <img class="myProfilePicEdit" id="profile-picture3" src="./assets/avaters/images1.png" alt="Profile Picture">
+                    <img class="myProfilePicEditt" id="profile-picture3" src="./assets/avaters/images1.png" alt="Profile Picture">
                 </div>
             </div>
             <label for="input4">
@@ -125,7 +125,7 @@
       
         <section class="userProfileSection1">
             <div class="roleLists roleLists1 userPadding userPaddingProfile userSetP">
-                <p class="userRole userPadding"><span id="myFullNProfile" style="font-weight: 600; font-size: 1.5rem; font-style: italic; "></span>  spends most of their time on...</p>
+                <p class="userRole userPadding"><span id="myFullNProfile" style="font-weight: 600; font-size: 1.5rem; font-style: italic; "></span>...  spends most of their time on...</p>
                 <div class="userPadding1">
                     <h4 class="roles roles1"><i class="fa-solid fa-tablet"></i>Product Infrastructure</h4>
                     <h4 class="roles roles2"><i class="fa-solid keyYellow fa-lock"></i>Network Security</h4>
@@ -177,56 +177,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="profileEditContainer" id="profileEditContainer">
-            <div class="profileEditHeader">
-                <i class="fa-solid searchIconn fa-xmark" onclick="removeProfileEditPage()"></i>
-                <h2 class="editText">Edit Profile</h2>
-            </div>
-            <div id="profile-section">
-                <div class="myProfilePicEditCont">
-                    <img class="myProfilePicEdit" id="profile-picture2" src="./assets/avaters/images1.png" alt="Profile Picture">
-                </div>
-                <div class="chooseAvaterCont flex justify_centre">
-                    <input type="file" class="profileInputAvater" id="profile-picture-input" accept="image/*" onchange="changeProfilePicture(event)">
-                </div>
-                <div>
-                    <label for="profile-name">Name:</label>
-                    <input type="text" class="textSpace" id="myFullN">
-                </div>
-                <div>
-                    <label for="profile-gender">Gender:</label>
-                    <select id="my_Gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="profile-Contact">Phone Number:</label>
-                    <input type="text" id="my_Contact">
-                </div>
-                <div>
-                    <label for="profile-Relationship">Relationship Status:</label>
-                    <input type="text" id="Relationship">
-                </div>
-                <div>
-                    <label for="profile-email">Email Address:</label>
-                    <input type="text" id="my_EmailAdd">
-                </div>
-                <div>
-                    <label for="profile-Nickname">Nickname:</label>
-                    <input type="text" id="my_Nickname">
-                </div>
-                <div>
-                    <label for="profile-Address">Home Address:</label>
-                    <input type="text" id="my_Address">
-                </div>
-                <div class="buttonSubmitEdit flex justify_centre">
-                    <button onclick="saveProfile()">Save Profile</button>
-                </divv>
-            </div>
-        </div>
     
     </main>
 

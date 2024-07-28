@@ -30,7 +30,6 @@ function changeProfilePicture(event) {
   reader.onload = function() {
     const profilePicture = reader.result;
     document.getElementById('profile-picture1').src = profilePicture;
-    document.getElementById('profile-picture2').src = profilePicture;
     document.getElementById('profile-picture3').src = profilePicture;
     const username = localStorage.getItem('loggedInUser');
     const profile = getUserProfile(username);
@@ -40,31 +39,6 @@ function changeProfilePicture(event) {
   reader.readAsDataURL(event.target.files[0]);
 }
 
-function saveProfile() {
-  const name = document.getElementById('myFullN').value;
-  const gender = document.getElementById('my_Gender').value;
-  const relationship = document.getElementById('Relationship').value;
-  const email = document.getElementById('my_EmailAdd').value;
-  const contact = document.getElementById('my_Contact').value;
-  const nickname = document.getElementById('my_Nickname').value;
-  const address = document.getElementById('my_Address').value;
-  const username = localStorage.getItem('loggedInUser');
-
-  const profile = {
-    name,
-    gender,
-    relationship,
-    email,
-    contact,
-    nickname,
-    address,
-    picture: document.getElementById('profile-picture1').src
-  };
-
-  saveUserProfile(username, profile);
-  alert('Profile saved successfully!');
-  document.getElementById('profileEditContainer').style.display = 'none';
-}
 
 function loadUserProfile() {
   const username = localStorage.getItem('loggedInUser');
@@ -72,13 +46,13 @@ function loadUserProfile() {
 
   if (profile.picture) {
     document.getElementById('profile-picture1').src = profile.picture;
-    document.getElementById('profile-picture2').src = profile.picture;
     document.getElementById('profile-picture3').src = profile.picture;
+    
   } else {
     document.getElementById('profile-picture1').src = './assets/avaters/images1.png';
-    document.getElementById('profile-picture2').src = './assets/avaters/images1.png';
-    document.getElementById('profile-picture3').src = './assets/avaters/images1.png';
+ 
   }
+
   document.getElementById('myFullN').innerText = profile.name || 'Edit Profile';
   document.getElementById('myFullNProfile').innerText = profile.name || '';
   document.getElementById('my_Gender').innerText = profile.gender || 'Select';
@@ -92,12 +66,11 @@ function loadUserProfile() {
 // Initial load
 loadUserProfile();
 
-
 function EditProfile() {
-  document.getElementById('profileEditContainer').style.display = 'block';
+  window.location.href = 'editProfile.html';
 }
 function removeProfileEditPage() {
-  document.getElementById('profileEditContainer').style.display = 'none';
+  window.location.href = 'Profile.html';
 }
 function myToggleDown() {
   document.getElementById('viewProfilePics').style.display = 'none';

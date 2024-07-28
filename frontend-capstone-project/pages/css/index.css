@@ -979,10 +979,6 @@ input[type="search" i] {
 }
 .formpost{
     width: 90%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-inline: 5%;
 }
 input[type="text" ], select, textarea{
@@ -991,6 +987,7 @@ input[type="text" ], select, textarea{
     width: 100%;
     margin-bottom: 1rem;
     margin-left: 0;
+    margin-top: 0.5rem;
     border: none;
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -1032,10 +1029,10 @@ input[type="text" ], select, textarea{
 }
 .createBtnCont > button{
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.1);
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 15rem;
     font-weight: 400;
     cursor: pointer;
@@ -1096,7 +1093,7 @@ input[type="text" ], select, textarea{
   } */
 .tableContainer{
     margin-inline: 0%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     width: 100%;
     overflow-x: auto;
     padding-bottom: 10rem;
@@ -1211,8 +1208,8 @@ th, td {
     width: 10px;
     border-radius: 100%;
     background-color: var(--main_primary1_color);
-    margin-top: 0.2rem;
-    margin-left: -1.2rem;
+    margin-top: 0.23rem;
+    margin-left: -1rem;
 }
 .informationDet{
     font-size: 1.5rem;
@@ -1393,14 +1390,14 @@ th, td {
 
 /* Uers profile edit form here  */
 .profileEditContainer{
-    position: fixed;
-    z-index: 10000;
+    /* position: fixed; */
+    /* z-index: 10000; */
     background-color: var(--primary_white_color);
-    top: 0;
+    /* top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
-    display: none;
+    left: 0; */
+    /* display: none; */
     overflow-y: auto;
 }
 .profileEditHeader{
@@ -1494,6 +1491,11 @@ th, td {
   }
   .buttonSubmitEdit{
     font-size: 1.3rem;
+    border-radius: 5px;
+    justify-content: end;
+  }
+  .buttonSubmitEdit button{
+    border-radius: 5px;
   }
 
   
@@ -2011,7 +2013,7 @@ input[type="search" i] {
         display: none;
     }
     #searchInput {
-        top: 2rem;
+        top: 1.5rem;
         width: 70%;
         left: 20%;
     }
@@ -2272,7 +2274,6 @@ input[type="search" i] {
 @media only screen and (min-width:928px) {
 
     #searchInput {
-        top: 2rem;
         width: 55%;
         left: 20%;
     }
@@ -2318,7 +2319,7 @@ input[type="search" i] {
         width: 70%;
     }
     #searchInput {
-        top: 1.7rem;
+        top: 1.3rem;
         width: 65%;
         left: 17%;
     }

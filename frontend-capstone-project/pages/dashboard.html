@@ -139,20 +139,28 @@
             <div id="create-business-form">
                 <h2 class="bizGenerate" id="bizGenerate">Create New Business</h2>
                 <form class="formpost">
+                    <label for="business-name">Enter Business Name:</label>
                     <input type="text" id="business-name" placeholder="Business Name">
-                    <input type="text" id="business-type" placeholder="Business Type">
+                    <label for="business-type">Enter Business Type:</label>
+                    <select id="business-type" class="planType" required>
+                        <option class="option" value="">Plan Type</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Firm">Firm</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <label for="planType">Select Type:</label>
                     <select id="planType" class="planType" required>
                         <option class="option" value="">Select Type</option>
                         <option value="Products">Products</option>
                         <option value="Services">Services</option>
                         <option value="Others">Others</option>
                     </select>
+                    <label for="business-description">Describe Your Business:</label>
                     <textarea id="business-description" placeholder="Business Description"></textarea>
                 </form>
                 <div class="radioBox">
-                    <label>
+                    <label for="visibility">Visibility Status:</label>
                       <input type="radio" name="visibility" value="Private" checked> Private
-                    </label>
                     <!-- <label>
                       <input type="radio" name="visibility" value="public"> Public
                     </label> -->
@@ -223,9 +231,7 @@
                         <button class="btnContainer1 btnContainer2" id="createMore1" style="display: none;" onclick="showCreateBusinessForm()">Generate more plan</button>
                     </div>
                 </div>
-          
             </div>
-            
         </section>
 
         <section class="viewBusiness" id="viewBusiness">
@@ -235,56 +241,6 @@
             <div class="conList flex gap justify_centre">
                 <button class="conBtn conBtn1" id="generatePdf" onclick="removeConfirm()">Yes</button>
                 <button class="conBtn"  onclick="confirmBtn()">No</button>
-            </div>
-        </div>
-
-        <div class="profileEditContainer" id="profileEditContainer">
-            <div class="profileEditHeader">
-                <i class="fa-solid searchIconn fa-xmark" onclick="removeProfileEditPage()"></i>
-                <h2 class="editText">Edit Profile</h2>
-            </div>
-            <div id="profile-section">
-                <div class="myProfilePicEditCont">
-                    <img class="myProfilePicEdit" id="profile-picture2" src="./assets/avaters/images1.png" alt="Profile Picture">
-                </div>
-                <div class="chooseAvaterCont flex justify_centre">
-                    <input type="file" class="profileInputAvater" id="profile-picture-input" accept="image/*" onchange="changeProfilePicture(event)">
-                </div>
-                <div>
-                    <label for="profile-name">Name:</label>
-                    <input type="text" class="textSpace" id="myFullN">
-                </div>
-                <div>
-                    <label for="profile-gender">Gender:</label>
-                    <select id="my_Gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="profile-Contact">Phone Number:</label>
-                    <input type="text" id="my_Contact">
-                </div>
-                <div>
-                    <label for="profile-Relationship">Relationship Status:</label>
-                    <input type="text" id="Relationship">
-                </div>
-                <div>
-                    <label for="profile-email">Email Address:</label>
-                    <input type="text" id="my_EmailAdd">
-                </div>
-                <div>
-                    <label for="profile-Nickname">Nickname:</label>
-                    <input type="text" id="my_Nickname">
-                </div>
-                <div>
-                    <label for="profile-Address">Home Address:</label>
-                    <input type="text" id="my_Address">
-                </div>
-                <div class="buttonSubmitEdit flex justify_centre">
-                    <button onclick="saveProfile()">Save Profile</button>
-                </divv>
             </div>
         </div>
     
