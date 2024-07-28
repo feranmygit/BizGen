@@ -65,12 +65,12 @@ function changeProfilePicture(event) {
   
     saveUserProfile(username, profile);
     alert('Profile saved successfully!');
-    window.location.href = 'Profile.html';
+    window.location.href = 'profile.html';
   }
   
   // Initial load
   loadUserProfile();
   
   function removeProfileEditPage() {
-    window.location.href = 'Profile.html';
+    window.location.href = 'profile.html';
   }
