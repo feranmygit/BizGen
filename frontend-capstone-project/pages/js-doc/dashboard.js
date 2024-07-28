@@ -472,7 +472,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // To set the users username where needed on the website inside DOMContentLoaded
 
-      const maxLength = 8; 
+      const maxLength = 10; 
       const truncatedUsername = truncateUsername(username, maxLength);
       
       document.getElementById('usernameDisplay1').innerText = username;
