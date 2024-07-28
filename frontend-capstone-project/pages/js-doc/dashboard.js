@@ -355,12 +355,10 @@ showIfSomething();
   }
 
   function EditProfile() {
-    // document.getElementById('profileEditContainer').style.display = 'block';
     window.location.href = 'editProfile.html';
   }
   function removeProfileEditPage() {
-    // document.getElementById('profileEditContainer').style.display = 'none';
-    window.location.href = 'Profile.html';
+    window.location.href = 'profile.html';
   }
  
   function avaterBtn(){
