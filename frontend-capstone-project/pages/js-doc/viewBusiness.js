@@ -45,3 +45,6 @@ function getParameterByName(name, url = window.location.href) {
   function goBack(){
     window.location.href = './dashboard.html';
   }
+
+
+  

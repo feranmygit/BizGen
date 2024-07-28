@@ -23,7 +23,7 @@ function loadUserProfile() {
   if (profile.picture) {
     document.getElementById('profile-picture1').src = profile.picture;
   } else {
-    document.getElementById('profile-picture1').src = './assets/avaters/images1.png';
+    document.getElementById('profile-picture1').src = './assets/avaters/user avater.jpg';
   }
 }
 loadUserProfile();
@@ -127,24 +127,57 @@ function loadBusinesses(filteredBusinesses = businesses) {
 
 loadBusinesses();
 
-function cardViewBtnContainers(index) {
-  let cardTableBtnCont = document.getElementById(`cardTableBtnCont${index}`);
-  if (cardTableBtnCont.style.display === 'block') {
-    cardTableBtnCont.style.display = 'none';
-  } else {
-    cardTableBtnCont.style.display = 'block';
-  }
 
+// toggleMenu with underlay color 1
+
+function cardViewBtnContainers(index) {
+  let menu = document.getElementById(`cardTableBtnCont${index}`);
+  const tableUnderlay = document.getElementById('btnUnderlay');
+  
+  btnUnderlay();
+
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+    tableUnderlay.style.display = 'none';
+  } else {
+    menu.style.display = 'block';
+    tableUnderlay.style.display = 'block';
+  }
 }
+
+function btnUnderlay() {
+  const menus = document.querySelectorAll('.cardTableBtnCont');
+  menus.forEach(menu => menu.style.display = 'none');
+  
+  const tableUnderlay = document.getElementById('btnUnderlay');
+  tableUnderlay.style.display = 'none';
+}
+
+// toggleMenu with underlay color 2
 
 function toggleMenu(index) {
   const menu = document.getElementById(`dropdown-content-${index}`);
+  const viewUnderlay = document.getElementById('viewUnderlay');
+  
+  closeAllMenus();
+
   if (menu.style.display === 'block') {
     menu.style.display = 'none';
+    viewUnderlay.style.display = 'none';
   } else {
     menu.style.display = 'block';
+    viewUnderlay.style.display = 'block';
   }
 }
+
+function closeAllMenus() {
+  const menus = document.querySelectorAll('.dropdown-content');
+  menus.forEach(menu => menu.style.display = 'none');
+  
+  const viewUnderlay = document.getElementById('viewUnderlay');
+  viewUnderlay.style.display = 'none';
+}
+
 
 
 function editBusiness(index) {
@@ -160,7 +193,9 @@ function editBusiness(index) {
   document.getElementById('showHomePage').style.display = 'block';
   document.getElementById('all-businesses').style.display = 'none';
   document.getElementById('Dash_section5').style.display = 'none';
-  document.getElementById('mainWrapper1').style.display = 'block';  
+  document.getElementById('mainWrapper1').style.display = 'block'; 
+  document.getElementById('btnUnderlay').style.display = 'none'; 
+  document.getElementById('viewUnderlay').style.display = 'none'; 
   document.getElementById('create-business-button').innerText = 'Update Business';
   document.getElementById('bizGenerate').innerText = 'Edit Business Created';
 
@@ -328,6 +363,8 @@ showIfSomething();
     document.getElementById('Dash_section2').style.display = 'none';
     document.getElementById('mainWrapper1').style.display = 'none';
     document.getElementById('Dash_section5').style.display = 'block';
+    document.getElementById('btnUnderlay').style.display = 'none'; 
+    document.getElementById('viewUnderlay').style.display = 'none'; 
   }
 
   function EditProfile() {
@@ -454,18 +491,7 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
     doc.save('All_Businesses.pdf');
 })
 
-
-// const user = getUser(username);
-// if (user && user.avatar) {
-//   document.getElementById('userAvatar').src = user.avatar;
-// }
-
 });
-
-// function getUser(username) {
-//   const users = JSON.parse(localStorage.getItem('users')) || [];
-//   return users.find(user => user.username === username);
-// }
 
 
 

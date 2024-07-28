@@ -15,7 +15,7 @@ function getUserProfile(username) {
     if (profile.picture) {
       document.getElementById('profile-picture2').src = profile.picture;
     } else {
-      document.getElementById('profile-picture2').src = './assets/avaters/images1.png';
+      document.getElementById('profile-picture2').src = './assets/avaters/user avater.jpg';
     }
     document.getElementById('myFullN').value = profile.name || '';
     document.getElementById('my_Gender').value = profile.gender || 'Select';

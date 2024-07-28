@@ -49,7 +49,7 @@ function loadUserProfile() {
     document.getElementById('profile-picture3').src = profile.picture;
     
   } else {
-    document.getElementById('profile-picture1').src = './assets/avaters/images1.png';
+    document.getElementById('profile-picture1').src = './assets/avaters/user avater.jpg';
  
   }
 
