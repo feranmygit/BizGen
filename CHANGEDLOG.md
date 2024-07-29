@@ -30,6 +30,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Added
 - Basic project structure with HTML, CSS, and JavaScript.
+- Responsive design layout across different screen devices
 - Initial version of business creation, display, and deletion.
 - User-specific data storage using `localStorage`.
 - Profile update functionality.
