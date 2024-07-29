@@ -5,6 +5,9 @@ let businesses = JSON.parse(localStorage.getItem('businesses')) || [];
 let editingPlanIndex = null;
 let users = JSON.parse(localStorage.getItem('users')) || [];
 
+
+// function to truncateUsername incase user input is more than expected lenght 
+
 function truncateUsername(username, maxLength) {
   if (username.length > maxLength) {
     return username.slice(0, maxLength) + '...';
@@ -12,9 +15,8 @@ function truncateUsername(username, maxLength) {
   return username;
 }
 
+
 // Load user profile from local storage
-
-
 
 function getUserProfile(username) {
   return JSON.parse(localStorage.getItem(`profile_${username}`)) || {};
@@ -115,7 +117,6 @@ function loadBusinesses(filteredBusinesses = businesses) {
                       <div class="threeDot">
                       </div>
                   </div>
-                
               </td>
               <div class="cardTableBtnCont" id="cardTableBtnCont${index}">
                 <div class="cardTableBtn dropdowncardTableBtn">
@@ -188,11 +189,13 @@ function closeAllMenus() {
 }
 
 
+// Data modification or restructuring 
 
 function editBusiness(index) {
   const business = businesses[index];
   document.getElementById('business-name').value = business.name;
   document.getElementById('business-type').value = business.type;
+  document.getElementById('planType').value = business.planType;
   document.getElementById('business-description').value = business.description;
   document.querySelector(`input[name="visibility"][value="${business.visibility}"]`).checked = true;
   editingPlanIndex = index; 
@@ -210,6 +213,8 @@ function editBusiness(index) {
 
 }
 
+// Data destruction or deletion 
+
 function deleteBusiness(index) {
   if (confirm('Are you sure you want to delete this business?')) {
     businesses.splice(index, 1);
@@ -217,6 +222,8 @@ function deleteBusiness(index) {
     loadBusinesses();
   }
 }
+
+// Data printing 
 
 function printBusiness(index) {
   const business = businesses[index];
@@ -234,6 +241,8 @@ function printBusiness(index) {
   printWindow.document.close();
   printWindow.print();
 }
+
+// Data collection or download 
 
 function downloadBusiness(index) {
   const business = businesses[index];
@@ -253,6 +262,8 @@ function downloadBusiness(index) {
   }
 }
 
+// Data link collection or fetching 
+
 function copyLink(index) {
   const business = businesses[index];
   const url = `${window.location.href}?business=${index}`;
@@ -260,6 +271,8 @@ function copyLink(index) {
     alert('Link copied to clipboard');
   });
 }
+
+// Data sharing functionality 
 
 function shareLink(index) {
   const business = businesses[index];
@@ -376,6 +389,9 @@ showIfSomething();
     document.getElementById('viewUnderlay').style.display = 'none'; 
   }
 
+
+  // To redirect pages 
+  
   function EditProfile() {
     window.location.href = 'editProfile.html';
   }
