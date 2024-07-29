@@ -1,4 +1,4 @@
-# Changelog
+# Changelog BizGenius Project
 
 All notable changes to this project will be documented in this file.
 
@@ -6,8 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [0.1.0] - 2024-07-28
+
 ### Added
-- Initial version of the Business Dashboard Project.
+- Initial version of the BizGenius Project.
+- Creating the landing page to prompt users for authentificaton process
 - User registration and login functionality.
 - Business management: Create, edit, delete, and view business details.
 - Profile management: Update user profile information and profile picture.
@@ -23,7 +26,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Fixed
 - Minor bugs and issues related to data storage and retrieval.
 
-## [0.1.0] - 2024-07-28
+## [0.2.0] - 2024-07-29
 
 ### Added
 - Basic project structure with HTML, CSS, and JavaScript.
@@ -31,7 +34,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - User-specific data storage using `localStorage`.
 - Profile update functionality.
 - Business detail view on a separate page.
-- Edit button on the dashboard leading to the profile edit page.
+- Edit profile button on the dashboard leading to the profile edit page.
 - Business search feature.
 
 ### Changed
@@ -43,5 +46,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Addressed bugs related to dropdown menu toggling.
 
 ---
-
-Note: Dates and versions in the changelog are placeholders. Update them as per your project's actual release dates and versions.
