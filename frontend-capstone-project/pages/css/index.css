@@ -1618,7 +1618,7 @@ th, td {
     align-items: center;
     padding-inline: 1rem;
     gap: 1rem;
-    background-color: var(--primary_light_grey_color);
+    background-color: var(--primary_light_greyish_color);
     line-height: 1.5rem;
     font-weight: 700;
   }
