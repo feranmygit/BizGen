@@ -1934,6 +1934,9 @@ input[type="search" i] {
 .userProfileSection{
     margin-inline: 4rem;
 }
+.viewProfilePics {
+    width: 83%;
+}
 .roles1 {
     width: 90%;
 }
@@ -2123,6 +2126,9 @@ input[type="search" i] {
         width: 40%;
         margin-inline-start: 2rem;
         margin-inline-end: 0rem;
+    }
+    .viewProfilePics {
+        width: 100%;
     }
     .blogPics{
         max-width: 70%;
