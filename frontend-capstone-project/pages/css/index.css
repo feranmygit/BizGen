@@ -4,13 +4,17 @@
 
     /* #main primary colors */
     --main_primary_color: rgba(0,78, 152, 255);
+    --main_primaryGenBtn_color: rgba(0,78, 152, 255);
     --main_Deep_primary_color: rgba(0,120, 255, 255);
     --main_primary1_color: #4CAF50;
     --primary_setting_color: #126415ab;
     --primary_white_color: #fff;
+    --primary_whiteMainDash_color: #fff;
+    --primary_whiteOdd_color: #fff;
     --primary_dropDown_color: #f9f9f9;
     --primary_mainpage_color: rgba(0, 154, 195, 255);
     --primary_black_color: rgb(8, 8, 8);
+    --primary_blackDonload_color: rgb(8, 8, 8);
     --primary_sidebar_color: hsl(0, 0%, 40%);
     --primary_brown_color: #1d3557;
     /* --primary_brown_color: #61a5c2; */
@@ -21,13 +25,46 @@
     --primary_loginPar_color: hsl(180, 7%, 60%);
     --primary_light_grey_color: hsl(228, 12%, 90%);
     --primary_light_greyish_color: hsl(0, 0%, 95%);
+    --primary_allBiz_color: hsl(0, 0%, 95%);
     --primary_overlay_color: rgb(0, 0, 0, 0.2);
+    --primary_overlaybtn_color: rgba(0, 0, 0, 0.1);
     --primary_dashboardbackground_greyish_color: hsl(0, 0%, 92%);
     --primary_covered_color: rgb(0, 0, 0, 0.6);
     --main_link_color: hsl(228, 12%, 20%);
     --primary_orange_color: rgb(196, 127, 0);
     --primary_orange1_color: #ecae1d;
     --primary_cream_color: rgba(254, 240, 229, 255);
+    --primary_blue_color: blue;
+    --primary_footer_color: rgb(4, 0, 20);
+    --pimary_instagram_color: hsl(329, 70%, 58%);
+}
+
+[data-theme="dark"] {
+    /* dark mode theme colors here */
+    --main_primary_color: rgba(0, 120, 255, 255);
+    --main_Deep_primary_color: rgba(0, 78, 152, 255);
+    --main_primary1_color: #4CAF50;
+    --primary_setting_color: #0083ca;
+    --primary_white_color: #1e1e1e;
+    --primary_dropDown_color: #333;
+    --primary_mainpage_color: rgba(0, 154, 195, 255);
+    --primary_black_color: rgb(240, 240, 240);
+    --primary_sidebar_color: hsl(0, 0%, 25%);
+    --primary_brown_color: #1d3557;
+    --paragraph_greyHeader_color: hsl(0, 0%, 75%);
+    --paragraph_grey_color: hsl(228, 12%, 90%);
+    --paragraph_btn_color: hsl(230, 40%, 85%);
+    --primary_greyish_color: hsl(180, 7%, 40%);
+    --primary_loginPar_color: hsl(180, 7%, 20%);
+    --primary_light_grey_color: hsl(228, 12%, 20%);
+    --primary_light_greyish_color: hsl(0, 0%, 15%);
+    --primary_overlay_color: rgba(255, 255, 255, 0.2);
+    --primary_dashboardbackground_greyish_color: hsl(0, 0%, 15%);
+    --primary_covered_color: rgba(0, 0, 0, 0.6);
+    --main_link_color: hsl(228, 12%, 80%);
+    --primary_orange_color: rgb(196, 127, 0);
+    --primary_orange1_color: #ecae1d;
+    --primary_cream_color: rgba(54, 40, 29, 255);
     --primary_blue_color: blue;
     --primary_footer_color: rgb(4, 0, 20);
     --pimary_instagram_color: hsl(329, 70%, 58%);
@@ -58,7 +95,15 @@ body{
     margin-inline-start: 1rem;
     margin-block-start: 0.2rem;
 }
-
+.lightTheme, .lightTheme1{
+    color: var(--primary_black_color);
+}
+.lightTheme2{
+    background-color: var(--primary_whiteMainDash_color);  
+}
+.lightTheme3{
+    color: var(--primary_blackDonload_color);
+}
 /* hamburger section here  */
 #input{
     display: none;
@@ -693,7 +738,6 @@ input[type="search" i] {
     height: 100vh;
     width: 80vw;
     top: 0;
-    background-color: var(--primary_white_color);
     z-index: 10000;
     border-radius: 0 10px 10px 0;
     overflow-y: scroll;
@@ -838,7 +882,6 @@ input[type="search" i] {
 }
 .listBar a{
     text-decoration: none;
-    color: var(--primary_sidebar_color);
 }
 .ftwtbar{
     font-weight: 600;
@@ -925,11 +968,11 @@ input[type="search" i] {
     text-align: left;
     font-size: clamp(1rem, 2.5vw, 1rem);
     background-color: var(--primary_light_greyish_color);
-    box-shadow: 0px 0px 2px 0px rgb(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px 0px var(--primary_overlaybtn_color);
 }
 .button1{
     background-color: var(--primary_orange1_color);
-    color: var(--primary_white_color);
+    color: var(--primary_whiteOdd_color);
     font-size: clamp(1.2rem, 2.5vw, 1.2rem);
     font-weight: 600;
     letter-spacing: 3px;
@@ -939,6 +982,7 @@ input[type="search" i] {
 .btnlinks{
     margin-bottom: 0.5rem;
     cursor: pointer;
+    color: var(--primary_white_color);
 }
 .btnContainer1:visited{
     background-color: var(--primary_light_grey_color);
@@ -1056,11 +1100,10 @@ input[type="text" ], select, textarea{
     padding-block: 2rem;
     background-color: var(--main_link_color);
     margin-top: 3rem;
-    color: var(--primary_light_greyish_color);
+    color: var(--primary_allBiz_color);
 }
 .newBizTitle1{
-    margin-inline: 5%;
-    border-radius: 5px;
+    margin-inline: 1rem;
 }
 
 .card-grid{
@@ -1317,6 +1360,7 @@ th, td {
 }
 #generatePdfBtn{
     color: var(--primary_black_color);
+    background-color: var(--main_primaryGenBtn_color);
     padding: 1rem 1.5rem;
     font-size: clamp(1.2rem, 2.5vw, 1.5rem);
     border: none;
@@ -1328,7 +1372,7 @@ th, td {
     transition: 0.3s ease;
 }
 #generatePdfBtn:hover{
-    background-color: var(--main_primary_color);
+    background-color: var(--main_primaryGenBtn_color);
     color: var(--primary_white_color);
 }
 
@@ -1749,6 +1793,19 @@ th, td {
   .cardTableBtn button:active{
     background-color: var(--primary_light_grey_color);
   }
+  .themeSelection{
+    position: absolute;
+    top: 5rem;
+    z-index: 10;
+  }
+  .topbottom{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
 
 @media only screen and (min-width:500px) {
     .borderBotm {
@@ -1988,7 +2045,7 @@ input[type="search" i] {
         right: 0;
     }
     .Dash_section1{
-        margin-top: 2rem;
+        padding-top: 2rem;
     }
     .Dash_sectionContent{
         top: 22rem;
@@ -2172,7 +2229,6 @@ input[type="search" i] {
         right: 13rem;
     }
     .pBar{
-        background-color: var(--primary_dropDown_color);
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         position: absolute;
         z-index: 4;

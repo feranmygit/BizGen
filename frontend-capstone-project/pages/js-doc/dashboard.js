@@ -471,9 +471,11 @@ document.addEventListener('DOMContentLoaded', function(){
       return;
     };
 
+    const themeKey = 'theme';
     document.getElementById('logoutButton').addEventListener('click', function() {
       if(confirm((`${username}, You are about to Logout!`))){
           localStorage.removeItem('loggedInUser');
+          localStorage.removeItem(themeKey);
           window.location.href = 'landingPage.html';
     }
 });
@@ -481,6 +483,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('logoutButton2').addEventListener('click', function() {
       if(confirm((`${username}, You are about to Logout!`))){
           localStorage.removeItem('loggedInUser');
+          localStorage.removeItem(themeKey);
           window.location.href = 'landingPage.html';
     }
 });
@@ -562,6 +565,142 @@ function myBtn(){
 } 
 
 
+
+// const lightMode = document.getElementById('light-theme-btn');
+// const darkMode = document.getElementById('dark-theme-btn');
+// const usernameDisplay = document.getElementById('usernameDisplay');
+// const themeKey = 'theme';
+
+
+// if (usernameDisplay) {
+//   const username = localStorage.getItem('loggedInUser');
+//       usernameDisplay.textContent = users.username;
+  
+//       // applyTheme(localStorage.getItem(themeKey) || 'light-mode');
+  
+// }
+
+// if (lightMode && darkMode) {
+//   lightMode.addEventListener('click', () => {
+//       applyTheme('light-mode');
+//   });
+
+//   darkMode.addEventListener('click', () => {
+//       applyTheme('dark-mode');
+//   });
+// }
+
+// function applyTheme(theme) {
+//   document.body.className = theme;
+//   localStorage.setItem(themeKey, theme);
+//   // applyTheme(localStorage.getItem(themeKey) || 'light-mode');
+// }
+// // script.js
+// // document.addEventListener('DOMContentLoaded', () => {
+//   // const loggedInUser = JSON.parse(localStorage.getItem('currentUser'));
+
+//   // if (!currentUser) {
+//   //     window.location.href = 'login.html';
+//   // } else {
+//   //     document.getElementById('user-avatar').src = currentUser.avatar || 'default-avatar.png';
+//   //     loadBusinessPlans();
+//   // }
+
+//   let loggedInUser;
+//     try {
+//       loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+//     } catch (error) {
+//         console.error('Invalid JSON format in localStorage for currentUser:', error);
+//         loggedInUser = null;
+//     }
+
+//   document.getElementById('light-theme-btn').addEventListener('click', () => setTheme('light'));
+//   document.getElementById('dark-theme-btn').addEventListener('click', () => setTheme('dark'));
+// });
+
+// function setTheme(theme) {
+//   document.documentElement.setAttribute('data-theme', theme);
+//   let loggedInUser;
+//     try {
+//       loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+//     } catch (error) {
+//         console.error('Invalid JSON format in localStorage for currentUser:', error);
+//         return;
+//     }
+//   loggedInUser.theme = theme;
+//   try {
+//     localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
+// } catch (error) {
+//     console.error('Error storing theme data in localStorage:', error);
+// }
+// }
+
+
+
+// if (usernameDisplay) {
+//   const username = localStorage.getItem('loggedInUser');
+//   if (username) {
+//       applyTheme(localStorage.getItem(themeKey) || 'light');
+//   }else {
+//           // Handle case when no user is logged in
+//           console.error('No user is logged in.');
+//       }
+// }
+
+// if (lightMode && darkMode) {
+//   lightMode.addEventListener('click', () => {
+//       applyTheme('light');
+//   });
+
+//   darkMode.addEventListener('click', () => {
+//       applyTheme('dark');
+//   });
+// }
+
+// function applyTheme(theme) {
+//   document.body.className = theme;
+//   localStorage.setItem(themeKey, theme);
+// }
+
+// // Function to set the theme
+// function setTheme(theme){
+//   document.documentElement.setAttribute('data-theme', theme);
+// }
+
+// // Load the saved theme on page load
+// window.onload = () => {
+//   const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+//   if (loggedInUser) {
+//       document.getElementById('username').innerText = loggedInUser.username;
+//       const savedTheme = loggedInUser.theme || 'light';
+//       setTheme(savedTheme);
+//   } else {
+//       // Handle case when no user is logged in
+//       console.error('No user is logged in.');
+//   }
+// };
+
+// // Add event listeners to theme selection buttons
+// document.getElementById('light-theme-btn').addEventListener('click', () => {
+//   updateUserTheme('light');
+// });
+
+// document.getElementById('dark-theme-btn').addEventListener('click', () => {
+//   updateUserTheme('dark');
+// });
+
+// // Function to update user theme
+// function updateUserTheme(theme) {
+//   setTheme(theme);
+//   let users = JSON.parse(localStorage.getItem('users')) || [];
+//   let loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+//   users = users.map(user => user.username === loggedInUser.username ? { ...user, theme } : user);
+//   loggedInUser = { ...loggedInUser, theme };
+
+//   localStorage.setItem('users', JSON.stringify(users));
+//   localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
+// }
 
 
 
