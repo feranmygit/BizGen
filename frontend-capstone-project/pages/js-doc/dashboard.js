@@ -524,14 +524,22 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 });
 
 document.getElementById('iconTheme').addEventListener('click', () =>{
+  document.getElementById('themeSelectionUnderlay').style.display = 'block';
   document.getElementById('topbottomTheme').style.height = '15rem';
   document.getElementById('topbottomTheme').style.transition = '0.3s';
 })
 document.getElementById('lightModeButton').addEventListener('click', () =>{
+  document.getElementById('themeSelectionUnderlay').style.display = 'none';
   document.getElementById('topbottomTheme').style.height = '0';
   document.getElementById('topbottomTheme').style.transition = '0.3s';
 })
 document.getElementById('darkModeButton').addEventListener('click', () =>{
+  document.getElementById('themeSelectionUnderlay').style.display = 'none';
+  document.getElementById('topbottomTheme').style.height = '0';
+  document.getElementById('topbottomTheme').style.transition = '0.3s';
+})
+document.getElementById('themeSelectionUnderlay').addEventListener('click', () =>{
+  document.getElementById('themeSelectionUnderlay').style.display = 'none';
   document.getElementById('topbottomTheme').style.height = '0';
   document.getElementById('topbottomTheme').style.transition = '0.3s';
 })
