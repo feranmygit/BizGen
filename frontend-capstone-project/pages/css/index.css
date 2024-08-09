@@ -39,8 +39,8 @@
     --primary_blue_color: blue;
     --primary_footer_color: rgb(4, 0, 20);
     --pimary_instagram_color: hsl(329, 70%, 58%);
-    --primary_searchArea_color: #2d323a;
-    --primary_textArea_color: #51565d;
+    --primary_searchArea_color: #414346;
+    --primary_textArea_color: #9fa0a1;
     --primary_textAreaBoxShadow_color: 0px 2px 4px 0px hsl(0, 0%, 25%);
 }
 
@@ -116,6 +116,53 @@ body{
     color: var(--primary_textArea_color);
     background-color: var(--primary_searchArea_color);
     box-shadow: 0px 2px 4px 0px var(--primary_textAreaBoxShadow_color);
+}
+.onethem{
+    position: relative;
+}
+.topbottomTheme{
+    position: fixed;
+    bottom: 0;
+    height: 0rem;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+    background-color: var(--primary_light_grey_color);
+    text-align: center;
+}
+.iconTheme{
+    margin-top: 1.5rem;
+    margin-right: -1rem;
+    font-size: 1.5rem;
+}
+.topbottomTheme::before{
+    position: absolute;
+    content: "";
+    top: 0.5rem;
+    width: 10%;
+    left: 45%;
+    border-radius: 30px;
+    height: 0.3rem;
+    align-items: center;
+    background-color: var(--paragraph_grey_color);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.themes{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem ;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.themesBtn{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    font-size: clamp(1rem, 2.5vw, 1rem);
+
 }
 /* hamburger section here  */
 #input{

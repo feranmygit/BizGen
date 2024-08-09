@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         root.style.setProperty('--main_primaryGenBtn_color', 'rgb(0,78, 152, 255)');
         root.style.setProperty('--primary_blackDonload_color', 'rgb(8, 8, 8)');
         root.style.setProperty('--primary_sidebar_color', '#f6f6f6');
-        root.style.setProperty('--primary_searchArea_color', '#2d323a');
-        root.style.setProperty('--primary_textArea_color', '#51565d');
+        root.style.setProperty('--primary_searchArea_color', '#414346');
+        root.style.setProperty('--primary_textArea_color', '#9fa0a1');
         root.style.setProperty('--primary_textAreaBoxShadow_color', 'hsl(0, 0%, 25%)');
         root.style.setProperty('--primary_light_grey_color', 'hsl(228, 12%, 20%)');
         // Add other properties for dark mode

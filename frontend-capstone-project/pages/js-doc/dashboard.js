@@ -523,7 +523,18 @@ document.getElementById('generatePdf').addEventListener('click', ( ) => {
 
 });
 
-
+document.getElementById('iconTheme').addEventListener('click', () =>{
+  document.getElementById('topbottomTheme').style.height = '15rem';
+  document.getElementById('topbottomTheme').style.transition = '0.3s';
+})
+document.getElementById('lightModeButton').addEventListener('click', () =>{
+  document.getElementById('topbottomTheme').style.height = '0';
+  document.getElementById('topbottomTheme').style.transition = '0.3s';
+})
+document.getElementById('darkModeButton').addEventListener('click', () =>{
+  document.getElementById('topbottomTheme').style.height = '0';
+  document.getElementById('topbottomTheme').style.transition = '0.3s';
+})
 
 // using onclick Event on a container 
 
