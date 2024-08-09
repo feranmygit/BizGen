@@ -1092,7 +1092,7 @@ input[type="text" ], select, textarea{
 }
 .btnCreate{
     background-color: var(--main_primary_color);
-    color: var(--primary_white_color);
+    color: var(--primary_whiteOdd_color);
 }
 .btnCancel{
     background-color: var(--primary_dashboardbackground_greyish_color);
