@@ -1,0 +1,6 @@
+:root{
+    --primary_whiteMainDash_color: #fff;
+}
+body{
+    background-color: var(--primary_whiteMainDash_color);  
+}
