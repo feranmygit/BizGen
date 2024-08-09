@@ -2081,7 +2081,7 @@ input[type="search" i] {
     }
     
 .topSectionWrapper {
-    border-bottom: 1px solid var(--primary_greyish_color);
+    border-bottom: 1px solid var(--primary_textArea_color);
 }
 .roles1 {
     width: 90%;
