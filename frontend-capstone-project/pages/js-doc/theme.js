@@ -13,11 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         root.style.setProperty('--primary_whitePage_color', '#fff');
         root.style.setProperty('--paragraph_greyHeader_color', 'rgb(240, 240, 240)');
         root.style.setProperty('--primary_whiteMainDash_color', '#26252c');
+        root.style.setProperty('--primary_deepblue_color', '#064247');
         root.style.setProperty('--primary_overlaybtn_color', 'rgb(247, 237, 237, 0.178)');
         root.style.setProperty('--main_primaryGenBtn_color', 'rgb(0,78, 152, 255)');
         root.style.setProperty('--primary_blackDonload_color', 'rgb(8, 8, 8)');
         root.style.setProperty('--primary_sidebar_color', '#f6f6f6');
-        root.style.setProperty('--primary_searchArea_color', '#414346');
+        root.style.setProperty('--primary_searchArea_color', '#202328');
         root.style.setProperty('--primary_textArea_color', '#9fa0a1');
         root.style.setProperty('--primary_textAreaBoxShadow_color', 'hsl(0, 0%, 25%)');
         root.style.setProperty('--primary_light_grey_color', 'hsl(228, 12%, 20%)');
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         root.style.setProperty('--primary_whitePage_color', 'rgb(8, 8, 8)');
         root.style.setProperty('--paragraph_greyHeader_color', 'hsl(0, 0%, 49%');
         root.style.setProperty('--primary_whiteMainDash_color', '#fff');
+        root.style.setProperty('--primary_deepblue_color', 'hsl(0, 0%, 92%)');
         root.style.setProperty('--primary_overlaybtn_color', 'rgb(0, 0, 0, 0.1)');
         root.style.setProperty('--main_primaryGenBtn_color', 'hsl(0, 0%, 95%)');
         root.style.setProperty('--primary_blackDonload_color', '#fff');

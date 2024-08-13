@@ -12,6 +12,7 @@
     --primary_whiteMenu_color: #fff;
     --primary_whitePage_color: #fff;
     --primary_whiteMainDash_color: #fff;
+    --primary_deepblue_color: #032124;
     --primary_whiteOdd_color: #fff;
     --primary_dropDown_color: #f9f9f9;
     --primary_mainpage_color: rgba(0, 154, 195, 255);
@@ -20,7 +21,7 @@
     --primary_sidebar_color: hsl(0, 0%, 40%);
     --primary_brown_color: #1d3557;
     /* --primary_brown_color: #61a5c2; */
-    --paragraph_greyHeader_color: hsl(0, 0%, 49%);
+    --paragraph_greyHeader_color: rgb(125, 125, 125);
     --paragraph_grey_color: hsl(228, 12%, 75%);
     --paragraph_btn_color: hsl(230, 40%, 68%);
     --primary_greyish_color: hsl(180, 7%, 80%);
@@ -115,7 +116,10 @@ body{
 .lightTheme5{
     color: var(--primary_textArea_color);
     background-color: var(--primary_searchArea_color);
-    box-shadow: 0px 2px 4px 0px var(--primary_textAreaBoxShadow_color);
+    /* box-shadow: 0px 2px 4px 0px var(--primary_textAreaBoxShadow_color); */
+}
+.lightTheme6{
+    background-color: var(--primary_deepblue_color);
 }
 .onethem{
     position: relative;
@@ -125,7 +129,7 @@ body{
     bottom: 0;
     height: 0rem;
     width: 100%;
-    border-radius: 50px 50px 0 0;
+    border-radius: 20px 20px 0 0;
     background-color: var(--primary_light_grey_color);
     text-align: center;
     z-index: 5;
@@ -765,6 +769,7 @@ input[type="search" i] {
     padding: 0.8rem 1.2rem;
     border-radius: 30px;
     outline: 0;
+    border: 1px solid var(--primary_textAreaBoxShadow_color);
 }
 .overlay{
     position: fixed;
@@ -1066,7 +1071,6 @@ input[type="search" i] {
 /* main area in Dashboard  */
 .welcomeAlert{
     text-align: center;
-    background-color: var(--primary_dashboardbackground_greyish_color);
     padding: 2rem;
     box-shadow: 0px 0px 2px 0px rgb(0, 0, 0, 0.5);
     margin-inline: 1rem;
@@ -1098,7 +1102,7 @@ input[type="text" ], select, textarea{
     margin-bottom: 1rem;
     margin-left: 0;
     margin-top: 0.5rem;
-    border: none;
+    border: 1px solid var(--primary_setting_color);
     border-radius: 5px;
     font-size: 1rem;
     box-sizing: border-box;
@@ -1150,10 +1154,10 @@ input[type="text" ], select, textarea{
     background-color: var(--main_primary_color);
     color: var(--primary_whiteOdd_color);
 }
-.btnCancel{
+/* .btnCancel{
     background-color: var(--primary_dashboardbackground_greyish_color);
     color: var(--primary_black_color);
-}
+} */
 .createBtnCont > button:hover{
     opacity: 0.7;
 }
@@ -2137,7 +2141,7 @@ input[type="search" i] {
     }
     
 .topSectionWrapper {
-    border-bottom: 1px solid var(--primary_textArea_color);
+    border-bottom: 1px solid var(--primary_textAreaBoxShadow_color);
 }
 .roles1 {
     width: 90%;
