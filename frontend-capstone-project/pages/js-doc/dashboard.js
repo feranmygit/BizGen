@@ -439,10 +439,10 @@ document.addEventListener('DOMContentLoaded', function(){
     const pBarDown = document.getElementById('pBarDown');
 
 
-    function togglecoverColor1(){
-      overlayColor1.classList.toggle('open');
-      pBarTop.classList.toggle('open');
-    };
+    // function togglecoverColor1(){
+    //   overlayColor1.classList.toggle('open');
+    //   pBarTop.classList.toggle('open');
+    // };
     function togglecoverColor2(){
       overlayColor2.classList.toggle('open');
       pBarDown.classList.toggle('open');
@@ -456,8 +456,8 @@ document.addEventListener('DOMContentLoaded', function(){
     };
 
    
-    personalSetting.addEventListener('click', togglecoverColor1);
-    genSetting.addEventListener('click', togglecoverColor2);
+    // personalSetting.addEventListener('click', togglecoverColor1);
+    // genSetting.addEventListener('click', togglecoverColor2);
     dotHamburger.addEventListener('click', toggleoverlayColor);
     hamburger.addEventListener('click', togglecoverColor);
 
@@ -568,14 +568,32 @@ function myToggle(){
     overlayColor.classList.toggle('open');
     menuList.classList.toggle('open');
 }
-function myToggleTop(){
-    overlayColor1.classList.toggle('open');
-    pBarTop.classList.toggle('open');
+
+const themeSelection1 = document.getElementById('themeSelection');
+const themeSelectionBtn = document.getElementById('themeSelectionBtn');
+
+function myThemeSelection(){
+  themeSelection1.style.display = 'none'
+  themeSelectionBtn.style.display = 'none'
+}
+function themeChange(){
+  themeSelection1.style.display = 'block'
+  themeSelectionBtn.style.display = 'block'
+}
+
+
+const ToggleDownTheme = document.getElementById('ToggleDownTheme');
+function myToggleDownTheme(){
+  ToggleDownTheme.style.display = 'none'
+  pBarDown.style.right = '-20rem';
 }
 function myToggleDown(){
-    overlayColor2.classList.toggle('open');
-    pBarDown.classList.toggle('open');
+  ToggleDownTheme.style.display = 'block'
+    pBarDown.style.right = '0';
+    pBarDown.style.transition = '0.3s';
+
 }
+
 
 const inputIcon = document.getElementById('inputIcon');
 

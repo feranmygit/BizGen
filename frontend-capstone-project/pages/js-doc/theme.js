@@ -80,8 +80,16 @@ document.addEventListener('DOMContentLoaded', function() {
       applyTheme('light');
       saveThemeToUserProfile('light');
     });
+    document.getElementById('lightModeButtonDesk').addEventListener('click', function() {
+      applyTheme('light');
+      saveThemeToUserProfile('light');
+    });
   
     document.getElementById('darkModeButton').addEventListener('click', function() {
+      applyTheme('dark');
+      saveThemeToUserProfile('dark');
+    });
+    document.getElementById('darkModeButtonDesk').addEventListener('click', function() {
       applyTheme('dark');
       saveThemeToUserProfile('dark');
     });

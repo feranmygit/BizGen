@@ -38,6 +38,10 @@
                     </nav>
                 </div>
             </div>
+            <div class="themeSelection" id="themeSelection">
+                <button id="lightModeButtonDesk">Light Mode</button>
+                <button id="darkModeButtonDesk">Dark Mode</button>
+            </div>
     
              <!-- search section here  -->
               <div class="setAsidesCont1">
@@ -47,7 +51,9 @@
                         <i class="fa-solid searchIcon fa-xmark"></i>
                       </label>
                 </div>
-                <i class="fa-solid bizIcon iconTheme fa-moon" id="iconTheme"></i>
+                <div class="iconTheme" id="iconTheme">
+                    <i class="fa-solid bizIcon fa-moon" ></i>
+                </div>
                   <label for="search" class="search xRemove" id="searcBtn" onclick="myBtn()">
                     <i class="fa-solid searchIcon fa-magnifying-glass"></i>
                   </label>
@@ -67,33 +73,42 @@
                             </div>
                              <h3 class="userN lightTheme4">Hi, <span id="usernameDisplay2"></span></h3>
                          </div>
-                         <div class="bar1 bartack bartack1 borderBotm">
-                            <label for="input3" >
-                                <h4 class="personalSet menuItems3 listPad1 showSettings1" id="personalSetting"><i class="fa-solid bizIconSet fa-circle-info"></i>Personal Setting</h4>
-                            </label>
-                            <h4 class="personalSet menuItems3 showSettings"><i class="fa-solid bizIconSet fa-circle-info"></i>Personal Setting</h4>
-                             <div class="pBar pBarTop lightTheme2" id="pBarTop">
-                                 <li class="listBar1 listBar listPad ftwtbar" onclick="EditProfile()"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-user"></i>Edit Profile</a></li>
-                                 <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-address-book"></i>Address</a></li>
-                                 <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-bell"></i>Notification</a></li>
-                                 <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-regular bizIcon fa-credit-card"></i>Payment</a></li>
+
+                         <div class="pBar">
+                            <div class="themeButtonCont" onclick="themeChange()">
+                                <button class="menuItems3 themeButton lightTheme4" >Change Theme</button>
+                            </div>
+                            <label for="input3" class="" onclick="myToggleDown()">
+                               <h4 class="personalSet menuItems3 listPad1 showSettings1" id="personalSetting"><i class="fa-solid bizIconSet fa-circle-info"></i>Setting</h4>
+                           </label>
+                         </div>
+                         <div class="mainNavContainer" >
+                    
+                             <!-- <div class="bar2 bartack bartack2 bar1"> -->
+                                <div class="pBarDown lightTheme2" id="pBarDown">
+                                    <!-- <label for="input3" >
+                                        <h4 class="personalSet menuItems3 listPad1 showSettings1" id="personalSetting"><i class="fa-solid bizIconSet fa-circle-info"></i>Personal Setting</h4>
+                                    </label> -->
+                                    <h4 class="personalSet menuItems3 showSettings"><i class="fa-solid bizIconSet fa-circle-info"></i>Personal Setting</h4>
+                                     <!-- <div class="pBar pBarTop lightTheme2" id="pBarTop"> -->
+                                         <li class="listBar1 listBar listPad ftwtbar" onclick="EditProfile()"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-user"></i>Edit Profile</a></li>
+                                         <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-address-book"></i>Address</a></li>
+                                         <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-bell"></i>Notification</a></li>
+                                         <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-regular bizIcon fa-credit-card"></i>Payment</a></li>
+                                     <!-- </div> -->
+                                 <!-- </div> -->
+    
+                                <h4 class="genSet personalSet menuItems3 showSettings"><i class="fa-solid bizIconSet fa-lock"></i>Settings</h4>
+                                 <div >
+                                    <li class="listBar1 listBar bizIcon listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-lock"></i>Security</a></li>
+                                    <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-comments"></i>Get Feedback</a></li>
+                                    <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-circle-question"></i>Help Center</a></li>
+                                    <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-brands bizIcon fa-rocketchat"></i>Chat</a></li>
+                                    <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-circle-info"></i>Enquiry</a></li>
+                                    <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="logoutButton"><i class="fa-solid bizIcon fa-right-from-bracket"></i>Logout</a></li>
+                                </div>
                              </div>
                          </div>
-                         <div class="bar2 bartack bartack2 bar1">
-                            <label for="input4">
-                                <h4 class="genSet personalSet menuItems3 listPad1 showSettings1" id="genSetting"><i class="fa-solid bizIconSet fa-lock"></i>Settings</h4>
-                            </label>
-                            <h4 class="genSet personalSet menuItems3 showSettings"><i class="fa-solid bizIconSet fa-lock"></i>Settings</h4>
-                             <div class="pBar pBarDown lightTheme2" id="pBarDown">
-                                <li class="listBar1 listBar bizIcon listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-lock"></i>Security</a></li>
-                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-comments"></i>Get Feedback</a></li>
-                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-circle-question"></i>Help Center</a></li>
-                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-brands bizIcon fa-rocketchat"></i>Chat</a></li>
-                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="barLink"><i class="fa-solid bizIcon fa-circle-info"></i>Enquiry</a></li>
-                                <li class="listBar1 listBar listPad ftwtbar"><a href="#" class="barLink lightTheme" id="logoutButton"><i class="fa-solid bizIcon fa-right-from-bracket"></i>Logout</a></li>
-                            </div>
-                         </div>
-                         <a href="#" class="loghidden lightTheme" id="logoutButton2"><i class="fa-solid bizIcon fa-right-from-bracket"></i></a>
                      </ul>
                  </nav>
               </div>
@@ -109,7 +124,8 @@
                         <button class="btnContainer btnlinks btnContainer1 lightTheme" onclick="showAllBusinesses()"><i class="fa-solid bizIcon bizIcon1 fa-list"></i>All Businesses</button>
                         <button class="btnContainer btnlinks btnContainer1 lightTheme" onclick="showProfile()"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>My Profile</button>
                         <button class="btnContainer btnlinks btnContainer1 lightTheme" onclick="showHomePage()" id="showHomePage" style="display: none;"><i class="fa-solid bizIcon bizIcon1 fa-house"></i>Home</button>
-                        <!-- <button class="btnContainer btnlinks btnContainer1" id="viewbizContainer" onclick="viewbizContainer()"><i class="fa-solid bizIcon bizIcon1 fa-user"></i></i>View all biz</button> -->
+                        <button class="btnContainer btnlinks btnContainer1 lightTheme" id="logoutButton2"><i class="fa-solid bizIcon bizIcon1 fa-right-from-bracket"></i></i>Logout</button>
+                        <!-- <a href="#" class="loghidden lightTheme" ><i class="fa-solid bizIcon fa-right-from-bracket"></i></a> -->
                 </div>
             </div>
         </div>
@@ -131,6 +147,12 @@
             </label>
             <label for="input6">
                 <div class="overlayColorview" id="viewUnderlay" onclick="closeAllMenus()"></div>
+            </label>
+            <label for="">
+                <div class="overlayColorview" id="ToggleDownTheme" onclick="myToggleDownTheme()"></div>
+            </label>
+            <label for="">
+                <div class="overlayColorview" id="themeSelectionBtn" onclick="myThemeSelection()"></div>
             </label>
             <label for="input7">
                 <div class="overlayColorview" id="btnUnderlay" onclick="btnUnderlay()"></div>

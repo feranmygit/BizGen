@@ -1102,7 +1102,7 @@ input[type="text" ], select, textarea{
     margin-bottom: 1rem;
     margin-left: 0;
     margin-top: 0.5rem;
-    border: 1px solid var(--primary_setting_color);
+    border: 1px solid var(--primary_black_color);
     border-radius: 5px;
     font-size: 1rem;
     box-sizing: border-box;
@@ -1863,9 +1863,10 @@ th, td {
     background-color: var(--primary_light_grey_color);
   }
   .themeSelection{
-    position: absolute;
-    top: 5rem;
-    z-index: 10;
+    display: none;
+  }
+  .themeButton{
+    display: none;
   }
 
 @media only screen and (min-width:500px) {
@@ -1990,6 +1991,8 @@ th, td {
    }
    .menuItems2:active{
     border-bottom: 2px solid var(--primary_orange1_color);
+   }.iconTheme {
+    margin-top: 2.5rem;
    }
 
 /* .menu-items list bar  */
@@ -2232,7 +2235,7 @@ input[type="search" i] {
         background-color: transparent;
         z-index: inherit;
         border-radius: 0 10px;
-        overflow-y: scroll;
+        overflow: hidden;
     }
     .profileInfo{
         position: absolute;
@@ -2290,9 +2293,35 @@ input[type="search" i] {
         right: 13rem;
     }
     .pBar{
+        position: absolute;
+        z-index: 2;
+        right: 1rem;
+        top: 4.8rem;
+        display: flex;
+        height: 2.5rem;
+    }
+    .pBarDown{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         position: absolute;
         z-index: 4;
+        right: -20rem;
+        transition: 0.3s;
+        top: 8rem;
+        width: 15rem;
+    }
+    .iconTheme {
+        display: none;
+    }
+    .themeButton{
+        border: none;
+        background-color: var(--main_link_color);
+        color: var(--primary_whiteOdd_color);
+        border-radius: 20px;
+        font-size: 0.8rem;
+        padding: 0.8rem 1.2rem;
+        cursor: pointer;
+        margin-right: 0.5rem;
+        display: block;
     }
     .ftwtbar {
         font-weight: 400;
@@ -2301,24 +2330,34 @@ input[type="search" i] {
         text-transform: inherit;
         color: var(--primary_setting_color);
         font-size: clamp(0.8rem, 2.5vw, 1rem);
-        margin-left: 0.7rem;
-        margin-block-end: 0.5rem;
+        margin-left: 0rem;
+        margin-block-end: 0rem;
+        margin-top: 0;
         cursor: pointer;
     }
- .pBarTop{
-    display: none;
- }
- .pBarTop.open{
+    .themeSelection{
+        position: absolute;
+        top: 8rem;
+        right: 3rem;
+        z-index: 10;
+        display: block;
+        background-color: var(--main_link_color);
+        padding: 1rem;
+        display: none;
+      }
+ /* .pBarTop{
+ } */
+ /* .pBarTop.open{
     display: block;
- }
- .pBarDown{
+ } */
+ /* .pBarDown{
     display: none;
     right: 1rem;
     width: 12rem;
- }
- .pBarDown.open{
+ } */
+ /* .pBarDown.open{
     display: block;
- }
+ } */
  .inlineTop span {
     display: none;
  }
