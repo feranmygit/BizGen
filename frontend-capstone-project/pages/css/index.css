@@ -1723,7 +1723,7 @@ th, td {
     position: relative;
     display: inline-block;
     /* border: 3px solid var(--primary_light_grey_color); */
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 1px 1px var(--primary_deepblue_color);
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -1734,9 +1734,10 @@ th, td {
     align-items: center;
     padding-inline: 1rem;
     gap: 1rem;
-    background-color: var(--primary_light_greyish_color);
+    /* background-color: var(--primary_light_greyish_color); */
     line-height: 1.5rem;
     font-weight: 700;
+    color: var(--primary_white_color);
   }
   .viewBt{
     width: 100%;

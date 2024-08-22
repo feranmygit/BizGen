@@ -84,7 +84,7 @@ function loadBusinesses(filteredBusinesses = businesses) {
     if (b.visibility === 'public' || b.username === username) {
       businessCards.innerHTML += `
          <div class="cardEdit">
-              <div class="cardContTitle">
+              <div class="cardContTitle lightTheme6">
                   <h3 class="">${b.name}</h3>
                   <div class="dropdown cardEdit1">
                    <div class="cardDotCont cardDotCont1">
@@ -101,7 +101,7 @@ function loadBusinesses(filteredBusinesses = businesses) {
                     </div>
                   </div>
               </div>
-          <p class="dashPar">${b.description}</p>
+          <p class="dashPar lightTheme">${b.description}</p>
         </div>
       `;
       businessList.innerHTML += `
