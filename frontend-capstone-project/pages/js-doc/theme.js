@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         root.style.setProperty('--primary_textArea_color', '#9fa0a1');
         root.style.setProperty('--primary_textAreaBoxShadow_color', 'hsl(0, 0%, 25%)');
         root.style.setProperty('--primary_light_grey_color', 'hsl(228, 12%, 20%)');
+        root.style.setProperty('--main_linkBackg_color', 'hsl(228, 12%, 20%)');
         // Add other properties for dark mode
       } else {
         root.style.setProperty('--primary_dashboardbackground_greyish_color', 'hsl(0, 0%, 92%)');
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         root.style.setProperty('--primary_textArea_color', 'hsl(0, 0%, 40%)');
         root.style.setProperty('--primary_textAreaBoxShadow_color', 'rgba(0, 0, 0, 0.2)');
         root.style.setProperty('--primary_light_grey_color', 'hsl(228, 12%, 90%)');
+        root.style.setProperty('--main_linkBackg_color', 'hsl(0, 0%, 95%)');
         // Add other properties for light mode
       }
     }
