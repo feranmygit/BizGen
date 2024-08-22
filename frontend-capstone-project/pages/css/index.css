@@ -1219,7 +1219,7 @@ input[type="text" ], select, textarea{
 }
 #all-businesses > div.scrollar > table > thead{
     background-color: var(--main_primary_color);
-    color: var(--primary_light_greyish_color);
+    color: var(--primary_whiteOdd_color);
 }
 th, td {
     padding: 10px;
