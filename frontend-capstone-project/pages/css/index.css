@@ -967,12 +967,20 @@ input[type="search" i] {
 }
 .listBar:visited{
  background-color: var(--primary_light_greyish_color);
+
 }
 .listBar:hover{
  background-color: var(--primary_light_greyish_color);
 }
 .listBar:active{
  background-color: var(--primary_light_greyish_color);
+}
+
+.listBar>a:hover{
+ color: var(--primary_orange1_color);
+}
+.listBar>a:active{
+    color: var(--primary_orange1_color);
 }
 
 /* menu services dropdown  */
@@ -2351,7 +2359,7 @@ input[type="search" i] {
         font-size: clamp(0.8rem, 2.5vw, 1rem);
         margin-left: 0rem;
         margin-block-end: 0rem;
-        margin-top: 0;
+        margin-top: -0.1rem;
         cursor: pointer;
     }
     .themeSelection{
