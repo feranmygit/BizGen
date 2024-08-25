@@ -979,12 +979,12 @@ input[type="search" i] {
 .menuList{
     position: absolute;
     background-color: var(--primary_whiteMenu_color);
+    border: 1px solid var(--primary_textAreaBoxShadow_color);
     display: none;
     border-radius: 10px;
     width: 10rem;
     right: 0.8rem;
     margin-top: 0.8rem;
-    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0, 0.2);
     z-index: 1000;
 }
 .menuList.open{
@@ -1241,7 +1241,11 @@ th, td {
 .loghidden{
     display: none;
 }
-
+.settingStyle{
+    border: 1px solid var(--primary_textAreaBoxShadow_color);
+    background-color: var(--primary_searchArea_color);
+    border-radius: 20px;
+}
 
 
 /* User Profile Stylings Here  */
@@ -1344,7 +1348,7 @@ th, td {
     margin: 0;
 }
 .userDetails{
-    box-shadow: 0px 1.8px 0px -0.5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 0px -0.5px var(--primary_textAreaBoxShadow_color);
     height: 2rem;
 }
 .uMeData{
@@ -1509,9 +1513,9 @@ th, td {
 
 
 /* Uers profile edit form here  */
-.profileEditContainer{
-    background-color: var(--primary_white_color);
-}
+/* .profileEditContainer{
+    background-color: var(--main_linkBackg_color);
+} */
 .profileEditHeader{
     display: flex;
     align-items: center;
@@ -1521,13 +1525,16 @@ th, td {
     padding-block: 0.7rem;
     background-color: var(--main_link_color);
     color: var(--primary_light_greyish_color);
+    border: 1px solid var(--primary_textAreaBoxShadow_color);
 }
 .searchIconn{
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     cursor: pointer;
+    color: var(--primary_whiteOdd_color);
 }
 .editText{
     font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    color: var(--primary_whiteOdd_color);
 }
 .myProfilePicEdit{
     height: 150px;
@@ -2010,6 +2017,7 @@ th, td {
     margin-top: 0;
     z-index: 1;
     box-shadow: 0px 0px 0px 0px rgb(0, 0, 0, 0.2);
+    border: none;
 }
 .nav-items {
     padding: 0rem;
@@ -2317,6 +2325,8 @@ input[type="search" i] {
         transition: 0.3s;
         top: 8rem;
         width: 15rem;
+        border: 1px solid var(--primary_textAreaBoxShadow_color);
+
     }
     .iconTheme {
         display: none;
