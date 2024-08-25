@@ -800,6 +800,7 @@ input[type="search" i] {
 .profileInfo img{
     height: 50px;
     border-radius: 100%;
+    cursor: pointer;
 }
 .topSectionWrapper{
     display: flex;
@@ -1251,7 +1252,7 @@ th, td {
 }
 .settingStyle{
     border: 1px solid var(--primary_textAreaBoxShadow_color);
-    background-color: var(--primary_searchArea_color);
+    background-color: var(--main_linkBackg_color);
     border-radius: 20px;
 }
 
@@ -2130,6 +2131,7 @@ input[type="search" i] {
     }
     .Dash_section1{
         padding-top: 2rem;
+        z-index: 2;
     }
     .Dash_sectionContent{
         top: 22rem;
@@ -2266,6 +2268,7 @@ input[type="search" i] {
         position: absolute;
         right: 1rem;
         top: 0.4rem;
+        z-index: 2;
     }
     .userProfileSection{
         position: absolute;
@@ -2334,7 +2337,7 @@ input[type="search" i] {
         top: 8rem;
         width: 15rem;
         border: 1px solid var(--primary_textAreaBoxShadow_color);
-
+        background-color: var(--main_linkBackg_color);
     }
     .iconTheme {
         display: none;
